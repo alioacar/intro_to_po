@@ -3,33 +3,35 @@ name: Deploy Jupyter Book to GitHub Pages
 on:
   push:
     branches:
-      - master  # Adjust this if your default branch is different
+      - master  # or 'main', the branch you use for development
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'  # Adjust if necessary
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter-book
+          
+      - name: Build Jupyter Book
+        run: |
+          jupyter-book build .  
 
-    - name: Install dependencies
-      run: |
-        pip install jupyter-book
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _build/html  # Replace with the correct build output directory
+          publish_branch: gh-pages  # Deploy to the 'gh-pages' branch
+          force_orphan: true  # Optional: creates an orphan branch if needed
 
-    - name: Build the Jupyter Book
-      run: |
-        jupyter-book build .
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/html
-        destination_repo: alioacar/intro_to_po
-        publish_branch: master
