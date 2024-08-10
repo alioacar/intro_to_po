@@ -3,7 +3,7 @@ name: Deploy Jupyter Book to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust this if your default branch is different
+      - master  # Adjust this if your default branch is different
 
 jobs:
   build-and-deploy:
@@ -32,4 +32,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _build/html
         destination_repo: alioacar/intro_to_po
-        publish_branch: gh-pages
+        publish_branch: master
