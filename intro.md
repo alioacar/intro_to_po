@@ -1,5 +1,3 @@
-# Introduction to Physical Oceanography
-
 # Introduction to Physical Oceanography, open-source edition
 **Based on the work of Robert Stewart**
 
@@ -31,7 +29,3 @@ We are going to update the book through the usual
 GitHub procedure with PRs and code review. Any
 help and contributions from the oceanographic
 community will be greatly appreciated.
-
-
-```{tableofcontents}
-```
