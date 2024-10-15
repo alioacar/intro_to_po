@@ -1,17 +1,13 @@
-# Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 title: Introduction to Physical Oceanography
 author: Robert Stewart
 logo: logo2.png
 
 # Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
 
 parse:
-    myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    myst_enable_extensions:  # default extensions to enable in the myst parser. 
     - html_admonition
     - html_image
 
@@ -39,9 +35,8 @@ repository:
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
   extra_css:
-    - _static/custom.css
+    - _static/custom.css # it can be useful for specific designs
