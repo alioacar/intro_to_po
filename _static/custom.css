@@ -9,3 +9,14 @@
     max-height: none;
     overflow-y: visible;
 }
+.toggle-button {
+  background-color: #007ACC;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #005999;
+}
