@@ -1,0 +1,505 @@
+Station,Sediment_sample,Latitude_Degrees,Latitude_Minutes,Latitude_Seconds,North_South,Longitude_Degrees,Longitude_Minutes,Longitude_Seconds,East_West,Decimal_Longitude,Decimal_Latitude,Location,FAOarea,Water_body,Sea_Area,Place,Date,Gear,Depth_(fathoms),Bottom_water_temperature_(C)_,Bottom_temp_(F),Bottom_water_depth_D_(fathoms),Specific_Gravity_at_bottom,Surface_temp_(C),Surface_temp_(F),Specific_Gravity_at_surface
+I,Blue mud,41,58,0,N,9,42,0,W,-9.7,41.97,"Off Cape Finisterre, Portugal",27,Northeast Atlantic Ocean,,Portugal,12/30/1872,Dredge,1125,,,,,,,
+Ia,Hard ground,40,25,0,N,9,38,30,W,-9.64,40.42,Off Portugal coast,27,Northeast Atlantic Ocean,,Portugal,1/1/1873,,325,11.11,52,,,13.89,57,
+Ib,Hard ground,40,24,0,N,9,45,0,W,-9.75,40.4,Off Portugal coast,27,Northeast Atlantic Ocean,,Portugal,1/1/1873,,730,9.44,49,,,13.89,57,
+Ic,Hard ground,40,23,0,N,9,43,0,W,-9.72,40.38,Off Portugal coast,27,Northeast Atlantic Ocean,,Portugal,1/1/1873,Dredge,950,,,,,13.89,57,
+Id,Green sand,39,55,0,N,10,5,0,W,-10.08,39.92,Off Portugal coast,27,Northeast Atlantic Ocean,,Portugal,1/2/1873,Dredge,1975,,,,,13.89,57,
+II,Green mud,38,10,0,N,9,14,0,W,-9.23,38.17,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/13/1873,Dredge,470,,,,,13.89,57,
+II a,Green mud,38,5,0,N,9,39,0,W,-9.65,38.08,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/13/1873,Dredge,1270,,,,,13.89,57,
+II b,Green mud,38,31,0,N,9,31,0,W,-9.52,38.52,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,84,,,,,13.89,57,
+II c,Green mud,38,28,0,N,9,35,0,W,-9.58,38.47,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,280,,,,,13.89,57,
+II d,Green mud,38,26,0,N,9,38,0,W,-9.63,38.43,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,560,11.11,52,,,14.17,57.5,
+II e,Green mud,38,22,0,N,9,44,0,W,-9.73,38.37,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,1290,,,,,13.89,57,
+II f,Green mud,38,14,25,N,9,49,42,W,-9.83,38.24,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,1475,3.06,37.5,,,14.17,57.5,
+II g,Green mud,38,9,43,N,9,48,0,W,-9.8,38.16,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,1380,3.33,38,,,14.17,57.5,
+II h,Green mud,37,50,0,N,10,8,0,W,-10.13,37.83,"South-west Lisbon, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/14/1873,,1800,2.78,37,,,13.89,57,
+II j,Green mud,37,1,45,N,9,23,45,W,-9.4,37.03,"Off Cape Sao Vincente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/15/1873,,1000,4.17,39.5,,,15.28,59.5,
+II k,Green sand,36,58,50,N,9,14,20,W,-9.24,36.98,"Off Cape Sao Vincente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/15/1873,Dredge,525,12.22,54,,,15.56,60,
+III,Green sand,37,2,0,N,9,14,0,W,-9.23,37.03,"Off Cape Sao Vincente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/15/1873,Dredge,900,,,,,15.56,60,
+IV,Green sand,36,25,0,N,8,12,0,W,-8.2,36.42,Between Cape Sao Vincente and Gibraltar Strait,27,Northeast Atlantic Ocean,,Portugal,1/16/1873,Dredge & Trawl,600,,,,,15.56,60,
+V,Globigerina ooze,35,47,0,N,8,23,0,W,-8.38,35.78,"Ninety miles south-east of Cape Sao Vicente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/28/1873,Trawl,1090,3.61,38.5,,,16.11,61,
+V a,,36,13,0,N,10,7,0,W,-10.12,36.22,"SW of Cape Sao Vincente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/29/1873,,2500,,,,,15,59,
+VI,Globigerina ooze,36,23,0,N,11,18,0,W,-11.3,36.38,"Off SW of Cape Sao Vincente, Portugal",27,Northeast Atlantic Ocean,,Portugal,1/30/1873,Trawl,1525,2.22,36,,,14.44,58,
+VII,Globigerina ooze,35,20,0,N,13,4,0,W,-13.07,35.33,SE Josephine Bank,34,Eastern Central Atlantic Ocean,,,1/31/1873,Trawl,2125,2.78,37,,,15.56,60,
+VII a,Globigerina ooze,34,4,0,N,14,18,0,W,-14.3,34.07,Off NE Madeira Islands,34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,,2250,2.78,37,,,16.11,61,
+VII b,Globigerina ooze,32,43,0,N,15,52,0,W,-15.87,32.72,East of Madeira Islands,34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,,2225,2.78,37,,,17.22,63,
+VII c,Calcareous sand,32,21,0,N,16,24,0,W,-16.4,32.35,"South of Bugio Island, Madeira Island",34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,,670,8.22,46.8,,,17.22,63,
+VII d,Volcanic mud,32,16,0,N,16,28,0,W,-16.47,32.27,"South of Bugio Island, Madeira Island",34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,,1150,,,,,17.78,64,
+VII e,Volcanic mud,32,20,15,N,16,32,0,W,-16.53,32.34,"South of Bugio Island, Madeira Island",34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,Trawl,930,6.39,43.5,,,17.67,63.8,
+VII f,Volcanic mud,32,27,0,N,16,40,30,W,-16.68,32.45,South of Madeira Island,34,Eastern Central Atlantic Ocean,,Madeira,2/1/1873,,1500,,,,,17.22,63,
+VII g,Volcanic mud,32,32,45,N,16,48,0,W,-16.8,32.55,South of Madeira Island,34,Eastern Central Atlantic Ocean,,Madeira,2/3/1873,,1150,3.89,39,,,17.22,63,
+VII h,Volcanic mud,32,35,0,N,16,51,0,W,-16.85,32.58,"South of Funchal, Madeira Island",34,Eastern Central Atlantic Ocean,,Madeira,2/3/1873,,790,7.22,45,,,17.11,62.8,
+VII j,Volcanic mud,32,36,15,N,16,53,15,W,-16.89,32.6,"South of Funchal, Madeira Island",34,Eastern Central Atlantic Ocean,,Madeira,2/3/1873,,490,,,,,17.22,63,
+VII k,Globigerina ooze,29,19,0,N,16,38,0,W,-16.63,29.32,"North of Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/6/1873,,1975,2.33,36.2,,,16.94,62.5,
+VII l,Volcanic mud,28,28,0,N,16,12,30,W,-16.21,28.47,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,278,,,,,17.78,64,
+VII m,Volcanic mud,28,28,0,N,16,10,0,W,-16.17,28.47,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,630,7.22,45,,,17.78,64,
+VII n,Volcanic mud,28,30,30,N,16,3,30,W,-16.06,28.51,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,975,5,41,,,17.78,64,
+VII o,Volcanic mud,28,33,0,N,16,4,0,W,-16.07,28.55,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,560,7.5,45.5,,,17.78,64,
+VII p,Volcanic sand,28,35,0,N,16,5,0,W,-16.08,28.58,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,Dredge,78,,,,,17.78,64,
+VII q,Hard ground,28,38,0,N,16,5,0,W,-16.08,28.63,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,179,,,,,17.78,64,
+VII r,Volcanic mud,28,41,0,N,16,6,0,W,-16.1,28.68,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,640,7.67,45.8,,,17.78,64,
+VII s,Volcanic mud,28,45,0,N,16,7,0,W,-16.12,28.75,"Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/10/1873,,1390,3.61,38.5,,,20,68,
+VII t,Volcanic mud,28,42,0,N,17,8,0,W,-17.13,28.7,"N of Tenerife, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/11/1873,,1750,3.06,37.5,,,17.22,63,
+VII u,Volcanic mud,28,20,0,N,17,34,0,W,-17.57,28.33,"N of Gomera Island, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/11/1873,,1340,3.61,38.5,,,18.33,65,
+VII v,Volcanic mud,27,58,0,N,17,39,0,W,-17.65,27.97,"SW of Gomera Island, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/11/1873,,1620,3.06,37.5,,,18.33,65,
+VIII,Volcanic mud,28,3,15,N,17,27,0,W,-17.45,28.05,"SW of Gomera Island, Canary Islands",34,Eastern Central Atlantic Ocean,,Spain,2/12/1873,Dredge,620,,,,,18.06,64.5,
+1,Globigerina ooze,27,24,0,N,16,55,0,W,-16.92,27.4,S of Canary Islands,34,Eastern Central Atlantic Ocean,,Spain,2/15/1873,Dredge,1890,2.67,36.8,1890,1.02854,18.06,64.5,1.02671
+2,Globigerina ooze,25,52,0,N,19,22,0,W,-19.37,25.87,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,2/17/1873,Dredge,1945,2.67,36.8,1945,1.02801,19.44,67,1.02666
+3,Pteropod ooze,25,45,0,N,20,14,0,W,-20.23,25.75,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,2/18/1873,Dredge,1525,2.78,37,,,18.89,66,1.02654
+4,,25,28,0,N,20,22,0,W,-20.37,25.47,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,2/19/1873,Dredge,2220,-17.78,0,,,18.89,66,1.02637
+5,Red clay,24,20,0,N,24,28,0,W,-24.47,24.33,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/21/1873,Dredge,2740,2.78,37,2740,1.02948,20,68,
+6,Red clay,23,14,0,N,28,22,0,W,-28.37,23.23,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/23/1873,,2950,2.78,37,2950,1.02949,20.67,69.2,
+7,Red clay,23,23,0,N,31,31,0,W,-31.52,23.38,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/24/1873,,2750,2.72,36.9,2750,1.02808,20,68,
+8,Red clay,23,12,0,N,32,56,0,W,-32.93,23.2,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/25/1873,Dredge,2700,2.78,37,2700,1.02811,19.44,67,1.02677
+9,Red clay,23,23,0,N,35,11,0,W,-35.18,23.38,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/26/1873,Dredge,3150,2.67,36.8,3150,1.02857,20.56,69,1.02656
+10,Red clay,23,10,0,N,38,42,0,W,-38.7,23.17,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,2/28/1873,,2720,2.5,36.5,2720,1.02959,21.67,71,1.02617
+11,Globigerina ooze,22,45,0,N,40,37,0,W,-40.62,22.75,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/1/1873,Dredge,2575,2.5,36.5,2575,1.02821,22.33,72.2,1.02614
+12,Globigerina ooze,21,57,0,N,43,29,0,W,-43.48,21.95,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/3/1873,Dredge,2025,2.72,36.9,2025,1.02845,22.78,73,1.02575
+13,Globigerina ooze,21,38,0,N,44,39,0,W,-44.65,21.63,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/4/1873,Dredge,1900,2.67,36.8,1900,1.02899,22.22,72,1.02607
+14,Globigerina ooze,21,1,0,N,46,29,0,W,-46.48,21.02,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/5/1873,Trawl,1950,2.67,36.8,,,23.33,74,1.02553
+15,Globigerina ooze,20,49,0,N,48,45,0,W,-48.75,20.82,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/6/1873,,2325,2.33,36.2,2325,1.02818,22.5,72.5,1.02589
+16,Globigerina ooze,20,39,0,N,50,33,0,W,-50.55,20.65,Mid Atlantic Ridge,31,Western Central Atlantic Ocean,,,3/7/1873,Dredge,2435,2.33,36.2,2435,1.02959,23.33,74,1.02568
+17,Globigerina ooze,20,7,0,N,52,32,0,W,-52.53,20.12,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,3/8/1873,,2385,2.5,36.5,,,23.33,74,1.02564
+18,Red clay,19,41,0,N,55,13,0,W,-55.22,19.68,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,3/10/1873,Dredge,2650,2.22,36,2650,1.02818,23.33,74,1.0253
+19,Red clay,19,15,0,N,57,47,0,W,-57.78,19.25,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,3/11/1873,,3000,1.94,35.5,3000,1.02819,23.89,75,1.02509
+20,Red clay,18,56,0,N,59,35,0,W,-59.58,18.93,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,3/12/1873,Dredge,2975,2.22,36,2975,1.0293,23.89,75,1.02508
+21,Red clay,18,54,0,N,61,28,0,W,-61.47,18.9,Off Leeward Islands (Lesser Antilles),31,Western Central Atlantic Ocean,,Lesser Antilles,3/13/1873,,3025,1.94,35.5,3025,1.02899,24.44,76,1.02451
+22,Pteropod ooze,18,40,0,N,62,56,0,W,-62.93,18.67,N of Anguilla Island (Lesser Antilles),31,Western Central Atlantic Ocean,,Lesser Antilles,3/14/1873,Trawl,1420,3.56,38.4,,,24.44,76,1.02464
+23,Pteropod ooze,18,24,0,N,63,28,0,W,-63.47,18.4,S of Sombrero Island (Lesser Antilles),31,Western Central Atlantic Ocean,,Lesser Antilles,3/15/1873,Dredge,450,,,,,24.44,76,
+23A,Pteropod ooze,18,26,0,N,63,31,15,W,-63.52,18.43,S of Sombrero Island (Lesser Antilles),31,Western Central Atlantic Ocean,,Lesser Antilles,3/15/1873,Dredge,460,,,,,24.44,76,
+23B,Pteropod ooze,18,28,0,N,63,35,0,W,-63.58,18.47,S of Sombrero Island (Lesser Antilles),31,Western Central Atlantic Ocean,,Lesser Antilles,3/15/1873,Dredge,590,,,,,24.44,76,1.02459
+24,Pteropod ooze,18,38,30,N,65,5,30,W,-65.09,18.64,N of Virgin Islands,31,Western Central Atlantic Ocean,,Virgin Islands,3/25/1873,Dredge,390,,,,,24.44,76,
+24A,,18,43,30,N,65,5,0,W,-65.08,18.73,N of Virgin Islands,31,Western Central Atlantic Ocean,,Virgin Islands,3/25/1873,Dredge,625,,,,,24.44,76,1.0247
+25,Red clay,19,41,0,N,65,7,0,W,-65.12,19.68,N of Virgin Islands,31,Western Central Atlantic Ocean,,Virgin Islands,3/26/1873,Dredge,3875,,,3875,,24.44,76,1.02458
+26,Red clay,21,26,0,N,65,16,0,W,-65.27,21.43,Sargasso Sea,31,Western Central Atlantic Ocean,,,3/27/1873,,2800,,,2800,,24.44,76,1.0247
+27,Red clay,22,49,0,N,65,19,0,W,-65.32,22.82,Sargasso Sea,31,Western Central Atlantic Ocean,,,3/28/1873,,2960,2.33,36.2,2960,1.02803,24.17,75.5,1.02484
+28,Red clay,24,39,0,N,65,25,0,W,-65.42,24.65,Sargasso Sea,31,Western Central Atlantic Ocean,,,3/29/1873,Dredge,2850,2.39,36.3,2850,,23.89,75,1.02491
+29,Red clay,27,49,0,N,64,59,0,W,-64.98,27.82,Sargasso Sea,31,Western Central Atlantic Ocean,,,3/31/1873,Dredge,2700,2.44,36.4,2700,1.02809,22.22,72,1.02571
+30,Red clay,29,5,0,N,65,1,0,W,-65.02,29.08,Sargasso Sea,31,Western Central Atlantic Ocean,,,4/1/1873,,2600,2.5,36.5,2600,1.0298,22.22,72,1.02568
+31,Globigerina ooze,31,24,0,N,65,0,0,W,-65,31.4,Off south of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/3/1873,,2475,2.5,36.5,2475,1.02857,20.83,69.5,
+32,Globigerina ooze,31,49,0,N,64,55,0,W,-64.92,31.82,Off south of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/3/1873,,2250,2.61,36.7,2250,1.02805,20,68,
+32A,Coral mud,32,1,0,N,64,51,0,W,-64.85,32.02,South of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/3/1873,,1820,,,,,20,68,1.02619
+32B,Coral mud,32,10,0,N,64,52,0,W,-64.87,32.17,South of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/3/1873,,950,,,,,20,68,
+32C,Coral mud,32,17,30,N,64,39,5,W,-64.65,32.29,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,,780,,,,,19.44,67,
+32D,Coral mud,32,19,0,N,64,40,0,W,-64.67,32.32,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,,380,,,,,19.44,67,
+32E,Coral mud,32,19,30,N,64,40,35,W,-64.68,32.33,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,Dredge,120,,,,,19.72,67.5,
+32F,Hard ground,32,20,40,N,64,38,15,W,-64.64,32.34,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,,125,,,,,19.72,67.5,
+32G,Hard ground,32,21,25,N,64,37,15,W,-64.62,32.36,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,Dredge,265,,,,,20,68,
+33,Coral mud,32,21,30,N,64,35,55,W,-64.6,32.36,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/4/1873,Dredge,435,,,,,20,68,
+33A,Coral sand,32,31,10,N,64,42,55,W,-64.72,32.52,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/21/1873,,175,,,,,19.56,67.2,
+33B,Coral sand,32,32,30,N,64,46,0,W,-64.77,32.54,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/21/1873,,640,,,,,19.56,67.2,
+34,Coral sand,32,33,55,N,64,52,18,W,-64.87,32.57,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/21/1873,,1370,,,,,19.56,67.2,
+35A,Globigerina ooze,32,39,0,N,65,6,0,W,-65.1,32.65,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/22/1873,,2450,2.5,36.5,,,19.89,67.8,
+35B,Globigerina ooze,32,26,0,N,65,9,0,W,-65.15,32.43,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/22/1873,,2100,2.5,36.5,,,20,68,1.02604
+35C,Globigerina ooze,32,15,0,N,65,8,0,W,-65.13,32.25,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/22/1873,,1950,,,,,20,68,
+36,Coral mud,32,7,25,N,65,4,0,W,-65.07,32.12,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/23/1873,Dredge,30,,,,,19.72,67.5,
+37,Globigerina ooze,32,18,0,N,65,38,0,W,-65.63,32.3,West of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/24/1873,Dredge,2650,2.5,36.5,,,20,68,
+38,Globigerina ooze,33,3,0,N,66,32,0,W,-66.53,33.05,Off NW of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/25/1873,,2600,2.5,36.5,,,21.11,70,1.02583
+39,Red clay,34,3,0,N,67,32,0,W,-67.53,34.05,Off NW of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/27/1873,,2850,2.5,36.5,,,18.33,65,1.02636
+40,Globigerina ooze,34,51,0,N,68,30,0,W,-68.5,34.85,Off NW of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,4/28/1873,Dredge,2675,,,,,20.83,69.5,1.02566
+41,Blue mud,36,5,0,N,69,54,0,W,-69.9,36.08,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,4/29/1873,,,,,,,18.33,65,1.02637
+42,Blue mud,35,58,0,N,70,35,0,W,-70.58,35.97,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,4/30/1873,,2425,2.67,36.8,2425,1.02872,18.33,65,1.02629
+43,,36,23,0,N,71,46,0,W,-71.77,36.38,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,5/1/1873,,2600,2.67,36.8,,,23.89,75,1.02455
+44,Blue mud,37,25,0,N,71,40,0,W,-71.67,37.42,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,5/2/1873,Dredge,1700,2.33,36.2,,,13.61,56.5,1.02583
+45,Blue mud,38,34,0,N,72,10,0,W,-72.17,38.57,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,5/3/1873,Dredge,1240,2.89,37.2,,,9.72,49.5,1.02618
+46,Blue mud,40,17,0,N,66,48,0,W,-66.8,40.28,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,5/6/1873,Dredge,1350,2.89,37.2,,,4.44,40,1.02586
+47,Blue mud,41,14,0,N,65,45,0,W,-65.75,41.23,Off East coast of United States,21,Northwest Atlantic Ocean,,USA,5/7/1873,Dredge,1340,,,,,5.56,42,1.0259
+48,Rock,43,4,0,N,64,5,0,W,-64.08,43.07,"South of Halifax, Nova Scotia",21,Northwest Atlantic Ocean,,Canada,5/8/1873,Dredge,51,,,,,8.89,48,
+49,Gravel and stones,43,3,0,N,63,39,0,W,-63.65,43.05,"South of Halifax, Nova Scotia",21,Northwest Atlantic Ocean,,Canada,5/20/1873,Dredge,85,1.67,35,85,1.02606,4.72,40.5,1.02534
+50,Blue mud,42,8,0,N,63,39,0,W,-63.65,42.13,"South of Halifax, Nova Scotia",21,Northwest Atlantic Ocean,,Canada,5/21/1873,Dredge,1250,3.33,38,1250,1.0274,7.22,45,1.02602
+51,Blue mud,41,19,0,N,63,12,0,W,-63.2,41.32,"South of Halifax, Nova Scotia",21,Northwest Atlantic Ocean,,Canada,5/22/1873,,2020,2.22,36,2020,1.02798,15,59,1.02636
+52,Blue mud,39,44,0,N,63,22,0,W,-63.37,39.73,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,Canada,5/23/1873,,2800,2.33,36.2,2800,1.02909,19.56,67.2,1.02619
+52A,,38,16,0,N,63,17,0,W,-63.28,28.27,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,Canada,5/24/1873,,,,,,,22.78,73,
+53,Blue mud,36,30,0,N,63,40,0,W,-63.67,36.5,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,Canada,5/26/1873,,2650,2.39,36.3,2650,1.02907,22.78,73,1.0252
+54,Blue mud,34,51,0,N,63,59,0,W,-63.98,34.85,North of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/27/1873,Trawl,2650,,,,,21.39,70.5,1.02537
+55,Globigerina ooze,33,20,0,N,64,37,0,W,-64.62,33.33,North of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/28/1873,,2500,,,,,21.39,70.5,1.02562
+55A,Globigerina ooze,32,46,0,N,64,39,0,W,-64.65,32.77,North of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/28/1873,,1775,2.33,36.2,,,21.39,70.5,
+55B,Coral mud,32,7,35,N,64,53,45,W,-64.9,32.13,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/29/1873,Dredge,1325,,,,,22.22,72,
+56,Coral mud,32,8,45,N,64,59,35,W,-64.99,32.15,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/29/1873,Dredge,1075,3.44,38.2,,,22.5,72.5,
+56A,,32,10,45,N,64,58,20,W,-64.97,32.18,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/29/1873,Dredge,506,,,,,22.5,72.5,
+57,,32,11,7,N,65,3,20,W,-65.06,32.19,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/30/1873,,690,,,,,22.5,72.5,
+57A,Coral mud,32,9,30,N,65,7,35,W,-65.13,32.16,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/30/1873,Dredge,1250,,,,,22.78,73,
+57B,,32,9,45,N,65,10,50,W,-65.18,32.16,Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,5/30/1873,Trawl,1575,,,,,22.78,73,
+58,Coral mud,32,37,0,N,64,21,0,W,-64.35,32.62,North of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,6/13/1873,,1500,2.89,37.2,,,23.06,73.5,
+59,Globigerina ooze,32,54,0,N,63,22,0,W,-63.37,32.9,Off North-east of Bermuda Island,31,Western Central Atlantic Ocean,,British Overseas Territory,6/14/1873,,2360,2.39,36.3,2360,1.02857,23.33,74,1.02513
+60,Globigerina ooze,34,28,0,N,58,56,0,W,-58.93,34.47,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,6/16/1873,Trawl,2575,2.33,36.2,2575,1.02912,21.94,71.5,1.02546
+61,Red clay,34,54,0,N,56,38,0,W,-56.63,34.9,North Western Atlantic Basin,31,Western Central Atlantic Ocean,,,6/17/1873,Trawl,2850,2.33,36.2,,,21.67,71,1.02551
+62,Red clay,35,7,0,N,52,32,0,W,-52.53,35.12,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,,6/18/1873,,2875,2.44,36.4,2875,1.02916,21.11,70,1.02577
+63,Globigerina ooze,35,29,0,N,50,53,0,W,-50.88,35.48,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,,6/19/1873,Trawl,2750,,,2750,,21.67,71,1.02563
+64,Globigerina ooze,35,35,0,N,50,27,0,W,-50.45,35.58,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,,6/20/1873,Dredge,,,,,,23.89,75,
+65,Red clay,36,33,0,N,47,58,0,W,-47.97,36.55,North Western Atlantic Basin,21,Northwest Atlantic Ocean,,,6/21/1873,,2700,2.33,36.2,2700,1.028,22.5,72.5,
+66,Globigerina ooze,37,24,0,N,44,14,0,W,-44.23,37.4,Mid Atlantic Ridge,21,Northwest Atlantic Ocean,,,6/22/1873,,2750,2.5,36.5,2750,1.02821,21.11,70,1.02571
+67,Globigerina ooze,37,54,0,N,41,44,0,W,-41.73,37.9,Mid Atlantic Ridge,21,Northwest Atlantic Ocean,,,6/23/1873,,2700,2.39,36.3,2700,1.02815,21.11,70,
+68,Globigerina ooze,38,3,0,N,39,19,0,W,-39.32,38.05,Mid Atlantic Ridge,27,Northeast Atlantic Ocean,,,6/24/1873,Trawl,2175,2.33,36.2,2175,1.02814,21.11,70,1.02548
+69,Globigerina ooze,38,23,0,N,37,21,0,W,-37.35,38.38,Mid Atlantic Ridge,27,Northeast Atlantic Ocean,,,6/25/1873,Trawl,2200,2.33,36.2,,,21.67,71,1.02555
+70,Globigerina ooze,38,25,0,N,35,50,0,W,-35.83,38.42,Mid Atlantic Ridge,27,Northeast Atlantic Ocean,,,6/26/1873,Trawl,1675,,,,,21.11,70,1.02568
+71,Globigerina ooze,38,18,0,N,34,48,0,W,-34.8,38.3,Mid Atlantic Ridge,27,Northeast Atlantic Ocean,,,6/27/1873,Trawl,1675,2.67,36.8,1675,1.02872,21.67,71,1.02537
+72,Pteropod ooze,38,34,0,N,32,47,0,W,-32.78,38.57,Mid Atlantic Ridge,27,Northeast Atlantic Ocean,,,6/28/1873,,1240,3.22,37.8,,,21.67,71,1.02561
+73,Pteropod ooze,38,30,0,N,31,14,0,W,-31.23,38.5,"South of Flores Island, Azores Islands",27,Northeast Atlantic Ocean,,Portugal,6/30/1873,Dredge,1000,4.11,39.4,1000,1.02883,20.56,69,
+74,Pteropod ooze,38,22,0,N,29,37,0,W,-29.62,38.37,Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/1/1873,,1350,,,,,21,69.8,
+75,Volcanic mud,38,38,0,N,28,28,30,W,-28.48,38.63,Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/2/1873,Dredge,450,,,,,21.11,70,
+76,Pteropod ooze,38,11,0,N,27,9,0,W,-27.15,38.18,Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/3/1873,Dredge,900,4.44,40,900,1.02876,21.11,70,1.02559
+77,Hard ground,37,52,0,N,26,26,0,W,-26.43,37.87,Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/4/1873,,750,,,750,,20.67,69.2,
+78,Volcanic mud,37,26,0,N,25,13,0,W,-25.22,37.43,Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/10/1873,Dredge,1000,,,,,21.67,71,
+79,Globigerina ooze,36,21,0,N,23,31,0,W,-23.52,36.35,SE of Azores Islands,27,Northeast Atlantic Ocean,,Portugal,7/11/1873,Dredge,2025,2.17,35.9,,,21.94,71.5,
+80,Globigerina ooze,35,3,0,N,21,25,0,W,-21.42,35.05,Between Azores Islands and Madeira Island,34,Eastern Central Atlantic Ocean,,Portugal,7/12/1873,,2660,2.56,36.6,2660,1.02801,21.67,71,1.02549
+81,Globigerina ooze,34,11,0,N,19,52,0,W,-19.87,34.18,Between Azores Islands and Madeira Island,34,Eastern Central Atlantic Ocean,,Portugal,7/13/1873,,2675,2.78,37,,,21.67,71,1.02556
+82,Globigerina ooze,33,46,0,N,19,17,0,W,-19.28,33.77,Off north-west of Madeira Island,34,Eastern Central Atlantic Ocean,,Portugal,7/14/1873,,2400,2.56,36.6,2400,1.02901,21.5,70.7,1.02565
+83,Globigerina ooze,33,13,0,N,18,13,0,W,-18.22,33.22,Off north-west of Madeira Island,34,Eastern Central Atlantic Ocean,,Portugal,7/15/1873,Dredge,1650,2.78,37,1650,1.02824,21.67,71,1.02585
+84,,30,38,0,N,18,5,0,W,-18.08,30.63,Between Madeira Island and Canary Islands,34,Eastern Central Atlantic Ocean,,,7/18/1873,,,,,,,21.67,71,1.02574
+85,Volcanic mud,28,42,0,N,18,6,0,W,-18.1,28.7,"La Palma Island, Canary Islands",34,Eastern Central Atlantic Ocean,,Spanish territory,7/19/1873,Dredge,1125,,,,,20.67,69.2,1.02608
+86,Globigerina ooze,25,46,0,N,20,34,0,W,-20.57,25.77,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,7/21/1873,,2300,2.56,36.6,2300,1.02832,21.67,71,
+87,,25,49,0,N,20,12,0,W,-20.2,25.82,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,7/21/1873,Dredge,1675,,,,,22.22,72,1.02582
+88,Globigerina ooze,23,58,0,N,21,18,0,W,-21.3,23.97,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,7/22/1873,,2300,2.44,36.4,2300,1.02819,22.22,72,1.02592
+89,Globigerina ooze,22,18,0,N,22,2,0,W,-22.03,22.3,Off Spanish Sahara,34,Eastern Central Atlantic Ocean,,,7/23/1873,Trawl,2400,2.56,36.6,,,23.06,73.5,1.02532
+90,Globigerina ooze,20,58,0,N,22,57,0,W,-22.95,20.97,Off Mauritania,34,Eastern Central Atlantic Ocean,,Mauritania,7/24/1873,,2400,2.5,36.5,2400,1.02851,23.33,74,1.0249
+91,Globigerina ooze,19,4,0,N,24,6,0,W,-24.1,19.07,N of Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/25/1873,,2075,2.5,36.5,2075,1.02902,23.33,74,
+92,Globigerina ooze,17,54,0,N,24,41,0,W,-24.68,17.9,N of Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/26/1873,Dredge,1975,,,,,23.72,74.7,1.02493
+93,Volcanic mud,17,12,45,N,24,55,45,W,-24.93,17.21,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/27/1873,,1070,,,,,23.89,75,
+93A,Volcanic mud,17,3,30,N,24,53,0,W,-24.88,17.06,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/27/1873,,1000,,,,,23.89,75,
+93B,Volcanic mud,16,59,15,N,24,57,45,W,-24.96,16.99,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/27/1873,,465,6.39,43.5,,,23.89,75,
+93C,Coralline sand,16,57,15,N,25,1,0,W,-25.02,16.95,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,7/27/1873,,52,,,,,24.44,76,
+93D,Coralline mud,16,55,45,N,23,3,45,W,-23.06,16.93,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,8/5/1873,,103,,,,,25.56,78,
+93E,Coralline mud,16,52,15,N,25,6,45,W,-25.11,16.87,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,8/5/1873,,85,,,,,25.56,78,
+93F,Volcanic mud,16,50,0,N,25,8,0,W,-25.13,16.83,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,8/5/1873,,260,,,,,25.56,78,
+93G,Volcanic mud,16,46,0,N,25,10,0,W,-25.17,16.77,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,8/5/1873,,675,,,,,25.56,78,
+94,Volcanic mud,16,42,0,N,25,12,0,W,-25.2,16.7,Cape Verde Islands,34,Eastern Central Atlantic Ocean,,Cape Verde,8/5/1873,,1150,,,,,25.56,78,
+95,Globigerina ooze,13,36,0,N,22,49,0,W,-22.82,13.6,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,8/10/1873,,2300,2.5,36.5,2300,1.02805,26.11,79,
+96,,12,15,0,N,22,28,0,W,-22.47,12.25,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,8/11/1873,,,,,,,25.94,78.7,
+97,Globigerina ooze,10,25,0,N,20,30,0,W,-20.5,10.42,Cape Verde Basin,34,Eastern Central Atlantic Ocean,,Cape Verde,8/13/1873,,2575,2.56,36.6,2575,1.02804,25.56,78,1.02346
+98,Globigerina ooze,9,21,0,N,18,28,0,W,-18.47,9.35,Off Guinea,34,Eastern Central Atlantic Ocean,,Guinea,8/14/1873,Dredge,1750,2.61,36.7,1750,1.02805,25.67,78.2,1.02339
+99,,7,53,0,N,17,26,0,W,-17.43,7.88,Off Sierra Leone,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/15/1873,,,,,,,25.56,78,
+100,,7,1,0,N,15,55,0,W,-15.92,7.02,Off Sierra Leone,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/16/1873,,2425,,,,,26.11,79,
+101,Blue mud,5,48,0,N,14,20,0,W,-14.33,5.8,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/19/1873,Trawl,2500,2.44,36.4,,,26.22,79.2,1.02348
+102,Globigerina ooze,3,8,0,N,14,29,0,W,-14.48,3.13,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/21/1873,,2450,2.44,36.4,2450,1.02796,25.56,78,1.02324
+103,Globigerina ooze,2,52,0,N,17,0,0,W,-17,2.87,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/22/1873,,2475,2.22,36,,,25,77,
+104,Globigerina ooze,2,25,0,N,20,1,0,W,-20.02,2.42,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/23/1873,Trawl,2500,2.56,36.6,2500,1.02801,25.56,78,1.02339
+105,Globigerina ooze,2,6,0,N,22,53,0,W,-22.88,2.1,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,8/24/1873,,2275,2.22,36,,,25.56,78,
+106,Globigerina ooze,1,47,0,N,24,26,0,W,-24.43,1.78,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,8/25/1873,Trawl,1850,2.56,36.6,,,26,78.8,1.02332
+107,Globigerina ooze,1,22,0,N,26,36,0,W,-26.6,1.37,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,8/26/1873,Trawl,1500,3.28,37.9,,,26,78.8,1.02335
+108,Globigerina ooze,1,10,0,N,28,23,0,W,-28.38,1.17,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,8/27/1873,,1900,2.67,36.8,,,25.56,78,
+109,Hard ground,0,55,38,N,29,22,35,W,-29.38,0.93,St. Paul Rocks,34,Eastern Central Atlantic Ocean,,Brazil,8/28/1873,Dredge,104,,,,,25.39,77.7,
+109A,Hard ground,0,54,43,N,29,23,32,W,-29.39,0.91,St. Paul Rocks,34,Eastern Central Atlantic Ocean,,Brazil,8/29/1873,,475,,,,,25.56,78,
+109B,Hard ground,0,54,55,N,29,22,17,W,-29.37,0.92,St. Paul Rocks,34,Eastern Central Atlantic Ocean,,Brazil,8/29/1873,,510,,,,,24.72,76.5,
+109C,Globigerina ooze,0,56,23,N,29,22,15,W,-29.37,0.94,St. Paul Rocks,34,Eastern Central Atlantic Ocean,,Brazil,8/29/1873,,780,,,,,24.72,76.5,
+109D,Globigerina ooze,0,56,4,N,29,25,2,W,-29.42,0.93,St. Paul Rocks,34,Eastern Central Atlantic Ocean,,Brazil,8/29/1873,,1425,,,,,25,77,
+110,Globigerina ooze,0,9,0,N,30,18,0,W,-30.3,0.15,South of St. Paul Rocks,41,Southwest Atlantic Ocean,,Brazil,8/30/1873,,2275,1.56,34.8,2275,1.02809,25.28,77.5,1.02408
+111,Globigerina ooze,1,45,0,S,30,58,0,W,-30.97,-1.75,Between St. Paul Rocks and Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,8/31/1873,,2475,0.94,33.7,,,25.56,78,
+112,Globigerina ooze,3,33,0,S,32,16,0,W,-32.27,-3.55,North of Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/1/1873,,2200,1.11,34,2200,1.02817,25.56,78,
+113,Globigerina ooze,3,40,45,S,32,22,0,W,-32.37,-3.68,North of Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/1/1873,,1010,3.06,37.5,,,25.56,78,
+113A,Hard ground,3,47,0,S,32,24,30,W,-32.41,-3.78,Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/1/1873,,25,,,,,25.56,78,
+113B,Hard ground,3,50,30,S,32,30,0,W,-32.5,-3.84,Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/3/1873,,400,,,,,25.56,78,
+113C,Hard ground,3,54,0,S,32,36,15,W,-32.6,-3.9,South of Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/3/1873,,525,,,,,25.56,78,
+114,Hard ground,3,58,0,S,32,42,0,W,-32.7,-3.97,SW of Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/3/1873,,820,,,,,25.56,78,
+115,Globigerina ooze,4,2,0,S,32,47,0,W,-32.78,-4.03,SW of Fernando Noronha Island,41,Southwest Atlantic Ocean,,Brazil,9/3/1873,,2150,,,,,25.56,78,
+116,Globigerina ooze,5,1,0,S,33,50,0,W,-33.83,-5.02,"Off Cape Sao Roque, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/4/1873,,2275,1.28,34.3,2275,1.02818,25.56,78,1.02362
+117,Globigerina ooze,5,56,0,S,34,50,0,W,-34.83,-5.93,"Off Cape Sao Roque, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/6/1873,,1375,,,,,25.56,78,
+117A,Red mud,6,4,0,S,34,51,0,W,-34.85,-6.07,"Off Cape Sao Roque, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/6/1873,,500,,,,,25.56,78,
+118,Globigerina ooze,7,28,0,S,34,2,0,W,-34.03,-7.47,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/8/1873,,2050,1.78,35.2,,,25.28,77.5,
+119,Globigerina ooze,7,39,0,S,34,12,0,W,-34.2,-7.65,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/8/1873,,1650,2.89,37.2,,,25.28,77.5,1.0248
+120,Red mud,8,37,0,S,34,28,0,W,-34.47,-8.62,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/9/1873,Trawl,675,,,,,25.56,78,
+121,Red mud,8,28,0,S,34,31,0,W,-34.52,-8.47,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/9/1873,Trawl,500,,,,,25.56,78,
+122,Red clay,9,5,0,S,34,50,0,W,-34.83,-9.08,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/10/1873,Trawl,350,,,,,25.28,77.5,
+122A,Red clay,9,10,0,S,34,52,0,W,-34.87,-9.17,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/10/1873,Trawl,120,,,,,25.28,77.5,
+122B,Red sandy mud,9,9,0,S,34,53,0,W,-34.88,-9.15,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/10/1873,Trawl,32,,,,,25.28,77.5,
+122C,Red mud,9,10,0,S,34,49,0,W,-34.82,-9.17,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/10/1873,Trawl,400,,,400,,25.28,77.5,1.0248
+123,Globigerina ooze,10,9,0,S,35,11,0,W,-35.18,-10.15,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/11/1873,,1715,2.78,37,,,25.28,77.5,
+124,Globigerina ooze,10,11,0,S,35,22,0,W,-35.37,-10.18,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/11/1873,Trawl,1600,,,1600,,25.28,77.5,
+125,Red mud,10,46,0,S,36,2,0,W,-36.03,-10.77,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/12/1873,,1200,,,1200,,25,77,1.02495
+126,Red mud,10,46,0,S,36,8,0,W,-36.13,-10.77,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/12/1873,Trawl,770,,,,,25,77,
+126A,Red mud,10,45,0,S,36,9,0,W,-36.15,-10.75,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/12/1873,Trawl,700,,,,,25,77,
+127,Red mud,11,42,0,S,37,3,0,W,-37.05,-11.7,"Off Pernambuco, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/13/1873,,1015,3.61,38.5,,,25,77,
+128,Globigerina ooze,13,6,0,S,38,7,0,W,-38.12,-13.1,"Off Bahia, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/14/1873,,1275,,,,,24.72,76.5,
+129,Globigerina ooze,20,13,0,S,35,19,0,W,-35.32,-20.22,"Off Spirito Santo, Brazil",41,Southwest Atlantic Ocean,,Brazil,9/30/1873,Dredge,2150,1.22,34.2,,,23.33,74,1.02557
+130,Globigerina ooze,26,15,0,S,32,56,0,W,-32.93,-26.25,Brazilian Basin,41,Southwest Atlantic Ocean,,Brazil,10/3/1873,Trawl,2350,1.5,34.7,2350,1.02928,20.56,69,1.02587
+131,Globigerina ooze,29,35,0,S,28,9,0,W,-28.15,-29.58,Brazilian Basin,41,Southwest Atlantic Ocean,,Brazil,10/6/1873,Trawl,2275,1.44,34.6,,,18.33,65,1.02607
+132,Globigerina ooze,35,25,0,S,23,40,0,W,-23.67,-35.42,Mid Atlantic Ridge,41,Southwest Atlantic Ocean,,,10/10/1873,,2050,1.67,35,2050,1.02796,14.44,58,1.02642
+133,Globigerina ooze,35,41,0,S,20,55,0,W,-20.92,-35.68,Mid Atlantic Ridge,41,Southwest Atlantic Ocean,,,10/11/1873,Trawl,1900,1.89,35.4,1900,1.02792,14.44,58,1.0265
+134,Globigerina ooze,36,12,0,S,12,16,0,W,-12.27,-36.2,North of Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/14/1873,Dredge,2025,2.22,36,2025,1.02786,11.94,53.5,1.02679
+135,Volcanic sand,37,1,50,S,12,19,10,W,-12.32,-37.03,Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/15/1873,,360,,,,,11.94,53.5,
+135A,"Hard ground, shells and gravel",37,16,50,S,12,45,15,W,-12.75,-37.28,Inaccessible Island (Tristan da Cunha Island),47,Southeast Atlantic Ocean,,British Overseas Territory,10/16/1873,Dredge,75,,,,,12.22,54,
+135B,"Hard ground, shells and gravel",37,22,30,S,12,33,0,W,-12.55,-37.38,Nightingale Island (Tristan da Cunha Island),47,Southeast Atlantic Ocean,,British Overseas Territory,10/17/1873,,465,,,,,11.94,53.5,
+135C,Coarse shells,37,25,30,S,12,28,30,W,-12.48,-37.43,Nightingale Island (Tristan da Cunha Island),47,Southeast Atlantic Ocean,,British Overseas Territory,10/17/1873,Dredge,110,,,,,12.22,54,
+135D,Coarse shells,37,25,0,S,12,30,30,W,-12.51,-37.42,Nightingale Island (Tristan da Cunha Island),47,Southeast Atlantic Ocean,,British Overseas Territory,10/17/1873,Dredge,72,,,,,12.22,54,
+135E,"Hard ground, shells and gravel",37,21,0,S,12,22,30,W,-12.38,-37.35,Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/18/1873,Dredge,1000,,,,,11.94,53.5,
+135F,Hard ground,37,14,45,S,12,20,15,W,-12.34,-37.25,Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/18/1873,Dredge,1100,,,,,11.94,53.5,
+135G,Hard ground,37,10,50,S,12,18,30,W,-12.31,-37.18,Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/18/1873,Dredge,550,,,,,12.22,54,
+136,,36,43,0,S,7,13,0,W,-7.22,-36.72,East of Tristan da Cunha Island,47,Southeast Atlantic Ocean,,British Overseas Territory,10/20/1873,Dredge,2100,1.78,35.2,2100,1.02798,12.22,54,1.02685
+137,Globigerina ooze,35,59,0,S,1,34,0,E,1.57,-35.98,Cape Basin,47,Southeast Atlantic Ocean,,South Africa,10/23/1873,Dredge,2550,1.39,34.5,2550,1.02793,13.39,56.1,1.02681
+138,Red clay,36,22,0,S,8,12,0,E,8.2,-36.37,Cape Basin,47,Southeast Atlantic Ocean,,South Africa,10/25/1873,,2560,1.72,35.1,2650,1.02786,13.44,56.2,1.02674
+139,Globigerina ooze,35,35,0,S,16,9,0,E,16.15,-35.58,Off SW of Cape of Good Hope,47,Southeast Atlantic Ocean,,South Africa,10/27/1873,,2325,1.17,34.1,2325,1.02791,13.44,56.2,1.0266
+140,Globigerina ooze,35,0,0,S,17,57,0,E,17.95,-35,Off SW of Cape of Good Hope,47,Southeast Atlantic Ocean,,South Africa,10/28/1873,,1250,,,,,15,59,
+141,Green sand,34,41,0,S,18,36,0,E,18.6,-34.68,South of Cape of Good Hope,47,Southeast Atlantic Ocean,,South Africa,12/17/1873,Dredge,98,9.72,49.5,,,19.17,66.5,
+142,Green sand,35,4,0,S,18,37,0,E,18.62,-35.07,South of Cape of Good Hope,47,Southeast Atlantic Ocean,,South Africa,12/18/1873,Dredge,150,8.33,47,150,1.02796,18.61,65.5,
+143,Globigerina ooze,36,48,0,S,19,24,0,E,19.4,-36.8,South of Cape of Good Hope,47,Southeast Atlantic Ocean,,South Africa,12/19/1873,Dredge,1900,2,35.6,1900,1.02811,22.78,73,1.0247
+144,Globigerina ooze,45,57,0,S,34,39,0,E,34.65,-45.95,West of Prince Edward Island,58,Antarctic Indian Ocean,,South Africa,12/24/1873,,1570,2.11,35.8,1570,1.02729,6.11,43,1.0268
+144A,Volcanic sand,46,48,0,S,37,49,30,E,37.83,-46.8,North of Marion Island,58,Antarctic Indian Ocean,,South Africa,12/26/1873,Dredge,69,,,,,5,41,
+145,Volcanic sand,46,43,0,S,38,4,30,E,38.08,-46.72,South-east of Prince Edward Island,58,Antarctic Indian Ocean,,South Africa,12/27/1873,Dredge,140,,,,,5,41,
+145A,Volcanic sand,46,41,0,S,38,10,0,E,38.17,-46.68,South-east of Prince Edward Island,58,Antarctic Indian Ocean,,South Africa,12/27/1873,Dredge,310,,,,,5.28,41.5,1.0269
+146,Globigerina ooze,46,46,0,S,45,31,0,E,45.52,-46.77,North-east of Prince Edward Island,58,Antarctic Indian Ocean,,South Africa,12/29/1873,Trawl,1375,2,35.6,1375,1.02759,6.11,43,1.02675
+147,Diatom ooze,46,16,0,S,48,27,0,E,48.45,-46.27,West of Crozet Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,12/30/1873,Trawl,1600,1.22,34.2,1600,1.02759,5,41,1.02692
+147A,Diatom ooze,46,45,0,S,50,42,0,E,50.7,-46.75,Crozet Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/1/1874,,600,,,,,5.56,42,
+148,Hard ground,46,47,0,S,51,37,0,E,51.62,-46.78,Crozet Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/3/1874,Dredge,210,,,,,5,41,
+148A,"Hard ground, shells and gravel",46,53,0,S,51,52,0,E,51.87,-46.88,Crozet Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/3/1874,Dredge,550,,,,,5,41,1.02683
+149,Green mud,49,8,0,S,70,12,0,E,70.2,-49.13,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/9/1874,Dredge,20,,,,,,,
+149A,Green mud,49,8,0,S,70,9,0,E,70.15,-49.13,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/14/1874,Dredge,40,,,,,,,
+149B,Green mud,49,28,0,S,70,30,0,E,70.5,-49.47,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/17/1874,Dredge,25,,,,,4.72,40.5,
+149C,Green mud,49,32,0,S,70,0,0,E,70,-49.53,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/19/1874,Dredge,60,,,,,,,
+149D,Green mud,49,28,0,S,70,13,0,E,70.22,-49.47,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/20/1874,Dredge,28,,,,,5,41,
+149E,Green mud,49,37,0,S,70,16,0,E,70.27,-49.62,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/21/1874,Dredge,30,,,,,-17.78,0,
+149F,Green mud,48,55,0,S,69,31,0,E,69.52,-48.92,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/27/1874,Dredge,95,,,,,5.39,41.7,
+149G,Green mud,48,50,0,S,69,18,0,E,69.3,-48.83,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/29/1874,Dredge,110,,,,,4.56,40.2,
+149H,Green mud,48,45,0,S,69,14,0,E,69.23,-48.75,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/29/1874,Dredge,127,,,,,4.33,39.8,
+149J,Green mud,48,43,0,S,69,15,0,E,69.25,-48.72,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/29/1874,Dredge,105,,,,,3.89,39,
+149K,Green mud,48,40,0,S,69,6,0,E,69.1,-48.67,Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,1/29/1874,Dredge,45,,,,,3.89,39,
+150,Coarse gravel,52,4,0,S,71,22,0,E,71.37,-52.07,South of Kerguelen Island,58,Antarctic Indian Ocean,,French Southern and Antarctic Lands,2/2/1874,Dredge,150,1.78,35.2,,,3.06,37.5,
+151,Volcanic mud,52,59,30,S,73,33,30,E,73.56,-52.99,Heard Island,58,Antarctic Indian Ocean,,Australian Territory,2/7/1874,Dredge,75,,,,,2.33,36.2,
+152,Diatom ooze,60,52,0,S,80,20,0,E,80.33,-60.87,"Off Prince Elizabeth Land, Antarctica",58,Antarctic Indian Ocean,,Antarctica,2/11/1874,Trawl,1260,,,1260,,1.39,34.5,1.02721
+153,Blue mud,65,42,0,S,79,49,0,E,79.82,-65.7,"Off Prince Elizabeth Land, Antarctica",58,Antarctic Indian Ocean,,Antarctica,2/14/1874,Dredge,1675,,,1675,,-1.39,29.5,1.02632
+154,Blue mud,64,37,0,S,85,49,0,E,85.82,-64.62,"Off Prince Elizabeth Land, Antarctica",58,Antarctic Indian Ocean,,Antarctica,2/19/1874,,1800,,,1800,,0,32,
+155,Blue mud,64,18,0,S,94,47,0,E,94.78,-64.3,"Off Queen Mary Land, Antarctica",58,Antarctic Indian Ocean,,Antarctica,2/23/1874,Dredge,1300,,,,,-0.56,31,
+156,Diatom ooze,62,26,0,S,95,44,0,E,95.73,-62.43,"Off Queen Mary Land, Antarctica",58,Antarctic Indian Ocean,,Antarctica,2/26/1874,Trawl,1975,,,1975,,0.56,33,1.02721
+157,Diatom ooze,53,55,0,S,108,35,0,E,108.58,-53.92,Indian Antarctic Ridge,57,Eastern Indian Ocean,,,3/3/1874,Trawl,1950,0.06,32.1,1950,1.02776,2.89,37.2,1.02708
+158,Globigerina ooze,50,1,0,S,123,4,0,E,123.07,-50.02,Indian Antarctic Ridge,57,Eastern Indian Ocean,,,3/7/1874,Trawl,1800,0.83,33.5,1800,1.02776,7.22,45,1.02672
+159,Globigerina ooze,47,25,0,S,130,22,0,E,130.37,-47.42,Indian Antarctic Ridge,57,Eastern Indian Ocean,,,3/10/1874,Trawl,2150,1.39,34.5,2150,1.02773,10.83,51.5,1.02665
+160,Red clay,42,42,0,S,134,10,0,E,134.17,-42.7,South Australian Basin,57,Eastern Indian Ocean,,Australia,3/13/1874,Trawl,2600,1.06,33.9,2600,1.0278,12.78,55,1.02627
+161,Shelly sand,38,22,30,S,144,36,30,E,144.61,-38.38,"Entrance of Port Phillip Bay, Australia",57,Eastern Indian Ocean,,Australia,4/1/1874,Trawl,33,,,,,17.5,63.5,
+162,Shelly sand,39,10,30,S,146,37,0,E,146.62,-39.18,"Off Port Jackson, South Australia",57,Southwest Pacific Ocean,Tasman Sea,Australia,4/2/1874,Dredge,38,,,,,17.33,63.2,
+163,Globigerina ooze,36,57,0,S,150,34,0,E,150.57,-36.95,"NE of Cape Howe, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,4/2/1874,,2200,1.39,34.5,2200,1.02809,22.22,72,1.02481
+163A,Green mud?,36,59,0,S,150,20,0,E,150.33,-36.98,"NE of Cape Howe, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,4/4/1874,Dredge,150,,,,,21.67,71,
+163B,,33,51,15,S,151,22,15,E,151.37,-33.85,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/3/1874,Dredge,35,17.22,63,,,20.56,69,
+163C,Hard ground,33,55,0,S,151,35,0,E,151.58,-33.92,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/12/1874,,85,16.94,62.5,,,19.72,67.5,1.02541
+163D,Green sand,33,57,30,S,151,39,15,E,151.65,-33.96,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/12/1874,,120,,,,,20,68,
+163E,Green sand,34,0,15,S,151,44,15,E,151.74,-34,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/12/1874,,290,,,,,21.22,70.2,
+163F,Green mud,34,3,15,S,151,51,30,E,151.86,-34.05,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/12/1874,,650,4.89,40.8,,,21.22,70.2,
+164,Green mud,34,8,0,S,152,0,0,E,152,-34.13,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/12/1874,,950,2.5,36.5,,,20.83,69.5,1.02518
+164A,Green mud,34,9,0,S,151,55,0,E,151.92,-34.15,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/13/1874,,1200,,,,,21.22,70.2,
+164B,Green mud,34,13,0,S,151,38,0,E,151.63,-34.22,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/13/1874,Trawl,410,,,,,20.56,69,1.02512
+164C,Green mud,34,19,0,S,151,31,0,E,151.52,-34.32,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/13/1874,Dredge,400,4.44,40,,,19.44,67,
+164D,,34,3,0,S,152,20,0,E,152.33,-34.05,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/14/1874,,2100,,,,,19.72,67.5,
+164E,,34,27,0,S,154,57,0,E,154.95,-34.45,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/16/1874,,2550,,,,,17.78,64,1.026
+165,Red clay,34,50,0,S,155,28,0,E,155.47,-34.83,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/17/1874,Dredge,2600,1.39,34.5,2600,1.02801,18.06,64.5,1.02579
+165A,Red clay,36,41,0,S,158,29,0,E,158.48,-36.68,"Off Sydney, Australia",81,Southwest Pacific Ocean,Tasman Sea,Australia,6/19/1874,,2600,1.33,34.4,,,16.94,62.5,
+165B,Globigerina ooze,37,53,0,S,163,18,0,E,163.3,-37.88,Tasman Sea,81,Southwest Pacific Ocean,Tasman Sea,,6/21/1874,,1975,1.5,34.7,1965,1.02832,15.28,59.5,
+165C,Globigerina ooze,38,36,0,S,166,39,0,E,166.65,-38.6,Tasman Sea,81,Southwest Pacific Ocean,Tasman Sea,,6/22/1874,,1100,2.44,36.4,1100,1.02795,14.56,58.2,
+166,Globigerina ooze,38,50,0,S,169,20,0,E,169.33,-38.83,"Off Cape Farewell, west of New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/23/1874,Trawl,275,10.44,50.8,275,1.02772,14.72,58.5,1.02644
+166A,,38,57,0,S,170,10,45,E,170.18,-38.95,"Off Cape Farewell, west of New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/23/1874,,350,,,,,14.72,58.5,
+166B,Globigerina ooze,39,8,0,S,170,43,0,E,170.72,-39.13,"Off Cape Farewell, west of New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/23/1874,,400,,,,,14.72,58.5,
+166C,Globigerina ooze,39,21,0,S,171,28,0,E,171.47,-39.35,"Off Cape Farewell, west of New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/24/1874,,400,,,,,14.44,58,
+167,Blue mud,39,32,0,S,171,48,0,E,171.8,-39.53,"Off entrance of Cook Strait, New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/24/1874,Trawl,150,,,,,14.72,58.5,
+167A,Mud,41,4,0,S,174,19,0,E,174.32,-41.07,"Port Hardy, New Zealand",81,Southwest Pacific Ocean,Tasman Sea,New Zealand,6/27/1874,Dredge,10,,,,,10.83,51.5,
+168,Blue mud,40,28,0,S,177,43,0,E,177.72,-40.47,"East of North Island, New Zealand",81,Southwest Pacific Ocean,,New Zealand,7/8/1874,Trawl,1100,2.89,37.2,1100,1.02781,14,57.2,1.02654
+169,Blue mud,37,34,0,S,179,22,0,E,179.37,-37.57,"East Cape, New Zealand",81,Southwest Pacific Ocean,,New Zealand,7/10/1874,Trawl,700,4.44,40,700,1.02777,14.56,58.2,
+170,Volcanic mud,29,55,0,S,178,14,0,W,-178.23,-29.92,North of Kermadec Island,81,Southwest Pacific Ocean,,New Zealand,7/14/1874,Trawl,520,6.11,43,,,18.33,65,
+170A,Volcanic mud,29,45,0,S,178,11,0,W,-178.18,-29.75,North of Kermadec Island,81,Southwest Pacific Ocean,,New Zealand,7/14/1874,Trawl,630,4.17,39.5,,1.02841,18.44,65.2,1.02576
+171,Volcanic mud,28,33,0,S,177,50,0,W,-177.83,-28.55,North of Kermadec Island,81,Southwest Pacific Ocean,,New Zealand,7/15/1874,Trawl,600,4.17,39.5,,,19.17,66.5,
+171A,Red clay,25,5,0,S,172,56,0,W,-172.93,-25.08,North of Kermadec Island,81,Southwest Pacific Ocean,,New Zealand,7/17/1874,,2900,1.28,34.3,2900,,22.22,72,1.02472
+172,Coral sand,20,58,0,S,175,9,0,W,-175.15,-20.97,"Tongatapu Island, Tonga Island",71,Western Central Pacific Ocean,,Tonga,7/22/1874,Dredge,18,,,,,23.89,75,
+172A,Coral sand,20,56,0,S,175,11,0,W,-175.18,-20.93,"Tongatapu Island, Tonga Island",71,Western Central Pacific Ocean,,Tonga,7/22/1874,Dredge,240,,,,,23.89,75,
+173,Coral mud,19,9,35,S,179,41,50,E,179.7,-19.16,"Matuku Island, Fiji Island",71,Western Central Pacific Ocean,,Fiji,7/24/1874,Dredge,315,,,,,24.44,76,
+173A,Coral mud,19,9,32,S,179,41,55,E,179.7,-19.16,"Matuku Island, Fiji Island",71,Western Central Pacific Ocean,,Fiji,7/24/1874,Trawl,310,,,,,25,77,
+174,Coral mud,19,6,0,S,178,14,20,E,178.24,-19.1,"Ngaloa Harbour, Kandavu Island, Fiji",71,Western Central Pacific Ocean,,Fiji,8/3/1874,,140,,,,,25,77,
+174A,Coral mud,19,6,32,S,178,16,20,E,178.27,-19.11,"Ngaloa Harbour, Kandavu Island, Fiji",71,Western Central Pacific Ocean,,Fiji,8/3/1874,,160,,,,,25,77,
+174B,Coral mud,19,6,45,S,178,17,0,E,178.28,-19.11,"Ngaloa Harbour, Kandavu Island, Fiji",71,Western Central Pacific Ocean,,Fiji,8/3/1874,Trawl,255,,,,,25.39,77.7,
+174C,Globigerina ooze,19,7,50,S,178,19,35,E,178.33,-19.13,"Ngaloa Harbour, Kandavu Island, Fiji",71,Western Central Pacific Ocean,,Fiji,8/3/1874,Trawl,610,3.89,39,,,25.56,78,
+174D,Coral mud,19,5,50,S,178,16,20,E,178.27,-19.1,"Ngaloa Harbour, Kandavu Island, Fiji",71,Western Central Pacific Ocean,,Fiji,8/3/1874,Dredge,210,,,,,25.39,77.7,
+175,Globigerina ooze,19,2,0,S,177,10,0,E,177.17,-19.03,"South of Viti Levu I., Fiji",71,Western Central Pacific Ocean,,Fiji,8/12/1874,Trawl,1350,2.22,36,1350,1.02842,25.28,77.5,1.02387
+176,Globigerina ooze,18,30,0,S,175,52,0,E,175.87,-18.5,"South-west of Viti Levu I., Fiji",71,Western Central Pacific Ocean,,Fiji,8/15/1874,,1450,2.33,36.2,1450,1.02829,25.28,77.5,1.02376
+177,Volcanic sand,16,45,0,S,168,7,0,E,168.12,-16.75,"Api I., New Hebrides Island",71,Western Central Pacific Ocean,Coral Sea,Vanuatu,8/18/1874,Dredge,130,,,,,25.94,78.7,
+178,Red clay,16,47,0,S,165,20,0,E,165.33,-16.78,West of New Hebrides Island,71,Western Central Pacific Ocean,Coral Sea,Vanuatu,8/19/1874,,2650,2.11,35.8,,,26.11,79,
+179,Globigerina ooze,15,58,0,S,160,48,0,E,160.8,-15.97,New Hebrides Basin,71,Western Central Pacific Ocean,Coral Sea,Vanuatu,8/21/1874,,2325,2.22,36,2325,1.02797,26.11,79,
+180,Red clay,14,7,0,S,153,43,0,E,153.72,-14.12,Northeast of Australia,71,Western Central Pacific Ocean,Coral Sea,Australia,8/24/1874,,2450,2.22,36,2450,1.02804,26.67,80,
+181,Red clay,13,50,0,S,151,49,0,E,151.82,-13.83,Northeast of Australia,71,Western Central Pacific Ocean,Coral Sea,Australia,8/25/1874,Trawl,2440,2.11,35.8,2440,1.02795,26.67,80,1.02348
+182,Globigerina ooze,13,6,0,S,148,37,0,E,148.62,-13.1,"East of Cape York Peninsula, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/27/1874,,2275,2.11,35.8,2275,1.02788,25.83,78.5,1.02344
+183,Globigerina ooze,12,42,0,S,146,46,0,E,146.77,-12.7,"East of Cape York Peninsula, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/28/1874,,1700,2.22,36,1700,1.02798,25.56,78,1.02364
+184,Globigerina ooze,12,8,0,S,145,10,0,E,145.17,-12.13,"75 miles east-southeast of Raine I., Queensland, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/29/1874,Trawl,1400,2.22,36,1400,1.02816,25.28,77.5,1.02373
+185,Coral sand,11,35,25,S,144,2,0,E,144.03,-11.59,"East of Cape York Peninsula, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/31/1874,Dredge,135,,,,,25,77,
+185A,Coral sand,11,36,20,S,144,1,50,E,144.03,-11.61,"East of Cape York Peninsula, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/31/1874,Dredge,150,,,,,25,77,
+185B,Coral sand,11,38,15,S,143,59,38,E,143.99,-11.64,"East of Cape York Peninsula, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,8/31/1874,Dredge,155,,,,,25,77,
+186,Sand and shells,10,30,0,S,142,18,0,E,142.3,-10.5,"North of Cape York,Torres Strait, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,9/8/1874,Dredge,8,,,,,25.11,77.2,
+187,Sand and shells,10,36,0,S,141,55,0,E,141.92,-10.6,"North of Cape York,Torres Strait, Australia",71,Western Central Pacific Ocean,Coral Sea,Australia,9/9/1874,Dredge,6,,,,,25.39,77.7,1.02428
+188,Sand and shells,9,59,0,S,139,42,0,E,139.7,-9.98,South of New Guinea,71,Western Central Pacific Ocean,Arafura Sea,Papua New Guinea,9/10/1874,Dredge & Trawl,28,,,,,25.83,78.5,1.02327
+189,Green mud,9,36,0,S,137,50,0,E,137.83,-9.6,South of New Guinea,71,Western Central Pacific Ocean,Arafura Sea,Papua New Guinea,9/11/1874,Trawl,25,,,25,,26.11,79,1.02269
+190,Green mud,8,56,0,S,136,5,0,E,136.08,-8.93,South of New Guinea,71,Western Central Pacific Ocean,Arafura Sea,Papua New Guinea,9/12/1874,Trawl,49,,,,,26.22,79.2,
+191,Green mud,5,41,0,S,134,4,30,E,134.08,-5.68,Aru Island,71,Western Central Pacific Ocean,Arafura Sea,Indonesia,9/23/1874,Trawl,800,4.17,39.5,,,27.89,82.2,1.02158
+191A,Green mud,5,26,0,S,133,19,0,E,133.32,-5.43,East of Kai Island,71,Western Central Pacific Ocean,Arafura Sea,Indonesia,9/24/1874,,580,4.83,40.7,580,1.0276,27.5,81.5,1.02255
+192,Blue mud,5,49,15,S,132,14,15,E,132.24,-5.82,West of Kai Island,71,Western Central Pacific Ocean,Banda Sea,Indonesia,9/26/1874,Trawl,140,,,,,27.78,82,1.02252
+193,Volcanic mud,5,24,0,S,130,37,15,E,130.62,-5.4,Off north-west of Kai Island,71,Western Central Pacific Ocean,Banda Sea,Indonesia,9/28/1874,,2800,3.33,38,2800,1.02752,28.61,83.5,
+194,Volcanic mud,4,34,0,S,129,57,30,E,129.96,-4.57,Banda Island,71,Western Central Pacific Ocean,Banda Sea,Indonesia,9/29/1874,Dredge,200,,,,,28.33,83,
+194A,Volcanic mud,4,31,0,S,129,57,20,E,129.96,-4.52,Banda Island,71,Western Central Pacific Ocean,Banda Sea,Indonesia,9/29/1874,Trawl,360,,,,,28.06,82.5,
+195,Blue mud,4,21,0,S,129,7,0,E,129.12,-4.35,South of Ceram Island,71,Western Central Pacific Ocean,Banda Sea,Indonesia,10/3/1874,Trawl,1425,3.33,38,1425,1.02762,27.78,82,1.0227
+196,Hard ground,0,48,30,S,126,58,30,E,126.98,-0.81,"South of Halmahera I., Moluccas",71,Western Central Pacific Ocean,Molucca Sea,Indonesia,10/13/1874,Trawl,825,2.72,36.9,825,1.02783,28.33,83,1.02209
+197,Blue mud,0,41,0,N,126,37,0,E,126.62,0.68,"West of Halmahera I., Moluccas",71,Western Central Pacific Ocean,Molucca Sea,Indonesia,10/14/1874,,1200,2.17,35.9,1200,1.02796,28.06,82.5,1.02183
+198,Volcanic mud,2,55,0,N,124,53,0,E,124.88,2.92,North of Celebes Island,71,Western Central Pacific Ocean,Celebes Sea,Indonesia,10/20/1874,Trawl,2150,3.33,38,2150,1.02775,29.44,85,1.02167
+199,Volcanic mud,5,44,0,N,123,34,0,E,123.57,5.73,South of Mindanao Island,71,Western Central Pacific Ocean,Celebes Sea,Philippines,10/22/1874,,2600,3.33,38,2600,1.02725,28.33,83,1.02196
+200,Green mud,6,47,0,N,122,28,0,E,122.47,6.78,"Moro Gulf, Mindanao I., Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,10/23/1874,Trawl,250,,,,,29.72,85.5,
+201,Stones and gravel,7,3,0,N,121,48,0,E,121.8,7.05,"West of Samboangan Peninsula, Mindano I., Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,10/26/1874,Trawl,82,,,,,28.33,83,1.02167
+202,Blue mud,8,32,0,N,121,55,0,E,121.92,8.53,"North-west of Samboangan Peninsula, Mindano I., Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,10/27/1874,,2550,10.28,50.5,2550,1.02659,28.33,83,1.02145
+203,Mud,11,6,0,N,123,9,0,E,123.15,11.1,"West of Panay Island, Philippine Islands",71,Western Central Pacific Ocean,Visayan Sea,Philippines,10/31/1874,Trawl,20,,,,,29.44,85,
+204,Blue mud,12,28,0,N,122,15,0,E,122.25,12.47,"West of Tablas Island, Philippine Island",71,Western Central Pacific Ocean,Sibuyan Sea,Philippines,11/2/1874,,705,,,,,28.89,84,1.02148
+204A,Green mud,12,43,0,N,122,9,0,E,122.15,12.72,"North-west of Tablas Island, Philippine Island",71,Western Central Pacific Ocean,Sibuyan Sea,Philippines,11/2/1874,Trawl,100,,,100,,28.89,84,
+204B,Green mud,12,46,0,N,122,10,0,E,122.17,12.77,"North-west of Tablas Island, Philippine Island",71,Western Central Pacific Ocean,Sibuyan Sea,Philippines,11/2/1874,Trawl,115,,,,,28.89,84,1.02151
+205,Blue mud,16,42,0,N,119,22,0,E,119.37,16.7,"West of Luzon Island, Philippine Island",71,Western Central Pacific Ocean,South China Sea,Philippines,11/13/1874,Trawl,1050,2.78,37,1050,1.02772,27.78,82,1.0217
+206,Blue mud,17,54,0,N,117,14,0,E,117.23,17.9,"Off west of Luzon Island, Philippine Island",71,Western Central Pacific Ocean,South China Sea,Philippines,1/8/1875,Trawl,2100,2.5,36.5,2100,1.02768,24,75.2,1.02319
+207,Blue mud,12,21,0,N,122,15,0,E,122.25,12.35,"West of Tablas Island, Philippine Island",71,Western Central Pacific Ocean,Sibuyan Sea,Philippines,1/16/1875,Trawl,700,10.89,51.6,700,1.0265,26.67,80,1.02214
+208,Blue mud,11,37,0,N,123,31,0,E,123.52,11.62,"West of Panay Island, Philippine Island",71,Western Central Pacific Ocean,Visayan Sea,Philippines,1/17/1875,Trawl,18,,,,,27.22,81,
+209,Blue mud,10,14,0,N,123,54,0,E,123.9,10.23,"West of Cebu Island, Philippine Island",71,Western Central Pacific Ocean,Camotes Sea,Philippines,1/22/1875,Dredge & Trawl,95,21.67,71,,,27.22,81,
+210,Green mud,9,26,0,N,123,45,0,E,123.75,9.43,"North of Mindanao Island, Philippine Island",71,Western Central Pacific Ocean,Mindanao Sea,Philippines,1/25/1875,Dredge & Trawl,375,12.28,54.1,,,26.78,80.2,
+210A,Blue mud,9,15,0,N,124,38,0,E,124.63,9.25,"North of Mindanao Island, Philippine Island",71,Western Central Pacific Ocean,Mindanao Sea,Philippines,1/26/1875,,185,13.94,57.1,,,27.06,80.7,
+211,Blue mud,8,0,0,N,121,42,0,E,121.7,8,"West of Samboangan Peninsula, Mindano I., Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,1/28/1875,,2225,10.28,50.5,2225,1.0265,27.22,81,
+212,Sand and shells,6,54,0,N,122,18,0,E,122.3,6.9,"Moro Gulf, Mindanao I., Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,1/30/1875,Dredge & Trawl,10,,,,,28.33,83,
+213,Blue mud,5,47,0,N,124,1,0,E,124.02,5.78,"South of Mindanao Island, Philippine Island",71,Western Central Pacific Ocean,Celebes Sea,Philippines,2/8/1875,Trawl,2050,3.78,38.8,2050,1.02757,28.33,83,
+214,Blue mud,4,33,0,N,127,6,0,E,127.1,4.55,"Kepulauan Talaud Island, Indonesia",71,Western Central Pacific Ocean,,Indonesia,2/10/1875,Dredge,500,5.44,41.8,500,1.02735,26.94,80.5,1.02246
+215,Red clay,4,19,0,N,130,15,0,E,130.25,4.32,East of Molucca Passage,71,Western Central Pacific Ocean,,Papua New Guinea,2/12/1875,Trawl,2550,1.89,35.4,2550,1.02764,27.67,81.8,1.02264
+216,Globigerina ooze,2,46,0,N,133,58,0,E,133.97,2.77,North of New Guinea,71,Western Central Pacific Ocean,,Papua New Guinea,2/16/1875,,1675,1.89,35.4,1675,1.0279,28.22,82.8,
+216A,Globigerina ooze,2,56,0,N,134,11,0,E,134.18,2.93,North of New Guinea,71,Western Central Pacific Ocean,,Papua New Guinea,2/16/1875,Trawl,2000,1.89,35.4,2000,1.02772,28.22,82.8,1.02224
+217,Blue mud,0,39,0,S,138,55,0,E,138.92,-0.65,North of New Guinea,71,Western Central Pacific Ocean,,Papua New Guinea,2/22/1875,,2000,1.78,35.2,2000,1.02801,28.33,83,1.02169
+218,Blue mud,2,33,0,S,144,4,0,E,144.07,-2.55,West of Admiralty Islands,71,Western Central Pacific Ocean,Bismarck Sea,Papua New Guinea,3/1/1875,Trawl,1070,2.44,36.4,1070,1.02773,28.89,84,
+219,Coral sand,1,54,0,S,146,39,40,E,146.66,-1.9,"Nares Harbour, Admiralty Island",71,Western Central Pacific Ocean,,Papua New Guinea,3/10/1875,Trawl,150,,,,,28.89,84,1.02203
+220,Globigerina ooze,0,42,0,S,147,0,0,E,147,-0.7,Off north of Admiralty Island,71,Western Central Pacific Ocean,,Papua New Guinea,3/11/1875,Trawl,1100,2.33,36.2,1100,1.02762,28.78,83.8,1.0258
+221,Red clay,0,40,0,N,148,41,0,E,148.68,0.67,Off north of Admiralty Island,71,Western Central Pacific Ocean,,Papua New Guinea,3/13/1875,,2650,1.89,35.4,,,28.78,83.8,
+222,Red clay,2,15,0,N,146,16,0,E,146.27,2.25,Between Bismarck Archipelago and Caroline Islands,71,Western Central Pacific Ocean,,,3/16/1875,,2450,1.78,35.2,2450,1.02766,28.22,82.8,
+223,Globigerina ooze,5,31,0,N,144,20,0,E,144.33,5.52,Between Bismarck Archipelago and Caroline Islands,71,Western Central Pacific Ocean,,,3/19/1875,Trawl,1850,1.94,35.5,2325,1.02783,27.78,82,1.02263
+224,Globigerina ooze,7,45,0,N,144,20,0,E,144.33,7.75,Caroline Islands,71,Western Central Pacific Ocean,,Caroline Islands,3/21/1875,Dredge,1850,1.89,35.4,1850,1.02772,27.33,81.2,1.02266
+225,Radiolarian ooze,11,24,0,N,143,16,0,E,143.27,11.4,Between Caroline Islands and Marianas Islands,71,Western Central Pacific Ocean,,,3/23/1875,,4475,1.78,35.2,4475,1.02785,26.78,80.2,1.02266
+226,Red clay,14,44,0,N,142,13,0,E,142.22,14.73,West of Marianas Islands,71,Western Central Pacific Ocean,,Marianas Islands,3/25/1875,Trawl,2300,1.94,35.5,,,26.11,79,1.02314
+227,Red clay,17,29,0,N,141,21,0,E,141.35,17.48,West of Marianas Islands,71,Western Central Pacific Ocean,,Marianas Islands,3/27/1875,,2475,1.78,35.2,,,26.22,79.2,
+228,Red clay,19,24,0,N,141,13,0,E,141.22,19.4,West of Marianas Islands,71,Western Central Pacific Ocean,,Marianas Islands,3/29/1875,,2450,1.94,35.5,,,26.78,80.2,1.02281
+229,Red clay,22,1,0,N,140,27,0,E,140.45,22.02,North-west of Marianas Islands,61,Northwest Pacific Ocean,,Marianas Islands,4/1/1875,Trawl,2500,1.94,35.5,,,25.83,78.5,1.02341
+230,Red clay,26,29,0,N,137,57,0,E,137.95,26.48,Off west of Bonin Isands,61,Northwest Pacific Ocean,,Japan,4/5/1875,Trawl,2425,1.94,35.5,,,20.28,68.5,1.02489
+231,Blue mud,31,8,0,N,137,8,0,E,137.13,31.13,South of Japan,61,Northwest Pacific Ocean,,Japan,4/9/1875,,2250,1.78,35.2,2250,1.02785,17.78,64,1.62488
+232,Green mud,35,11,0,N,139,28,0,E,139.47,35.18,"Sagami-wan (bay), Japan",61,Northwest Pacific Ocean,,Japan,5/12/1875,Dredge & Trawl,345,5.06,41.1,,,17.89,64.2,1.02485
+233,Blue mud,34,39,0,N,135,14,0,E,135.23,34.65,"Isumi-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,5/17/1875,Dredge,8,,,,,16.83,62.3,
+233A,Sand,34,38,0,N,135,1,0,E,135.02,34.63,"Isumi-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,5/19/1875,Dredge,50,,,,,17,62.6,
+233B,Blue mud,34,18,0,N,133,35,0,E,133.58,34.3,"Bingo-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,5/26/1875,Trawl,15,,,,,19.06,66.3,1.02279
+233C,Blue mud,34,18,0,N,133,21,0,E,133.35,34.3,"Bingo-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,5/28/1875,Trawl,12,15.5,59.9,,,19.33,66.8,
+234,Blue mud,32,31,0,N,135,39,0,E,135.65,32.52,"Off Osaka, South of Japan",61,Northwest Pacific Ocean,,Japan,6/3/1875,,2675,2.11,35.8,,,20.83,69.5,1.0241
+235,Green mud,34,7,0,N,138,0,0,E,138,34.12,"Off Nagoya, South of Japan",61,Northwest Pacific Ocean,,Japan,6/4/1875,Trawl,565,3.39,38.1,565,1.02753,22.78,73,
+236,Green mud,34,58,0,N,139,29,0,E,139.48,34.97,"Sagami-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,6/5/1875,Trawl,775,3.11,37.6,775,1.02742,19.17,66.5,1.02472
+236A,Green mud,34,59,0,N,139,31,0,E,139.52,34.98,"Sagami-nada (gulf), Japan",61,Northwest Pacific Ocean,,Japan,6/5/1875,Trawl,420,3.11,37.6,775,,19.17,66.5,
+237,Blue mud,34,37,0,N,140,32,0,E,140.53,34.62,"Off Tokyo, South of Japan",61,Northwest Pacific Ocean,,Japan,6/17/1875,Trawl,1875,1.83,35.3,1875,1.02761,22.78,73,1.02385
+238,Red clay,35,18,0,N,144,8,0,E,144.13,35.3,East of Japan,61,Northwest Pacific Ocean,,Japan,6/18/1875,,3850,1.67,35,3950,1.02764,21.39,70.5,
+239,Red clay,35,18,0,N,147,9,0,E,147.15,35.3,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/19/1875,,3625,1.72,35.1,3625,1.02778,21.22,70.2,1.02436
+240,Red clay,35,20,0,N,153,39,0,E,153.65,35.33,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/21/1875,Trawl,2900,1.61,34.9,,,18.22,64.8,1.02493
+241,Red clay,35,41,0,N,157,42,0,E,157.7,35.68,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/23/1875,Trawl,2300,1.72,35.1,2300,1.02764,20.67,69.2,1.02447
+242,Red clay,35,29,0,N,161,52,0,E,161.87,35.48,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/24/1875,,2575,1.72,35.1,2575,1.02766,20.28,68.5,1.02473
+243,Red clay,35,24,0,N,166,35,0,E,166.58,35.4,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/26/1875,Trawl,2800,1.67,35,,,21.67,71,1.02407
+244,Red clay,35,22,0,N,169,53,0,E,169.88,35.37,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/28/1875,Trawl,2900,1.83,35.3,2900,1.02777,21.39,70.5,1.02419
+245,Red clay,36,23,0,N,174,31,0,E,174.52,36.38,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,6/30/1875,,2775,1.61,34.9,2775,1.0276,20.56,69,1.02433
+246,Globigerina ooze,36,10,0,N,178,0,0,E,178,36.17,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,7/2/1875,Trawl,2050,1.72,35.1,2050,1.02778,22.78,73,1.02382
+247,Red clay,35,49,0,N,179,57,0,W,-179.95,35.82,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,7/3/1875,,2530,1.78,35.2,2530,1.02774,22.78,73,1.02389
+248,Red clay,37,41,0,N,177,4,0,W,-177.07,37.68,Middle of Northwest Pacific,61,Northwest Pacific Ocean,,,7/5/1875,Trawl,2900,1.72,35.1,,,20.67,69.2,1.02445
+249,Red clay,37,59,0,N,171,48,0,W,-171.8,37.98,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/7/1875,,3000,1.78,35.2,3000,1.02748,18.44,65.2,1.02472
+250,Red clay,37,49,0,N,166,47,0,W,-166.78,37.82,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/9/1875,Trawl,3050,1.67,35,3050,1.02774,18.33,65,
+251,Red clay,37,37,0,N,163,26,0,W,-163.43,37.62,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/10/1875,,2950,1.72,35.1,2950,1.02778,18.33,65,
+252,Red clay,37,52,0,N,160,17,0,W,-160.28,37.87,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/12/1875,Trawl,2740,1.83,35.3,2740,1.02773,18.33,65,1.0247
+253,Red clay,38,9,0,N,156,25,0,W,-156.42,38.15,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/14/1875,Dredge,3125,1.72,35.1,3125,1.02775,19.83,67.7,1.02434
+254,Red clay,35,13,0,N,154,43,0,W,-154.72,35.22,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/17/1875,Trawl,3025,1.67,35,3025,1.02739,22.22,72,1.02401
+255,Red clay,32,28,0,N,154,33,0,W,-154.55,32.47,Middle of Northeast Pacific,77,Eastern Central Pacific Ocean,,,7/19/1875,,2550,1.67,35,2850,1.02775,23.33,74,
+256,Red clay,30,20,0,N,154,56,0,W,-154.93,30.33,North of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,7/21/1875,Dredge,2950,1.78,35.2,2950,1.02771,23.33,74,1.02434
+257,Red clay,27,33,0,N,154,55,0,W,-154.92,27.55,North of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,7/23/1875,,2875,1.61,34.9,2875,1.02788,24.72,76.5,
+258,Red clay,26,11,0,N,155,12,0,W,-155.2,26.18,North of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,7/24/1875,,2775,1.78,35.2,2775,1.02731,25,77,
+259,Red clay,23,3,0,N,156,6,0,W,-156.1,23.05,North of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,7/26/1875,,2225,1.61,34.9,2225,1.02784,25,77,1.02326
+260,Volcanic mud,21,11,0,N,157,27,0,W,-157.45,21.18,"South-east of Oahu I., Hawaiian Islands",77,Eastern Central Pacific Ocean,,USA,7/27/1875,Trawl,310,6.67,44,310,1.02699,24.89,76.8,
+261,Volcanic mud,20,18,0,N,157,14,0,W,-157.23,20.3,East of Hawaii Island,77,Eastern Central Pacific Ocean,,USA,8/12/1875,,2050,1.78,35.2,2050,1.02783,25.83,78.5,1.02314
+262,Volcanic mud,19,12,0,N,154,14,0,W,-154.23,19.2,South of Hawaii Island,77,Eastern Central Pacific Ocean,,USA,8/20/1875,,2875,1.78,35.2,2875,1.02775,25.28,77.5,1.02329
+263,Volcanic mud,17,33,0,N,153,36,0,W,-153.6,17.55,South of Hawaii Island,77,Eastern Central Pacific Ocean,,USA,8/21/1875,Trawl,2650,1.72,35.1,2650,1.0275,25.28,77.5,1.02336
+264,Red clay,14,19,0,N,152,37,0,W,-152.62,14.32,Off south of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,8/23/1875,Trawl,3000,1.78,35.2,3000,1.028,25.28,77.5,1.02315
+265,Radiolarian ooze,12,42,0,N,152,1,0,W,-152.02,12.7,Off South of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,8/25/1875,Dredge,2900,1.67,35,2900,1.0257,26.22,79.2,1.0228
+266,Radiolarian ooze,11,7,0,N,152,3,0,W,-152.05,11.12,Off south of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,8/26/1875,,2750,1.72,35.1,2750,1.0285,26.67,80,
+267,Radiolarian ooze,9,28,0,N,150,49,0,W,-150.82,9.47,Off south of Hawaiian Islands,77,Eastern Central Pacific Ocean,,USA,8/28/1875,,2700,1.67,35,2700,1.02778,26.67,80,1.02191
+268,Radiolarian ooze,7,35,0,N,149,49,0,W,-149.82,7.58,"Off North-east of Christmas Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,8/30/1875,,2900,1.56,34.8,2900,1.02776,27.22,81,1.02255
+269,Radiolarian ooze,5,54,0,N,147,2,0,W,-147.03,5.9,"Off north-east of Christmas Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/2/1875,Dredge,2550,1.78,35.2,2550,1.92777,27.33,81.2,1.02273
+270,Globigerina ooze,2,34,0,N,149,9,0,W,-149.15,2.57,"Off east of Christmas Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/4/1875,,2925,1.44,34.6,2925,1.02786,26.39,79.5,1.02328
+271,Globigerina ooze,0,33,0,S,151,34,0,W,-151.57,-0.55,"Off East of Christmas Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/6/1875,Trawl,2425,1.67,35,2425,1.02793,25.94,78.7,1.02383
+272,Radiolarian ooze,3,48,0,S,152,56,0,W,-152.93,-3.8,"East of Molden Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/8/1875,Trawl,2600,1.72,35.1,2600,1.02848,26.11,79,1.02366
+273,Radiolarian ooze,5,11,0,S,152,56,0,W,-152.93,-5.18,"East of Starbuck Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/9/1875,,2350,1.39,34.5,,,27.06,80.7,
+274,Radiolarian ooze,7,25,0,S,152,15,0,W,-152.25,-7.42,"North of Caroline Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/11/1875,Trawl,2750,1.72,35.1,,,26.78,80.2,1.0235
+275,Red clay,11,20,0,S,150,30,0,W,-150.5,-11.33,"East of Flint Island, Line Islands",77,Eastern Central Pacific Ocean,,Kiribati,9/14/1875,,2610,1.67,35,2610,1.02808,26.67,80,1.02375
+276,Red clay,13,28,0,S,149,30,0,W,-149.5,-13.47,North of Tuamotu Islands,77,Eastern Central Pacific Ocean,,French Polynesia,9/16/1875,Trawl,2350,1.72,35.1,2350,1.02799,26.67,80,1.02326
+277,Red clay,15,51,0,S,149,41,0,W,-149.68,-15.85,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,9/17/1875,,2325,1.72,35.1,2325,1.02787,26.11,79,
+278,Volcanic mud,17,12,0,S,149,43,0,W,-149.72,-17.2,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,9/18/1875,,1525,2.5,36.5,1525,,26.39,79.5,1.02403
+279,Volcanic mud,17,30,26,S,149,33,45,W,-149.56,-17.51,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/2/1875,,420,,,,,26.11,79,
+279A,Volcanic mud,17,29,53,S,149,34,0,W,-149.57,-17.5,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/2/1875,,590,,,,,26.11,79,
+279B,Volcanic mud,17,29,38,S,149,34,7,W,-149.57,-17.49,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/2/1875,,620,,,,,26.11,79,
+279C,Volcanic mud,17,29,11,S,149,34,32,W,-149.58,-17.49,"North of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/2/1875,Trawl,680,,,,,26.11,79,
+280,Globigerina ooze,18,40,0,S,149,52,0,W,-149.87,-18.67,"South of Tahiti, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/4/1875,Trawl,1940,1.83,35.3,1940,1.02842,25.11,77.2,1.02453
+281,Red clay,22,21,0,S,150,17,0,W,-150.28,-22.35,"North of Tubai I., French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/6/1875,Trawl,2385,1.61,34.9,2385,1.02841,23.61,74.5,1.0246
+282,Red clay,23,46,0,S,149,59,0,W,-149.98,-23.77,"South of Tubai I., French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/7/1875,,2450,1.72,35.1,2450,1.02788,22.89,73.2,1.02486
+283,Globigerina ooze,26,9,0,S,145,17,0,W,-145.28,-26.15,"Iles Australes, French Polynesia",77,Eastern Central Pacific Ocean,,French Polynesia,10/9/1875,,2075,1.89,35.4,2075,1.02788,20.28,68.5,1.02514
+284,Globigerina ooze,28,22,0,S,141,22,0,W,-141.37,-28.37,West of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/11/1875,Trawl,1985,1.72,35.1,1985,1.02827,20,68,1.0252
+285,Red clay,32,36,0,S,137,43,0,W,-137.72,-32.6,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/14/1875,Trawl,2375,1.67,35,2375,1.02781,18.33,65,1.02556
+286,Red clay,33,20,0,S,133,22,0,W,-133.37,-33.33,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/16/1875,Trawl,2335,1.56,34.8,2335,1.02777,17.22,63,1.02571
+287,Red clay,36,32,0,S,132,52,0,W,-132.87,-36.53,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/19/1875,,2400,1.5,34.7,2400,1.02771,14.33,57.8,1.02613
+288,Red clay,40,3,0,S,132,58,0,W,-132.97,-40.05,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/21/1875,,2600,1.56,34.8,2600,1.02771,12.5,54.5,1.02613
+289,Red clay,39,41,0,S,131,23,0,W,-131.38,-39.68,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/23/1875,Trawl,2550,1.56,34.8,2550,1.02772,12.5,54.5,1.02597
+290,Red clay,39,16,0,S,124,7,0,W,-124.12,-39.27,South of Pitcairn Islands,81,Southwest Pacific Ocean,,British Overseas Territory,10/25/1875,,2300,1.61,34.9,2300,1.02753,11.39,52.5,1.02615
+291,Red clay,39,13,0,S,118,49,0,W,-118.82,-39.22,Pacific Antarctic Ridge,81,Southwest Pacific Ocean,,,10/27/1875,Trawl,2250,1.44,34.6,2250,1.02758,11.67,53,1.02548
+292,Globigerina ooze,38,43,0,S,112,31,0,W,-112.52,-38.72,Pacific Antarctic Ridge,81,Southwest Pacific Ocean,,,10/29/1875,Trawl,1600,1.78,35.2,1600,1.02765,11.78,53.2,1.02609
+293,Globigerina ooze,39,4,0,S,105,5,0,W,-105.08,-39.07,Pacific Antarctic Ridge,81,Southwest Pacific Ocean,,,11/1/1875,Trawl,2025,1.33,34.4,2025,1.02782,12.06,53.7,1.02595
+294,Red clay,39,22,0,S,98,46,0,W,-98.77,-39.37,Roggeveen Basin,87,Southeast Pacific Ocean,,,11/3/1875,,2270,1.44,34.6,,,14.17,57.5,
+295,Globigerina ooze,38,7,0,S,94,4,0,W,-94.07,-38.12,Roggeveen Basin,87,Southeast Pacific Ocean,,,11/5/1875,Trawl,1500,1.83,35.3,1500,1.02768,14.72,58.5,1.02554
+296,Globigerina ooze,38,6,0,S,88,2,0,W,-88.03,-38.1,Roggeveen Basin,87,Southeast Pacific Ocean,,,11/9/1875,Trawl,1825,1.83,35.3,1825,1.0275,15.44,59.8,1.02538
+297,Globigerina ooze,37,29,0,S,83,7,0,W,-83.12,-37.48,Off coast of Chile,87,Southeast Pacific Ocean,,Chile,11/11/1875,Trawl,1775,1.94,35.5,1775,1.0277,13.89,57,1.02577
+298,Blue mud,34,7,0,S,73,56,0,W,-73.93,-34.12,"South-west of Valparaiso, Chile",87,Southeast Pacific Ocean,,Chile,11/17/1875,Trawl,2225,2,35.6,,,15,59,1.02546
+299,Blue mud,33,31,0,S,74,43,0,W,-74.72,-33.52,"South-west of Valparaiso, Chile",87,Southeast Pacific Ocean,,Chile,12/14/1875,Trawl,2160,1.78,35.2,2160,1.02773,16.67,62,1.02505
+300,Globigerina ooze,33,42,0,S,78,18,0,W,-78.3,-33.7,"Juan Fernandez Archipelago, Chile",87,Southeast Pacific Ocean,,Chile,12/17/1875,Trawl,1375,1.94,35.5,1375,1.02748,16.94,62.5,1.02497
+301,,37,29,0,S,84,2,0,W,-84.03,-37.48,Off coast of Chile,87,Southeast Pacific Ocean,,Chile,12/22/1875,,,,,,,15.28,59.5,1.02545
+302,Red clay,42,43,0,S,82,11,0,W,-82.18,-42.72,"Off Isla Chiloe, Chile",87,Southeast Pacific Ocean,,Chile,12/28/1875,Trawl,1450,2,35.6,1450,1.02766,12.78,55,1.02589
+303,Blue mud,45,31,0,S,78,9,0,W,-78.15,-45.52,"Off Chonos Archipelago, Chile",87,Southeast Pacific Ocean,,Chile,12/30/1875,,1325,2.22,36,1325,1.02766,12.67,54.8,1.02544
+304,Green mud,46,53,15,S,75,12,0,W,-75.2,-46.89,"Port Otway, Chile",87,Southeast Pacific Ocean,,Chile,12/31/1875,Dredge,45,,,,,14,57.2,1.02327
+305,Blue mud,47,47,0,S,74,47,0,W,-74.78,-47.78,"Gulf of Penas, Chile",87,Southeast Pacific Ocean,,Chile,1/1/1876,,165,,,,,13.06,55.5,
+305A,Blue mud,47,48,30,S,74,47,0,W,-74.78,-47.81,"Gulf of Penas, Chile",87,Southeast Pacific Ocean,,Chile,1/1/1876,Trawl,125,,,,,12.78,55,
+305B,Blue mud,47,48,0,S,74,46,0,W,-74.77,-47.8,"Gulf of Penas, Chile",87,Southeast Pacific Ocean,,Chile,1/1/1876,Trawl,160,,,160,1.02577,12.78,55,
+306,Blue mud,48,17,0,S,74,33,0,W,-74.55,-48.28,"Messier Channel, Chile",87,Southeast Pacific Ocean,,Chile,1/2/1876,,565,,,,,13.89,57,1.01557
+306A,Blue mud,48,27,0,S,74,30,0,W,-74.5,-48.45,"Messier Channel, Chile",87,Southeast Pacific Ocean,,Chile,1/2/1876,Trawl,345,7.78,46,345,1.02657,14.17,57.5,
+307,Blue mud,49,24,30,S,74,23,30,W,-74.39,-49.41,"Messier Channel, Chile",87,Southeast Pacific Ocean,,Chile,1/4/1876,Trawl,140,,,140,1.02606,11.67,53,1.01585
+308,Blue mud,50,8,30,S,74,41,0,W,-74.68,-50.14,"Concepcion Channel, Chile",87,Southeast Pacific Ocean,,Chile,1/5/1876,Trawl,175,,,,,10.94,51.7,
+309,Blue mud,50,56,0,S,74,15,0,W,-74.25,-50.93,"Puerto Bueno, Hanover Island, Chile",87,Southeast Pacific Ocean,,Chile,1/8/1876,,40,8.33,47,,,10.28,50.5,1.02
+309A,Blue mud,50,56,0,S,74,14,0,W,-74.23,-50.93,"Puerto Bueno, Hanover Island, Chile",87,Southeast Pacific Ocean,,Chile,1/8/1876,Trawl,140,,,140,1.02584,10.28,50.5,
+310,Blue mud,51,27,30,S,74,3,0,W,-74.05,-51.46,"Sarmineto Channel, Queen Adelaide Archipelago, Chile",87,Southeast Pacific Ocean,,Chile,1/10/1876,Trawl,400,8.06,46.5,400,1.02589,10.28,50.5,1.02013
+311,Blue mud,52,45,30,S,73,46,0,W,-73.77,-52.76,"South of Queen Adelaide Archipelago, Chile",87,Southeast Pacific Ocean,,Chile,1/11/1876,Trawl,245,7.78,46,245,1.02596,10,50,1.02011
+312,Blue mud,53,37,30,S,70,56,0,W,-70.93,-53.63,"Port Famine, Magellan Strait, Chile",87,Southeast Pacific Ocean,Magellan Strait,Chile,1/13/1876,Dredge,9,,,,,8.78,47.8,1.02271
+313,Coarse sand,52,20,0,S,67,39,0,W,-67.65,-52.33,"Off Cape Virgins, Argentina",41,Southwest Atlantic Ocean,,Argentina,1/20/1876,Trawl,55,8.78,47.8,55,1.02567,9,48.2,1.02562
+314,Coarse sand,51,35,0,S,65,39,0,W,-65.65,-51.58,"Off Cape Virgins, Argentina",41,Southwest Atlantic Ocean,,Argentina,1/21/1876,Trawl,70,7.78,46,70,1.02618,8.89,48,1.02595
+314A,Hard ground,51,24,0,S,61,46,0,W,-61.77,-51.4,West of Falkland Islands,41,Southwest Atlantic Ocean,,British Overseas Territory,1/22/1876,Trawl,110,5.44,41.8,110,1.02677,9.44,49,1.02605
+315,Sand and gravel,51,40,0,S,57,50,0,W,-57.83,-51.67,Falkland Islands,41,Southwest Atlantic Ocean,,British Overseas Territory,1/26/1876,Dredge,12,,,,,10,50, 
+316,,51,32,0,S,58,6,0,W,-58.1,-51.53,Falkland Islands,41,Southwest Atlantic Ocean,,British Overseas Territory,2/3/1876,Dredge,4,,,,,10.67,51.2,
+317,Sandy gravel,48,37,0,S,55,17,0,W,-55.28,-48.62,North-east of Falkland Islands,41,Southwest Atlantic Ocean,,British Overseas Territory,2/8/1876,Trawl,1035,2.06,35.7,1035,1.02735,8.17,46.7,1.0266
+318,Globigerina ooze,42,32,0,S,56,29,0,W,-56.48,-42.53,"Off south-west of Mar del Plata, Argentina",41,Southwest Atlantic Ocean,,Argentina,2/11/1876,Trawl,2040,0.94,33.7,2040,1.02795,14.17,57.5,1.02553
+319,Blue mud,41,54,0,S,54,48,0,W,-54.8,-41.9,"Off south-west of Mar del Plata, Argentina",41,Southwest Atlantic Ocean,,Argentina,2/12/1876,,2425,0.39,32.7,2425,1.02765,15.28,59.5,
+320,Blue mud,37,17,0,S,53,52,0,W,-53.87,-37.28,"Off Rio La Plata, Argentina",41,Southwest Atlantic Ocean,,Argentina,2/14/1876,Trawl,600,2.89,37.2,600,1.02738,19.72,67.5,1.02425
+321,Blue mud,35,2,0,S,55,15,0,W,-55.25,-35.03,"Off Montevideo, Uruguay",41,Southwest Atlantic Ocean,,Uruguay,2/25/1876,Trawl,13,,,,,23.06,73.5,
+322,Sand and shells,35,20,0,S,53,42,0,W,-53.7,-35.33,"Off Montevideo, Uruguay",41,Southwest Atlantic Ocean,,Uruguay,2/26/1876,Trawl,21,,,,,21.94,71.5,
+323,Blue mud,35,39,0,S,50,47,0,W,-50.78,-35.65,"Off Montevideo, Uruguay",41,Southwest Atlantic Ocean,,Uruguay,2/28/1876,Trawl,1900,0.61,33.1,1900,1.0286,23.06,73.5,1.02477
+324,Blue mud,36,9,0,S,48,22,0,W,-48.37,-36.15,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,2/29/1876,Trawl,2800,0.33,32.6,2800,1.02816,21.94,71.5,1.02443
+325,Blue mud,36,44,0,S,46,16,0,W,-46.27,-36.73,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/2/1876,Trawl,2650,0.39,32.7,2650,1.02796,21.56,70.8,1.02523
+326,Blue mud,37,3,0,S,44,17,0,W,-44.28,-37.05,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/3/1876,,2775,0.39,32.7,2775,1.02798,19.89,67.8,
+327,Red clay,36,48,0,S,42,45,0,W,-42.75,-36.8,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/4/1876,,2900,0.44,32.8,2900,1.02829,21.22,70.2,
+328,Red clay,37,38,0,S,39,36,0,W,-39.6,-37.63,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/6/1876,,2900,0.5,32.9,,,20,68,
+329,Red clay,37,31,0,S,36,7,0,W,-36.12,-37.52,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/7/1876,,2675,0.17,32.3,2675,1.0279,18.06,64.5,
+330,Red clay,37,45,0,S,33,0,0,W,-33,-37.75,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/8/1876,,2440,0.39,32.7,2440,1.02821,17.89,64.2,
+331,Globigerina ooze,37,47,0,S,30,20,0,W,-30.33,-37.78,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/9/1876,Trawl,1715,1.89,35.4,1715,1.0279,18.06,64.5,1.02568
+332,Globigerina ooze,37,29,0,S,27,31,0,W,-27.52,-37.48,Argentine Basin,41,Southwest Atlantic Ocean,,Argentina,3/10/1876,Trawl,2200,1.11,34,2200,1.0279,17.78,64,1.02604
+333,Globigerina ooze,35,36,0,S,21,12,0,W,-21.2,-35.6,Mid Atlantic Ridge,41,Southwest Atlantic Ocean,,,3/13/1876,Trawl,2025,1.83,35.3,2025,1.0279,19.44,67,
+334,Globigerina ooze,35,45,0,S,18,31,0,W,-18.52,-35.75,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/14/1876,Trawl,1915,2.11,35.8,1915,1.02808,20.28,68.5,1.02473
+335,Pteropod ooze,32,24,0,S,13,5,0,W,-13.08,-32.4,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/16/1876,Dredge,1425,2.78,37,1425,1.02783,23.06,73.5,1.02473
+336,Globigerina ooze,27,54,0,S,13,13,0,W,-13.22,-27.9,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/18/1876,,1890,2.5,36.5,1890,1.0279,24.44,76,
+337,Pteropod ooze,24,38,0,S,13,36,0,W,-13.6,-24.63,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/19/1876,Dredge,1240,2.89,37.2,1240,1.02842,25,77,1.02453
+338,Globigerina ooze,21,15,0,S,14,2,0,W,-14.03,-21.25,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/21/1876,Dredge,1990,2.39,36.3,,,24.72,76.5,1.0251
+339,Pteropod ooze,17,26,0,S,13,52,0,W,-13.87,-17.43,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/23/1876,,1415,2.89,37.2,1415,1.02765,24.44,76,1.02524
+340,Pteropod ooze,14,33,0,S,13,42,0,W,-13.7,-14.55,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/24/1876,,1500,3.11,37.6,1500,1.02794,25.11,77.2,
+341,Pteropod ooze,12,16,0,S,13,44,0,W,-13.73,-12.27,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/25/1876,,1475,3.44,38.2,1475,1.02794,26.11,79,
+342,Pteropod ooze,9,43,0,S,13,51,0,W,-13.85,-9.72,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,3/26/1876,,1445,3.06,37.5,1445,1.02797,26.67,80,
+343,Volcanic sand,8,3,0,S,14,27,0,W,-14.45,-8.05,Ascension Island,34,Eastern Central Atlantic Ocean,,British Overseas Territory,3/27/1876,Dredge,425,4.61,40.3,425,1.02793,27.11,80.8,1.02373
+344,Volcanic sand,7,54,20,S,14,28,20,W,-14.47,-7.91,Ascension Island,34,Eastern Central Atlantic Ocean,,British Overseas Territory,4/3/1876,Dredge,420,,,,,27.78,82,1.0232
+345,Globigerina ooze,5,45,0,S,14,25,0,W,-14.42,-5.75,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,4/4/1876,,2010,2.67,36.8,2010,1.02798,28.22,82.8,1.02278
+346,Globigerina ooze,2,42,0,S,14,41,0,W,-14.68,-2.7,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,4/6/1876,Dredge,2350,1.11,34,2350,1.02838,28.17,82.7,1.02275
+347,Globigerina ooze,0,15,0,S,14,25,0,W,-14.42,-0.25,Mid Atlantic Ridge,34,Eastern Central Atlantic Ocean,,,4/7/1876,,2250,2.33,36.2,2250,1.02791,27.78,82,1.02303
+348,Globigerina ooze,3,10,0,N,14,51,0,W,-14.85,3.17,Sierra Leone Basin,34,Eastern Central Atlantic Ocean,,Sierra Leone,4/9/1876,,,,,,,28.89,84,1.0221
+349,,5,28,0,N,14,38,0,W,-14.63,5.47,Off Liberia,34,Eastern Central Atlantic Ocean,,Liberia,4/10/1876,,,,,,,28.61,83.5,
+350,,7,33,0,N,15,16,0,W,-15.27,7.55,Off Sierra Leone,34,Eastern Central Atlantic Ocean,,Sierra Leone,4/11/1876,,,,,,,28.89,84,
+351,,9,9,0,N,16,41,0,W,-16.68,9.15,Off coast of Guinea,34,Eastern Central Atlantic Ocean,,Guinea,4/12/1876,,,,,,,27.67,81.8,
+352,,10,55,0,N,17,46,0,W,-17.77,10.92,Off coast of Guinea,34,Eastern Central Atlantic Ocean,,Guinea,4/13/1876,,,,,,,25.39,77.7,
+353,Red clay,26,21,0,N,33,37,0,W,-33.62,26.35,Mid Atlantic,34,Eastern Central Atlantic Ocean,,,5/3/1876,,2965,3.11,37.6,2965,1.02909,21.5,70.7,1.02622
+354,Globigerina ooze,32,41,0,N,36,6,0,W,-36.1,32.68,Mid Atlantic,34,Eastern Central Atlantic Ocean,,,5/6/1876,,1675,3.22,37.8,1675,1.0286,21.11,70,1.02593
