@@ -1,7 +1,6 @@
 jupyter-book
 matplotlib
+cartopy
 numpy
-plotly
 pandas
-pyproj
-bokeh
+sphinx
