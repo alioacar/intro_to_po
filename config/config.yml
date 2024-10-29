@@ -5,6 +5,7 @@ logo: docs/logo2.png
 # Force re-execution of notebooks on each build.
 execute:
   execute_notebooks: force
+  stderr_output: remove # suppress warnings 
 
 parse:
     myst_enable_extensions:  # default extensions to enable in the myst parser. 
@@ -34,13 +35,14 @@ sphinx:
     #    html_extra_path: ['assets']
     html_js_files:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-    # suppress_warnings: ["mystnb.unknown_mime_type"]
+    suppress_warnings: ["*"]
+    nb_execution_show_tb: False
+    nb_execution_quiet: True
     html_static_path: ["docs/static"]
   html_context:
     default_mode: light
   extra_extensions:
     - myst_nb
-
 
 # I don't know if this is working good for jupyter-book??
 # latex:
@@ -55,4 +57,3 @@ repository:
   url: https://github.com/alioacar/intro_to_po
   path_to_book: book  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
-
