@@ -17,6 +17,27 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+          cache : 'pip'
+
+      # Cache Cartopy downloads
+      - name: Cache Cartopy data
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.local/share/cartopy
+            ~/.cache/cartopy
+          key: ${{ runner.os }}-cartopy-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-cartopy-
+
+      # Cache Jupyter Book build
+      - name: Cache Jupyter Book build
+        uses: actions/cache@v3
+        with:
+          path: _build
+          key: ${{ runner.os }}-jupyter-book-${{ hashFiles('**/*.ipynb', 'config/*.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-jupyter-book-
 
       - name: Install dependencies
         run: |
