@@ -39,19 +39,14 @@ sphinx:
     nb_execution_show_tb: False
     nb_execution_quiet: True
     html_static_path: ["docs/static"]
+    bibtex_reference_style: author_year
   html_context:
     default_mode: light
   extra_extensions:
     - myst_nb
 
-# I don't know if this is working good for jupyter-book??
-# latex:
-#  latex_documents:
-#    targetname: book.tex
-
-# Add a bibtex file so that we can create citations
-# bibtex_bibfiles:
-#  - references.bib
+bibtex_bibfiles:
+    - docs/references.bib
 
 repository:
   url: https://github.com/alioacar/intro_to_po
