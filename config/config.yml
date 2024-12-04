@@ -11,8 +11,8 @@ parse:
     myst_enable_extensions:  # default extensions to enable in the myst parser. 
     - html_admonition
     - html_image
-    myst_nb:
-      hide_code_source: true  # This will hide all code cell inputs
+    - amsmath
+    - dollarmath
 
 html:
   static_paths: 
@@ -32,12 +32,10 @@ exclude_patterns: [
 
 sphinx:
   config:
-    #    html_extra_path: ['assets']
     html_js_files:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     suppress_warnings: ["*"]
     nb_execution_show_tb: False
-    nb_execution_quiet: True
     html_static_path: ["docs/static"]
     bibtex_reference_style: author_year
   html_context:
