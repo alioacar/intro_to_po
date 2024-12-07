@@ -1,0 +1,22 @@
+/* Make the input cells scrollable */
+.jp-CodeCell .input {
+    max-height: 400px;  /* Adjust the height as needed */
+    overflow-y: scroll;
+}
+
+/* Keep the output cells as they are */
+.jp-CodeCell .output {
+    max-height: none;
+    overflow-y: visible;
+}
+.toggle-button {
+  background-color: #007ACC;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #005999;
+}
