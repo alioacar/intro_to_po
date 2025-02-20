@@ -1,0 +1,1360 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>14. Equatorial Processes &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter14';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="15. Numerical Models" href="chapter15.html" />
+    <link rel="prev" title="13. Deep Circulation in the Ocean" href="chapter13.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter14.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter14.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Equatorial Processes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">14.1. Equatorial Processes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-currents">14.1.1. Surface Currents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-undercurrent-observations">14.1.2. Equatorial Undercurrent: Observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-undercurrent-theory">14.1.3. Equatorial Undercurrent: Theory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-equatorial-circulation-el-nino-la-nina">14.2. Variable Equatorial Circulation: El Niño/La Niña</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-little-history">14.2.1. A Little History</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-el-nino">14.2.2. Definition of El Niño</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-of-el-nino">14.2.3. Theory of El Niño</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-kelvin-and-rossby-waves">14.2.4. Equatorial Kelvin and Rossby Waves</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-nino-teleconnections">14.3. El Niño Teleconnections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-variability-of-texas-rainfall">14.3.1. An Example: Variability of Texas Rainfall</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observing-el-nino">14.4. Observing El Niño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forecasting-el-nino">14.5. Forecasting El Niño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">14.6. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="equatorial-processes">
+<h1><span class="section-number">14. </span>Equatorial Processes<a class="headerlink" href="#equatorial-processes" title="Link to this heading">#</a></h1>
+<p>Equatorial processes are at the center of our understanding the
+influence of the ocean on the atmosphere, and they dominate the
+interannual fluctuations in global weather patterns. The sun warms the
+vast expanses of the tropical Pacific and Indian ocean, evaporating
+water. When the water condenses as rain it releases so much heat that
+these areas are the primary engine driving the atmospheric circulation
+(figure 14.1). Rainfall over extensive areas exceeds three meters per
+year (figure 5.5), and some oceanic regions receive more than five
+meters of rain per year. To put the numbers in perspective, five meters
+of rain per year releases on average 400 W/m<span class="math notranslate nohighlight">\(^2\)</span> of heat to the
+atmosphere. Equatorial currents modulate the air-sea interactions,
+especially through the phenomenon known as El Niño, with global
+consequences. I describe here first the basic equatorial processes, then
+the year-to-year variability of the processes and the influence of the
+variability on weather patterns.</p>
+<p>Figure 14.1 Average diabatic</p>
+<p>heating between 700 and 50 mb in the atmosphere during December, January
+and February calculated from <span class="smallcaps">ecmwf</span> data for 1983–1989.
+Most of the heating is due to the release of latent heat by rain. After
+Webster et al. (1992). <span id="fig:rainheat" label="fig:rainheat"></span></p>
+<section id="id1">
+<h2><span class="section-number">14.1. </span>Equatorial Processes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>The tropical ocean is characterized by a thin, permanent, shallow layer
+of warm water over deeper, colder water. In this respect, the vertical
+stratification is similar to the summer stratification at higher
+latitudes. Surface waters are hottest in the west (figure 6.3) in the
+great Pacific warm pool. The mixed layer is deep in the west and very
+shallow in the east (Figure 14.2).</p>
+<p>Figure 14.2 The mean,</p>
+<p>upper-ocean, thermal structure along the equator in the Pacific from
+north of New Guinea to Ecuador calculated from data in Levitus (1982).</p>
+<p><span id="fig:equator" label="fig:equator"></span></p>
+<p>The shallow thermocline has important consequences. The southeast trade
+winds blow along the equator (figure 4.2) although they tend to be
+strongest in the east. North of the equator, Ekman transport is
+northward. South of the equator it is southward. The divergence of the
+Ekman flow causes upwelling on the equator. In the west, the upwelled
+water is warm. But in the east the upwelled water is cold because the
+thermocline is so shallow. This leads to a cold tongue of water at the
+sea surface extending from South America to near the dateline (figure
+6.3).</p>
+<p>Surface temperature in the east is a balance among four processes:</p>
+<p>The strength of the upwelling, which is determined by the westward
+component of the wind.</p>
+<p>The speed of westward currents which carry cold water from the coast of
+Peru and Ecuador.</p>
+<p>North-south mixing with warmer waters on either side of the equator.</p>
+<p>Heat fluxes through the sea surface along the equator.</p>
+<p>The east-west temperature gradient on the equator drives a zonal
+circulation in the atmosphere, the Walker circulation. Thunderstorms
+over the warm pool carry air upward, and sinking air in the east feeds
+the return flow at the surface. Variations in the temperature gradient
+influences the Walker circulation, which, in turn, influences the
+gradient. The feedback can lead to an instability, the El Niño-Southern
+Oscillation (<span class="smallcaps">enso</span>) discussed in the next section.</p>
+<section id="surface-currents">
+<h3><span class="section-number">14.1.1. </span>Surface Currents<a class="headerlink" href="#surface-currents" title="Link to this heading">#</a></h3>
+<p>The strong stratification confines the wind-driven circulation to the
+mixed layer and upper thermocline. Sverdrup’s theory and Munk’s
+extension, described in §11.1 and §11.3, explain the surface currents in
+the tropical Atlantic, Pacific, and Indian ocean. The currents include
+(figure 14.3):</p>
+<p>Figure 14.3 Average currents at 10 m</p>
+<p>calculated from the Modular Ocean Model driven by observed winds and
+mean heat fluxes from 1981 to 1994. The model, operated by the
+<span class="smallcaps">noaa</span> National Centers for Environmental Prediction,
+assimilates observed surface and subsurface temperatures. After
+Behringer, Ji, and Leetmaa (1998). <span id="fig:EqCurr" label="fig:EqCurr"></span></p>
+<p>The North Equatorial Countercurrent between 3N and 10N, which flows
+eastward with a typical surface speed of 50 cm/s. The current is
+centered on the band of weak winds, the <em>doldrums</em>, around 5–10N where
+the north and south trade winds converge, the <em>tropical convergence
+zone</em>.</p>
+<p>The North and South Equatorial Currents which flow westward in the zonal
+band on either side of the countercurrent. The currents are shallow,
+less than 200 m deep. The northern current is weak, with a speed less
+than roughly 20 cm/s. The southern current has a maximum speed of around
+100 cm/s, in the band between 3N and the equator.</p>
+<p>The currents in the Atlantic are similar to those in the Pacific because
+the trade winds in that ocean also converge near 5 –10N. The South
+Equatorial Current in the Atlantic continues northwest along the coast
+of Brazil, where it is known as the North Brazil Current. In the Indian
+Ocean, the doldrums occur in the southern hemisphere and only during the
+northern-hemisphere winter. In the northern hemisphere, the currents
+reverse with the monsoon winds.</p>
+<p>There is, however, much more to the story of equatorial currents.</p>
+</section>
+<section id="equatorial-undercurrent-observations">
+<h3><span class="section-number">14.1.2. </span>Equatorial Undercurrent: Observations<a class="headerlink" href="#equatorial-undercurrent-observations" title="Link to this heading">#</a></h3>
+<p>Just a few meters below the surface on the equator is a strong eastward
+flowing current, the Equatorial Undercurrent, the last major oceanic
+current to be discovered. Here’s the story:</p>
+<blockquote>
+<div><p>In September 1951, aboard the U.S. Fish and Wildlife Service research
+vessel long-line fishing on the equator south of Hawaii, it was
+noticed that the subsurface gear drifted steadily to the east. The
+next year Cromwell, in company with Montgomery and Stroup, led an
+expedition to investigate the vertical distribution of horizontal
+velocity at the equator. Using floating drogues at the surface and at
+various depths, they were able to establish the presence, near the
+equator in the central Pacific, of a strong, narrow eastward current
+in the lower part of the surface layer and the upper part of the
+thermocline (Cromwell, <em>et. al.</em>, 1954). A few years later the Scripps
+<em>Eastropac</em> Expedition, under Cromwell’s leadership, found the current
+extended toward the east nearly to the Galapagos Islands but was not
+present between those islands and the South American continent.</p>
+<p>The current is remarkable in that, even though comparable in transport
+to the Florida Current, its presence was unsuspected ten years ago.
+Even now, neither the source nor the ultimate fate of its waters has
+been established. No theory of oceanic circulation predicted its
+existence, and only now are such theories being modified to account
+for the important features of its flow.—Warren S. Wooster (1960).</p>
+</div></blockquote>
+<p>The Equatorial Undercurrent in the Atlantic was first discovered by
+Buchanan in 1886, and in the Pacific by the Japanese Navy in the 1920s
+and 1930s (McPhaden, 1986).</p>
+<blockquote>
+<div><p>However, no attention was paid to these observations. Other earlier
+hints regarding this undercurrent were mentioned by Matthäus (1969).
+Thus the old experience becomes even more obvious which says that
+discoveries not attracting the attention of contemporaries simply do
+not exist.—Dietrich et al. (1980).</p>
+</div></blockquote>
+<p>Bob Arthur (1960) summarized the major aspects of the flow:</p>
+<p>Surface flow may be directed westward at speeds of 25–75 cm/s;</p>
+<p>Current reverses at a depth of from 20 to 40 m;</p>
+<p>Eastward undercurrent extends to a depth of 400 meters with a transport
+of as much as 30 Sv <span class="math notranslate nohighlight">\(=30 \times 10^6\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s;</p>
+<p>Core of maximum eastward velocity (0.50–1.50 m/s) rises from a depth of
+100 m at 140W to 40 m at 98W, then dips down;</p>
+<p>Undercurrent appears to be symmetrical about the equator and becomes
+much thinner and weaker at 2N and 2S.</p>
+<p>In essence, the Pacific Equatorial Undercurrent is a ribbon with
+dimensions of <span class="math notranslate nohighlight">\(0.2 \text{ km} \times 300 \text{ km} \times 13,000 \text{ km}\)</span> (figure 14.4).</p>
+<p>Figure 14.4 Cross</p>
+<p>section of the Equatorial Undercurrent in the Pacific calculated from
+Modular Ocean Model with assimilated surface data (See §14.5). The
+section is an average from 160E to 170E from January 1965 to December
+1999. Stippled areas are westward flowing. From Nevin S. Fučkar.</p>
+<p><span id="fig:equatorialxsec" label="fig:equatorialxsec"></span></p>
+</section>
+<section id="equatorial-undercurrent-theory">
+<h3><span class="section-number">14.1.3. </span>Equatorial Undercurrent: Theory<a class="headerlink" href="#equatorial-undercurrent-theory" title="Link to this heading">#</a></h3>
+<p>Although we do not yet have a complete theory for the undercurrent, we
+do have a clear understanding of some of the more important processes at
+work in the equatorial regions. Pedlosky(1996), in his excellent chapter
+on Equatorial Dynamics of the Thermocline: The Equatorial Undercurrent,
+points out that the basic dynamical balances we have used in mid
+latitudes break down near or on the equator.</p>
+<p>Near the equator:</p>
+<p>The Coriolis parameter becomes very small, going to zero at the equator:
+$<span class="math notranslate nohighlight">\(f=2\Omega \sin\varphi = \beta y \approx 2\Omega \,\varphi\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\varphi<span class="math notranslate nohighlight">\( is latitude, \)</span>\beta = \partial f/\partial y \approx 2\Omega/R<span class="math notranslate nohighlight">\( near the equator, and \)</span>y=R,\varphi$.</p>
+<p>Planetary vorticity <span class="math notranslate nohighlight">\(f\)</span> is also small, and the advection of relative
+vorticity cannot be neglected. Thus the Sverdrup balance (11.7) must be
+modified.</p>
+<p>The geostrophic and vorticity balances fail when the meridional distance
+<span class="math notranslate nohighlight">\(L\)</span> to the equator is <span class="math notranslate nohighlight">\(O\left(\sqrt{U/\beta}\right)\)</span>, where
+<span class="math notranslate nohighlight">\(\beta = \partial f / \partial y\)</span>. If <span class="math notranslate nohighlight">\(U=1\)</span> m/s, then <span class="math notranslate nohighlight">\(L=200\)</span> km or 2 of
+latitude. Lagerloeff et al (1999), using measured currents, show that
+currents near the equator can be described by the geostrophic balance
+for <span class="math notranslate nohighlight">\(|\varphi | &gt; 2.2^{\circ}\)</span>. They also show that flow closer to the
+equator can be described using a <span class="math notranslate nohighlight">\(\beta\)</span>-plane approximation
+<span class="math notranslate nohighlight">\(f = \beta y\)</span>.</p>
+<p>The geostrophic balance for <em>zonal</em> currents works so well near the
+equator because <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(\partial \zeta/\partial y \rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(\varphi \rightarrow 0\)</span>, where <span class="math notranslate nohighlight">\(\zeta\)</span> is sea surface
+topography.</p>
+<p>Upwelled water along the equator produced by Ekman pumping is not part
+of a two-dimensional flow in a north-south, meridional plane. The flow
+is three-dimensional. Water tends to flow along the contours of constant
+density (isopycnal surfaces), close to the lines of constant temperature
+in figure 14.2. Cold water enters the undercurrent in the far west
+Pacific, and it moves eastward and upward along the equator. For
+example, the 25isotherm enters the undercurrent at a depth near 125 m in
+the western Pacific at 170E and eventually reaches the surface at 125W
+in the eastern Pacific.</p>
+<p>The meridional geostrophic balance near the equator gives the speed of
+the zonal currents, but it does not explain what drives the
+undercurrent. A very simplified theory for the undercurrent is based on
+a balance of zonal pressure gradients along the equator. Wind stress
+pushes water westward, producing the deep thermocline and warm pool in
+the west. The deepening of the thermocline causes the sea-surface
+topography <span class="math notranslate nohighlight">\(\zeta\)</span> to be higher in the west, assuming that flow below
+the thermocline is weak. Thus there is an eastward pressure gradient
+along the equator in the surface layers to a depth of a few hundred
+meters. The eastward pressure gradient at the surface (layer A in figure
+14.5) is balanced by the wind stress <span class="math notranslate nohighlight">\(T_x\)</span>, and
+<span class="math notranslate nohighlight">\(T_x / H = -\partial p/\partial x\)</span>, where H is the mixed-layer depth</p>
+<p>Below a few tens of meters in layer B, the influence of the wind stress
+is small, and the pressure gradient is unbalanced, leading to an
+accelerated flow toward the east, the equatorial undercurrent. Within
+this layer, the flow accelerates until the pressure gradient is balanced
+by frictional forces which tend to slow the current. At depths below a
+few hundred meters in layer C, the eastward pressure gradient is too
+weak to produce a current, <span class="math notranslate nohighlight">\(\partial p / \partial x \approx 0\)</span>.</p>
+<p>Figure 14.5 <strong>Left:</strong></p>
+<p>Cross-sectional sketch of the thermocline and sea-surface topography
+along the equator. <strong>Right:</strong> Eastward pressure gradient in the central
+Pacific caused by the density structure at left. <span id="fig:equatorsketch" label="fig:equatorsketch"></span></p>
+<p>Coriolis forces keep the equatorial undercurrent centered on the
+equator. If the flow strays northward, the Coriolis force deflects the
+current southward. The opposite occurs if the flow strays southward.</p>
+</section>
+</section>
+<section id="variable-equatorial-circulation-el-nino-la-nina">
+<h2><span class="section-number">14.2. </span>Variable Equatorial Circulation: El Niño/La Niña<a class="headerlink" href="#variable-equatorial-circulation-el-nino-la-nina" title="Link to this heading">#</a></h2>
+<p>The trades are remarkably steady, but they do vary from month to month
+and year to year, especially in the western Pacific. One important
+source of variability are Madden-Julian waves in the atmosphere
+(McPhaden, 1999). If the trades in the west weaken or reverse, the
+air-sea system in the equatorial regions can be thrown into another
+state called El Niño. This disruption of the equatorial system in the
+Pacific is the most important cause of changing weather patterns around
+the globe.</p>
+<p>Although the modern meaning of the term El Niño denotes a disruption of
+the entire equatorial system in the Pacific, the term has been used in
+the past to describe several very different processes. This causes a lot
+of confusion. To reduce the confusion, let’s learn a little history.</p>
+<section id="a-little-history">
+<h3><span class="section-number">14.2.1. </span>A Little History<a class="headerlink" href="#a-little-history" title="Link to this heading">#</a></h3>
+<p>In the 19th century, the term was applied to conditions off the coast of
+Peru. The following quote comes from the introduction to Philander’s
+(1990) excellent book <em>El Niño, La Niña, and the Southern Oscillation</em>:</p>
+<blockquote>
+<div><p>In the year 1891, Señor Dr. Luis Carranza of the Lima Geographical
+Society, contributed a small article to the Bulletin of that Society,
+calling attention to the fact that a counter-current flowing from
+north to south had been observed between the ports of Paita and
+Pacasmayo.</p>
+<p>The Paita sailors, who frequently navigate along the coast in small
+craft, either to the north or the south of that port, name this
+counter-current the current of “El Niño” (the Child Jesus) because it
+has been observed to appear immediately after Christmas.</p>
+<p>As this counter-current has been noticed on different occasions, and
+its appearance along the Peruvian coast has been concurrent with rains
+in latitudes where it seldom if ever rains to any great extent, I
+wish, on the present occasion, to call the attention of the
+distinguished geographers here assembled to this phenomenon, which
+exercises, undoubtedly, a very great influence over the climatic
+conditions of that part of the world.—Señor Frederico Alfonso
+Pezet’s address to the Sixth International Geographical Congress in
+Lima, Peru 1895.</p>
+</div></blockquote>
+<p>The Peruvians noticed that in some years the El Niño current was
+stronger than normal, it penetrated further south, and it is associated
+with heavy rains in Peru. This occurred in 1891 when (again quoting from
+Philander’s book)</p>
+<blockquote>
+<div><p>…it was then seen that, whereas nearly every summer here and there
+there is a trace of the current along the coast, in that year it was
+so visible, and its effects were so palpable by the fact that large
+dead alligators and trunks of trees were borne down to Pacasmayo from
+the north, and that the whole temperature of that portion of Peru
+suffered such a change owing to the hot current that bathed the coast.
+…—Señor Frederico Alfonso Pezet.</p>
+<p>…the sea is full of wonders, the land even more so. First of all the
+desert becomes a garden …. The soil is soaked by the heavy downpour,
+and within a few weeks the whole country is covered by abundant
+pasture. The natural increase of flocks is practically doubled and
+cotton can be grown in places where in other years vegetation seems
+impossible.—From Mr. S.M. Scott &amp; Mr. H. Twiddle quoted from a paper
+by Murphy, 1926.</p>
+</div></blockquote>
+<p>The El Niño of 1957 was even more exceptional. So much so that it
+attracted the attention of meteorologists and oceanographers throughout
+the Pacific basin.</p>
+<blockquote>
+<div><p>By the fall of 1957, the coral ring of Canton Island, in the memory of
+man ever bleak and dry, was lush with the seedlings of countless
+tropical trees and vines.</p>
+<p>Figure 14.6 Correlation</p>
+<p>coefficient of annual-mean sea-level pressure with pressure at Darwin.
+– – – – Coefficient <span class="math notranslate nohighlight">\(&lt; -0.4\)</span>. After Trenberth and Shea (1987).</p>
+<p><span id="fig:ensocorrelations" label="fig:ensocorrelations"></span></p>
+<p>One is inclined to select the events of this isolated atoll as
+epitomizing the year, for even here, on the remote edges of the
+Pacific, vast concerted shifts in the ocean and atmosphere had wrought
+dramatic change.</p>
+<p>Elsewhere about the Pacific it also was common knowledge that the year
+had been one of extraordinary climatic events. Hawaii had its first
+recorded typhoon; the seabird-killing <em>El Niño</em> visited the Peruvian
+coast; the ice went out of Point Barrow at the earliest time in
+history; and on the Pacific’s western rim, the tropical rainy season
+lingered six weeks beyond its appointed term—Sette and Isaacs
+(1960).</p>
+</div></blockquote>
+<p>Just months after the event, in 1958, a distinguished group of
+oceanographers and meteorologists assembled in Rancho Santa Fe,
+California to try to understand the <em>Changing Pacific Ocean in 1957 and
+1958</em> (Sette and Isaacs (1960). There, for perhaps the first time, they
+began the synthesis of atmospheric and oceanic events leading to our
+present understanding of El Niño.</p>
+<p>While oceanographers had been mostly concerned with the eastern
+equatorial Pacific and El Niño, meteorologists had been mostly concerned
+with the western tropical Pacific, the tropical Indian Ocean, and the
+Southern Oscillation. Hildebrandsson, the Lockyers, and Sir Gilbert
+Walker noticed in the early decades of the 20th century that pressure
+fluctuations throughout that region are highly correlated with pressure
+fluctuations in many other regions of the world (figure 14.6). Because
+variations in pressure are associated with winds and rainfall, they
+wanted to find out if pressure in one region could be used to forecast
+weather in other regions using the correlations.</p>
+<p>The early studies found that the two strongest centers of the
+variability are near Darwin, Australia and Tahiti. The fluctuations at
+Darwin are opposite those at Tahiti, and resemble an oscillation.
+Furthermore, the two centers had strong correlations with pressure in
+areas far from the Pacific. Walker named the fluctuations the <em>Southern
+Oscillation</em>.</p>
+<p>The <em>Southern Oscillation Index</em> is sea-level pressure at Tahiti minus
+sea-level pressure at Darwin (figure 14.7) normalized by the standard
+deviation of the difference. The index is related to the trade winds.
+When the index is high, the pressure gradient between east and west in
+the tropical Pacific is large, and the trade winds are strong. When the
+index is negative trades, are weak.</p>
+<p>Figure 14.7 Normalized Southern Oscillation</p>
+<p>Index from 1951 to 1999. The normalized index is sea-level pressure
+anomaly at Tahiti divided by its standard deviation minus sea-level
+pressure anomaly at Darwin divided by its standard deviation then the
+difference is divided by the standard deviation of the difference. The
+means are calculated from 1951 to 1980. Monthly values of the index have
+been smoothed with a 5-month running mean. Strong El Niño events
+occurred in 1957–58, 1965–66, 1972–73, 1982–83, 1997–98. Data from
+<span class="smallcaps">noaa</span>. <span id="fig:soi" label="fig:soi"></span></p>
+<p>The connection between the Southern Oscillation and El Niño was made
+soon after the Rancho Santa Fe meeting. Ichiye and Petersen (1963) and
+Bjerknes (1966) noticed the relationship between equatorial temperatures
+in the Pacific during the 1957 El Niño and fluctuations in the trade
+winds associated with the Southern Oscillation. The theory was further
+developed by Wyrtki (1975).</p>
+<p>Because El Niño and the Southern Oscillation are so closely related, the
+phenomenon is often referred to as the <em>El Niño–Southern Oscillation</em>
+or <span class="smallcaps">enso</span>. More recently, the oscillation is referred to as
+El Niño/La Niña, where La Niña refers to the positive phase of the
+oscillation when trade winds are strong, and water temperature in the
+eastern equatorial region is very cold.</p>
+</section>
+<section id="definition-of-el-nino">
+<h3><span class="section-number">14.2.2. </span>Definition of El Niño<a class="headerlink" href="#definition-of-el-nino" title="Link to this heading">#</a></h3>
+<p>Philander (1990) points out that each El Niño is unique, with different
+temperature, pressure, and rainfall patterns. Some are strong, some are
+weak. So, exactly what events deserve to be called El Niño? The
+<span class="smallcaps">icoads</span> data show that the best indicator of El Niño is
+sea-level pressure anomaly in the eastern equatorial Pacific from 4S to
+4N and from 108W to 98W (Harrison and Larkin, 1996). It correlates
+better with sea-surface temperature in the central Pacific than with the
+Southern-Oscillation Index. Thus the importance of the El Niño is not
+exactly proportional to the Southern Oscillation Index—the strong El
+Niño of 1957–58, has a weaker signal in figure 14.7 than the weaker El
+Niño of 1965–66.</p>
+<p>Trenberth (1997) recommends that those disruptions of the equatorial
+system in the Pacific shall be called an El Niño only when the 5-month
+running mean of sea-surface temperature anomalies in the region 5N–5S,
+120W–170W exceeds 0.4C for six months or longer.</p>
+<p>So El Niño, which started life as a change in currents off Peru each
+Christmas, has grown into a giant. It now means a disruption of the
+ocean-atmosphere system over the whole equatorial Pacific.</p>
+</section>
+<section id="theory-of-el-nino">
+<h3><span class="section-number">14.2.3. </span>Theory of El Niño<a class="headerlink" href="#theory-of-el-nino" title="Link to this heading">#</a></h3>
+<p>Wyrtki (1975) gives a clear description of El Niño.</p>
+<blockquote>
+<div><p>During the two years preceding El Niño, excessively strong southeast
+trades are present in the central Pacific. These strong southeast
+trades intensify the subtropical gyre of the South Pacific, strengthen
+the South Equatorial Current, and increase the east-west slope of sea
+level by building up water in the western equatorial Pacific. As soon
+as the wind stress in the central Pacific relaxes, the accumulated
+water flows eastward, probably in the form of an equatorial Kelvin
+wave. This wave leads to the accumulation of warm water off Ecuador
+and Peru and to a depression of the usually shallow thermocline. In
+total, El Niño is the result of the response of the equatorial Pacific
+to atmospheric forcing by the trade winds.</p>
+</div></blockquote>
+<p>Sometimes the trades in the western equatorial Pacific not only weaken,
+they actually reverse direction for a few weeks to a month, producing
+<em>westerly wind bursts</em> that quickly deepen the thermocline there. The
+deepening of the thermocline launches an eastward propagating Kelvin
+wave and a westward propagating Rossby wave. (If you are asking, What
+are Kelvin and Rossby waves? I will answer that in a minute. So please
+be patient.)</p>
+<p>Figure 14.8 Anomalies</p>
+<p>of sea-surface temperature (in C) during a typical El Niño obtained by
+averaging data from El Niños between 1950 and 1973. Months are after the
+onset of the event. After Rasmusson and Carpenter (1982).
+<span id="fig:elninoanomalies" label="fig:elninoanomalies"></span></p>
+<p>The Kelvin wave deepens the thermocline as it moves eastward, and it
+carries warm water eastward. Both processes cause a deepening of the
+mixed layer in the eastern equatorial Pacific a few months after the
+wave is launched in the western Pacific. The deeper thermocline in the
+east leads to upwelling of warm water, and the surface temperatures
+offshore of Ecuador and Peru warms by 2–4. The warm water reduces the
+temperature contrast between east and west, further reducing the trades.
+The strong positive feedback between sea-surface temperature and the
+trade winds causes rapid development of El Niño.</p>
+<p>With time, the warm pool spreads east, eventually extending as far as
+140W (figure 14.8). Plus, water warms in the east along the equator due
+to upwelling of warm water, and to reduced advection of cold water from
+the east due to weaker trade winds.</p>
+<p>The warm waters along the equator in the east cause the areas of heavy
+rain to move eastward from Melanesia and Fiji to the central Pacific.
+Essentially, a major source of heat for the atmospheric circulation
+moves from the west to the central Pacific, and the whole atmosphere
+responds to the change. Bjerknes (1972), describing the interaction
+between the ocean and the atmosphere over the eastern equatorial Pacific
+concluded:</p>
+<blockquote>
+<div><p>In the cold ocean case (1964) the atmosphere has a pronounced stable
+layer between 900 and 800 mb, preventing convection and rainfall, and
+in the warm case (1965) the heat supply from the ocean eliminates the
+atmospheric stability and activates rainfall. …A side effect of the
+widespread warming of the tropical belt of the atmosphere shows up in
+the increase of exchange of angular momentum with the neighboring
+subtropical belt, whereby the subtropical westerly jet strengthens
+…The variability of the heat and moisture supply to the global
+atmospheric thermal engine from the equatorial Pacific can be shown to
+have far-reaching large-scale effects.</p>
+</div></blockquote>
+<p>Klaus Wyrtki (1985), drawing on extensive observations of El Niño,
+writes:</p>
+<blockquote>
+<div><p>A complete El Niño cycle results in a net heat discharge from the
+tropical Pacific toward higher latitudes. At the end of the cycle the
+tropical Pacific is depleted of heat, which can only be restored by
+the slow accumulation of warm water in the western Pacific by the
+normal trade winds. Consequently, the time scale of the Southern
+Oscillation is given by the time required for the accumulation of warm
+water in the western Pacific.</p>
+</div></blockquote>
+<p>It is these far reaching events that make El Niño so important. Few
+people care about warm water off Peru around Christmas, many care about
+global changes the weather. El Niño is important because of its
+atmospheric influence.</p>
+<p>When the Kelvin wave reaches the coast of Ecuador, part is reflected as
+an westward propagating Rossby wave, and part propagates north and south
+as a coastal trapped Kelvin wave carrying warm water to higher
+latitudes. For example, during the 1957 El Niño, the northward
+propagating Kelvin wave produced unusually warm water off shore of
+California, and it eventually reached Alaska. This warming of the west
+coast of North America further influences climate in North America,
+especially in California.</p>
+<p>As the Kelvin wave moves along the coast, it forces Rossby waves which
+move west across the Pacific at a velocity that depends on the latitude
+(14.4). The velocity is very slow at high latitudes and fastest on the
+equator, where the reflected wave moves back as a deepening of the
+thermocline, reaching the central equatorial Pacific a year later.
+Similarly, the westward propagating Rossby wave launched at the start of
+the El Niño in the west, reflects off Asia and returns to the central
+equatorial Pacific as a Kelvin wave, again about a year later.</p>
+<p>El Niño ends when the Rossby waves reflected from Asia and Ecuador meet
+in the central Pacific about a year after the onset of El Niño (Picaut,
+Masia, and du Penhoat, 1997). The waves push the warm pool at the
+surface toward the west. At the same time, the Rossby wave reflected
+from the western boundary causes the thermocline in the central Pacific
+to become shallower when the waves reaches the central Pacific. Then any
+strengthening of the trades causes upwelling of cold water in the east,
+which increases the east-west temperature gradient, which increases the
+trades, which increases the upwelling (Takayabu et al 1999). The system
+is then thrown into the La Niña state with strong trades, and a very
+cold tongue along the equator in the east.</p>
+<p>La Niña tends to last longer than El Niño, and the cycle from La Niña to
+El Niño and back takes about three years. The cycle isn’t exact. El Niño
+comes back at intervals from 2-7 years, with an average near four years
+(figure 14.7).</p>
+</section>
+<section id="equatorial-kelvin-and-rossby-waves">
+<h3><span class="section-number">14.2.4. </span>Equatorial Kelvin and Rossby Waves<a class="headerlink" href="#equatorial-kelvin-and-rossby-waves" title="Link to this heading">#</a></h3>
+<p>Kelvin and Rossby waves are the ocean’s way of adjusting to changes in
+forcing such as westerly wind bursts. The adjustment occurs as waves of
+current and sea level that are influenced by gravity, Coriolis force
+<span class="math notranslate nohighlight">\(f\)</span>, and the north-south variation of Coriolis force
+<span class="math notranslate nohighlight">\(\partial f/\partial y = \beta\)</span>. There are many kinds of these waves
+with different frequencies, wavelengths, and velocities. If gravity and
+<span class="math notranslate nohighlight">\(f\)</span> are the restoring forces, the waves are called Kelvin and Poincaré
+waves. If <span class="math notranslate nohighlight">\(\beta\)</span> is the restoring force, the waves are called planetary
+waves. One important type of planetary wave is the Rossby wave.</p>
+<p>Two types of waves are especially important for El Niño: internal Kelvin
+waves and Rossby waves. Both waves can have modes that are confined to a
+narrow, north-south region centered on the equator. These are
+<em>equatorially trapped waves</em>. Both exist in slightly different forms at
+higher latitudes.</p>
+<p>Kelvin and Rossby wave theory is beyond the scope of this book, so I
+will just tell you what they are without deriving the properties of the
+waves. If you are curious, you can find the details in Philander (1990):
+Chapter 3; Pedlosky (1987): Chapter 3; and Apel (1987): §6.10–6.12. If
+you know little about waves, their wavelength, frequency, group and
+phase velocities, skip to Chapter 16 and read §16.1.</p>
+<p>The theory for equatorial waves is based on a two-layer model of the
+ocean (figure 14.9). Because the tropical ocean have a thin, warm,
+surface layer above a sharp thermocline, such a model is a good
+approximation for those regions.</p>
+<p>Figure 14.9 Sketch</p>
+<p>of the two-layer model of the equatorial ocean used to calculate
+planetary waves in those regions. After Philander (1990: 107).
+<span id="fig:modelsketch" label="fig:modelsketch"></span></p>
+<p>Equatorial-trapped Kelvin waves are non-dispersive, with group velocity:
+$<span class="math notranslate nohighlight">\(c_{Kg} = c \equiv \sqrt{g'H}; \qquad \text{where} \qquad
+g' = \frac{\rho_2 - \rho_1}{\rho_1}\,g\)</span><span class="math notranslate nohighlight">\( \)</span>g’<span class="math notranslate nohighlight">\( is *reduced gravity*,
+\)</span>\rho_1, , \rho_2<span class="math notranslate nohighlight">\( are the densities above and below the thermocline,
+and \)</span>g<span class="math notranslate nohighlight">\( is gravity. Trapped Kelvin waves propagate only to the east.
+Note, that \)</span>c<span class="math notranslate nohighlight">\( is the phase and group velocity of a shallow-water,
+internal, gravity wave. It is the maximum velocity at which disturbances
+can travel along the thermocline. Typical values of the quantities in
+(14.2) are:
+\)</span><span class="math notranslate nohighlight">\(\frac{\rho_2 - \rho_1}{\rho_1} = 0.003; \qquad H=150 \text{ m;} \qquad c =2.1
+\text{ m/s} \notag\)</span>$ At the equator, Kelvin waves propagate eastward at
+speeds of up to 3 m/s, and they cross the Pacific in a few months.
+Currents associated with the wave are everywhere eastward with
+north-south component (figure 14.10).</p>
+<p>Figure 14.10 <strong>Left:</strong> Horizontal</p>
+<p>currents associated with equatorially trapped waves generated by a
+bell-shaped displacement of the thermocline. <strong>Right:</strong> Displacement of
+the thermocline due to the waves. The figures shows that after 20 days,
+the initial disturbance has separated into an westward propagating
+Rossby wave (left) and an eastward propagating Kelvin wave (right).
+After Philander et al. (1984: 120). <span id="fig:rossbycurrents" label="fig:rossbycurrents"></span></p>
+<p>Kelvin waves can also propagate poleward as a trapped wave along an east
+coast of an ocean basin. Their group velocity is also given by (14.3),
+and they are confined to a coastal zone with width
+<span class="math notranslate nohighlight">\(x=c/\left(\beta\,y\right)\)</span></p>
+<p>The important Rossby waves on the equator have frequencies much less
+than the Coriolis frequency. They can travel only to the west. The group
+velocity is:
+$<span class="math notranslate nohighlight">\(c_{Rg} = - \frac{c}{\left(2\,n+1\right)}; \qquad n=1,\,2,\,3,\,\ldots\)</span>$
+The fastest wave travels westward at a velocity near 0.8 m/s. The
+currents associated with the wave are almost in geostrophic balance in
+two counter-rotating eddies centered on the equator (figure 14.10).</p>
+<p>Away from the equator, low-frequency, long-wavelength Rossby waves also
+travel only to the west, and the currents associated with the waves are
+again almost in geostrophic balance. Group velocity depends strongly on
+latitude: $<span class="math notranslate nohighlight">\(c_{Rg} = -\frac{\beta\,g'\,H}{f^2}\)</span>$</p>
+<p>Wave dynamics in the equatorial regions differ markedly from wave
+dynamics at mid-latitudes. Baroclinic waves are much faster, and the
+response of the ocean to changes in wind forcing is much faster than at
+mid-latitudes. For planetary waves near the equator, we can speak of an
+<em>equatorial wave guide</em>.</p>
+<p>Now, let’s return to El Niño and its “far-reaching large-scale effects.”</p>
+</section>
+</section>
+<section id="el-nino-teleconnections">
+<h2><span class="section-number">14.3. </span>El Niño Teleconnections<a class="headerlink" href="#el-nino-teleconnections" title="Link to this heading">#</a></h2>
+<p><em>Teleconnections</em> are statistically significant correlations between
+weather events that occur at different places on the earth. Figure 14.11
+shows the dominant global teleconnections associated with the El
+Niño/Southern Oscillation.</p>
+<p>Figure 14.11 Sketch</p>
+<p>of regions receiving enhanced rain (dashed lines) or drought (solid
+lines) during an El Niño event. (0) indicates that rain changed during
+the year in which El Niño began, (+)indicates that rain changed during
+the year after El Niño began. After Ropelewski and Halpert (1987).
+<span id="fig:teleconnections" label="fig:teleconnections"></span></p>
+<p>The influence of <span class="smallcaps">enso</span> is through its influence on
+convection and associated latent heat release in the equatorial Pacific.
+As the area of heavy rain moves east, the source of atmospheric heating
+moves with the rain, leading to widespread changes in atmospheric
+circulation and weather patterns outside the tropical Pacific (McPhaden,
+Zebiak and Glantz, 2006), including perturbations in atmospheric
+pressure (figure 14.12). This sequence of events leads to some
+predictability of weather patterns a season in advance over North
+America, Brazil, Australia, South Africa and other regions.</p>
+<p>The <span class="smallcaps">enso</span> perturbations to mid-latitude and tropical
+weather systems leads to dramatic changes in rainfall in some regions
+(figure 14.11). As the convective regions migrate east along the
+equator, they bring rain to the normally arid, central-Pacific islands.
+The lack of rain the western Pacific leads to drought in Indonesia and
+Australia.</p>
+<p>Figure 14.12 Changing</p>
+<p>patterns of convection in the equatorial Pacific during an El Niño, set
+up a pattern of pressure anomalies in the atmosphere (solid lines) which
+influence the extratropical atmosphere. After Rasmusson and Wallace
+(1983). <span id="fig:pressureanomaly" label="fig:pressureanomaly"></span></p>
+<section id="an-example-variability-of-texas-rainfall">
+<h3><span class="section-number">14.3.1. </span>An Example: Variability of Texas Rainfall<a class="headerlink" href="#an-example-variability-of-texas-rainfall" title="Link to this heading">#</a></h3>
+<p>Figure 14.11 shows a global view of teleconnections. Let’s zoom in to
+one region, Texas, that I chose only because I live there. The global
+figure shows that the region should have higher than normal rainfall in
+the winter season after El Niño begins. I therefore correlated yearly
+averaged rainfall for the state of Texas to the Southern Oscillation
+Index (figure 14.13). Wet years correspond to El Niño years in the
+equatorial Pacific. During El Niño, convection normally found in the
+western equatorial Pacific moved east into the central equatorial
+Pacific. The subtropical jet also moves east, carrying tropical moisture
+across Mexico to Texas and the Mississippi Valley. Cold fronts in winter
+interact with the upper level moisture to produce abundant winter rains
+from Texas eastward.</p>
+<p>Figure 14.13 Correlation of</p>
+<p>yearly averaged rainfall averaged over Texas plotted as a function of
+the Southern Oscillation Index averaged for the year. From Stewart
+(1995).</p>
+<p><span id="fig:texasrain" label="fig:texasrain"></span></p>
+</section>
+</section>
+<section id="observing-el-nino">
+<h2><span class="section-number">14.4. </span>Observing El Niño<a class="headerlink" href="#observing-el-nino" title="Link to this heading">#</a></h2>
+<p>The tropical and equatorial Pacific is a vast, remote area seldom
+visited by ships. To observe the region <span class="smallcaps">noaa</span>’s Pacific
+Marine Environmental Laboratory in Seattle deployed an array of buoys to
+measure oceanographic and meteorological variables (figure 14.14). The
+first buoy was successfully deployed in 1976 by David Halpern. Since
+then, new moorings have been added to the array, new instruments have
+been added to the moorings, and the moorings have been improved. The
+program has now evolved into the Tropical Atmosphere Ocean
+<span class="smallcaps">tao</span> array of approximately 70 deep-ocean moorings spanning
+the equatorial Pacific Ocean between 8N and 8S from 95W to 137E
+(McPhaden et al, 1998).</p>
+<p>The array began full operation in December 1994, and it continues to
+evolve. The work necessary to design and calibrate instruments, deploy
+moorings, and process data is coordinated through the <span class="smallcaps">tao</span>
+Project. It is a multi-national effort involving the United States,
+Japan, Korea, Taiwan, and France with a project office at the Pacific
+Marine Environmental Laboratory.</p>
+<p>The <span class="smallcaps">tao</span> moorings measure air temperature, relative
+humidity, surface wind velocity, sea-surface temperatures, and
+subsurface temperatures from 10 meters down to 500 meters. Five moorings
+located on the equator at 110W, 140W, 170W, 165E, and 147E also carry
+upward-looking Acoustic Doppler Current Profilers <span class="smallcaps">adcp</span> to
+measure upper-ocean currents between 10 m and 250 m. Data are sent back
+through the Argos system, and data are processed and made available in
+near real time. The moorings are recovered and replaced yearly. All
+sensors are calibrated prior to deployment and after recovery.</p>
+<p>Figure 14.14 Tropical Atmosphere</p>
+<p>Ocean <span class="smallcaps">tao</span> array of moored buoys operated by the
+<span class="smallcaps">noaa</span> Pacific Marine Environmental Laboratory with help
+from Japan, Korea, Taiwan, and France. Figure from <span class="smallcaps">noaa</span>
+Pacific Marine Environmental Laboratory.</p>
+<p><span id="fig:TaoArray" label="fig:TaoArray"></span></p>
+<p>Data from <span class="smallcaps">tao</span> are merged with altimeter data from Jasin,
+and <span class="smallcaps">ers</span>-2 to obtain a more comprehensive measurement of El
+Niño. Jasin and Topex/Poseidon data have been especially useful because
+they could be used to produce accurate maps of sea level every ten days.
+The maps provided detailed views of the development of the 1997–1998 El
+Niño in near real time that were widely reproduced throughout the world.
+The observations (figure 10.6) show high sea level propagating from west
+to east, peaking in the eastern equatorial Pacific in November 1997. In
+addition, satellite data extended beyond the <span class="smallcaps">tao</span> data
+region to include the entire tropical Pacific. This allowed
+oceanographers to look for extra-tropical influences on El Niño.</p>
+<p>Rain rates are measured by <span class="smallcaps">nasa</span>’s Tropical Rainfall
+Measuring Mission which was specially designed for this purpose. It was
+launched on 27 November 1997, and it carries five instruments: the first
+spaceborne precipitation radar, a five-frequency microwave radiometer, a
+visible and infrared scanner, a cloud and earth radiant energy system,
+and a lightning imaging sensor. Working together, the instruments
+provide data necessary to produce monthly maps of tropical rainfall
+averaged over 500 km by 500 km areas with 15% accuracy. The grid is
+global between <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->35 latitude. In addition, the
+satellite data are used to measure latent heat released to the
+atmosphere by rain, thus providing continuous monitoring of heating of
+the atmosphere in the tropics.</p>
+</section>
+<section id="forecasting-el-nino">
+<h2><span class="section-number">14.5. </span>Forecasting El Niño<a class="headerlink" href="#forecasting-el-nino" title="Link to this heading">#</a></h2>
+<p>The importance of El Niño to global weather patterns has led to many
+schemes for forecasting events in the equatorial Pacific. Several
+generations of models have been produced, but the skill of the forecasts
+has not always increased. Models worked well for a few years, then
+failed. Failure was followed by improved models, and the cycle
+continued. Thus, the best models in 1991 failed to predict weak El Niños
+in 1993 and 1994 (Ji, Leetmaa, and Kousky, 1996). The best model of the
+mid 1990s failed to predict the onset of the strong El Niño of 1997-1998
+although a new model developed by the National Centers for Environmental
+Prediction made the best forecast of the development of the event. In
+general, the more sophisticated the model, the better the forecasts
+(Kerr, 1998).</p>
+<p>The following recounts some of the more recent work to improve the
+forecasts. For simplicity, I describe the technique used by the National
+Centers for Environmental Prediction (Ji, Behringer, and Leetmaa, 1998).
+But Chen et al. (1995), Latif et al. (1993), and Barnett et al. (1993),
+among others, have all developed useful prediction models.</p>
+<p><strong>Atmospheric Models</strong> How well can we model atmospheric processes over
+the Pacific? To help answer the question, the World Climate Research
+Program’s Atmospheric Model Intercomparison Project (Gates, 1992)
+compared output from 30 different atmospheric numerical models for 1979
+to 1988. <em>The Variability in the Tropics: Synoptic to Intraseasonal
+Timescales</em> subproject is especially important because it documents the
+ability of 15 atmospheric general-circulation models to simulate the
+observed variability in the tropical atmosphere (Slingo et al. 1995).
+The models included several operated by government weather forecasting
+centers, including the model used for day-to-day forecasts by the
+European Center for Medium-Range Weather Forecasts.</p>
+<p>The first results indicate that none of the models were able to
+duplicate all important interseasonal variability of the tropical
+atmosphere on timescales of 2 to 80 days. Models with weak intraseasonal
+activity tended to have a weak annual cycle. Most models seemed to
+simulate some important aspects of the interannual variability including
+El Niño. The length of the time series was, however, too short to
+provide conclusive results on interannual variability.</p>
+<p>The results of the substudy imply that numerical models of the
+atmospheric general circulation need to be improved if they are to be
+used to study tropical variability and the response of the atmosphere to
+changes in the tropical ocean.</p>
+<p><strong>Oceanic Models</strong> Our ability to understand El Niño also depends on our
+ability to model the oceanic circulation in the equatorial Pacific.
+Because the models provide the initial conditions used for the
+forecasts, they must be able to assimilate up-to-date measurements of
+the Pacific along with heat fluxes and surface winds calculated from the
+atmospheric models. The measurements include sea-surface winds from
+scatterometers and moored buoys, surface temperature from the
+optimal-interpolation data set (see §6.6), subsurface temperatures from
+buoys and <span class="smallcaps">xbt</span>s, and sea level from altimetry and
+tide-gauges on islands.</p>
+<p>Ji, Behringer, and Leetmaa (1998) at the National Centers for
+Environmental Prediction have modified the Geophysical Fluid Dynamics
+Laboratory’s Modular Ocean Model for use in the tropical Pacific (see
+§15.3 for more information about this model). It’s domain is the Pacific
+between 45 and 55 and between 120 and 70. The zonal resolution is 1.5 .
+The meridional resolution is 1/3 within 10 of the equator, increasing
+smoothly to 1 poleward of 20 latitude. It has 28 vertical levels, with
+18 in the upper 400 m to resolve the mixed layer and thermocline. The
+model is driven by mean winds from Hellerman and Rosenstein (1983),
+anomalies in the wind field from Florida State University, and mean heat
+fluxes from Oberhuber (1988). It assimilates subsurface temperature from
+the <span class="smallcaps">tao</span> array and <span class="smallcaps">xbt</span>s, and surface
+temperatures from the monthly optimal-interpolation data set (Reynolds
+and Smith, 1994).</p>
+<p>The output of the model is an ocean analysis, the density and current
+field that best fits the data used in the analysis (figures 14.3 and
+14.4). This is used to drive a coupled ocean-atmosphere model to produce
+forecasts.</p>
+<p><strong>Coupled Models</strong> Coupled models are separate atmospheric and oceanic
+models that pass information through their common boundary at the sea
+surface, thus coupling the two calculations. The coupling can be one
+way, from the atmosphere, or two way, into and out of the ocean. In the
+scheme used by the <span class="smallcaps">noaa</span> National Centers for Environmental
+Prediction the ocean model is the same Modular Ocean Model described
+above. It is coupled to a low-resolution version of the global,
+medium-range forecast model operated by the National Centers (Kumar,
+Leetmaa, and Ji, 1994). Anomalies of wind stress, heat, and fresh-water
+fluxes calculated from the atmospheric model are added to the mean
+annual values of the fluxes, and the sums are used to drive the ocean
+model. Sea-surface temperature calculated from the ocean model is used
+to drive the atmospheric model from 15 to 15.</p>
+<p>As computer power decreases in cost, models are becoming ever more
+complex. The trend is to global coupled models able to include other
+coupled ocean-atmosphere systems in addition to <span class="smallcaps">enso</span>. I
+return to the problem in §15.6 where I describe global coupled models.</p>
+<p><strong>Statistical Models</strong> Statistical models are based on an analysis of
+weather patterns in the Pacific using data going back many decades. The
+basic idea is that if weather patterns today are similar to patterns at
+some time in the past, then todays patterns will evolve as they did at
+that past time. For example, if winds and temperatures in the tropical
+Pacific today are similar to wind and temperatures just before the 1976
+El Niño, then we might expect a similar El Niño to start in the near
+future.</p>
+<p><strong>Forecasts</strong> In general, the coupled ocean-atmosphere models produce
+forecasts that are no better than the statistical forecasts (Jan van
+Oldenborgh, 2005). The forecasts include not only events in the Pacific
+but also the global consequences of El Niño. The forecasts are judged
+two ways:</p>
+<p>Using the correlation between the area-averaged sea-surface-temperature
+anomalies from the model and the observed temperature anomalies in the
+eastern equatorial Pacific. The area is usually from 170 to 120 between
+5 and 5. Useful forecasts have correlations exceeding 0.6.</p>
+<p>Using the root-mean-square difference between the observed and predicted
+sea-surface temperature in the same area.</p>
+<p>The forecasts of the very strong 1997 El Niño have been carefully
+studied. Jan van Oldenborg et al (2005) and Barnston et al (1999) found
+no models successfully forecast the earliest onset of the El Niño in
+late 1996 and early 1997. The first formal announcements of the El Niño
+were made in May 1997. Nor did any model forecast the large temperature
+anomalies observed in the eastern equatorial Pacific until the area had
+already warmed. There was no clear distinction between the accuracy of
+the dynamical or statistical forecasts.</p>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">14.6. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Equatorial processes are important because heat released by rain in
+the equatorial region helps drives much of the atmospheric
+circulation.</p></li>
+<li><p>Solar energy absorbed by the Pacific is the most important driver of
+atmospheric circulation. Solar energy is lost from the ocean mainly
+by evaporation. The heat warms the atmosphere and drives the
+circulation when the latent heat of evaporation is released in rainy
+areas, primarily in the western tropical Pacific and the
+Intertropical Convergence Zone.</p>
+<p>The interannual variability of currents and temperatures in the
+equatorial Pacific modulates the oceanic forcing of the atmosphere.
+This interannual variability is associated with El Niño/La Niña.</p>
+<p>Changes in equatorial dynamics cause changes in atmospheric
+circulation by changing the location of rain in tropical Pacific and
+therefore the location of the major heat source driving the
+atmospheric circulation.</p>
+<p>El Niño causes the biggest changes in equatorial dynamics. During El
+Niño, trade-winds weaken in the western Pacific, the thermocline
+becomes less deep in the west. This drives a Kelvin wave eastward
+along the equator, which deepens the thermocline in the eastern
+Pacific. The warm pool in the west moves eastward toward the central
+Pacific, and the intense tropical rain areas move with the warm
+pool.</p>
+<p>El Ni[̃n]o is the largest source of year-to-year fluctuations in
+global weather patterns.</p>
+<p>As a result of El Niño, drought occurs in the Indonesian area and
+northern Australia, and floods occur in western, tropical South
+America. Variations in the atmospheric circulation influence more
+distant areas through teleconnections.</p>
+<p>Forecasts of El Niño are made using coupled ocean-atmospheric
+numerical models. Forecasts appear to have useful accuracy for 3–6
+months in advance, mostly after the onset of El Niño.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter13.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Deep Circulation in the Ocean</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter15.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Numerical Models</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">14.1. Equatorial Processes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-currents">14.1.1. Surface Currents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-undercurrent-observations">14.1.2. Equatorial Undercurrent: Observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-undercurrent-theory">14.1.3. Equatorial Undercurrent: Theory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-equatorial-circulation-el-nino-la-nina">14.2. Variable Equatorial Circulation: El Niño/La Niña</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-little-history">14.2.1. A Little History</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-el-nino">14.2.2. Definition of El Niño</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-of-el-nino">14.2.3. Theory of El Niño</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-kelvin-and-rossby-waves">14.2.4. Equatorial Kelvin and Rossby Waves</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-nino-teleconnections">14.3. El Niño Teleconnections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-variability-of-texas-rainfall">14.3.1. An Example: Variability of Texas Rainfall</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observing-el-nino">14.4. Observing El Niño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forecasting-el-nino">14.5. Forecasting El Niño</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">14.6. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

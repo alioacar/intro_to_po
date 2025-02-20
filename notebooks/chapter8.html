@@ -1,0 +1,1259 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8. Equations of Motion With Viscosity &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter8';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="9. Response of the Upper Ocean to Winds" href="chapter9.html" />
+    <link rel="prev" title="7. Some Mathematics, The Equations of Motion" href="chapter7.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter8.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter8.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Equations of Motion With Viscosity</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-influence-of-viscosity">8.1. The Influence of Viscosity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulence">8.2. Turbulence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulent-stresses-the-reynolds-stress">8.2.1. Turbulent Stresses: The Reynolds Stress</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reynolds-stress">8.3. Calculation of Reynolds Stress:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-experiments">8.3.1. From Experiments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-analogy-with-molecular-viscosity">8.3.2. By Analogy with Molecular Viscosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-a-statistical-theory-of-turbulence">8.3.3. From a Statistical Theory of Turbulence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8.3.4. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixing-in-the-ocean">8.4. Mixing in the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#average-vertical-mixing">8.4.1. Average Vertical Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measured-vertical-mixing">8.4.2. Measured Vertical Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measured-horizontal-mixing">8.4.3. Measured Horizontal Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-horizontal-mixing">8.4.4. Comments on horizontal mixing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stability">8.5. Stability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#static-stability-and-the-stability-frequency">8.5.1. Static Stability and the Stability Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-stability-and-richardsons-number">8.5.2. Dynamic Stability and Richardson’s Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-diffusion-and-salt-fingers">8.5.3. Double Diffusion and Salt Fingers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">8.6. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="equations-of-motion-with-viscosity">
+<h1><span class="section-number">8. </span>Equations of Motion With Viscosity<a class="headerlink" href="#equations-of-motion-with-viscosity" title="Link to this heading">#</a></h1>
+<p>Throughout most of the interior of the ocean and atmosphere friction is
+relatively small, and we can safely assume that the flow is
+frictionless. At the boundaries, friction, in the form of viscosity,
+becomes important. This thin, viscous layer is called a <em>boundary
+layer</em>. Within the layer, the velocity slows from values typical of the
+interior to zero at a solid boundary. If the boundary is not solid, then
+the boundary layer is a thin layer of rapidly changing velocity whereby
+velocity on one side of the boundary changes to match the velocity on
+the other side of the boundary. For example, there is a boundary layer
+at the bottom of the atmosphere, the planetary boundary layer I
+described in Chapter 3. In the planetary boundary layer, velocity goes
+from many meters per second in the free atmosphere to tens of
+centimeters per second at the sea surface. Below the sea surface,
+another boundary layer, the Ekman layer described in Chapter 9, matches
+the flow at the sea surface to the deeper flow.</p>
+<p>In this chapter I consider the role of friction in fluid flows, and the
+stability of the flows to small changes in velocity or density.</p>
+<section id="the-influence-of-viscosity">
+<h2><span class="section-number">8.1. </span>The Influence of Viscosity<a class="headerlink" href="#the-influence-of-viscosity" title="Link to this heading">#</a></h2>
+<p>Viscosity is the tendency of a fluid to resist shear. In the last
+chapter I wrote the <span class="math notranslate nohighlight">\(x\)</span>–component of the momentum equation for a fluid
+in the form (7:12a):
+$<span class="math notranslate nohighlight">\(\frac{\partial{u}}{\partial{t}}+u\,\frac{\partial{u}}{\partial{x}}+v\,
+\frac{\partial{u}}{\partial{y}}+w\,\frac{\partial{u}}{\partial{z}}=-\,
+\frac{1}{\rho}\frac{\partial{p}}{\partial{x}} + 2\,\Omega\,v\,\sin\vartheta + F_x\)</span><span class="math notranslate nohighlight">\(
+where \)</span>F_x$ was a frictional force per unit mass. Now we can consider
+the form of this term if it is due to viscosity.</p>
+<p>Molecules in a fluid close to a solid boundary sometime strike the
+boundary and transfer momentum to it (figure 8.1). Molecules further
+from the boundary collide with molecules that have struck the boundary,
+further transferring the change in momentum into the interior of the
+fluid. This transfer of momentum is <em>molecular viscosity</em>. Molecules,
+however, travel only micrometers between collisions, and the process is
+very inefficient for transferring momentum even a few centimeters.
+Molecular viscosity is important only within a few millimeters of a
+boundary.</p>
+<p>Molecular viscosity <span class="math notranslate nohighlight">\(\rho \nu\)</span> is the ratio of the stress <span class="math notranslate nohighlight">\(T\)</span> tangential
+to the boundary of a fluid and the velocity shear at the boundary. So
+the stress has the form:
+$<span class="math notranslate nohighlight">\(T_{xz} =  \rho \nu \,\frac{\partial{u}}{\partial{z}}\)</span><span class="math notranslate nohighlight">\( for flow in the
+\)</span>(x, z)<span class="math notranslate nohighlight">\( plane within a few millimetres of the surface, where \)</span>\nu<span class="math notranslate nohighlight">\( is
+the kinematic molecular viscosity. Typically \)</span>\nu = 10^{-6}<span class="math notranslate nohighlight">\( m\)</span>^2$/s for
+water at 20.</p>
+<p>Generalizing (8.2) to three dimensions leads to a stress tensor giving
+the nine components of stress at a point in the fluid, including
+pressure, which is a normal stress, and shear stresses. A derivation of
+the stress tensor is beyond the scope of this book, but you can find the
+details in Lamb (1945: §328) or Kundu (1990: p. 93). For an
+incompressible fluid, the frictional force per unit mass in (8.1) takes
+the form:
+$$F_x= \frac{\partial }{\partial x} \left[ \nu \frac{\partial u}{\partial x} \right]</p>
+<ul class="simple">
+<li><p>\frac{\partial }{\partial y} \left[ \nu \frac{\partial u}{\partial y} \right]</p></li>
+<li><p>\frac{\partial }{\partial z} \left[ \nu \frac{\partial u}{\partial z} \right]
+= \frac{1}{\rho} \left[ \frac{\partial T_{xx}}{\partial x} +
+\frac{\partial T_{xy}}{\partial y} +
+\frac{\partial T_{xz}}{\partial z} \right]$$</p></li>
+</ul>
+<p>Figure 8.1 Molecules</p>
+<p>colliding with the wall and with each other transfer<br />
+momentum from the fluid to the wall, slowing the fluid velocity.</p>
+<p><span id="fig:viscositysketch" label="fig:viscositysketch"></span></p>
+<p>Figure 8.2 Reynolds</p>
+<p>apparatus for investigating the transition to turbulence in pipe flow,
+with photographs of near-laminar flow (left) and turbulent flow (right)
+in a clear pipe much like the one used by Reynolds. After Binder (1949:
+88-89). <span id="fig:reynoldsexp" label="fig:reynoldsexp"></span></p>
+</section>
+<section id="turbulence">
+<h2><span class="section-number">8.2. </span>Turbulence<a class="headerlink" href="#turbulence" title="Link to this heading">#</a></h2>
+<p>If molecular viscosity is important only over distances of a few
+millimeters, and if it is not important for most oceanic flows, unless
+of course you are a zooplankter trying to swim in the ocean, how then is
+the influence of a boundary transferred into the interior of the flow?
+The answer is: through turbulence.</p>
+<p>Turbulence arises from the non-linear terms in the momentum equation
+<span class="math notranslate nohighlight">\((u\,\partial{u}/\partial{x}\)</span>, <em>etc</em>.). The importance of these terms is
+given by a non-dimensional number, the Reynolds Number <span class="math notranslate nohighlight">\(Re\)</span>, which is
+the ratio of the non-linear terms to the viscous terms:
+$<span class="math notranslate nohighlight">\(Re = \frac{\text{Non-linear Terms}}{\text{Viscous
+Terms}} =
+\cfrac{\left( \displaystyle u\,\cfrac{\partial{u}}{\partial{x}}\right) }{\left( \displaystyle \nu\,\cfrac{\partial^2{u}}{\partial{x^2}}\right)
+} \approx \cfrac{\D U\,\cfrac{U}{L\vphantom{y}}}{\D \nu\,\cfrac{U}{L^2}}
+= \frac{UL}{\nu}\)</span><span class="math notranslate nohighlight">\( where, \)</span>U<span class="math notranslate nohighlight">\( is a typical velocity of the flow and \)</span>L<span class="math notranslate nohighlight">\(
+is a typical length describing the flow. You are free to pick whatever
+\)</span>U,L<span class="math notranslate nohighlight">\( might be typical of the flow. For example \)</span>L<span class="math notranslate nohighlight">\( can be either a
+typical cross-stream distance, or an along-stream distance. Typical
+values in the open ocean are \)</span>U = 0.1<span class="math notranslate nohighlight">\( m/s and \)</span>L = 1<span class="math notranslate nohighlight">\( megameter, so
+\)</span>Re = 10^{11}<span class="math notranslate nohighlight">\(. Because non-linear terms are important if Re \)</span>&gt;$ 10 –
+1000, they are certainly important in the ocean. The ocean is turbulent.</p>
+<p>The Reynolds number is named after Osborne Reynolds (1842–1912) who
+conducted experiments in the late 19th century to understand turbulence.
+In one famous experiment (Reynolds 1883), he injected dye into water
+flowing at various speeds through a tube (figure 8.2). If the speed was
+small, the flow was smooth. This is called <em>laminar flow</em>. At higher
+speeds, the flow became irregular and turbulent. The transition occurred
+at Re <span class="math notranslate nohighlight">\(= VD/\nu \approx 2000\)</span>, where <span class="math notranslate nohighlight">\(V\)</span> is the average speed in the pipe, and
+<span class="math notranslate nohighlight">\(D\)</span> is the diameter of the pipe.</p>
+<p>As Reynolds number increases above some critical value, the flow becomes
+more and more turbulent. Note that flow pattern is a function of
+Reynold’s number. All flows with the same geometry and the same Reynolds
+number have the same flow pattern. Thus flow around all circular
+cylinders, whether 1 mm or 1 m in diameter, look the same as the flow at
+the top of figure 8.3 if the Reynolds number is 20. Furthermore, the
+boundary layer is confined to a very thin layer close to the cylinder,
+in a layer too thin to show in the figure.</p>
+<p>Figure 8.3 Flow past a circular</p>
+<p>cylinder as a function of Reynolds number between one and a million.
+From Richardson (1961). The appropriate flows are: A—a toothpick
+moving at 1 mm/s; B—finger moving at 2 cm/s; F—hand out a car window
+at 60 mph. All flow at the same Reynolds number has the same
+streamlines. Flow past a 10 cm diameter cylinder at 1 cm/s looks the
+same as 10 cm/s flow past a cylinder 1 cm in diameter because in both
+cases Re <span class="math notranslate nohighlight">\(= 1000\)</span>. <span id="fig:turbsketch" label="fig:turbsketch"></span></p>
+<section id="turbulent-stresses-the-reynolds-stress">
+<h3><span class="section-number">8.2.1. </span>Turbulent Stresses: The Reynolds Stress<a class="headerlink" href="#turbulent-stresses-the-reynolds-stress" title="Link to this heading">#</a></h3>
+<p>Prandtl, Karman and others who studied fluid mechanics in the early 20th
+century, hypothesized that parcels of fluid in a turbulent flow played
+the same role in transferring momentum within the flow that molecules
+played in laminar flow. The work led to the idea of turbulent stresses.</p>
+<p>To see how these stresses might arise, consider the momentum equation
+for a flow with mean <span class="math notranslate nohighlight">\((U, V, W)\)</span> and turbulent <span class="math notranslate nohighlight">\((u', v', w')\)</span>
+components:
+$<span class="math notranslate nohighlight">\(u=U+u' \,;\quad v = V+v' \,;\quad w=W+w' \, ;\quad p=P+p'\)</span><span class="math notranslate nohighlight">\( where the
+mean value \)</span>U<span class="math notranslate nohighlight">\( is calculated from a time or space average:
+\)</span><span class="math notranslate nohighlight">\(U = \langle u \rangle =\frac{1}{T}\int^T_0\,u(t)\,dt \quad \text{or}\quad
+U = \langle u \rangle =\frac{1}{X}\int^X_0\,u(x)\,dx\)</span>$</p>
+<p>The non-linear terms in the momentum equation can be written:
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+\left&lt; (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right&gt; &amp;= \left&lt;
+U\,\frac{\D \partial{U}}{\partial{x}}\right&gt; +
+\left&lt; U\,\frac {\partial{u'}}{\partial{x}}\right&gt; +
+\left&lt; u' \,\frac {\partial{U}}{\partial{x}}\right&gt; + \left&lt; u' \,\frac
+{\partial{u'}}{\partial{x}}\right&gt; \notag \\
+\left&lt; (U+u')\frac{\partial{(U+u')}}{\partial{x}} \right&gt; &amp;= \left&lt;
+U\,\frac{\D \partial{U}}{\partial{x}}\right&gt; +
+\left&lt;u' \,\frac{\partial{u'}}{\partial{x}}\right&gt;\end{aligned}\)</span><span class="math notranslate nohighlight">\( The
+second equation follows from the first since \)</span>\langle U,\partial{u’}/\partial{x}\rangle = 0<span class="math notranslate nohighlight">\( and \)</span>\langle u’,\partial{U}/\partial{x}\rangle<span class="math notranslate nohighlight">\( \)</span>= 0<span class="math notranslate nohighlight">\(, which follow from the
+definition of \)</span>U<span class="math notranslate nohighlight">\(: \)</span>\langle U \partial{u’}/\partial{x}\rangle = U \partial{\langle u’ \rangle }/\partial{x}<span class="math notranslate nohighlight">\( \)</span>= 0$.</p>
+<p>Using (8.5) in (7.19) gives:
+$<span class="math notranslate nohighlight">\(\frac{\partial{U }}{\partial{x}} + \frac{\partial{V }}{\partial{y}}  +\frac{\partial{W }}{\partial{z}} +
+\frac{\partial{u'}}{\partial{x}} + \frac{\partial{v'}}{\partial{y}}
++\frac{\partial{w'}}{\partial{z}} =0\)</span>$ Subtracting the mean of (8.8)
+from (8.8) splits the continuity equation into two equations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{\partial{U }}{\partial{x}} + \frac{\partial{V }}{\partial{y}}  +\frac{\partial{W }}{\partial{z}} &amp;= 0 \\
+\frac{\partial{u'}}{\partial{x}} + \frac{\partial{v'}}{\partial{y}} +\frac{\partial{w'}}{\partial{z}} &amp;=0\end{aligned}\end{split}\]</div>
+<p>Using (8.5) in (8.1) taking the mean value of the resulting equation,
+then simplifying using (8.7), the x-component of the momentum equation
+for the mean flow becomes: $<span class="math notranslate nohighlight">\(\begin{split}
+\frac{DU}{Dt} &amp; = -\frac{1}{\rho}\,\frac{\partial{P}}{\partial{x}}  + 2\Omega V\sin\varphi \\
+  &amp; + \frac{\partial }{\partial x} \left[ \nu \frac{\partial U}{\partial x} - \langle u'u'\rangle \right]
+    + \frac{\partial }{\partial y} \left[ \nu \frac{\partial U}{\partial y} - \langle u'v'\rangle \right] +
+      \frac{\partial }{\partial z} \left[ \nu \frac{\partial U}{\partial z} - \langle u'w'\rangle \right]
+\end{split}\)</span><span class="math notranslate nohighlight">\( The derivation is not as simple as it seems. See Hinze
+(1975: 22) for details. Thus the additional force per unit mass due to
+the turbulence is:
+\)</span><span class="math notranslate nohighlight">\(F_x=-\frac{\partial}{\partial{x}}\langle u'u' \rangle
+-\frac{\partial}{\partial{y}}\langle u'v' \rangle
+-\frac{\partial}{\partial{z}}\langle u'w'\rangle\)</span>$</p>
+<p>The terms <span class="math notranslate nohighlight">\(\rho{\langle u' u' \rangle}\)</span>, <span class="math notranslate nohighlight">\(\rho{\langle u' v' \rangle}\)</span>,
+and <span class="math notranslate nohighlight">\(\rho{\langle u' w' \rangle}\)</span> transfer eastward momentum (<span class="math notranslate nohighlight">\(\rho u'\)</span>)
+in the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> directions. For example, the term
+<span class="math notranslate nohighlight">\(\rho{\langle u' w' \rangle}\)</span> gives the downward transport of eastward
+momentum across a horizontal plane. Because they transfer momentum, and
+because they were first derived by Osborne Reynolds, they are called
+<em>Reynolds Stresses</em>.</p>
+</section>
+</section>
+<section id="calculation-of-reynolds-stress">
+<h2><span class="section-number">8.3. </span>Calculation of Reynolds Stress:<a class="headerlink" href="#calculation-of-reynolds-stress" title="Link to this heading">#</a></h2>
+<p>The Reynolds stresses such as
+<span class="math notranslate nohighlight">\(\partial{\langle u'w'\rangle}/\partial{z}\)</span> are called virtual stresses
+(cf. Goldstein, 1965: §69 &amp; §81) because we assume that they play the
+same role as the viscous terms in the equation of motion. To proceed
+further, we need values or functional form for the Reynolds stress.
+Several approaches are used.</p>
+<section id="from-experiments">
+<h3><span class="section-number">8.3.1. </span>From Experiments<a class="headerlink" href="#from-experiments" title="Link to this heading">#</a></h3>
+<p>We can calculate Reynolds stresses from direct measurements of
+(<span class="math notranslate nohighlight">\(u', v', w'\)</span>) made in the laboratory or ocean. This is accurate, but
+hard to generalize to other flows. So we seek more general approaches.</p>
+</section>
+<section id="by-analogy-with-molecular-viscosity">
+<h3><span class="section-number">8.3.2. </span>By Analogy with Molecular Viscosity<a class="headerlink" href="#by-analogy-with-molecular-viscosity" title="Link to this heading">#</a></h3>
+<p>Let’s return to the example in figure 8.1, which shows flow above a
+surface in the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> plane. Prandtl, in a revolutionary paper
+published in 1904, stated that turbulent viscous effects are only
+important in a very thin layer close to the surface, the boundary layer.
+Prandtl’s invention of the boundary layer allows us to describe very
+accurately turbulent flow of wind above the sea surface, or flow at the
+bottom boundary layer in the ocean, or flow in the mixed layer at the
+sea surface. See the box <em>Turbulent Boundary Layer Over a Flat Plate</em>.</p>
+<p>To calculate flow in a boundary layer, we assume that flow is constant
+in the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> direction, that the statistical properties of the flow
+vary only in the <span class="math notranslate nohighlight">\(z\)</span> direction, and that the mean flow is steady.
+Therefore <span class="math notranslate nohighlight">\(\partial /\partial t = \partial /\partial x = \partial /\partial y = 0\)</span>, and (8.10) can be written:
+$<span class="math notranslate nohighlight">\(2 \Omega V \sin \varphi + \frac{\partial }{\partial z} \left[\nu \frac{\partial
+U}{\partial z} - \langle u'w'\rangle \right] = 0\)</span>$</p>
+<p>We now assume, in analogy with (8.2)
+$<span class="math notranslate nohighlight">\(- \rho \langle u'w'\rangle = T_{xz} = \rho A_z \frac{\partial U}{\partial z}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>A_z<span class="math notranslate nohighlight">\( is an *eddy viscosity* or *eddy diffusivity* which replaces
+the molecular viscosity \)</span>\nu<span class="math notranslate nohighlight">\( in (8.2). With this assumption,
+\)</span><span class="math notranslate nohighlight">\(\frac{\partial{T_{xz}}}{\partial{z}} =
+\frac{\partial}{\partial{z}}\left(A_z\frac{\partial{U}}{\partial{z}}\right)
+\approx A_z \frac{\partial^2 U}{\partial z^2}\)</span><span class="math notranslate nohighlight">\( where I have assumed
+that \)</span>A_z<span class="math notranslate nohighlight">\( is either constant or that it varies more slowly in the \)</span>z<span class="math notranslate nohighlight">\(
+direction than \)</span>\partial U / \partial z<span class="math notranslate nohighlight">\(. Later, I will assume that
+\)</span>A_z \approx z$.</p>
+<p>Because eddies can mix heat, salt, or other properties as well as
+momentum, I will use the term eddy diffusivity. It is more general than
+eddy viscosity, which is the mixing of momentum.</p>
+<p>The <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> momentum equations for a homogeneous, steady-state,
+turbulent boundary layer above or below a horizontal surface are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\rho fV + \frac{\partial {T_{xz}}}{\partial z} &amp; = 0 \\
+\rho fU - \frac{\partial {T_{yz}}}{\partial z} &amp; = 0\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(f=2\omega \sin \varphi\)</span> is the Coriolis parameter, and I have
+dropped the molecular viscosity term because it is much smaller than the
+turbulent eddy viscosity. Note, (8.15b) follows from a similar
+derivation from the <span class="math notranslate nohighlight">\(y\)</span>-component of the momentum equation. We will need
+(8.15) when we describe flow near the surface.</p>
+<p>The assumption that an eddy viscosity <span class="math notranslate nohighlight">\(A_z\)</span> can be used to relate the
+Reynolds stress to the mean flow works well in turbulent boundary
+layers. However <span class="math notranslate nohighlight">\(A_z\)</span> cannot be obtained from theory. It must be
+calculated from data collected in wind tunnels or measured in the
+surface boundary layer at sea. See Hinze (1975, §5–2 and§7–5) and
+Goldstein (1965: §80) for more on the theory of turbulence flow near a
+flat plate.</p>
+<p>Prandtl’s theory based on assumption (8.13) works well only where
+friction is much larger than the Coriolis force. This is true for air
+flow within tens of meters of the sea surface and for water flow within
+a few meters of the surface. The application of the technique to other
+flows in the ocean is less clear. For example, the flow in the mixed
+layer at depths below about ten meters is less well described by the
+classical turbulent theory. Tennekes and Lumley (1990: 57) write:</p>
+<blockquote>
+<div><p>Mixing-length and eddy viscosity models should be used only to
+generate analytical expressions for the Reynolds stress and
+mean-velocity profile if those are desired for curve fitting purposes
+in turbulent flows characterized by a single length scale and a single
+velocity scale. The use of mixing-length theory in turbulent flows
+whose scaling laws are not known beforehand should be avoided.</p>
+</div></blockquote>
+<p>Problems with the eddy-viscosity approach:</p>
+<p>Except in boundary layers a few meters thick, geophysical flows may be
+influenced by several characteristic scales. For example, in the
+atmospheric boundary layer above the sea, at least three scales may be
+important: i) the height above the sea <span class="math notranslate nohighlight">\(z\)</span>, ii) the Monin-Obukhov scale
+<span class="math notranslate nohighlight">\(L\)</span> discussed in §4.3, and iii) the typical velocity <span class="math notranslate nohighlight">\(U\)</span> divided by the
+Coriolis parameter <span class="math notranslate nohighlight">\(U/f\)</span>.</p>
+<p>The velocities <span class="math notranslate nohighlight">\(u',\,w'\)</span> are a property of the <em>fluid</em>, while <span class="math notranslate nohighlight">\(A_z\)</span> is a
+property of the <em>flow</em>;</p>
+<p>Eddy viscosity terms are not symmetric: $<span class="math notranslate nohighlight">\(\begin{aligned}
+\langle u'v' \rangle &amp;= \langle v'u' \rangle\,;\quad \text{but} \notag \\
+A_x \frac{\partial{V}}{\partial{x}} &amp;\neq A_y \frac{\partial{U}}{\partial{y}}
+\notag\end{aligned}\)</span>$</p>
+</section>
+<section id="from-a-statistical-theory-of-turbulence">
+<h3><span class="section-number">8.3.3. </span>From a Statistical Theory of Turbulence<a class="headerlink" href="#from-a-statistical-theory-of-turbulence" title="Link to this heading">#</a></h3>
+<p>The Reynolds stresses can be calculated from various theories which
+relate <span class="math notranslate nohighlight">\(\langle u'u' \rangle\)</span> to higher order correlations of the form
+<span class="math notranslate nohighlight">\(\langle u'u'u' \rangle\)</span>. The problem then becomes: How to calculate the
+higher order terms? This is the <em>closure problem</em> in turbulence. There
+is no general solution, but the approach leads to useful understanding
+of some forms of turbulence such as isotropic turbulence downstream of a
+grid in a wind tunnel (Batchelor 1967). <em>Isotropic turbulence</em> is
+turbulence with statistical properties that are independent of
+direction.</p>
+<p>The approach can be modified somewhat for flow in the ocean. In the
+idealized case of high Reynolds flow, we can calculate the statistical
+properties of a flow in thermodynamic equilibrium. Because the actual
+flow in the ocean is far from equilibrium, we assume it will evolve
+towards equilibrium. Holloway (1986) provides a good review of this
+approach, showing how it can be used to derive the influence of
+turbulence on mixing and heat transports. One interesting result of the
+work is that zonal mixing ought to be larger than meridional mixing.</p>
+</section>
+<section id="summary">
+<h3><span class="section-number">8.3.4. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p>The turbulent eddy viscosities <span class="math notranslate nohighlight">\(A_x\)</span>, <span class="math notranslate nohighlight">\(A_y\)</span>, and <span class="math notranslate nohighlight">\(A_z\)</span> cannot be
+calculated accurately for most oceanic flows.</p>
+<p>They can be estimated from measurements of turbulent flows. Measurements
+in the ocean, however, are difficult. Measurements in the lab, although
+accurate, cannot reach Reynolds numbers of <span class="math notranslate nohighlight">\(10^{11}\)</span> typical of the
+ocean.</p>
+<p>The statistical theory of turbulence gives useful insight into the role
+of turbulence in the ocean, and this is an area of active research.</p>
+<p>62mm&#64;rcl&#64;</p>
+<p><span class="math notranslate nohighlight">\(\nu_{water}\)</span> &amp;<span class="math notranslate nohighlight">\(=\)</span>&amp;</p>
+<p><span class="math notranslate nohighlight">\(10^{-6}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s<br />
+<span class="math notranslate nohighlight">\(\nu_{tar\,at\,15^\circ{C}}\)</span> &amp;<span class="math notranslate nohighlight">\(=\)</span>&amp;</p>
+<p><span class="math notranslate nohighlight">\(10^6\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s<br />
+<span class="math notranslate nohighlight">\(\nu_{glacier\,ice}\)</span> &amp;<span class="math notranslate nohighlight">\(=\)</span>&amp;</p>
+<p><span class="math notranslate nohighlight">\(10^{10}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s<br />
+<span class="math notranslate nohighlight">\(A_{y ocean}\)</span> &amp;<span class="math notranslate nohighlight">\(=\)</span>&amp;</p>
+<p><span class="math notranslate nohighlight">\(10^4\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s<br />
+<span class="math notranslate nohighlight">\(A_{z ocean}\)</span> &amp;<span class="math notranslate nohighlight">\(=\)</span>&amp;</p>
+<p><span class="math notranslate nohighlight">\((10^{-5} - 10^{-3})\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s</p>
+</section>
+</section>
+<section id="mixing-in-the-ocean">
+<h2><span class="section-number">8.4. </span>Mixing in the Ocean<a class="headerlink" href="#mixing-in-the-ocean" title="Link to this heading">#</a></h2>
+<p>Turbulence in the ocean leads to mixing. Because the ocean has stable
+stratification, vertical displacement must work against the buoyancy
+force. Vertical mixing requires more energy than horizontal mixing. As a
+result, horizontal mixing along surfaces of constant density is much
+larger than vertical mixing across surfaces of constant density. The
+latter, however, usually called <em>diapycnal mixing</em>, is very important
+because it changes the vertical structure of the ocean, and it controls
+to a large extent the rate at which deep water eventually reaches the
+surface in mid and low latitudes.</p>
+<p>The equations describing mixing depend on many processes. See Garrett
+(2006) for a good overview of the subject. Here I consider some simple
+flows. A simple equation for vertical mixing by eddies of a tracer
+<span class="math notranslate nohighlight">\(\Theta\)</span> such as salt or temperature is:
+$<span class="math notranslate nohighlight">\(\frac{\partial \Theta}{\partial t} + W\,\frac{\partial \Theta}{\partial z} =
+\frac{\partial }{\partial z} \left( A_z \frac{\partial \Theta}{\partial z}
+\right) + S\)</span><span class="math notranslate nohighlight">\( where \)</span>A_z<span class="math notranslate nohighlight">\( is the vertical eddy diffusivity, \)</span>W<span class="math notranslate nohighlight">\( is a
+mean vertical velocity, and \)</span>S$ is a source term.</p>
+<section id="average-vertical-mixing">
+<h3><span class="section-number">8.4.1. </span>Average Vertical Mixing<a class="headerlink" href="#average-vertical-mixing" title="Link to this heading">#</a></h3>
+<p>Walter Munk (1966) used a very simple observation to calculate vertical
+mixing in the ocean. He observed that the ocean has a thermocline almost
+everywhere, and the deeper part of the thermocline does not change even
+over decades (figure 8.4). This was a remarkable observation because we
+expect downward mixing would continuously deepen the thermocline. But it
+doesn’t. Therefore, a steady-state thermocline requires that the
+downward mixing of heat by turbulence must be balanced by an upward
+transport of heat by a mean vertical current <span class="math notranslate nohighlight">\(W\)</span>. This follows from
+(8.21) for steady state with no sources or sinks of heat:
+$<span class="math notranslate nohighlight">\(W \frac{\partial T}{\partial z} = A_z \frac{\partial^2 T}{\partial z^2}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>T$ is temperature as a function of depth in the thermocline.</p>
+<p>The equation has the solution: $<span class="math notranslate nohighlight">\(T \approx T_0 \exp (z/H)\)</span><span class="math notranslate nohighlight">\( where
+\)</span>H=A_z/W<span class="math notranslate nohighlight">\( is the scale depth of the thermocline, and \)</span>T_0<span class="math notranslate nohighlight">\( is the
+temperature near the top of the thermocline. Observations of the shape
+of the deep thermocline are indeed very close to a exponential function.
+Munk used an exponential function fit through the observations of \)</span>T(z)<span class="math notranslate nohighlight">\(
+to get \)</span>H$.</p>
+<p>Figure 8.4 Potential</p>
+<p>temperature measured as a function of depth (pressure) near 24.7N,
+161.4W in the central North Pacific by the <em>Yaquina</em> in 1966
+(<span class="math notranslate nohighlight">\(\bullet\)</span>), and by the <em>Thompson</em> in 1985 <span class="math notranslate nohighlight">\(\left( _\square \;\right)\)</span>.
+Data from <em>Atlas of Ocean Sections</em> produced by Swift, Rhines, and
+Schlitzer. <span id="fig:mixing" label="fig:mixing"></span></p>
+<p>Munk calculated <span class="math notranslate nohighlight">\(W\)</span> from the observed vertical distribution of <span class="math notranslate nohighlight">\(^{14}\)</span>C,
+a radioactive isotope of carbon, to obtain a vertical time scale. In
+this case, <span class="math notranslate nohighlight">\(S=-1.24 \times 10^{-4}\)</span> years<span class="math notranslate nohighlight">\(^{-1}\)</span>. The length and time
+scales gave <span class="math notranslate nohighlight">\(W=1.2\)</span> cm/day and
+$<span class="math notranslate nohighlight">\(\left&lt; A_z \right&gt; = 1.3 \times 10^{-4} \text{ m\)</span>^2<span class="math notranslate nohighlight">\(/s} \qquad \text{Average
+Vertical Eddy Diffusivity}\)</span>$ where the brackets denote average eddy
+diffusivity in the thermocline.</p>
+<p>Munk also used <span class="math notranslate nohighlight">\(W\)</span> to calculate the average vertical flux of water
+through the thermocline in the Pacific, and the flux agreed well with
+the rate of formation of bottom water assuming that bottom water upwells
+almost everywhere at a constant rate in the Pacific. Globally, his
+theory requires upward mixing of 25 to 30 Sverdrups of water, where one
+Sverdrup is <span class="math notranslate nohighlight">\(10^6\)</span> cubic meters per second.</p>
+</section>
+<section id="measured-vertical-mixing">
+<h3><span class="section-number">8.4.2. </span>Measured Vertical Mixing<a class="headerlink" href="#measured-vertical-mixing" title="Link to this heading">#</a></h3>
+<p>Direct observations of vertical mixing required the development of
+techniques for measuring: i) the fine structure of turbulence, including
+probes able to measure temperature and salinity with a spatial
+resolution of a few centimeters (Gregg 1991), and ii) the distribution
+of tracers such as sulphur hexafluoride (SF<span class="math notranslate nohighlight">\(_6\)</span>) which can be easily
+detected at concentrations as small as one gram in a cubic kilometer of
+seawater.</p>
+<p>Direct measurements of open-ocean turbulence and the diffusion of SF<span class="math notranslate nohighlight">\(_6\)</span>
+yield an eddy diffusivity:
+$<span class="math notranslate nohighlight">\(A_z \approx 1 \times 10^{-5} \text{ m\)</span>^2<span class="math notranslate nohighlight">\(/s} \qquad \text{Open-Ocean Vertical
+Eddy Diffusivity}\)</span><span class="math notranslate nohighlight">\( For example, Ledwell, Watson, and Law (1998)
+injected 139 kg of SF\)</span>_6<span class="math notranslate nohighlight">\( in the Atlantic near 26N, 29W 1200 km west of
+the Canary Islands at a depth of 310 m. They then measured the
+concentration for five months as it mixed over hundreds of kilometers to
+obtain a diapycnal eddy diffusivity of
+\)</span>A_z = 1.2 \pm 0.2 \times 10^{-5}<span class="math notranslate nohighlight">\( m\)</span>^2$/s.</p>
+<p>The large discrepancy between Munk’s calculation of the average eddy
+diffusivity for vertical mixing and the small values observed in the
+open ocean has been resolved by recent studies that show:
+$<span class="math notranslate nohighlight">\(A_z \approx 10^{-3} \to 10^{-1} \text{ m\)</span>^2<span class="math notranslate nohighlight">\(/s} \qquad \text{Local Vertical Eddy Diffusivity}\)</span>$</p>
+<p>Polzin et al. (1997) measured the vertical structure of temperature in
+the Brazil Basin in the south Atlantic. They found <span class="math notranslate nohighlight">\(A_z &gt; 10^{-3}\)</span>
+m<span class="math notranslate nohighlight">\(^2\)</span>/s close to the bottom when the water flowed over the western flank
+of the mid-Atlantic ridge at the eastern edge of the basin. Kunze and
+Toole (1997) calculated enhanced eddy diffusivity as large as
+<span class="math notranslate nohighlight">\(A= 10^{-3}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/s above Fieberling Guyot in the Northwest Pacific and
+smaller diffusivity along the flank of the seamount. And, Garbato et al
+(2004) calculated even stronger mixing in the Scotia Sea where the
+Antarctic Circumpolar Current flows between Antarctica and South
+America.</p>
+<p>The results of these and other experiments show that mixing occurs
+mostly by breaking internal waves and by shear at oceanic boundaries:
+along continental slopes, above seamounts and mid-ocean ridges, at
+fronts, and in the mixed layer at the sea surface. To a large extent,
+the mixing is driven by deep-ocean tidal currents, which become
+turbulent when they flow past obstacles on the sea floor, including
+seamounts and mid-ocean ridges (Jayne et al, 2004).</p>
+<p>Because water is mixed along boundaries or in other regions
+(Gnadadesikan, 1999), we must take care in interpreting temperature
+profiles such as that in figure 8.4. For example, water at 1200 m in the
+central north Atlantic could move horizontally to the Gulf Stream, where
+it mixes with water from 1000 m. The mixed water may then move
+horizontally back into the central north Atlantic at a depth of 1100 m.
+Thus parcels of water at 1200 m and at 1100 m at some location may reach
+their position along entirely different paths.</p>
+</section>
+<section id="measured-horizontal-mixing">
+<h3><span class="section-number">8.4.3. </span>Measured Horizontal Mixing<a class="headerlink" href="#measured-horizontal-mixing" title="Link to this heading">#</a></h3>
+<p>Eddies mix fluid in the horizontal, and large eddies mix more fluid than
+small eddies. Eddies range in size from a few meters due to turbulence
+in the thermocline up to several hundred kilometers for geostrophic
+eddies discussed in Chapter 10.</p>
+<p>In general, mixing depends on Reynolds number <span class="math notranslate nohighlight">\(R\)</span> (Tennekes 1990: p. 11)
+$<span class="math notranslate nohighlight">\(\frac{A}{\gamma} \approx \frac{A}{\nu} \sim \frac{UL}{\nu} = R\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\gamma<span class="math notranslate nohighlight">\( is the molecular diffusivity of heat, \)</span>U<span class="math notranslate nohighlight">\( is a typical velocity
+in an eddy, and \)</span>L$ is the typical size of an eddy. Furthermore,
+horizontal eddy diffusivity are ten thousand to ten million times larger
+than the average vertical eddy diffusivity.</p>
+<p>Equation (8.27) implies <span class="math notranslate nohighlight">\(A_x\sim UL\)</span>. This functional form agrees well
+with Joseph and Sender’s (1958) analysis, as reported in (Bowden 1962)
+of spreading of radioactive tracers, optical turbidity, and
+Mediterranean Sea water in the north Atlantic. They report
+$<span class="math notranslate nohighlight">\(\begin{gathered}
+A_x = P L \\
+10 \text{ km} &lt; L &lt; 1500 \text{ km} \notag \\
+P = 0.01 \pm 0.005 \text{ m/s} \notag\end{gathered}\)</span><span class="math notranslate nohighlight">\( where \)</span>L<span class="math notranslate nohighlight">\( is the
+distance from the source, and \)</span>P$ is a constant.</p>
+<p>The horizontal eddy diffusivity (8.28) also agrees well with more recent
+reports of horizontal diffusivity. Work by Holloway (1986) who used
+satellite altimeter observations of geostrophic currents, Freeland who
+tracked <span class="smallcaps">sofar</span> underwater floats, and Ledwell Watson, and
+Law (1998) who used observations of currents and tracers to find
+$<span class="math notranslate nohighlight">\(A_x \approx 8 \times 10^2 \text{ m\)</span>^2<span class="math notranslate nohighlight">\(/s} \qquad \text{Geostrophic Horizontal
+Eddy Diffusivity}\)</span><span class="math notranslate nohighlight">\( Using (8.28) and the measured \)</span>A_x$ implies eddies
+with typical scales of 80 km, a value near the size of geostrophic
+eddies responsible for the mixing.</p>
+<p>Ledwell, Watson, and Law (1998) also measured a horizontal eddy
+diffusivity. They found
+$<span class="math notranslate nohighlight">\(A_x \approx 1 \text{ -- } 3 \text{ m\)</span>^2<span class="math notranslate nohighlight">\(/s} \qquad \text{Open-Ocean Horizontal
+Eddy Diffusivity}\)</span>$ over scales of meters due to turbulence in the
+thermocline probably driven by breaking internal waves. This value, when
+used in (8.28) implies typical lengths of 100 m for the small eddies
+responsible for mixing in this experiment.</p>
+</section>
+<section id="comments-on-horizontal-mixing">
+<h3><span class="section-number">8.4.4. </span>Comments on horizontal mixing<a class="headerlink" href="#comments-on-horizontal-mixing" title="Link to this heading">#</a></h3>
+<p>Horizontal eddy diffusivity is <span class="math notranslate nohighlight">\(10^5 - 10^8\)</span> times larger than vertical
+eddy diffusivity.</p>
+<p>Water in the interior of the ocean moves along sloping surfaces of
+constant density with little local mixing until it reaches a boundary
+where it is mixed vertically. The mixed water then moves back into the
+open ocean again along surfaces of constant density (Gregg 1987).</p>
+<p>One particular case is particularly noteworthy. When water, mixing
+downward through the base of the mixed layer, flows out into the
+thermocline along surfaces of constant density, the mixing leads to the
+<em>ventilated thermocline</em> model of oceanic density distributions.</p>
+<p>Observations of mixing in the ocean imply that numerical models of the
+oceanic circulation should use mixing schemes that have different eddy
+diffusivity parallel and perpendicular to surfaces of constant density,
+not parallel and perpendicular to level surfaces of constant <span class="math notranslate nohighlight">\(z\)</span> as I
+used above. Horizontal mixing along surfaces of constant <span class="math notranslate nohighlight">\(z\)</span> leads to
+mixing across layers of constant density because layers of constant
+density are inclined to the horizontal by about <span class="math notranslate nohighlight">\(10^{-3}\)</span> radians (see
+§10.7 and figure 10.13).</p>
+<p>Studies by Danabasoglu, McWilliams, and Gent (1994) show that numerical
+models using isopycnal and diapycnal mixing leads to much more realistic
+simulations of the oceanic circulation.</p>
+<p>Mixing is horizontal and two dimensional for horizontal scales greater
+than <span class="math notranslate nohighlight">\(NH/(2f)\)</span> where <span class="math notranslate nohighlight">\(H\)</span> is the water depth, <span class="math notranslate nohighlight">\(N\)</span> is the stability
+frequency (8.36), and <span class="math notranslate nohighlight">\(f\)</span> is the Coriolis parameter (Dritschel, Juarez,
+and Ambaum (1999).</p>
+</section>
+</section>
+<section id="stability">
+<h2><span class="section-number">8.5. </span>Stability<a class="headerlink" href="#stability" title="Link to this heading">#</a></h2>
+<p>We saw in section 8.2 that fluid flow with a sufficiently large Reynolds
+number is turbulent. This is one form of instability. Many other types
+of instability occur in the in the ocean. Here, let’s consider three of
+the more important ones: i) <em>static stability</em> associated with change of
+density with depth, ii) <em>dynamic stability</em> associated with velocity
+shear, and iii) <em>double-diffusion</em> associated with salinity and
+temperature gradients in the ocean.</p>
+<section id="static-stability-and-the-stability-frequency">
+<h3><span class="section-number">8.5.1. </span>Static Stability and the Stability Frequency<a class="headerlink" href="#static-stability-and-the-stability-frequency" title="Link to this heading">#</a></h3>
+<p>Consider first static stability. If more dense water lies above less
+dense water, the fluid is unstable. The more dense water will sink
+beneath the less dense. Conversely, if less dense water lies above more
+dense water, the interface between the two is stable. But how stable? We
+might guess that the larger the density contrast across the interface,
+the more stable the interface. This is an example of static stability.
+Static stability is important in any <em>stratified</em> flow where density
+increases with depth, and we need some criterion for determining the
+importance of the stability.</p>
+<p>Figure 8.5 Sketch for</p>
+<p>calculating static stability and stability frequency.</p>
+<p><span id="fig:stabilitysketch" label="fig:stabilitysketch"></span></p>
+<p>Consider a parcel of water that is displaced vertically and
+adiabatically in a stratified fluid (figure 8.5). The buoyancy force <span class="math notranslate nohighlight">\(F\)</span>
+acting on the displaced parcel is the difference between its weight
+<span class="math notranslate nohighlight">\(V g \rho '\)</span> and the weight of the surrounding water <span class="math notranslate nohighlight">\(V g \rho_2\)</span>, where
+<span class="math notranslate nohighlight">\(V\)</span> is the volume of the parcel: $<span class="math notranslate nohighlight">\(F=V\,g\,(\rho_2-\rho{'})\)</span><span class="math notranslate nohighlight">\( The
+acceleration of the displaced parcel is:
+\)</span><span class="math notranslate nohighlight">\(a=\frac{F}{m}=\frac{g\,(\rho_2-\rho{'})}{\rho{'}}\)</span><span class="math notranslate nohighlight">\( but
+\)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+\rho_2  &amp;= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{water}
+\delta z \\
+\rho{'} &amp;= \rho + \left( \frac{d {\rho}}{d {z}}\right)_{parcel}
+\delta z\end{aligned}\)</span><span class="math notranslate nohighlight">\( Using (8.32) and (8.33) in (8.31), ignoring
+terms proportional to \)</span>\delta{z^2}<span class="math notranslate nohighlight">\(, we obtain:
+\)</span>$E = -\frac{1}{\rho},\Biggl[\left(\frac{d \rho}{d {z}}\right)_{water}</p>
+<ul class="simple">
+<li><p>,\left(\frac{d \rho}{d {z}}\right)_{parcel}\Biggr]$<span class="math notranslate nohighlight">\( where
+\)</span>E \equiv -a/(g , \delta z)$ is the <em>stability</em> of the water column
+(McDougall, 1987; Sverdrup, Johnson, and Fleming, 1942: 416; or Gill,
+1982: 50).</p></li>
+</ul>
+<p>In the upper kilometer of the ocean stability is large, and the first
+term in (8.34) is much larger than the second. The first term is
+proportional to the rate of change of density of the water column. The
+second term is proportional to the compressibility of sea water, which
+is very small. Neglecting the second term, we can write the <em>stability
+equation</em>: $<span class="math notranslate nohighlight">\(\boxed{E \approx -\frac{1}{\rho}\,\frac{d{\rho}}{d{z}} }\)</span><span class="math notranslate nohighlight">\(
+The approximation used to derive (8.35) is valid for \)</span>E &gt; 50 \times 10^{-8}$/m.</p>
+<p>Below about a kilometer in the ocean, the change in density with depth
+is so small that we must consider the small change in density of the
+parcel due to changes in pressure as it is moved vertically.</p>
+<p>Stability is defined such that $<span class="math notranslate nohighlight">\(\begin{aligned}
+E&gt;0 &amp; \quad \text{Stable} \notag \\
+E=0 &amp; \quad \text{Neutral Stability} \notag \\
+E&lt;0 &amp; \quad \text{Unstable} \notag\end{aligned}\)</span><span class="math notranslate nohighlight">\( In the upper kilometer
+of the ocean, \)</span>z &lt; 1,000<span class="math notranslate nohighlight">\( m, \)</span>E = (50<span class="math notranslate nohighlight">\(—\)</span>1000)\times 10^{-8}<span class="math notranslate nohighlight">\(/m, and in
+deep trenches where \)</span>z &gt; 7,000<span class="math notranslate nohighlight">\( m, \)</span>E = 1 \times 10^{-8}$/m.</p>
+<p>Figure 8.6. Observed</p>
+<p>stability frequency in the Pacific. <strong>Left:</strong> Stability of the deep
+thermocline east of the Kuroshio. <strong>Right:</strong> Stability of a shallow
+thermocline typical of the tropics. Note the change of scales.
+<span id="fig:stabilityfreq" label="fig:stabilityfreq"></span></p>
+<p>The influence of stability is usually expressed by a <em>stability
+frequency</em> <span class="math notranslate nohighlight">\(N\)</span>: $<span class="math notranslate nohighlight">\(N^2 \equiv -g E\)</span><span class="math notranslate nohighlight">\( The stability frequency is often
+called the *buoyancy frequency* or the *Brunt-Vaisala frequency*. The
+frequency quantifies the importance of stability, and it is a
+fundamental variable in the dynamics of stratified flow. In simplest
+terms, the frequency can be interpreted as the vertical frequency
+excited by a vertical displacement of a fluid parcel. Thus, it is the
+maximum frequency of internal waves in the ocean. Typical values of \)</span>N$
+are a few cycles per hour (figure 8.6).</p>
+</section>
+<section id="dynamic-stability-and-richardsons-number">
+<h3><span class="section-number">8.5.2. </span>Dynamic Stability and Richardson’s Number<a class="headerlink" href="#dynamic-stability-and-richardsons-number" title="Link to this heading">#</a></h3>
+<p>If velocity changes with depth in a stable, stratified flow, then the
+flow may become unstable if the change in velocity with depth, the
+<em>current shear</em>, is large enough. The simplest example is wind blowing
+over the ocean. In this case, stability is very large across the sea
+surface. We might say it is infinite because there is a step
+discontinuity in <span class="math notranslate nohighlight">\(\rho\)</span>, and (8.36) is infinite. Yet, wind blowing on
+the ocean creates waves, and if the wind is strong enough, the surface
+becomes unstable and the waves break.</p>
+<p>This is an example of <em>dynamic instability</em> in which a stable fluid is
+made unstable by velocity shear. Another example of dynamic instability,
+the Kelvin-Helmholtz instability, occurs when the density contrast in a
+sheared flow is much less than at the sea surface, such as in the
+thermocline or at the top of a stable, atmospheric boundary layer
+(figure 8.7).</p>
+<p>Figure 8.7 Billow clouds showing a Kelvin-Helmholtz</p>
+<p>instability at the top of a stable atmospheric layer. Some billows can
+become large enough that more dense air overlies less dense air, and
+then the billows collapse into turbulence. Photography copyright Brooks
+Martner, <span class="smallcaps">noaa</span> Environmental Technology Laboratory.
+<span id="fig:helmholtz" label="fig:helmholtz"></span></p>
+<p>The relative importance of static stability and dynamic instability is
+expressed by the <em>Richardson Number</em>:
+$<span class="math notranslate nohighlight">\(\boxed{R_i\equiv\frac{g\,E}{(\partial{U}/\partial{z})^2} }\)</span><span class="math notranslate nohighlight">\( where the
+numerator is the strength of the static stability, and the denominator
+is the strength of the velocity shear. \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+R_i &amp;&gt;0.25 \quad \text{Stable} \notag \\
+R_i &amp;&lt;0.25 \quad \text{Velocity Shear Enhances Turbulence} \notag\end{aligned}\)</span>$</p>
+<p>Note that a small Richardson number is not the only criterion for
+instability. The Reynolds number must be large and the Richardson number
+must be less than 0.25 for turbulence. These criteria are met in some
+oceanic flows. The turbulence mixes fluid in the vertical, leading to a
+vertical eddy viscosity and eddy diffusivity. Because the ocean tends to
+be strongly stratified and currents tend to be weak, turbulent mixing is
+intermittent and rare. Measurements of density as a function of depth
+rarely show more dense fluid over less dense fluid as seen in the
+breaking waves in figure 8.7 (Moum and Caldwell 1985).</p>
+</section>
+<section id="double-diffusion-and-salt-fingers">
+<h3><span class="section-number">8.5.3. </span>Double Diffusion and Salt Fingers<a class="headerlink" href="#double-diffusion-and-salt-fingers" title="Link to this heading">#</a></h3>
+<p>In some regions of the ocean, less dense water overlies more dense
+water, yet the water column is unstable even if there are no currents.
+The instability occurs because the molecular diffusion of heat is about
+100 times faster than the molecular diffusion of salt. The instability
+was first discovered by Melvin Stern in 1960 who quickly realized its
+importance in oceanography.</p>
+<p>Figure 8.8 <strong>Left:</strong> Initial</p>
+<p>distribution of density in the vertical. <strong>Right:</strong> After some time, the
+diffusion of heat leads to a thin unstable layer between the two
+initially stable layers. The thin unstable layer sinks into the lower
+layer as salty fingers. The vertical scale in the figures is a few
+centimeters. <span id="fig:saltfingers" label="fig:saltfingers"></span></p>
+<p>Consider two thin layers a few meters thick separated by a sharp
+interface (figure 8.8). If the upper layer is warm and salty, and if the
+lower is colder and less salty than the upper layer, the interface
+becomes unstable even if the upper layer is less dense than the lower.</p>
+<p>Here’s what happens. Heat diffuses across the interface faster than
+salt, leading to a thin, cold, salty layer between the two initial
+layers. The cold salty layer is more dense than the cold, less-salty
+layer below, and the water in the layer sinks. Because the layer is
+thin, the fluid sinks in fingers 1–5 cm in diameter and 10s of
+centimeters long, not much different in size and shape from our fingers.
+This is <em>salt fingering</em>. Because two constituents diffuse across the
+interface, the process is called <em>double diffusion</em>.</p>
+<p>There are four variations on this theme. Two variables taken two at a
+time leads to four possible combinations:</p>
+<p><em>Warm salty over colder less salty</em>. This process is called <em>salt
+fingering</em>. It occurs in the thermocline below the surface waters of
+sub-tropical gyres and the western tropical north Atlantic, and in the
+North-east Atlantic beneath the outflow from the Mediterranean Sea. Salt
+fingering eventually leads to density increasing with depth in a series
+of steps. Layers of constant-density are separated by thin layers with
+large changes in density, and the profile of density as a function of
+depth looks like stair steps. Schmitt et al (1987) observed 5–30 m
+thick steps in the western, tropical north Atlantic that were coherent
+over 200–400 km and that lasted for at least eight months. Kerr (2002)
+reports a recent experiment by Raymond Schmitt, James Leswell, John
+Toole, and Kurt Polzin showed salt fingering off Barbados mixed water 10
+times faster than turbulence.</p>
+<p><em>Colder less salty over warm salty</em>. This process is called <em>diffusive
+convection</em>. It is much less common than salt fingering, and it us
+mostly found at high latitudes. Diffusive convection also leads to a
+stair step of density as a function of depth. Here’s what happens in
+this case. Double diffusion leads to a thin, warm, less-salty layer at
+the base of the upper, colder, less-salty layer. The thin layer of water
+rises and mixes with water in the upper layer. A similar processes
+occurs in the lower layer where a colder, salty layer forms at the
+interface. As a result of the convection in the upper and lower layers,
+the interface is sharpened. Any small gradients of density in either
+layer are reduced. Neal et al (1969) observed 2–10 m thick layers in
+the sea beneath the Arctic ice.</p>
+<p><em>Cold salty over warmer less salty</em>. Always statically unstable. <em>Warmer
+less salty over cold salty</em>. Always stable and double diffusion diffuses
+the interface between the two layers.</p>
+<p>Double diffusion mixes ocean water, and it cannot be ignored. Merryfield
+et al (1999), using a numerical model of the ocean circulation that
+included double diffusion, found that double-diffusive mixing changed
+the regional distributions of temperature and salinity although it had
+little influence on large-scale circulation of the ocean.</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">8.6. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Friction in the ocean is important only over distances of a few
+millimeters. For most flows, friction can be ignored.</p>
+<p>The ocean is turbulent for all flows whose typical dimension exceeds
+a few centimeters, yet the theory for turbulent flow in the ocean is
+poorly understood.</p>
+<p>The influence of turbulence is a function of the Reynolds number of
+the flow. Flows with the same geometry and Reynolds number have the
+same streamlines.</p>
+<p>Oceanographers assume that turbulence influences flows over
+distances greater than a few centimeters in the same way that
+molecular viscosity influences flow over much smaller distances.</p>
+<p>The influence of turbulence leads to Reynolds stress terms in the
+momentum equation.</p>
+<p>The influence of static stability in the ocean is expressed as a
+frequency, the stability frequency. The larger the frequency, the
+more stable the water column.</p>
+<p>The influence of shear stability is expressed through the Richardson
+number. The greater the velocity shear, and the weaker the static
+stability, the more likely the flow will become turbulent.</p>
+<p>Molecular diffusion of heat is much faster than the diffusion of
+salt. This leads to a double-diffusion instability which modifies
+the density distribution in the water column in many regions of the
+ocean.</p>
+<p>Instability in the ocean leads to mixing. Mixing across surfaces of
+constant density is much smaller than mixing along such surfaces.</p>
+<p>Horizontal eddy diffusivity in the ocean is much greater than
+vertical eddy diffusivity.</p>
+<p>Measurements of eddy diffusivity indicate water is mixed vertically
+near oceanic boundaries such as above seamounts and mid-ocean
+ridges.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Some Mathematics, The Equations of Motion</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter9.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Response of the Upper Ocean to Winds</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-influence-of-viscosity">8.1. The Influence of Viscosity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulence">8.2. Turbulence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulent-stresses-the-reynolds-stress">8.2.1. Turbulent Stresses: The Reynolds Stress</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reynolds-stress">8.3. Calculation of Reynolds Stress:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-experiments">8.3.1. From Experiments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-analogy-with-molecular-viscosity">8.3.2. By Analogy with Molecular Viscosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-a-statistical-theory-of-turbulence">8.3.3. From a Statistical Theory of Turbulence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8.3.4. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixing-in-the-ocean">8.4. Mixing in the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#average-vertical-mixing">8.4.1. Average Vertical Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measured-vertical-mixing">8.4.2. Measured Vertical Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measured-horizontal-mixing">8.4.3. Measured Horizontal Mixing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-horizontal-mixing">8.4.4. Comments on horizontal mixing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stability">8.5. Stability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#static-stability-and-the-stability-frequency">8.5.1. Static Stability and the Stability Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-stability-and-richardsons-number">8.5.2. Dynamic Stability and Richardson’s Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-diffusion-and-salt-fingers">8.5.3. Double Diffusion and Salt Fingers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">8.6. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

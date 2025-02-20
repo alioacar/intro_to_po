@@ -1,0 +1,1081 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. Some Mathematics, The Equations of Motion &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter7';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. Equations of Motion With Viscosity" href="chapter8.html" />
+    <link rel="prev" title="6. Temperature, Salinity, and Density" href="chapter6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter7.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter7.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Some Mathematics, The Equations of Motion</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominant-forces-for-ocean-dynamics">7.1. Dominant Forces for Ocean Dynamics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-system">7.2. Coordinate System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-flow-in-the-ocean">7.3. Types of Flow in the ocean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass-and-salt">7.4. Conservation of Mass and Salt</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-of-conservation-of-mass-and-salt">7.4.1. An Example of Conservation of Mass and Salt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-total-derivative-d-dt">7.5. The Total Derivative (D/Dt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-equation">7.6. Momentum Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-equation-in-cartesian-coordinates">7.6.1. Momentum Equation in Cartesian coordinates:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-of-pressure-term">7.6.2. Derivation of Pressure Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coriolis-term-in-the-momentum-equation">7.6.3. The Coriolis Term in the Momentum Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravity-term-in-the-momentum-equation">7.6.4. The Gravity Term in the Momentum Equation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass-the-continuity-equation">7.7. Conservation of Mass: The Continuity Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boussinesq-approximation">7.7.1. The Boussinesq Approximation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compressibility">7.7.2. Compressibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-the-equations-of-motion">7.8. Solutions to the Equations of Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">7.8.1. Boundary Conditions:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">7.8.2. Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">7.9. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="some-mathematics-the-equations-of-motion">
+<span id="ch7"></span><h1><span class="section-number">7. </span>Some Mathematics, The Equations of Motion<a class="headerlink" href="#some-mathematics-the-equations-of-motion" title="Link to this heading">#</a></h1>
+<p>In this chapter I consider the response of a fluid to internal and
+external forces. This leads to a derivation of some of the basic
+equations describing ocean dynamics. In the next chapter, we will
+consider the influence of viscosity, and in chapter 12 we will consider
+the consequences of vorticity.</p>
+<p>Fluid mechanics used in oceanography is based on Newtonian mechanics
+modified by our evolving understanding of turbulence. Conservation of
+mass, momentum, angular momentum, and energy lead to particular
+equations having names that hide their origins (table 7.1).</p>
+<p>121mm&#64;ll&#64; &#64;l&#64;</p>
+<p><strong>Table 7.1 Conservation Laws Leading to Basic</strong></p>
+<p>Equations of Fluid Motion</p>
+<p>Conservation of Mass: &amp; Leads to Continuity Equation.<br />
+Conservation of Energy: &amp; Conservation of heat leads to Heat Budgets.<br />
+&amp; Conservation of mechanical energy leads to<br />
+&amp; Wave Equation.<br />
+Conservation of Momentum:&amp; Leads to Momentum (Navier-Stokes) Eq.<br />
+Conservation of Angular Momentum: &amp; Leads to Conservation of Vorticity.</p>
+<section id="dominant-forces-for-ocean-dynamics">
+<h2><span class="section-number">7.1. </span>Dominant Forces for Ocean Dynamics<a class="headerlink" href="#dominant-forces-for-ocean-dynamics" title="Link to this heading">#</a></h2>
+<p>Only a few forces are important in physical oceanography: gravity,
+friction, and Coriolis (table 7.2). Remember that forces are vectors.
+They have magnitude and direction.</p>
+<p><em>Gravity</em> is the dominant force. The weight of the water in the ocean
+produces pressure. Changes in gravity, due to the motion of sun and moon
+relative to earth produces tides, tidal currents, and tidal mixing in
+the interior of the ocean.</p>
+<p><em>Buoyancy</em> is the upward or downward force due to gravity acting on a
+parcel of water that is more or less dense than other water at its
+level. For example, cold air blowing over the sea cools surface waters
+causing them to be more dense than the water beneath. Gravity acting on
+the difference in density results in a force that causes the water to
+sink.</p>
+<p><em>Horizontal pressure gradients</em> are due to the varying weight of water
+in different regions of the ocean.</p>
+<p><em>Friction</em> is the force acting on a body as it moves past another body
+while in contact with that body. The bodies can be parcels of water or
+air.</p>
+<p><em>Wind stress</em> is the friction due to wind blowing across the sea
+surface. It transfers horizontal momentum to the sea, creating currents.
+Wind blowing over waves on the sea surface leads to an uneven
+distribution of pressure over the waves. The pressure distribution
+transfers energy to the waves, causing them to grow into bigger waves.</p>
+<p><em>Pseudo-forces</em> are apparent forces that arise from motion in
+curvilinear or rotating coordinate systems. For example, Newton’s first
+law states that there is no change in motion of a body unless a
+resultant force acts on it. Yet a body moving at constant velocity seems
+to change direction when viewed from a rotating coordinate system. The
+change in direction is due to a pseudo-force, the Coriolis force.</p>
+<p><em>Coriolis Force</em> is the dominant pseudo-force influencing motion in a
+coordinate system fixed to the earth.</p>
+<p><strong>Table 7.2 Forces in Geophysical Fluid Dynamics</strong></p>
+<p>121mm&#64;ll&#64; <strong>Dominant Forces</strong></p>
+<p>&amp;<br />
+Gravity &amp; Gives rise to pressure gradients, buoyancy, and tides.<br />
+Coriolis &amp; Results from motion in a rotating coordinate system<br />
+Friction &amp; Is due to relative motion between two fluid parcels.<br />
+&amp; Wind stress is an important frictional force.<br />
+<strong>Other Forces</strong> &amp;</p>
+<p>Atmospheric Pressure &amp; Results in inverted barometer effect.<br />
+Seismic &amp; Results in <em>tsunamis</em> driven by earthquakes.</p>
+</section>
+<section id="coordinate-system">
+<h2><span class="section-number">7.2. </span>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading">#</a></h2>
+<p>Coordinate systems allow us to find locations in theory and practice.
+Various systems are used depending on the size of the features to be
+described or mapped. I will refer to the simplest systems; descriptions
+of other systems can be found in geography and geodesy books.</p>
+<p><em>Cartesian Coordinate System</em> is the one I will use most commonly in the
+following chapters to keep the discussion as simple as possible. We can
+describe most processes in Cartesian coordinates without the
+mathematical complexity of spherical coordinates. The standard
+convention in geophysical fluid mechanics is <span class="math notranslate nohighlight">\(x\)</span> is to the east, <span class="math notranslate nohighlight">\(y\)</span> is
+to the north, and <span class="math notranslate nohighlight">\(z\)</span> is up.</p>
+<p><em>f-Plane</em> is a Cartesian coordinate system in which the Coriolis force
+is assumed constant. It is useful for describing flow in regions small
+compared with the radius of the earth and larger than a few tens of
+kilometers.</p>
+<p><em><span class="math notranslate nohighlight">\(\beta\)</span>-plane</em> is a Cartesian coordinate system in which the Coriolis
+force is assumed to vary linearly with latitude. It is useful for
+describing flow over areas as large as ocean basins.</p>
+<p><em>Spherical coordinates</em> are used to describe flows that extend over
+large distances and in numerical calculations of basin and global scale
+flows.</p>
+</section>
+<section id="types-of-flow-in-the-ocean">
+<h2><span class="section-number">7.3. </span>Types of Flow in the ocean<a class="headerlink" href="#types-of-flow-in-the-ocean" title="Link to this heading">#</a></h2>
+<p>Many terms are used for describing the ocean circulation. Here are a few
+of the more commonly used terms for describing currents and waves.</p>
+<p><em>General Circulation</em> is the permanent, time-averaged circulation.</p>
+<p><em>Abyssal</em> also called the <em>Deep Circulation</em> is the circulation of mass,
+in the meridional plane, in the deep ocean, driven by mixing.</p>
+<p><em>Wind-Driven Circulation</em> is the circulation in the upper kilometer of
+the ocean forced by the wind. The circulation can be caused by local
+winds or by winds in other regions.</p>
+<p><em>Gyres</em> are wind-driven cyclonic or anticyclonic currents with
+dimensions nearly that of ocean basins.</p>
+<p><em>Boundary Currents</em> are currents flowing parallel to coasts. Two types
+of boundary currents are important:</p>
+<p>Western boundary currents on the western edge of the ocean tend to be
+fast, narrow jets such as the Gulf Stream and Kuroshio.</p>
+<p>Eastern boundary currents are weak, <em>e.g</em>. the California Current.</p>
+<p><em>Squirts</em> or <em>Jets</em> are long narrow currents, with dimensions of a few
+hundred kilometers, that are nearly perpendicular to west coasts.</p>
+<p><em>Mesoscale Eddies</em> are turbulent or spinning flows on scales of a few
+hundred kilometers.</p>
+<p>In addition to flow due to currents, there are many types of oscillatory
+flows due to waves. Normally, when we think of waves in the ocean, we
+visualize waves breaking on the beach or the surface waves influencing
+ships at sea. But many other types of waves occur in the ocean.</p>
+<p><em>Planetary Waves</em> depend on the rotation of the earth for a restoring
+force, and they including Rossby, Kelvin, Equatorial, and Yanai waves.</p>
+<p><em>Surface Waves</em> sometimes called gravity waves, are the waves that
+eventually break on the beach. The restoring force is due to the large
+density contrast between air and water at the sea surface.</p>
+<p><em>Internal Waves</em> are sub-sea wave similar in some respects to surface
+waves. The restoring force is due to change in density with depth.</p>
+<p><em>Tsunamis</em> are surface waves with periods near 15 minutes generated by
+earthquakes.</p>
+<p><em>Tidal Currents</em> are horizontal currents and currents associated with
+internal waves driven by the tidal potential.</p>
+<p><em>Edge Waves</em> are surface waves with periods of a few minutes confined to
+shallow regions near shore. The amplitude of the waves drops off
+exponentially with distance from shore.</p>
+</section>
+<section id="conservation-of-mass-and-salt">
+<h2><span class="section-number">7.4. </span>Conservation of Mass and Salt<a class="headerlink" href="#conservation-of-mass-and-salt" title="Link to this heading">#</a></h2>
+<p>Conservation of mass and salt can be used to obtain very useful
+information about flows in the ocean. For example, suppose we wish to
+know the net loss of fresh water, evaporation minus precipitation, from
+the Mediterranean Sea. We could carefully calculate the latent heat flux
+over the surface, but there are probably too few ship reports for an
+accurate application of the bulk formula. Or we could carefully measure
+the mass of water flowing in and out of the sea through the Strait of
+Gibraltar, but the difference is small and perhaps impossible to measure
+accurately.</p>
+<p>We can, however, calculate the net evaporation knowing the salinity of
+the flow in <span class="math notranslate nohighlight">\(S_i\)</span> and out <span class="math notranslate nohighlight">\(S_o\)</span>, together with a rough estimate of the
+volume of water <span class="math notranslate nohighlight">\(V_o\)</span> flowing out, where <span class="math notranslate nohighlight">\(V_o\)</span> is a volume flow in units
+of m<span class="math notranslate nohighlight">\(^3\)</span>/s (figure 7.1).</p>
+<p>Figure 7.1 Schematic</p>
+<p>diagram of flow into and out of a basin.<br />
+Values from Bryden and Kinder (1991).</p>
+<p><span id="fig:basin" label="fig:basin"></span></p>
+<p>The mass flowing out is, by definition, <span class="math notranslate nohighlight">\(\rho_o \, V_o\)</span>. If the volume
+of the sea does not change, conservation of mass requires:
+$<span class="math notranslate nohighlight">\(\rho_i\,V_i = \rho_o\,V_o\)</span><span class="math notranslate nohighlight">\( where, \)</span>\rho_i, ,\rho_o<span class="math notranslate nohighlight">\( are the
+densities of the water flowing in and out. We can usually assume, with
+little error, that \)</span>\rho_i = \rho_o$.</p>
+<p>If there is precipitation <span class="math notranslate nohighlight">\(P\)</span> and evaporation <span class="math notranslate nohighlight">\(E\)</span> at the surface of the
+basin and river inflow <span class="math notranslate nohighlight">\(R\)</span>, conservation of mass becomes:
+$<span class="math notranslate nohighlight">\(V_i + R + P = V_o + E\)</span><span class="math notranslate nohighlight">\( Solving for (\)</span>V_o<span class="math notranslate nohighlight">\( - \)</span>V_i<span class="math notranslate nohighlight">\():
+\)</span><span class="math notranslate nohighlight">\(V_o - V_i = (R + P) - E\)</span>$ which states that the net flow of water into
+the basin must balance precipitation plus river inflow minus evaporation
+when averaged over a sufficiently long time.</p>
+<p>Because salt is not deposited or removed from the sea, conservation of
+salt requires : $<span class="math notranslate nohighlight">\(\rho_i\,V_i\,S_i = \rho_o\,V_o\,S_o\)</span><span class="math notranslate nohighlight">\( Where \)</span>\rho_i<span class="math notranslate nohighlight">\(,
+\)</span>S_i<span class="math notranslate nohighlight">\( are the density and salinity of the incoming water, and \)</span>\rho_o<span class="math notranslate nohighlight">\(,
+\)</span>S_o<span class="math notranslate nohighlight">\( are density and salinity of the outflow. With little error, we can
+again assume that \)</span>\rho_i<span class="math notranslate nohighlight">\( = \)</span>\rho_o$.</p>
+<section id="an-example-of-conservation-of-mass-and-salt">
+<h3><span class="section-number">7.4.1. </span>An Example of Conservation of Mass and Salt<a class="headerlink" href="#an-example-of-conservation-of-mass-and-salt" title="Link to this heading">#</a></h3>
+<p>Using the values for the flow at the Strait of Gibraltar measured by
+Bryden and Kinder (1991) and shown in figure 7.1, solving (7.4) for
+<span class="math notranslate nohighlight">\(V_i\)</span> assuming that <span class="math notranslate nohighlight">\(\rho_i = \rho_o\)</span>, and using the estimated value of
+<span class="math notranslate nohighlight">\(V_o\)</span>, gives <span class="math notranslate nohighlight">\(V_i = 0.836\)</span> Sv <span class="math notranslate nohighlight">\(= 0.836 \times 10^6\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s, where Sv =
+Sverdrup <span class="math notranslate nohighlight">\(= 10^6\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s is the unit of volume transport used in
+oceanography. Using <span class="math notranslate nohighlight">\(V_i\)</span> and <span class="math notranslate nohighlight">\(V_o\)</span> in (7.3) gives
+<span class="math notranslate nohighlight">\((R + P - E) = - 4.6 \times 10^4\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s.</p>
+<p>Knowing <span class="math notranslate nohighlight">\(V_i\)</span> we can also calculate a minimum flushing time for
+replacing water in the sea by incoming water. The minimum flushing time
+<span class="math notranslate nohighlight">\(T_m\)</span> is the volume of the sea divided by the volume of incoming water.
+The Mediterranean has a volume of around <span class="math notranslate nohighlight">\(4 \times 10^6\)</span> km<span class="math notranslate nohighlight">\(^3\)</span>.
+Converting <span class="math notranslate nohighlight">\(0.836 \times 10^6\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s to km<span class="math notranslate nohighlight">\(^3\)</span>/yr we obtain
+<span class="math notranslate nohighlight">\(2.64 \times10^4\)</span> km<span class="math notranslate nohighlight">\(^3\)</span>/yr. Then, <span class="math notranslate nohighlight">\(T_m = 4 \times 10^6\)</span> km<span class="math notranslate nohighlight">\(^3\)</span>/<span class="math notranslate nohighlight">\(2.64 \times 10^4\)</span> km<span class="math notranslate nohighlight">\(^3\)</span>/yr <span class="math notranslate nohighlight">\(= 151\)</span> yr. The actual time depends on mixing
+within the sea. If the waters are well mixed, the flushing time is close
+to the minimum time, if they are not well mixed, the flushing time is
+longer.</p>
+<p>Our example of flow into and out of the Mediterranean Sea is an example
+of a <em>box model</em>. A box model replaces large systems, such as the
+Mediterranean Sea, with boxes. Fluids or chemicals or organisms can move
+between boxes, and conservation equations are used to constrain the
+interactions within systems.</p>
+<p><span class="image">image</span> Figure 7.2 Sketch of flow</p>
+<p>used for deriving the total derivative.</p>
+<p><span id="fig:derivativesketch" label="fig:derivativesketch"></span></p>
+</section>
+</section>
+<section id="the-total-derivative-d-dt">
+<h2><span class="section-number">7.5. </span>The Total Derivative (D/Dt)<a class="headerlink" href="#the-total-derivative-d-dt" title="Link to this heading">#</a></h2>
+<p>If the number of boxes in a system increases to a very large number as
+the size of each box shrinks, we eventually approach limits used in
+differential calculus. For example, if we subdivide the flow of water
+into boxes a few meters on a side, and if we use conservation of mass,
+momentum, or other properties within each box, we can derive the
+differential equations governing fluid flow.</p>
+<p>Consider the example of acceleration of flow in a small box of fluid.
+The resulting equation is called the <em>total derivative</em>. It relates the
+acceleration of a particle <span class="math notranslate nohighlight">\(Du/Dt\)</span> to derivatives of the velocity field
+at a fixed point in the fluid. We will use the equation to derive the
+equations for fluid motion from Newton’s Second Law which requires
+calculating the acceleration of a particles passing a fixed point in the
+fluid.</p>
+<p>We begin by considering the flow of a quantity <span class="math notranslate nohighlight">\(q_{in}\)</span> into and
+<span class="math notranslate nohighlight">\(q_{out}\)</span> out of the small box sketched in figure 7.2. If <span class="math notranslate nohighlight">\(q\)</span> can change
+continuously in time and space, the relationship between <span class="math notranslate nohighlight">\(q_{in}\)</span> and
+<span class="math notranslate nohighlight">\(q_{out}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}q_{out} = q_{in} + \frac{\partial{q}}{\partial{t}}\,\delta{t} +
+\frac{\partial{q}}{\partial{x}}\,\delta{x}$$ The rate of change of the
+quantity $q$ within the volume is:
+$$\frac{Dq}{Dt} = \frac{q_{out} - q_{in}}{\delta{t}}=
+\frac{\partial{q}}{\partial{t}} +
+\frac{\partial{q}}{\partial{x}}\frac{\delta{x}}{\delta{t}}$$ But
+$\delta x /\delta t$ is the velocity $u$, and therefore:
+$$\frac{Dq}{Dt} = \frac{\partial{q}}{\partial{t}} +
+u\frac{\partial{q}}{\partial{x}}$$ In three dimensions, the total
+derivative becomes:\\\begin{split}$$\begin{aligned}
+\frac{D}{Dt} = &amp; \:\frac{\partial}{dt} + u\frac{\partial}{\partial{x}} + v\frac{\partial}{\partial y} + w\frac{\partial
+}{\partial z}
+\\
+\frac{D}{Dt} = &amp; \:\frac{\partial}{dt} +
+\mathbf{u}\cdot \nabla(\,)\end{aligned}\end{split}\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is the vector velocity and <span class="math notranslate nohighlight">\(\nabla\)</span> is the operator
+<em>del</em> of vector field theory (See Feynman, Leighton, and Sands 1964:
+2–6).</p>
+<p>This is an amazing result. Transforming coordinates from one following a
+particle to one fixed in space converts a simple linear derivative into
+a non-linear partial derivative. Now let’s use the equation to calculate
+the change of momentum of a parcel of fluid.</p>
+</section>
+<section id="momentum-equation">
+<h2><span class="section-number">7.6. </span>Momentum Equation<a class="headerlink" href="#momentum-equation" title="Link to this heading">#</a></h2>
+<p>Newton’s Second Law relates the change of the momentum of a fluid mass
+due to an applied force. The change is:
+$<span class="math notranslate nohighlight">\(\frac{D(m\textbf{v})}{Dt} = \textbf{F}\)</span><span class="math notranslate nohighlight">\( where **F** is force, \)</span>m<span class="math notranslate nohighlight">\( is
+mass, and **v** is velocity. I have emphasized the need to use the total
+derivative because we are calculating the force on a particle. We can
+assume that the mass is constant, and (7.8) can be written:
+\)</span><span class="math notranslate nohighlight">\(\frac{D\textbf{v}}{Dt} = \frac{\textbf{F}}{m} = \textbf{f\)</span>_m<span class="math notranslate nohighlight">\(}\)</span><span class="math notranslate nohighlight">\( where
+**f\)</span>_m$** is force per unit mass.</p>
+<p>Four forces are important: pressure gradients, Coriolis force, gravity,
+and friction. Without deriving the form of these forces (the derivations
+are given in the next section), we can write (7.9) in the following
+form. $<span class="math notranslate nohighlight">\(\frac{D\mathbf{v}}{Dt} = -\,\frac{1}{\rho}\nabla\,p -
+\,2\boldsymbol{\Omega}
+\times \mathbf{v} + \mathbf{g} + \mathbf{F_r}\)</span><span class="math notranslate nohighlight">\( Acceleration equals the
+negative pressure gradient minus the Coriolis force plus gravity plus
+other forces. Here **g** is acceleration of gravity, \)</span>\mathbf{F_r}<span class="math notranslate nohighlight">\( is
+friction, and the magnitude \)</span>\Omega<span class="math notranslate nohighlight">\( of \)</span>\boldsymbol{\Omega}<span class="math notranslate nohighlight">\( is the
+*Rotation Rate of earth*, 2\)</span>\pi<span class="math notranslate nohighlight">\( radians per sidereal day or \)</span><span class="math notranslate nohighlight">\(\fbox{\)</span>\D
+\Omega = 7.292 \times 10^{-5} \text{ radians/s} <span class="math notranslate nohighlight">\(}\)</span>$</p>
+<section id="momentum-equation-in-cartesian-coordinates">
+<h3><span class="section-number">7.6.1. </span>Momentum Equation in Cartesian coordinates:<a class="headerlink" href="#momentum-equation-in-cartesian-coordinates" title="Link to this heading">#</a></h3>
+<p>Expanding the derivative in (7.10) and writing the components in a
+Cartesian coordinate system gives the <em>Momentum Equation</em>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{\partial{u}}{\partial{t}} + u\,\frac{\partial{u}}{\partial{x}}
++ v\,\frac{\partial{u}}{\partial{y}} +w\,\frac{\partial{u}}{\partial{z}} &amp;=
+-\,\frac{1}{\rho}\,\frac{\partial{p}}{\partial{x}} +
+2\,\Omega\,{v}\,\sin\varphi +  F_x \\
+ \frac{\partial{v}}{\partial{t}} + u\,\frac{\partial{v}}{\partial{x}} +
+v\,\frac{\partial{v}}{\partial{y}} +w\,\frac{\partial{v}}{\partial{z}} &amp;=
+-\,\frac{1}{\rho}\,\frac{\partial{p}}{\partial{y}} - 2\,\Omega\,u\,\sin\varphi
++ F_y
+\\
+ \frac{\partial{w}}{\partial{t}} + u\,\frac{\partial{w}}{\partial{x}} +
+v\,\frac{\partial{w}}{\partial{y}} +w\,\frac{\partial{w}}{\partial{z}} &amp;=
+-\,\frac{1}{\rho}\,\frac{\partial{p}}{\partial{z}} + 2\,\Omega\,{u}\,\cos\varphi
+- g + F_z\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_i\)</span> are the components of any frictional force per unit mass,
+and <span class="math notranslate nohighlight">\(\varphi\)</span> is latitude. In addition, we have assumed that <span class="math notranslate nohighlight">\(w &lt;&lt; v\)</span>,
+so the <span class="math notranslate nohighlight">\(2\,\Omega\,w \cos \varphi\)</span> has been dropped from equation in
+(7.12a).</p>
+<p>Equation (7.12) appears under various names. Leonhard Euler (1707–1783)
+first wrote out the general form for fluid flow with external forces,
+and the equation is sometimes called the <em>Euler equation</em> or the
+<em>acceleration equation</em>. Louis Marie Henri Navier (1785–1836) added the
+frictional terms, and so the equation is sometimes called the
+<em>Navier-Stokes equation</em>.</p>
+<p>The term <span class="math notranslate nohighlight">\(2\,\Omega\,u\, \cos{\varphi}\)</span> in (7.12c) is small compared
+with <span class="math notranslate nohighlight">\(g\)</span>, and it can be ignored in ocean dynamics. It cannot be ignored,
+however, for gravity surveys made with gravimeters on moving ships.</p>
+<p>Figure 7.3 Sketch of flow</p>
+<p>used for deriving the pressure term in the momentum equation.</p>
+<p><span id="fig:pressuresketch" label="fig:pressuresketch"></span></p>
+</section>
+<section id="derivation-of-pressure-term">
+<h3><span class="section-number">7.6.2. </span>Derivation of Pressure Term<a class="headerlink" href="#derivation-of-pressure-term" title="Link to this heading">#</a></h3>
+<p>Consider the forces acting on the sides of a small cube of fluid (figure
+7.3). The net force <span class="math notranslate nohighlight">\(\delta F_x\)</span> in the <span class="math notranslate nohighlight">\(x\)</span> direction is
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+\delta F_x &amp;= p\,\delta{y}\,\delta{z} - (p + \delta{p})\,\delta{y}\,\delta{z}
+\notag \\
+\delta F_x &amp;= - \delta{p}\,\delta{y}\,\delta{z} \notag\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+But \)</span><span class="math notranslate nohighlight">\(\delta{p} = \frac{\partial{p}}{\partial{x}}\,\delta{x}\)</span><span class="math notranslate nohighlight">\( and
+therefore \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+\delta F_x &amp;= - \frac{\partial{p}}{\partial{x}}\,\delta{x}\,\delta{y}\,\delta{z}
+\notag \\
+\delta F_x &amp;=-\,\frac{\partial{p}}{\partial{x}}\, \delta{V} \notag\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+Dividing by the mass of the fluid \)</span>\delta m<span class="math notranslate nohighlight">\( in the box, the
+acceleration of the fluid in the \)</span>x<span class="math notranslate nohighlight">\( direction is:
+\)</span><span class="math notranslate nohighlight">\(a_x = \frac{{\delta F_x}}{\delta{m}} = - \frac{\partial{p}}{\partial{x}}\,
+\frac{\delta{V}}{\delta{m}} \notag\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(\boxed{a_x = - \frac{1}{\rho}\,\frac{\partial{p}}{\partial{x}}}\)</span><span class="math notranslate nohighlight">\( The
+pressure forces and the acceleration due to the pressure forces in the
+\)</span>y<span class="math notranslate nohighlight">\( and \)</span>z$ directions are derived in the same way.</p>
+</section>
+<section id="the-coriolis-term-in-the-momentum-equation">
+<h3><span class="section-number">7.6.3. </span>The Coriolis Term in the Momentum Equation<a class="headerlink" href="#the-coriolis-term-in-the-momentum-equation" title="Link to this heading">#</a></h3>
+<p>The Coriolis term exists because we describe currents in a reference
+frame fixed on earth. The derivation of the Coriolis terms is not easy.
+Henry Stommel, the noted oceanographer at the Woods Hole Oceanographic
+Institution even wrote a book on the subject with Dennis Moore (Stommel
+&amp; Moore, 1989).</p>
+<p>Usually, we just state that the force per unit mass, the acceleration of
+a parcel of fluid in a rotating system, can be written:
+$<span class="math notranslate nohighlight">\(\textbf{a}_{fixed} = \left(\frac{D\textbf{v}}{Dt}\right)_{fixed} =
+ \left(\frac{D\textbf{v}}{Dt}\right)_{rotating} + \left( 2 \boldsymbol{\Omega}
+\times \mathbf{v} \right) + \boldsymbol{\Omega} \times \left(
+\boldsymbol{\Omega} \times \mathbf{R} \right)\)</span><span class="math notranslate nohighlight">\( where **R** is the
+vector distance from the center of earth, \)</span>\boldsymbol{\Omega}<span class="math notranslate nohighlight">\( is the
+angular velocity vector of earth, and **v** is the velocity of the fluid
+parcel in coordinates fixed to earth. The term
+\)</span>2 \boldsymbol{\Omega} \times \mathbf{v}<span class="math notranslate nohighlight">\( is the Coriolis force, and the
+term \)</span>\boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{R} \right)$ is the centrifugal
+acceleration. The latter term is included in gravity (figure 7.4).</p>
+</section>
+<section id="the-gravity-term-in-the-momentum-equation">
+<h3><span class="section-number">7.6.4. </span>The Gravity Term in the Momentum Equation<a class="headerlink" href="#the-gravity-term-in-the-momentum-equation" title="Link to this heading">#</a></h3>
+<p>The gravitational attraction of two masses <span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is:
+$<span class="math notranslate nohighlight">\(\textbf{F}_g = \frac{G\,M_1\, m}{R^2}\)</span><span class="math notranslate nohighlight">\( where \)</span>R<span class="math notranslate nohighlight">\( is the distance
+between the masses, and \)</span>G<span class="math notranslate nohighlight">\( is the gravitational constant. The vector
+force \)</span>\textbf{F}_g$ is along the line connecting the two masses.</p>
+<p>The force per unit mass due to gravity is:
+$<span class="math notranslate nohighlight">\(\frac{\textbf{F}_g}{m} = \textbf{g}_f =\frac{G\,M_E}{R^2}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>M_E<span class="math notranslate nohighlight">\( is the mass of earth. Adding the centrifugal acceleration to
+(7.15) gives gravity \)</span>\textbf{g}<span class="math notranslate nohighlight">\( (figure 7.4):
+\)</span><span class="math notranslate nohighlight">\(\textbf{g} = \textbf{g}_f - \boldsymbol{\Omega} \times
+\left( \boldsymbol{\Omega} \times \mathbf{R}
+\right)\)</span>$</p>
+<p>Note that gravity does not point toward earth’s center of mass. The
+centrifugal acceleration causes a plumb bob to point at a small angle to
+the line directed to earth’s center of mass. As a result, earth’s
+surface including the ocean’s surface is not spherical but it is a
+oblate ellipsoid. A rotating fluid planet has an equatorial bulge.</p>
+<p>Figure 7.4 Downward</p>
+<p>acceleration <span class="math notranslate nohighlight">\(g\)</span> of a body at rest on earth’s surface is the sum of
+gravitational acceleration between the body and earth’s mass <span class="math notranslate nohighlight">\(g_f\)</span> and
+the centrifugal acceleration due to earth’s rotation
+<span class="math notranslate nohighlight">\(\Omega\times(\Omega\times{R})\)</span>. The surface of an ocean at rest must be
+perpendicular to <span class="math notranslate nohighlight">\(g\)</span>, and such a surface is close to an ellipsoid of
+rotation. earth’s ellipticity is greatly exaggerated here.
+<span id="fig:gravitysketch" label="fig:gravitysketch"></span></p>
+</section>
+</section>
+<section id="conservation-of-mass-the-continuity-equation">
+<h2><span class="section-number">7.7. </span>Conservation of Mass: The Continuity Equation<a class="headerlink" href="#conservation-of-mass-the-continuity-equation" title="Link to this heading">#</a></h2>
+<p>Now let’s derive the equation for the conservation of mass in a fluid.
+We begin by writing down the flow of mass into and out of a small box
+(figure 7.5).</p>
+<p>Figure 7.5 Sketch of flow</p>
+<p>used for deriving the continuity equation. <span id="fig:continuitysketchR" label="fig:continuitysketchR"></span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\text{Mass flow in} &amp;= \rho \, u \, \delta z \, \delta y \notag  \\
+\text{Mass flow out} &amp;= (\rho + \delta \rho ) (u + \delta u) \delta z \,  \delta y \notag\end{aligned}\end{split}\]</div>
+<p>The mass flux into the volume must be (mass flow out) <span class="math notranslate nohighlight">\(-\)</span> (mass flow
+in). Therefore,
+$<span class="math notranslate nohighlight">\(\text{Mass flux} = ( \rho \, \delta u + u \, \delta \rho + \delta \rho \, \delta u)  \delta z \,  \delta y \notag\)</span><span class="math notranslate nohighlight">\(
+But
+\)</span><span class="math notranslate nohighlight">\(\delta u = \frac{\partial u}{\partial x} \delta x \,;\quad \delta \rho = \frac{\partial {\rho}}{\partial x} \delta x \notag\)</span><span class="math notranslate nohighlight">\(
+Therefore
+\)</span><span class="math notranslate nohighlight">\(\text{Mass flux} = \left(\rho \, \frac{\partial{u}}{\partial{x}} + u\,\frac{\partial{\rho}}{\partial{x}}
++\frac{\partial{\rho}}{\partial{x}}\,\frac{\partial{u}}{\partial{x}}\,\delta{x}\right)\delta{x}\,\delta{y}\,\delta{z}
+\notag\)</span><span class="math notranslate nohighlight">\( The third term inside the parentheses becomes much smaller than
+the first two terms as \)</span>\delta x \rightarrow 0<span class="math notranslate nohighlight">\(, and
+\)</span><span class="math notranslate nohighlight">\(\text{Mass flux} =
+\frac{\partial{(\rho{u})}}{\partial{x}}\,\delta{x}\,\delta{y}\,\delta{z} \notag\)</span><span class="math notranslate nohighlight">\(
+In three dimensions:
+\)</span><span class="math notranslate nohighlight">\(\mbox{Mass flux} = \left(\frac{\partial{(\rho{u})}}{\partial{x}} +
+\frac{\partial{(\rho{v})}}{\partial{y}} +
+\frac{\partial{(\rho{w})}}{\partial{z}}\right)\delta{x}\,\delta{y}\,\delta{z}\)</span><span class="math notranslate nohighlight">\(
+The mass flux must be balanced by a change of mass inside the volume,
+which is:
+\)</span><span class="math notranslate nohighlight">\(\frac{\partial\rho}{\partial{t}}\,\delta{x}\,\delta{y}\,\delta{z}\)</span><span class="math notranslate nohighlight">\(
+and conservation of mass requires:
+\)</span><span class="math notranslate nohighlight">\(\frac{\partial\rho}{\partial{t}} + \frac{\partial{(\rho{u})}}{\partial{x}} + \frac{d(\rho{v})}{\partial{y}} + \frac{\partial{(\rho{w})}}{\partial{z}} = 0\)</span>$
+This is the <em>continuity equation</em> for compressible flow, first derived
+by Leonhard Euler (1707–1783).</p>
+<p>The equation can be put in an alternate form by expanding the
+derivatives of products and rearranging terms to obtain:
+$<span class="math notranslate nohighlight">\(\frac{\partial{\rho}}{\partial{t}} + u\,\frac{\partial{\rho}}{\partial{x}} + v\,\frac{\partial{\rho}}{\partial{y}} + w\,\frac{\partial{\rho}}{\partial{z}} +
+\rho\,\frac{\partial{u}}{\partial{x}} + \rho\,\frac{\partial{v}}{\partial{y}} + \rho\,\frac{\partial{w}}{\partial{z}} = 0\)</span><span class="math notranslate nohighlight">\(
+The first four terms constitute the total derivative of density
+\)</span>D\rho/Dt<span class="math notranslate nohighlight">\( from (7.7), and we can write (7.17) as: \)</span><span class="math notranslate nohighlight">\(\fbox{\)</span>\D
+\frac{\D1}{\D\rho}\frac{\D{D}\D\rho}{\D{Dt}} + \frac{\D\partial{u}}{\D\partial{x}} + \frac{\D\partial{v}}{\D\partial{y}} + \frac{\D\partial{w}}{\D\partial{z}} =
+0
+<span class="math notranslate nohighlight">\(}\)</span>$ This is the alternate form for the continuity equation for a
+compressible fluid.</p>
+<section id="the-boussinesq-approximation">
+<h3><span class="section-number">7.7.1. </span>The Boussinesq Approximation<a class="headerlink" href="#the-boussinesq-approximation" title="Link to this heading">#</a></h3>
+<p>Density is nearly constant in the ocean, and Joseph Boussinesq
+(1842–1929) noted that we can safely assume density is constant except
+when it is multiplied by <span class="math notranslate nohighlight">\(g\)</span> in calculations of pressure in the ocean.
+The assumption greatly simplifies the equations of motion.</p>
+<p>Boussinesq’s assumption requires that:</p>
+<p>Velocities in the ocean must be small compared to the speed of sound
+<span class="math notranslate nohighlight">\(c\)</span>. This ensures that velocity does not change the density. As velocity
+approaches the speed of sound, the velocity field can produces large
+changes of density such as shock waves.</p>
+<p>The phase speed of waves or disturbances must be small compared with
+<span class="math notranslate nohighlight">\(c\)</span>. Sound speed in incompressible flows is infinite, and we must assume
+the fluid is compressible when discussing sound in the ocean. Thus the
+approximation is not true for sound. All other waves in the ocean have
+speeds small compared to sound.</p>
+<p>The vertical scale of the motion must be small compared with <span class="math notranslate nohighlight">\(c^2\)</span>/<span class="math notranslate nohighlight">\(g\)</span>,
+where <span class="math notranslate nohighlight">\(g\)</span> is gravity. This ensures that as pressure increases with depth
+in the ocean, the increase in pressure produces only small changes in
+density.</p>
+<p>The approximations are true for oceanic flows, and they ensure that
+oceanic flows are incompressible. See Kundu (1990: 79 and 112), Gill
+(1982: 85), Batchelor (1967: 167), or other texts on fluid dynamics for
+a more complete description of the approximation.</p>
+</section>
+<section id="compressibility">
+<h3><span class="section-number">7.7.2. </span>Compressibility<a class="headerlink" href="#compressibility" title="Link to this heading">#</a></h3>
+<p>The Boussinesq approximation is equivalent to assuming sea water is
+incompressible. Now let’s see how the assumption simplifies the
+continuity equation. We define the <em>coefficient of compressibility</em>
+$<span class="math notranslate nohighlight">\(\beta \equiv -\frac{1}{V}\,\frac{\partial{V}}{\partial{p}} =
+-\frac{1}{V}\,\frac{dV}{dt}\Big/\frac{dp}{dt}\)</span><span class="math notranslate nohighlight">\( where \)</span>V<span class="math notranslate nohighlight">\( is volume, and
+\)</span>p<span class="math notranslate nohighlight">\( is pressure. For incompressible flows, \)</span>\beta<span class="math notranslate nohighlight">\( = 0, and:
+\)</span><span class="math notranslate nohighlight">\(\frac{1}{V}\,\frac{dV}{dt} = 0\)</span><span class="math notranslate nohighlight">\( because \)</span>dp<span class="math notranslate nohighlight">\(/\)</span>dt<span class="math notranslate nohighlight">\( \)</span>\not=<span class="math notranslate nohighlight">\( 0.
+Remembering that density is mass \)</span>m<span class="math notranslate nohighlight">\( per unit volume \)</span>V<span class="math notranslate nohighlight">\(, and that mass
+is constant:
+\)</span>$\frac{1}{V}\frac{dV}{dt} = -,V\frac{d}{dt}\left(\frac{1}{V}\right) =</p>
+<ul class="simple">
+<li><p>\frac{V}{m},\frac{d}{dt}\left(\frac{m}{V}\right)
+=,-,\frac{1}{\rho},\frac{d\rho}{dt} =,-,\frac{1}{\rho}, \frac{D\rho}{Dt} = 0$<span class="math notranslate nohighlight">\(
+If the flow is incompressible, (7.18) becomes: \)</span><span class="math notranslate nohighlight">\(\fbox{\)</span> \D
+\frac{\D\partial{u}}{\D\partial{x}} + \frac{\D\partial{v}}{\D\partial{y}} + \frac{\D\partial{w}}{\D\partial{z}} = 0 <span class="math notranslate nohighlight">\(}\)</span>$
+This is the <em>Continuity Equation for Incompressible Flows</em>.</p></li>
+</ul>
+</section>
+</section>
+<section id="solutions-to-the-equations-of-motion">
+<h2><span class="section-number">7.8. </span>Solutions to the Equations of Motion<a class="headerlink" href="#solutions-to-the-equations-of-motion" title="Link to this heading">#</a></h2>
+<p>Equations (7.12) and (7.19) are four equations, the three components of
+the momentum equation plus the continuity equation, with four unknowns:
+<span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(w\)</span>, <span class="math notranslate nohighlight">\(p\)</span>. Note, however, that these are non-linear partial
+differential equations. Conservation of momentum, when applied to a
+fluid, converted a simple, first-order, ordinary, differential equation
+for velocity (Newton’s Second Law), which is usually easy to solve, into
+a non-linear partial differential equation, which is almost impossible
+to solve.</p>
+<section id="boundary-conditions">
+<h3><span class="section-number">7.8.1. </span>Boundary Conditions:<a class="headerlink" href="#boundary-conditions" title="Link to this heading">#</a></h3>
+<p>In fluid mechanics, we generally assume:</p>
+<p>No velocity normal to a boundary, which means there is no flow through
+the boundary; and</p>
+<p>No flow parallel to a solid boundary, which means no slip at the solid
+boundary.</p>
+</section>
+<section id="solutions">
+<h3><span class="section-number">7.8.2. </span>Solutions<a class="headerlink" href="#solutions" title="Link to this heading">#</a></h3>
+<p>We expect that four equations in four unknowns plus boundary conditions
+give a system of equations that can be solved in principle. In practice,
+solutions are difficult to find even for the simplest flows. First, as
+far as I know, there are no exact solutions for the equations with
+friction. There are very few exact solutions for the equations without
+friction. Those who are interested in ocean waves might note that one
+such exact solution is Gerstner’s solution for water waves (Lamb, 1945:
+251). Because the equations are almost impossible to solve, we will look
+for ways to greatly simplify the equations. Later, we will find that
+even numerical calculations are difficult.</p>
+<p>Analytical solutions can be obtained for much simplified forms of the
+equations of motion. Such solutions are used to study processes in the
+ocean, including waves. Solutions for oceanic flows with realistic
+coasts and bathymetric features must be obtained from numerical
+solutions. In the next few chapters we seek solutions to simplified
+forms of the equations. In Chapter 15 we will consider numerical
+solutions.</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">7.9. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Gravity, buoyancy, and wind are the dominant forces acting on the
+ocean.</p>
+<p>Earth’s rotation produces a pseudo force, the Coriolis force.</p>
+<p>Conservation laws applied to flow in the ocean lead to equations of
+motion. Conservation of salt, volume and other quantities can lead
+to deep insights into oceanic flow.</p>
+<p>The transformation from equations of motion applied to fluid parcels
+to equations applied at a fixed point in space greatly complicates
+the equations of motion. The linear, first-order, ordinary
+differential equations describing Newtonian dynamics of a mass
+accelerated by a force become nonlinear, partial differential
+equations of fluid mechanics.</p>
+<p>Flow in the ocean can be assumed to be incompressible except when
+describing sound. Density can be assumed to be constant except when
+density is multiplied by gravity <span class="math notranslate nohighlight">\(g\)</span>. The assumption is called the
+Boussinesq approximation.</p>
+<p>Conservation of mass leads to the continuity equation, which has an
+especially simple form for an incompressible fluid.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Temperature, Salinity, and Density</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Equations of Motion With Viscosity</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominant-forces-for-ocean-dynamics">7.1. Dominant Forces for Ocean Dynamics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-system">7.2. Coordinate System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-flow-in-the-ocean">7.3. Types of Flow in the ocean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass-and-salt">7.4. Conservation of Mass and Salt</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-of-conservation-of-mass-and-salt">7.4.1. An Example of Conservation of Mass and Salt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-total-derivative-d-dt">7.5. The Total Derivative (D/Dt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-equation">7.6. Momentum Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#momentum-equation-in-cartesian-coordinates">7.6.1. Momentum Equation in Cartesian coordinates:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-of-pressure-term">7.6.2. Derivation of Pressure Term</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-coriolis-term-in-the-momentum-equation">7.6.3. The Coriolis Term in the Momentum Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-gravity-term-in-the-momentum-equation">7.6.4. The Gravity Term in the Momentum Equation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass-the-continuity-equation">7.7. Conservation of Mass: The Continuity Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boussinesq-approximation">7.7.1. The Boussinesq Approximation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compressibility">7.7.2. Compressibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-the-equations-of-motion">7.8. Solutions to the Equations of Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">7.8.1. Boundary Conditions:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">7.8.2. Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">7.9. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

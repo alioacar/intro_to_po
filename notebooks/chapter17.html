@@ -1,0 +1,1485 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>17. Coastal Processes and Tides &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter17';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="18. Bibliography" href="chapter18.html" />
+    <link rel="prev" title="16. Ocean Waves" href="chapter16.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter17.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter17.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Coastal Processes and Tides</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shoaling-waves-and-coastal-processes">17.1. Shoaling Waves and Coastal Processes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shoaling-waves">17.1.1. Shoaling Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking-waves">17.1.2. Breaking Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-driven-currents">17.1.3. Wave-Driven Currents</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tsunamis">17.2. Tsunamis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storm-surges">17.3. Storm Surges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-of-ocean-tides">17.4. Theory of Ocean Tides</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-potential">17.4.1. Tidal Potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinates-of-sun-and-moon">17.4.2. Coordinates of Sun and Moon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-frequencies">17.4.3. Tidal Frequencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction">17.5. Tidal Prediction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction-for-ports-and-shallow-water">17.5.1. Tidal Prediction for Ports and Shallow Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction-for-deep-water">17.5.2. Tidal Prediction for Deep-Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-dissipation">17.5.3. Tidal Dissipation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">17.6. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="coastal-processes-and-tides">
+<h1><span class="section-number">17. </span>Coastal Processes and Tides<a class="headerlink" href="#coastal-processes-and-tides" title="Link to this heading">#</a></h1>
+<p>In the last chapter I described waves on the sea surface. Now we can
+consider several special and important cases: the transformation of
+waves as they come ashore and break; the currents and edge waves
+generated by the interaction of waves with coasts; tsunamis; storm
+surges; and tides, especially tides along coasts and in the deep ocean.</p>
+<section id="shoaling-waves-and-coastal-processes">
+<h2><span class="section-number">17.1. </span>Shoaling Waves and Coastal Processes<a class="headerlink" href="#shoaling-waves-and-coastal-processes" title="Link to this heading">#</a></h2>
+<p>Wave phase and group velocities are a function of depth when the depth
+is less than about one-quarter wavelength in deep water. Wave period and
+frequency are invariant (don’t change as the wave comes ashore); and
+this is used to compute the properties of shoaling waves. Wave height
+increases as wave group velocity slows. Wave length decreases. Waves
+change direction due to refraction. Finally, waves break if the water is
+sufficiently shallow; and broken waves pour water into the surf zone,
+creating long-shore and rip currents.</p>
+<section id="shoaling-waves">
+<h3><span class="section-number">17.1.1. </span>Shoaling Waves<a class="headerlink" href="#shoaling-waves" title="Link to this heading">#</a></h3>
+<p>The dispersion relation (16.3) is used to calculate wave properties as
+the waves propagate from deep water offshore to shallow water just
+outside the surf zone. Because <span class="math notranslate nohighlight">\(\omega\)</span> is constant, (16.3) leads to:
+$<span class="math notranslate nohighlight">\(\frac{L}{L_{0}} = \frac{c}{c_{0}}=\frac{\sin \alpha }{\sin \alpha _{0}} = \tanh
+\frac{2 \pi d}{L} \label{eq:intermed}\)</span><span class="math notranslate nohighlight">\( where
+\)</span><span class="math notranslate nohighlight">\(L_{0} = \frac{g T^{2}}{2 \pi }, \qquad c_{0} = \frac{g T}{2 \pi } \label{eq:Lzero}\)</span><span class="math notranslate nohighlight">\(
+and \)</span>L<span class="math notranslate nohighlight">\( is wave length, \)</span>c<span class="math notranslate nohighlight">\( is phase velocity, \)</span>\alpha<span class="math notranslate nohighlight">\( is the angle of
+the crest relative to contours of constant depth, and \)</span>d<span class="math notranslate nohighlight">\( is water
+depth. The subscript \)</span>0$ indicates values in deep water.</p>
+<p>The quantity <span class="math notranslate nohighlight">\(d/L\)</span> is calculated from the solution of
+$<span class="math notranslate nohighlight">\(\frac{d}{L_{0}} = \frac{d}{L} \tanh \frac{2 \pi d}{L} \label{eq:intermediate}\)</span>$
+using an iterative technique, or from figure 17.1, or from Wiegel (1964:
+A1).</p>
+<p>Figure 17.1 Properties of</p>
+<p>waves in intermediate depths between deep and shallow water. <span class="math notranslate nohighlight">\(d=\)</span> depth,
+<span class="math notranslate nohighlight">\(L=\)</span> wavelength, <span class="math notranslate nohighlight">\(C=\)</span> phase velocity, <span class="math notranslate nohighlight">\(C_g=\)</span> group velocity, <span class="math notranslate nohighlight">\(\alpha =\)</span>
+angle of crests relative to contours of constant depth, <span class="math notranslate nohighlight">\(H =\)</span> wave
+height. Subscript <span class="math notranslate nohighlight">\(0\)</span> refers to properties in deep water. From values in
+Wiegel (1964: A1).</p>
+<p><span id="wiegelgraph" label="wiegelgraph"></span></p>
+<p>Figure 17.2 sub-sea</p>
+<p>features, such as submarine canyons and ridges, offshore of coasts can
+greatly influence the height of breakers inshore of the features. After
+Thurman (1985: 229).</p>
+<p><span id="wavefocusing" label="wavefocusing"></span></p>
+<p>Because wave velocity is a function of depth in shallow water,
+variations in offshore water depth can focus or defocus wave energy
+reaching the shore. Consider the simple case of waves with deep-water
+crests almost parallel to a straight beach with two ridges each
+extending seaward from a headland (figure 17.2). Wave group velocity is
+faster in the deeper water between the ridges, and the wave crests
+become progressively deformed as the wave propagates toward the beach.
+Wave energy, which propagates perpendicular to wave crests, is refracted
+out of the region between the headland. As a result, wave energy is
+focused into the headlands, and breakers there are much larger than
+breakers in the bay. The difference in wave height can be surprisingly
+large. On a calm day, breakers can be knee high shoreward of a submarine
+canyon at La Jolla Shores, California, just south of the Scripps
+Institution of Oceanography. At the same time, waves just north of the
+canyon can be high enough to attract surfers.</p>
+<p>Figure 17.3 <strong>Left</strong>:</p>
+<p>Classification of breaking waves as a function of beach steepness and
+wave steepness offshore. <strong>Right</strong>: Sketch of types of breaking waves.
+After Horikawa (1988: 79, 81).</p>
+<p><span id="fig:breakers" label="fig:breakers"></span></p>
+</section>
+<section id="breaking-waves">
+<h3><span class="section-number">17.1.2. </span>Breaking Waves<a class="headerlink" href="#breaking-waves" title="Link to this heading">#</a></h3>
+<p>As waves move into shallow water, the group velocity becomes small, wave
+energy per square meter of sea surface increases, and non-linear terms
+in the wave equations become important. These processes cause waves to
+steepen, with short steep crests and broad shallow troughs. When wave
+slope at the crest becomes sufficiently steep, the wave breaks (figure
+17.3 Right). The shape of the breaking wave depends on the slope of the
+bottom, and the steepness of waves offshore (figure 17.3 Left).</p>
+<p>Steep waves tend to lose energy slowly as the waves moves into shallower
+water through water spilling down the front of the wave. These are
+spilling breakers.</p>
+<p>Less steep waves on steep beaches tend to steepen so quickly that the
+crest of the wave moves much faster than the trough, and the crest,
+racing ahead of the trough, plunges into the trough (figure 17.4).</p>
+<p>If the beach is sufficiently steep, the wave can surge up the face of
+the beach without breaking in the sense that white water is formed. Or
+if it is formed, it is at the leading edge of the water as it surges up
+the beach. An extreme example would be a wave incident on a vertical
+breakwater.</p>
+<p>Figure 17.4 Steep, plunging</p>
+<p>breakers are the archetypical breaker. The edge<br />
+of such breakers are ideal for surfing. From photo by Jeff Devine.</p>
+<p><span id="fig:wavecropped" label="fig:wavecropped"></span></p>
+</section>
+<section id="wave-driven-currents">
+<h3><span class="section-number">17.1.3. </span>Wave-Driven Currents<a class="headerlink" href="#wave-driven-currents" title="Link to this heading">#</a></h3>
+<p>Waves break in a narrow band of shallow water along the beach, the <em>surf
+zone</em>. After breaking, waves continues as a near-vertical wall of
+turbulent water called a <em>bore</em> which carries water to the beach. At
+first, the bore surges up the beach, then retreats. The water carried by
+the bore is left in the shallow waters inside the breaker zone.</p>
+<p>Figure 17.5 Sketch of rip currents</p>
+<p>generated by water carried to the beach by breaking waves.</p>
+<p><span id="fig:rips" label="fig:rips"></span></p>
+<p>Water dumped inside the breaker zone must return offshore. It does this
+by first moving parallel to the beach as an <em>along-shore current</em>. Then
+it turns and flows offshore perpendicular to the beach in a narrow,
+swift <em>rip current</em>. The rips are usually spaced hundreds of meters
+apart (figure 17.5). Usually there is a band of deeper water between the
+breaker zone and the beach, and the long-shore current runs in this
+channel. The strength of a rip current depends on the height and
+frequency of breaking waves and the strength of the onshore wind. Rips
+are a danger to unwary swimmers, especially poor swimmers bobbing along
+in the waves inside the breaker zone. They are carried along by the
+along-shore current until they are suddenly carried out to sea by the
+rip. Swimming against the rip is futile, but swimmers can escape by
+swimming parallel to the beach.</p>
+<p><em>Edge waves</em> are produced by the variability of wave energy reaching
+shore. Waves tend to come in groups, especially when waves come from
+distant storms. For several minutes breakers may be smaller than
+average, then a few very large waves will break. The minute-to-minute
+variation in the height of breakers produces low-frequency variability
+in the along-shore current. This, in turn, drives a low-frequency wave
+attached to the beach, an edge wave. The waves have periods of a few
+minutes, a long-shore wave length of around a kilometer, and an
+amplitude that decays exponentially offshore (figure 17.6).</p>
+<p>Figure 17.6 Computer-assisted sketch of</p>
+<p>an edge wave. Such waves exist in the breaker<br />
+zone near the beach and on the continental shelf. After Cutchin and
+Smith (1973).</p>
+<p><span id="fig:edgewave" label="fig:edgewave"></span></p>
+</section>
+</section>
+<section id="tsunamis">
+<h2><span class="section-number">17.2. </span>Tsunamis<a class="headerlink" href="#tsunamis" title="Link to this heading">#</a></h2>
+<p>Tsunamis are low-frequency ocean waves generated by submarine
+earthquakes. The sudden motion of sea floor over distances of a hundred
+or more kilometers generates waves with periods of 15–40 minutes
+(figure 17.7). A quick calculation shows that such waves must be
+shallow-water waves, propagating at a speed of 180 m/s and having a
+wavelength of 130 km in water 3.6 km deep (figure 17.8). The waves are
+not noticeable at sea, but after slowing on approach to the coast, and
+after refraction by sub-sea features, they can come ashore and surge to
+heights ten or more meters above sea level. In an extreme example, the
+great 2004 Indian Ocean tsunami destroyed hundreds of villages, killing
+at least 200,000 people.</p>
+<p>Figure 17.7 <strong>Left</strong> Hourly positions</p>
+<p>of leading edge of tsunami generated by the large earthquake in the
+Aleutian Trench on April 1, 1946 at 1:59 AM Hawaiian time (12:59 GMT).
+<strong>Right: top</strong> Sealevel recorded by a river gauge in the estuary of the
+Waimea River. <strong>Right: lower</strong> Map of Kauai showing the heights reached
+by the water (in meters above lower low water) during the tsunami, wave
+fronts, orthogonals, and submarine contours. Times refer to the computed
+arrival time of the first wave. After Shepard, MacDonald, and Cox
+(1950). <span id="fig:tsunami" label="fig:tsunami"></span></p>
+<p>Shepard (1963, Chapter 4) summarized the influence of tsunamis based on
+his studies in the Pacific.</p>
+<p>Tsunamis appear to be produced by movement (an earthquake) along a
+linear fault.</p>
+<p>Tsunamis can travel thousands of kilometers and still do serious damage.</p>
+<p>The first wave of a tsunami is not likely to be the biggest.</p>
+<p>Wave amplitudes are relatively large shoreward of submarine ridges. They
+are relatively low shoreward of submarine valleys, provided the features
+extend into deep water.</p>
+<p>Wave amplitudes are decreased by the presence of coral reefs bordering
+the coast.</p>
+<p>Some bays have a funneling effect, but long estuaries attenuate waves.</p>
+<p>Waves can bend around circular islands without great loss of energy, but
+they are considerably smaller on the backsides of elongated, angular
+islands.</p>
+<p>Figure 17.8 Tsunami</p>
+<p>waves four hours after the great M9 Cascadia earthquake off the coast of
+Washington on 26 January 1700 calculated by a finite-element, numerical
+model. Maximum open-ocean wave height, about one meter, is north of
+Hawaii. After Satake et al. (1996). <span id="fig:tsunamiwave" label="fig:tsunamiwave"></span></p>
+<p>Numerical models are used to forecast tsunami heights throughout ocean
+basins and the inundation of coasts. For example, <span class="smallcaps">noaa</span>’s
+Center for Tsunami Research uses the Method of Splitting Tsunami
+<span class="smallcaps">most</span> model (Titov and Gonzalez, 1997). The model uses
+nested grids to resolve the tsunami wavelength, it propagates the wave
+across ocean basins, and then calculates run-up when the wave comes
+ashore. It is initialized from a ground deformation model that uses
+measured earthquake magnitude and location to calculate vertical
+displacement of the sea floor. The forcing is modified once waves are
+measured near the earthquake by seafloor observing stations.</p>
+</section>
+<section id="storm-surges">
+<h2><span class="section-number">17.3. </span>Storm Surges<a class="headerlink" href="#storm-surges" title="Link to this heading">#</a></h2>
+<p>Storm winds blowing over shallow, continental shelves pile water against
+the coast. The increase in sea level is known as a storm surge. Several
+processes are important:</p>
+<p>Ekman transport by winds parallel to the coast transports water toward
+the coast causing a rise in sea level.</p>
+<p>Winds blowing toward the coast push water directly toward the coast.</p>
+<p>Wave run-up and other wave interactions transport water toward the coast
+adding to the first two processes.</p>
+<p>Edge waves generated by the wind travel along the coast.</p>
+<p>The low pressure inside the storm raises sea level by one centimeter for
+each millibar decrease in pressure through the inverted-barometer
+effect.</p>
+<p>Finally, the storm surge adds to the tides, and high tides can change a
+relative weak surge into a much more dangerous one.</p>
+<p>See Graber et al (2006) and §15.5 for a description of Advanced
+Circulation Model used by the National Hurricane Center for predicting
+storm-surges.</p>
+<p>To a crude first approximation, wind blowing over shallow water causes a
+slope in the sea surface proportional to wind stress.
+$<span class="math notranslate nohighlight">\(\frac{\partial \zeta }{\partial x}= \frac{\tau _{0}}{\rho g H}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\zeta<span class="math notranslate nohighlight">\( is sea level, \)</span>x<span class="math notranslate nohighlight">\( is horizontal distance, \)</span>H<span class="math notranslate nohighlight">\( is water depth,
+\)</span>T_{0}<span class="math notranslate nohighlight">\( is wind stress at the sea surface, \)</span>\rho<span class="math notranslate nohighlight">\( is water density; and
+\)</span>g$ is gravitational acceleration.</p>
+<p>If <span class="math notranslate nohighlight">\(x=100\)</span> km, <span class="math notranslate nohighlight">\(U=40\)</span> m/s, and <span class="math notranslate nohighlight">\(H=20\)</span> m, values typical of a hurricane
+offshore of the Texas Gulf Coast, then <span class="math notranslate nohighlight">\(T= 2.7\)</span> Pa, and <span class="math notranslate nohighlight">\(\zeta = 1.3\)</span> m
+at the shore. Figure 17.9 shows the frequency of surges at the
+Netherlands and a graphical method for estimating the probability of
+extreme events using the probability of weaker events.</p>
+<p>Figure 17.9 Probability (per year)</p>
+<p>density distribution of vertical height of storm surges in the Hook of
+Holland in the Netherlands. The distribution function is Rayleigh, and
+the probability of large surges is estimated by extrapolating the
+observed frequency of smaller, more common surges. After Wiegel (1964:
+113). <span id="fig:surgeprob" label="fig:surgeprob"></span></p>
+</section>
+<section id="theory-of-ocean-tides">
+<h2><span class="section-number">17.4. </span>Theory of Ocean Tides<a class="headerlink" href="#theory-of-ocean-tides" title="Link to this heading">#</a></h2>
+<p>Tides have been so important for commerce and science for so many
+thousands of years that tides have entered our everyday language: <em>time
+and tide wait for no one</em>, <em>the ebb and flow of events</em>, <em>a high-water
+mark</em>, and <em>turn the tide of battle</em>.</p>
+<p>Tides produce strong currents in many parts of the ocean. Tidal currents
+can have speeds of up to 5 m/s in coastal waters, impeding navigation
+and mixing coastal waters.</p>
+<p>Tidal currents generate internal waves over seamounts, continental
+slopes, and mid-ocean ridges. The waves dissipate tidal energy. Breaking
+internal waves and tidal currents are a major force driving oceanic
+mixing.</p>
+<p>Tidal mixing helps drive the deep circulation, and it influences climate
+and abrupt climate change.</p>
+<p>Tidal currents can suspend bottom sediments, even in the deep ocean.</p>
+<p>Earth’s crust is elastic. It bends under the influence of the tidal
+potential. It also bends under the weight of oceanic tides. As a result,
+the sea floor, and the continents move up and down by about 10 cm in
+response to the tides. The deformation of the solid earth influence
+almost all precise geodetic measurements.</p>
+<p>Oceanic tides lag behind the tide-generating potential. This produces
+forces that transfer angular momentum between earth and the tide
+producing body, especially the moon. As a result of tidal forces,
+earth’s rotation about it’s axis slows, increasing the length of day;
+the rotation of the moon about earth slows, causing the moon to move
+slowly away from earth; and moon’s rotation about it’s axis slows,
+causing the moon to keep the same side facing earth as the moon rotates
+about earth.</p>
+<p>Tides influence the orbits of satellites. Accurate knowledge of tides is
+needed for computing the orbit of altimetric satellites and for
+correcting altimeter measurements of oceanic topography.</p>
+<p>Tidal forces on other planets and stars are important for understanding
+many aspects of solar-system dynamics and even galactic dynamics. For
+example, the rotation rate of Mercury, Venus, and Io result from tidal
+forces.</p>
+<p>Mariners have known for at least four thousand years that tides are
+related to the phase of the moon. The exact relationship, however, is
+hidden behind many complicating factors, and some of the greatest
+scientific minds of the last four centuries worked to understand,
+calculate, and predict tides. Galileo, Descartes, Kepler, Newton, Euler,
+Bernoulli, Kant, Laplace, Airy, Lord Kelvin, Jeffreys, Munk and many
+others contributed. Some of the first computers were developed to
+compute and predict tides. Ferrel built a tide-predicting machine in
+1880 that was used by the U.S. Coast Survey to predict nineteen tidal
+constituents. In 1901, Harris extended the capacity to 37 constituents.</p>
+<p>Despite all this work important questions remained: What is the
+amplitude and phase of the tides at any place on the ocean or along the
+coast? What is the speed and direction of tidal currents? What is the
+shape of the tides on the ocean? Where is tidal energy dissipated?
+Finding answers to these simple questions is difficult, and the first,
+accurate, global maps of deep-sea tides were only published in 1994
+(LeProvost et al. 1994). The problem is hard because the tides are a
+self-gravitating, near-resonant, sloshing of water in a rotating,
+elastic, ocean basin with ridges, mountains, and submarine basins.</p>
+<p>Predicting tides along coasts and at ports is much easier. Data from a
+tide gauge plus the theory of tidal forcing gives an accurate
+description of tides near the tide gauge.</p>
+<section id="tidal-potential">
+<h3><span class="section-number">17.4.1. </span>Tidal Potential<a class="headerlink" href="#tidal-potential" title="Link to this heading">#</a></h3>
+<p>Tides are calculated from the hydrodynamic equations for a
+self-gravitating ocean on a rotating, elastic earth. The driving force
+is the gradient of the gravity field of the moon and sun. If the earth
+were an ocean planet with no land, and if we ignore the influence of
+inertia and currents, the gravity gradient produces a pair of bulges of
+water on earth, one on the side facing the moon or sun, one on the side
+away from the moon or sun. A clear derivation of the forces is given by
+Pugh (1987) and by Dietrich, Kalle, Krauss, and Siedler (1980). Here I
+follow the discussion in Pugh (1987: §3.2).</p>
+<p>Note that many oceanographic books state that the tide is produced by
+two processes: i) the centripetal acceleration at earth’s surface as the
+earth and moon circle around a common center of mass, and ii) the
+gravitational attraction of mass on earth and the moon. However, the
+derivation of the tidal potential does not involve centripetal
+acceleration, and the concept is not used by the astronomical or
+geodetic communities.</p>
+<p>Figure 17.10 Sketch of</p>
+<p>coordinates for determining the tide-generating potential.</p>
+<p><span id="fig:tidesketch" label="fig:tidesketch"></span></p>
+<p>To calculate the amplitude and phase of the tide on an ocean planet, we
+begin by calculating the tide-generating potential. This is much easier
+than calculating the forces. Ignoring for now earth’s rotation, the
+rotation of moon about earth produces a potential <span class="math notranslate nohighlight">\(V_M\)</span> at any point on
+earth’s surface $<span class="math notranslate nohighlight">\(V_{M} = -\frac{\gamma M}{r_{1}}\)</span><span class="math notranslate nohighlight">\( where the geometry
+is sketched in figure 17.10, \)</span>\gamma<span class="math notranslate nohighlight">\( is the gravitational constant, and
+\)</span>M<span class="math notranslate nohighlight">\( is moon’s mass. From the triangle \)</span>OPA<span class="math notranslate nohighlight">\( in the figure,
+\)</span><span class="math notranslate nohighlight">\(r_{1}^{2} = r^{2} + R^{2} - 2 r R \cos \varphi\)</span><span class="math notranslate nohighlight">\( Using this in (17.5)
+gives
+\)</span><span class="math notranslate nohighlight">\(V_{M} = -\frac{\gamma M}{R} \left\{ 1 - 2 \left(\frac{r}{R}\right) \cos \varphi +
+\left(\frac{r}{R}\right)^{2}\right\}^{-1/2}\)</span><span class="math notranslate nohighlight">\( \)</span>r/R \approx 1/60<span class="math notranslate nohighlight">\(, and
+(17.7) may be expanded in powers of \)</span>r/R<span class="math notranslate nohighlight">\( using Legendre polynomials
+(Whittaker and Watson, 1963: §15.1):
+\)</span><span class="math notranslate nohighlight">\(V_M = -\frac{\gamma M}{R} \left\{1+\left(\frac{r}{R}\right) \cos \varphi +
+\left(\frac{r}{R}\right)^2 \left(\frac{1}{2}\right) (3\cos ^2 \varphi - 1) + \cdots
+\right\}\)</span><span class="math notranslate nohighlight">\( The tidal forces are calculated from the spatial gradient of
+the potential. The first term in (17.8) produces no force. The second
+term, when differentiated with respect to (\)</span>r \cos \varphi<span class="math notranslate nohighlight">\() produces a
+constant force \)</span>\gamma M/R^{2}<span class="math notranslate nohighlight">\( parallel to OA that keeps earth in orbit
+around the center of mass of the earth-moon system. The third term
+produces the tides, assuming the higher-order terms can be ignored. The
+tide-generating potential is therefore:
+\)</span><span class="math notranslate nohighlight">\(V= -\frac{\gamma M r^{2}}{2 R^{3}} (3 \cos ^2 \varphi - 1)\)</span>$</p>
+<p>Figure 17.11 The horizontal</p>
+<p>component of the tidal force on earth when the<br />
+tide-generating body is above the Equator at <span class="math notranslate nohighlight">\(Z\)</span>. After Dietrich et al.
+(1980: 413).</p>
+<p><span id="fig:horiztideforce" label="fig:horiztideforce"></span></p>
+<p>The tide-generating force can be decomposed into components
+perpendicular <span class="math notranslate nohighlight">\(P\)</span> and parallel <span class="math notranslate nohighlight">\(H\)</span> to the sea surface. Tides are
+produced by the horizontal component. “The vertical component is
+balanced by pressure on the sea bed, but the ratio of the horizontal
+force per unit mass to vertical gravity has to be balanced by an
+opposing slope of the sea surface, as well as by possible changes in
+current momentum” (Cartwright, 1999: 39, 45). The horizontal component,
+shown in figure 17.11, is:
+$<span class="math notranslate nohighlight">\(H = - \frac{1}{r} \frac{\partial V}{\partial\varphi} = \frac{2 G}{r} \sin
+2\varphi\)</span><span class="math notranslate nohighlight">\( where
+\)</span><span class="math notranslate nohighlight">\(G = \frac{3}{4} \gamma M \left( \frac{r^{2}}{R^{3}} \right)\)</span>$ The
+tidal potential is symmetric about the earth-moon line, and it produces
+symmetric bulges.</p>
+<p>If we allow our ocean-covered earth to rotate, an observer in space sees
+the two bulges fixed relative to the earth-moon line as earth rotates.
+To an observer on earth, the two tidal bulges seems to rotate around
+earth because moon appears to move around the sky at nearly one cycle
+per day. Moon produces high tides every 12 hours and 25.23 minutes on
+the equator if the moon is above the equator. Notice that high tides are
+not exactly twice per day because the moon is also rotating around
+earth. Of course, the moon is above the equator only twice per lunar
+month, and this complicates our simple picture of the tides on an ideal
+ocean-covered earth. Furthermore, moon’s distance from earth <span class="math notranslate nohighlight">\(R\)</span> varies
+because moon’s orbit is elliptical and because the elliptical orbit is
+not fixed.</p>
+<p>Clearly, the calculation of tides is getting more complicated than we
+might have thought. Before continuing on, we note that the solar tidal
+forces are derived in a similar way. The relative importance of the sun
+and moon are nearly the same. Although the sun is much more massive than
+moon, it is much further away. $<span class="math notranslate nohighlight">\(\begin{aligned}
+G_{sun}     = G_{S} &amp;= \frac{3}{4} \gamma S \left( \frac{r^{2}}{R_{sun}^{3}} \right) \\
+G_{moon}    = G_{M} &amp;= \frac{3}{4} \gamma M \left( \frac{r^{2}}{R_{moon}^{3}} \right) \\
+\frac{G_{S}}{G_{M}} &amp;= 0.46051\end{aligned}\)</span><span class="math notranslate nohighlight">\( where \)</span>R_{sun}<span class="math notranslate nohighlight">\( is the
+distance to the sun, \)</span>S<span class="math notranslate nohighlight">\( is the mass of the sun, \)</span>R_{moon}<span class="math notranslate nohighlight">\( is the
+distance to the moon, and \)</span>M$ is the mass of the moon.</p>
+</section>
+<section id="coordinates-of-sun-and-moon">
+<h3><span class="section-number">17.4.2. </span>Coordinates of Sun and Moon<a class="headerlink" href="#coordinates-of-sun-and-moon" title="Link to this heading">#</a></h3>
+<p>Before we can proceed further we need to know the position of moon and
+sun relative to earth. An accurate description of the positions in three
+dimensions is very difficult, and it involves learning arcane terms and
+concepts from celestial mechanics. Here, I paraphrase a simplified
+description from Pugh (1987). See also figure 4.1.</p>
+<p>A natural reference system for an observer on earth is the equatorial
+system described at the start of Chapter 3. In this system,
+<em>declinations</em> <span class="math notranslate nohighlight">\(\delta\)</span> of a celestial body are measured north and south
+of a plane which cuts the earth’s equator.</p>
+<blockquote>
+<div><p>Angular distances around the plane are measured relative to a point on
+this celestial equator which is fixed with respect to the stars. The
+point chosen for this system is the <em>vernal equinox</em>, also called the
+‘First Point of Aries’…The angle measured eastward, between Aries
+and the equatorial intersection of the meridian through a celestial
+object is called the <em>right ascension</em> of the object. The declination
+and the right ascension together define the position of the object on
+a celestial background…</p>
+<p>[Another natural reference] system uses the plane of the earth’s
+revolution around the sun as a reference. The celestial extension of
+this plane, which is traced by the sun’s annual apparent movement, is
+called the <em>ecliptic</em>. Conveniently, the point on this plane which is
+chosen for a zero reference is also the vernal equinox, at which the
+sun crosses the equatorial plane from south to north around 21 March
+each year. Celestial objects are located by their ecliptic latitude
+and ecliptic longitude. The angle between the two planes, of 23.45, is
+called the obliquity of the ecliptic…—Pugh (1987: 72).</p>
+</div></blockquote>
+</section>
+<section id="tidal-frequencies">
+<h3><span class="section-number">17.4.3. </span>Tidal Frequencies<a class="headerlink" href="#tidal-frequencies" title="Link to this heading">#</a></h3>
+<p>Now, let’s allow earth to spin about its polar axis. The changing
+potential at a fixed geographic coordinate on earth is:
+$<span class="math notranslate nohighlight">\(\cos \varphi = \sin \varphi _p \sin \delta + \cos \varphi _p \cos \delta \cos (\tau
+_{1} - 180^{\circ})\)</span><span class="math notranslate nohighlight">\( where \)</span>\varphi _p<span class="math notranslate nohighlight">\( is latitude at which the tidal
+potential is calculated, \)</span>\delta<span class="math notranslate nohighlight">\( is declination of moon or sun north of
+the equator, and \)</span>\tau _{1}$ is the hour angle of moon or sun. The <em>hour
+angle</em> is the longitude where the imaginary plane containing the sun or
+moon and earth’s rotation axis crosses the Equator.</p>
+<p>The period of the solar hour angle is a solar day of 24 hr 0 m. The
+period of the lunar hour angle is a lunar day of 24 hr 50.47 m.</p>
+<p>Earth’s axis of rotation is inclined 23.45 with respect to the plane of
+earth’s orbit about the sun. This defines the ecliptic, and the sun’s
+declination varies between <span class="math notranslate nohighlight">\(\delta = \pm 23.45\)</span> with a period of one solar year. The orientation of earth’s
+rotation axis precesses with respect to the stars with a period of 26
+years. The rotation of the ecliptic plane causes <span class="math notranslate nohighlight">\(\delta\)</span> and the vernal
+equinox to change slowly, and the movement called the <em>precession of the
+equinoxes</em>.</p>
+<p>Earth’s orbit about the sun is elliptical, with the sun in one focus.
+That point in the orbit where the distance between the sun and earth is
+a minimum is called <em>perigee</em>. The orientation of the ellipse in the
+ecliptic plane changes slowly with time, causing perigee to rotate with
+a period of 20 years. Therefore <span class="math notranslate nohighlight">\(R_{sun}\)</span> varies with this period.</p>
+<p>Moon’s orbit is also elliptical, but a description of moon’s orbit is
+much more complicated than a description of earth’s orbit. Here are the
+basics. The moon’s orbit lies in a plane inclined at a mean angle of
+5.15 relative to the plane of the ecliptic. And lunar declination varies
+between <span class="math notranslate nohighlight">\(\delta = 23.45 \pm 5.15\)</span> with a period of one tropical month of
+27.32 solar days. The actual inclination of moon’s orbit varies between
+4.97, and 5.32.</p>
+<p>The shape of moon’s orbit also varies. First, perigee rotates with a
+period of 8.85 years. The eccentricity of the orbit has a mean value of
+0.0549, and it varies between 0.044 and 0.067. Second, the plane of
+moon’s orbit rotates around earth’s axis of rotation with a period of
+18.613 years. Both processes cause variations in <span class="math notranslate nohighlight">\(R_{moon}\)</span>.</p>
+<p>Note that I am a little imprecise in defining the position of the sun
+and moon. Lang (1980: § 5.1.2) gives much more precise definitions.</p>
+<p>Substituting (17.15) into (17.9) gives: $$\begin{gathered}
+V = \frac{\gamma M r^{2}}{R^{3}} \frac{1}{4} \left[ \left( 3 \sin ^{2} \varphi_p - 1
+\right) \left( 3 \sin ^{2} \delta -1 \right)  \right. \</p>
+<ul class="simple">
+<li><p>3 \sin 2 \varphi_p ,, \sin 2 \delta ,, \cos \tau _{1} \</p></li>
+<li><p>\left. 3 \cos^2 \varphi_p ,, \cos^2 \delta ,, \cos 2 \tau _1 \right]\end{gathered}$<span class="math notranslate nohighlight">\(
+Equation (17.16) separates the period of the lunar tidal potential into
+three terms with periods near 14 days, 24 hours, and 12 hours. Similarly
+the solar potential has periods near 180 days, 24 hours, and 12 hours.
+Thus there are three distinct groups of tidal frequencies: twice-daily,
+daily, and long period, having different latitudinal factors
+\)</span>\sin^2 \theta<span class="math notranslate nohighlight">\(, \)</span>\sin 2 \theta<span class="math notranslate nohighlight">\(, and \)</span>(1 - 3 \cos^2 \theta )/2<span class="math notranslate nohighlight">\(, where \)</span>\theta<span class="math notranslate nohighlight">\( is the co-latitude \)</span>\left( 90^{\circ} - \varphi \right)$.</p></li>
+</ul>
+<p>121mm&#64;crrll&#64;</p>
+<p>&amp; Frequency &amp; &amp; Period &amp; Source<br />
+&amp; /hour &amp; &amp; &amp;<br />
+<span class="math notranslate nohighlight">\(f_1\)</span> &amp; 14.49205211 &amp; 1 &amp; lunar day &amp; Local mean lunar time</p>
+<p><span class="math notranslate nohighlight">\(f_2\)</span> &amp; 0.54901653 &amp; 1 &amp; month &amp; Moon’s mean longitude<br />
+<span class="math notranslate nohighlight">\(f_3\)</span> &amp; 0.04106864 &amp; 1 &amp; year &amp; Sun’s mean longitude<br />
+<span class="math notranslate nohighlight">\(f_4\)</span> &amp; 0.00464184 &amp; 8.847 &amp; years &amp; Longitude of moon’s perigee<br />
+<span class="math notranslate nohighlight">\(f_5\)</span> &amp; -0.00220641 &amp; 18.613 &amp; years &amp; Longitude of moon’s ascending
+node<br />
+<span class="math notranslate nohighlight">\(f_6\)</span> &amp; 0.00000196 &amp; 20,940 &amp; years &amp; Longitude of sun’s perigee</p>
+<p>Doodson (1922) expanded (17.16) in a Fourier series using the cleverly
+chosen frequencies in table 17.1. Other choices of fundamental
+frequencies are possible, for example the local, mean, solar time can be
+used instead of the local, mean, lunar time. Doodson’s expansion,
+however, leads to an elegant decomposition of tidal constituents into
+groups with similar frequencies and spatial variability.</p>
+<p>Using Doodson’s expansion, each constituent of the tide has a frequency
+$<span class="math notranslate nohighlight">\(f = n_1 f_1 + n_2 f_2 + n_3 f_3 + n_4 f_4 + n_5 f_5 + n_6 f_6\)</span><span class="math notranslate nohighlight">\( where
+the integers \)</span>n_i<span class="math notranslate nohighlight">\( are the *Doodson numbers*. \)</span>n_1 = 1, 2, 3<span class="math notranslate nohighlight">\( and
+\)</span>n_2<span class="math notranslate nohighlight">\(–\)</span>n_6<span class="math notranslate nohighlight">\( are between \)</span>-5<span class="math notranslate nohighlight">\( and \)</span>+5<span class="math notranslate nohighlight">\(. To avoid negative numbers,
+Doodson added five to \)</span>n_{2  \cdots 6}<span class="math notranslate nohighlight">\(. Each tidal wave having a particular frequency given by its
+Doodson number is called a *tidal constituent*, sometimes called a
+*partial tides*. For example, the principal, twice-per-day, lunar tide
+has the number 255.555. Because the very long-term modulation of the
+tides by the change in sun’s perigee is so small, the last Doodson
+number \)</span>n_6$ is usually ignored.</p>
+<p><strong>Table 17.2 Principal Tidal Constituents</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p>Equilibrium</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tidal</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p>Amplitude</p></td>
+<td><p>Period</p></td>
+</tr>
+<tr class="row-even"><td><p>Species</p></td>
+<td><p>Name</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_5\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\((m)\)</span></p></td>
+<td><p>(hr)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Semidiurnal</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_1 =2\)</span></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Principal lunar</p></td>
+<td><p><span class="math notranslate nohighlight">\(M_2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.242334</p></td>
+<td><p>12.4206</p></td>
+</tr>
+<tr class="row-odd"><td><p>Principal solar</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>-2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.112841</p></td>
+<td><p>12.0000</p></td>
+</tr>
+<tr class="row-even"><td><p>Lunar elliptic</p></td>
+<td><p><span class="math notranslate nohighlight">\(N_2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>-1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.046398</p></td>
+<td><p>12.6584</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lunisolar</p></td>
+<td><p><span class="math notranslate nohighlight">\(K_2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.030704</p></td>
+<td><p>11.9673</p></td>
+</tr>
+<tr class="row-even"><td><p>Diurnal</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_1 =1\)</span></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Lunisolar</p></td>
+<td><p><span class="math notranslate nohighlight">\(K_1\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.141565</p></td>
+<td><p>23.9344</p></td>
+</tr>
+<tr class="row-even"><td><p>Principal lunar</p></td>
+<td><p><span class="math notranslate nohighlight">\(O_1\)</span></p></td>
+<td><p>1</p></td>
+<td><p>-1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.100514</p></td>
+<td><p>25.8194</p></td>
+</tr>
+<tr class="row-odd"><td><p>Principal solar</p></td>
+<td><p><span class="math notranslate nohighlight">\(P_1\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>-2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.046843</p></td>
+<td><p>24.0659</p></td>
+</tr>
+<tr class="row-even"><td><p>Elliptic lunar</p></td>
+<td><p><span class="math notranslate nohighlight">\(Q_1\)</span></p></td>
+<td><p>1</p></td>
+<td><p>-2</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.019256</p></td>
+<td><p>26.8684</p></td>
+</tr>
+<tr class="row-odd"><td><p>Long Period</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_1 =0\)</span></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Fortnightly</p></td>
+<td><p><span class="math notranslate nohighlight">\(Mf\)</span></p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.041742</p></td>
+<td><p>327.85</p></td>
+</tr>
+<tr class="row-odd"><td><p>Monthly</p></td>
+<td><p><span class="math notranslate nohighlight">\(Mm\)</span></p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>-1</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.022026</p></td>
+<td><p>661.31</p></td>
+</tr>
+<tr class="row-even"><td><p>Semiannual</p></td>
+<td><p><span class="math notranslate nohighlight">\(Ssa\)</span></p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td class="text-center"><p>0.019446</p></td>
+<td><p>4383.05</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If the ocean surface is in equilibrium with the tidal potential, which
+means we ignore inertia and currents and assume no land (Cartwright
+1999: 274), the largest tidal constituents would have amplitudes given
+in table 17.2. Notice that tides with frequencies near one or two cycles
+per day are split into closely spaced lines with spacing separated by a
+cycle per month. Each of these lines is further split into lines
+separated by a cycle per year (figure 17.12). Furthermore, each of these
+lines is split into lines separated by a cycle per 8.8 yr, and so on.
+Clearly, there are very many possible tidal constituents.</p>
+<p>Figure 17.12 <strong>Upper:</strong> Spectrum</p>
+<p>of equilibrium tides with frequencies near twice per day. The spectrum
+is split into groups separated by a cycle per month (0.55 deg/hr).
+<strong>Lower:</strong> Expanded spectrum of the <span class="math notranslate nohighlight">\(S_2\)</span> group, showing splitting at a
+cycle per year (0.04 deg/hr). The finest splitting in this figure is at
+a cycle per 8.847 years (0.0046 deg/hr). From Richard Eanes, Center for
+Space Research, University of Texas. <span id="combinedtides" label="combinedtides"></span></p>
+<p>Why is the tide split into the many constituents shown in figure 17.12?
+To answer the question, suppose moon’s elliptical orbit was in the
+equatorial plane of earth. Then <span class="math notranslate nohighlight">\(\delta = 0\)</span>. From (17.16), the tidal
+potential on the equator, where <span class="math notranslate nohighlight">\(\varphi_p =0\)</span>, is:
+$<span class="math notranslate nohighlight">\(V = \frac{\gamma M r^{2}}{R^{3}} \frac{1}{4} \cos \left(4 \pi f_1 \right)\)</span><span class="math notranslate nohighlight">\(
+If the ellipticity of the orbit is small, \)</span>R= R_0 (1+\epsilon )<span class="math notranslate nohighlight">\(, and
+(17.18) is approximately
+\)</span><span class="math notranslate nohighlight">\(V = a (1-3\epsilon) \cos \left(4 \pi f_1 \right)\)</span><span class="math notranslate nohighlight">\( where
+\)</span>a=\left( \gamma M r^2 \right)/\left( 4 R^3 \right)<span class="math notranslate nohighlight">\( is a constant.
+\)</span>\epsilon<span class="math notranslate nohighlight">\( varies with a period of 27.32 days, and we can write
+\)</span>\epsilon = b \cos (2 \pi f_2)<span class="math notranslate nohighlight">\( where \)</span>b$ is a small constant. With
+these simplifications, (17.19) can be written:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+V &amp;= a \cos \left(4 \pi f_1 \right) -3 a b \cos \left( 2 \pi f_2 \right) \cos \left(4 \pi f_1 \right) \\
+V &amp;= a \cos \left(4\pi f_1 \right) - 3 a b \left[ \cos 2\pi \left( 2f_1 - f_2 \right) + \cos 2\pi \left( 2f_1 + f_2 \right) \right]\end{aligned}\end{split}\]</div>
+<p>which has a spectrum with three lines at <span class="math notranslate nohighlight">\(2 f_1\)</span> and <span class="math notranslate nohighlight">\(2 f_1 \pm f_2\)</span>. Therefore, the slow modulation of the amplitude of the tidal
+potential at two cycles per lunar day causes the potential to be split
+into three frequencies. This is the way amplitude modulated AM radio
+works. If we add in the slow changes in the shape of the orbit, we get
+still more terms even in this very idealized case of a moon in an
+equatorial orbit.</p>
+<p>If you are very observant, you will have noticed that the tidal spectrum
+in figure 17.12 does not look like the ocean-wave spectrum of ocean
+waves in figure 16.6. Ocean waves have all possible frequencies, and
+their spectrum is continuous. Tides have precise frequencies determined
+by the orbit of earth and moon, and their spectrum is not continuous. It
+consists of discrete lines.</p>
+<p>Doodson’s expansion included 399 constituents, of which 100 are long
+period, 160 are daily, 115 are twice per day, and 14 are thrice per day.
+Most have very small amplitudes, and only the largest are included in
+table 17.2. The largest tides were named by Sir George Darwin (1911) and
+the names are included in the table. Thus, for example, the principal,
+twice-per-day, lunar tide, which has Doodson number 255.555, is the
+<span class="math notranslate nohighlight">\(M_2\)</span> tide, called the <em>M-two</em> tide.</p>
+</section>
+</section>
+<section id="tidal-prediction">
+<h2><span class="section-number">17.5. </span>Tidal Prediction<a class="headerlink" href="#tidal-prediction" title="Link to this heading">#</a></h2>
+<p>If tides in the ocean were in equilibrium with the tidal potential,
+tidal prediction would be much easier. Unfortunately, tides are far from
+equilibrium. The shallow-water wave which is the tide cannot move fast
+enough to keep up with sun and moon. On the equator, the tide would need
+to propagate around the world in one day. This requires a wave speed of
+around 460 m/s, which is only possible in an ocean 22 km deep. In
+addition, the continents interrupt the propagation of the wave. How to
+proceed?</p>
+<p>We can separate the problem of tidal prediction into two parts. The
+first deals with the prediction of tides in ports and shallow water
+where tides can be measured by tide gauges. The second deals with the
+prediction of tides in the deep ocean where tides are measured by
+satellite altimeters.</p>
+<section id="tidal-prediction-for-ports-and-shallow-water">
+<h3><span class="section-number">17.5.1. </span>Tidal Prediction for Ports and Shallow Water<a class="headerlink" href="#tidal-prediction-for-ports-and-shallow-water" title="Link to this heading">#</a></h3>
+<p>Two methods are used to predict future tides at a tide-gauge station
+using past observations of sea level measured at the gauge.</p>
+<p><em>The Harmonic Method</em> This is the traditional method, and it is still
+widely used. The method typically uses 19 years of data from a coastal
+tide gauge from which the amplitude and phase of each tidal constituent
+(the tidal harmonics) in the tide-gage record are calculated. The
+frequencies used in the analysis are specified in advance from the basic
+frequencies given in table 17.1.</p>
+<p>Despite its simplicity, the technique had disadvantages compared with
+the response method described below.</p>
+<p>More than 18.6 years of data are needed to resolve the modulation of the
+lunar tides.</p>
+<p>Amplitude accuracy of <span class="math notranslate nohighlight">\(10^{-3}\)</span> of the largest term require that at
+least 39 frequencies be determined. Doodson found 400 frequencies were
+needed for an amplitude accuracy of <span class="math notranslate nohighlight">\(10^{-4}\)</span> of the largest term.</p>
+<p>Non-tidal variability introduces large errors into the calculated
+amplitudes and phases of the weaker tidal constituents. The weaker tides
+have amplitudes smaller than variability at the same frequency due to
+other processes such as wind set up and currents near the tide gauge.</p>
+<p>At many ports, the tide is non-linear, and many more tidal constituents
+are important. For some ports, the number of frequencies is
+unmanageable. When tides propagate into very shallow water, especially
+river estuaries, they steepen and become non-linear. This generates
+harmonics of the original frequencies. In extreme cases, the incoming
+waves steepens so much the leading edge is nearly vertical, and the wave
+propagates as solitary wave. This is a <em>tidal bore</em>.</p>
+<p><em>The Response Method</em> This method, developed by Munk and Cartwright
+(1966), calculates the relationship between the observed tide at some
+point and the tidal potential. The relationship is the spectral
+admittance between the major tidal constituents and the tidal potential
+at each station. The admittance is assumed to be a slowly varying
+function of frequency so that the admittance of the major constituents
+can be used for determining the response at nearby frequencies. Future
+tides are calculated by multiplying the tidal potential by the
+admittance function.</p>
+<p>The technique requires only a few months of data.</p>
+<p>The tidal potential is easily calculated, and a knowledge of the tidal
+frequencies is not needed.</p>
+<p>The admittance is <span class="math notranslate nohighlight">\(Z(f) = G(f)/H(f)\)</span>. <span class="math notranslate nohighlight">\(G(f)\)</span> and <span class="math notranslate nohighlight">\(H(f)\)</span> are the Fourier
+transforms of the potential and the tide gage data, and <span class="math notranslate nohighlight">\(f\)</span> is
+frequency.</p>
+<p>The admittance is inverse transformed to obtain the admittance as a
+function of time.</p>
+<p>The technique works only if the waves propagate as linear waves.</p>
+</section>
+<section id="tidal-prediction-for-deep-water">
+<h3><span class="section-number">17.5.2. </span>Tidal Prediction for Deep-Water<a class="headerlink" href="#tidal-prediction-for-deep-water" title="Link to this heading">#</a></h3>
+<p>Prediction of deep-ocean tides has been much more difficult than
+prediction of shallow-water tides because tide gauges were seldom
+deployed in deep water. All this changed with the launch of Topex/
+Poseidon. The satellite was placed into an orbit especially designed for
+observing ocean tides (Parke et al. 1987), and the altimetric system was
+sufficiently accurate to measure many tidal constituents. Data from the
+satellite have now been used to determine deep-ocean tides with an
+accuracy of <span class="math notranslate nohighlight">\(\pm \, 2\)</span> cm. For most practical purposes, the tides are
+now known accurately for most of the ocean.</p>
+<p>Two avenues led to the new knowledge of deep-water tides using
+altimetry.</p>
+<p><em>Prediction Using Hydrodynamic Theory</em> Purely theoretical calculations
+of tides are not very accurate, especially because the dissipation of
+tidal energy is not well known. Nevertheless, theoretical calculations
+provided insight into processes influencing ocean tides. Several
+processes must be considered:</p>
+<p>The tides in one ocean basin perturb earth’s gravitational field, and
+the mass in the tidal bulge attracts water in other ocean basins. The
+self-gravitational attraction of the tides must be included.</p>
+<p>The weight of the water in the tidal bulge is sufficiently great that it
+deforms the sea floor. The earth deforms as an elastic solid, and the
+deformation extends thousands of kilometers.</p>
+<p>The ocean basins have a natural resonance close to the tidal
+frequencies. The tidal bulge is a shallow-water wave on a rotating
+ocean, and it propagates as a high tide rotating around the edge of the
+basin. Thus the tides are a nearly resonant sloshing of water in the
+ocean basin. The actual tide heights in deep water can be higher than
+the equilibrium values noted in table 17.2.</p>
+<p>Tides are dissipated by bottom friction especially in shallow seas, by
+the flow over seamounts and mid-ocean ridges, and by the generation of
+internal waves over seamounts and at the edges of continental shelves.
+If the tidal forcing stopped, the tides would continue sloshing in the
+ocean basins for several days.</p>
+<p>Because the tide is a shallow-water wave everywhere, its velocity
+depends on depth. Tides propagate more slowly over mid-ocean ridges and
+shallow seas. Hence, the distance between grid points in numerical
+models must be proportional to depth with very close spacing on
+continental shelves (LeProvost et al. 1994).</p>
+<p>Internal waves generated by the tides produce a small signal at the sea
+surface near the tidal frequencies, but not phase-locked to the
+potential. The noise near the frequency of the tides causes the spectral
+cusps in the spectrum of sea-surface elevation first seen by Munk and
+Cartwright (1966). The noise is due to deep-water, tidally generated,
+internal waves.</p>
+<p><em>Altimetry Plus Response Method</em> Several years of altimeter data from
+Topex/ Poseidon have been used with the response method to calculate
+deep-sea tides almost everywhere equatorward of 66 (Ma et al. 1994). The
+altimeter measured sea-surface heights in geocentric coordinates at each
+point along the sub-satellite track every 9.97 days. The temporal
+sampling aliased the tides into long frequencies, but the aliased
+periods are precisely known and the tides can be recovered (Parke et
+al. 1987). Because the tidal record is shorter than 8 years, the
+altimeter data are used with the response method to obtain predictions
+for a much longer time.</p>
+<p>Recent solutions by ten different groups, have accuracy of
+<span class="math notranslate nohighlight">\(\pm \,\)</span><!-- -->2.8 cm in deep water (Andersen, Woodworth, and
+Flather, 1995). Work has begun to improve knowledge of tides in shallow
+water.</p>
+<p>Figure 17.13 Global map of <span class="math notranslate nohighlight">\(M_2\)</span> tide</p>
+<p>calculated from Topex/Poseidon observations of the height of the sea
+surface combined with the response method for extracting tidal
+information. Full lines are contours of constant tidal phase, contour
+interval is 30. Dashed lines are lines of constant amplitude, contour
+interval is 10 cm. From Richard Ray, <span class="smallcaps">nasa</span> Goddard Space
+Flight Center. <span id="fig:m2_tide" label="fig:m2_tide"></span></p>
+<p><em>Altimetry Plus Numerical Models</em> Altimeter data can be used directly
+with numerical models of the tides to calculate tides in all areas of
+the ocean from deep water all the way to the coast. Thus the technique
+is especially useful for determining tides near coasts and over
+sea-floor features where the altimeter ground track is too widely spaced
+to sample the tides well in space. Tide models use finite-element grids
+similar to the one shown in figure 15.3. Recent numerical calculations
+by (LeProvost et al. 1994; LeProvost, Bennett, and Cartwright, 1995)
+give global tides with <span class="math notranslate nohighlight">\(\pm\)</span> 2–3 cm accuracy and full spatial
+resolution.</p>
+<p>Maps produced by this method show the essential features of the
+deep-ocean tides (figure 17.13). The tide consists of a crest that
+rotates counterclockwise around the ocean basins in the northern
+hemisphere, and in the opposite direction in the southern hemisphere.
+Points of minimum amplitude are called <em>amphidromes</em>. Highest tides tend
+to be along the coast.</p>
+<p>The maps also show the importance of the size of the ocean basins. The
+semi-diurnal (12 hr period) tides are relatively large in all ocean
+basins. But the diurnal (24 hr period) tides are small in the Atlantic
+and relatively large in the Pacific and Indian ocean. The Atlantic is
+too small to have a resonant sloshing with a period near 24 hr.</p>
+</section>
+<section id="tidal-dissipation">
+<h3><span class="section-number">17.5.3. </span>Tidal Dissipation<a class="headerlink" href="#tidal-dissipation" title="Link to this heading">#</a></h3>
+<p>Tides dissipate <span class="math notranslate nohighlight">\(3.75\pm0.08\)</span> TW of power (Kantha, 1998), of which 3.5
+TW are dissipated in the ocean, and much smaller amounts in the
+atmosphere and solid earth. The dissipation increases the length of day
+by about 2.07 milliseconds per century, it causes the semimajor axis of
+moon’s orbit to increase by 3.86 cm/yr, and it mixes water masses in the
+ocean.</p>
+<p>The calculations of dissipation from Topex/Poseidon observations of
+tides are remarkably close to estimates from lunar-laser ranging,
+astronomical observations, and ancient eclipse records. The calculations
+show that roughly two thirds of the M2 tidal energy is dissipated on
+shelves and in shallow seas, and one third is transferred to internal
+waves and dissipated in the deep ocean (Egbert and ray, 2000). 85 to 90%
+of the energy of the K1 tide is dissipated in shallow water, and only
+about 10–15% is transferred to internal waves in the deep ocean
+(LeProvost 2003, personal communication).</p>
+<p>Overall, our knowledge of the tides is now sufficiently good that we can
+begin to use the information to study mixing in the ocean. Recent
+results show that “tides are perhaps responsible for a large portion of
+the vertical mixing in the ocean” (Jayne et al. 2004). Remember, mixing
+helps drive the abyssal circulation in the ocean as discussed in §13.2
+(Munk and Wunsch, 1998). Who would have thought that an understanding of
+the influence of the ocean on climate would require accurate knowledge
+of tides?</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">17.6. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Waves propagating into shallow water are refracted by features of
+the seafloor, and they eventually break on the beach. Breaking waves
+drive near-shore currents including long-shore currents, rip
+currents, and edge waves.</p>
+<p>Storm surges are driven by strong winds in storms close to shore.
+The amplitude of the surge is a function of wind speed, the slope of
+the seafloor, and the propagation of the storm.</p>
+<p>Tides are important for navigation; they influence accurate geodetic
+measurements; and they change the orbits and rotation of planets,
+moons, and stars in galaxies.</p>
+<p>Tides are produced by a combination of time-varying gravitational
+potential of the moon and sun and the centrifugal forces generated
+as earth rotates about the common center of mass of the
+earth-moon-sun system.</p>
+<p>Tides have six fundamental frequencies. The tide is the
+superposition of hundreds of tidal constituents, each having a
+frequency that is the sum and difference of five fundamental
+frequencies.</p>
+<p>Shallow water tides are predicted using tide measurements made in
+ports and other locations along the coast. Tidal records of just a
+few months duration can be used to predict tides many years into the
+future.</p>
+<p>Tides in deep water are calculated from altimetric measurements,
+especially Topex/Poseidon measurements. As a result, deep water
+tides are known almost everywhere with an accuracy approaching
+<span class="math notranslate nohighlight">\(\pm 2\)</span> cm.</p>
+<p>The dissipation of tidal energy in the ocean transfers angular
+momentum from moon to earth, causing the day to become longer.</p>
+<p>Tidal dissipation mixes water masses, and it is a major driver of
+the deep, meridional-overturning circulation. Tides, abyssal
+circulation, and climate are closely linked.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter16.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">16. </span>Ocean Waves</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter18.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">18. </span>Bibliography</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shoaling-waves-and-coastal-processes">17.1. Shoaling Waves and Coastal Processes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shoaling-waves">17.1.1. Shoaling Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking-waves">17.1.2. Breaking Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-driven-currents">17.1.3. Wave-Driven Currents</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tsunamis">17.2. Tsunamis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storm-surges">17.3. Storm Surges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-of-ocean-tides">17.4. Theory of Ocean Tides</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-potential">17.4.1. Tidal Potential</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinates-of-sun-and-moon">17.4.2. Coordinates of Sun and Moon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-frequencies">17.4.3. Tidal Frequencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction">17.5. Tidal Prediction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction-for-ports-and-shallow-water">17.5.1. Tidal Prediction for Ports and Shallow Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-prediction-for-deep-water">17.5.2. Tidal Prediction for Deep-Water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tidal-dissipation">17.5.3. Tidal Dissipation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">17.6. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

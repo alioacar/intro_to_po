@@ -1,0 +1,1071 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Atmospheric Influences &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter4';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. The Oceanic Heat Budget" href="chapter5.html" />
+    <link rel="prev" title="3. The Physical Setting" href="chapter3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Atmospheric Influences</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-earth-in-space">4.1. The Earth in Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atmospheric-wind-systems">4.2. Atmospheric Wind Systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-planetary-boundary-layer">4.3. The Planetary Boundary Layer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-wind">4.4. Measurement of Wind</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beaufort-scale">4.4.1. Beaufort Scale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterometers">4.4.2. Scatterometers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windsat">4.4.3. Windsat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-sensor-microwave-ssm-i">4.4.4. Special Sensor Microwave SSM/I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anemometers-on-ships">4.4.5. Anemometers on Ships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrated-anemometers-on-weather-buoys">4.4.6. Calibrated Anemometers on Weather Buoys</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations-of-wind">4.5. Calculations of Wind</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-analysis-from-numerical-weather-models">4.5.1. Surface Analysis from Numerical Weather Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reanalyzed-data-from-numerical-weather-models">4.5.2. Reanalyzed Data from Numerical Weather Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-of-reanalyzed-data">4.5.3. Sources of Reanalyzed Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wind-stress">4.6. Wind Stress</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">4.7. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="atmospheric-influences">
+<h1><span class="section-number">4. </span>Atmospheric Influences<a class="headerlink" href="#atmospheric-influences" title="Link to this heading">#</a></h1>
+<p>The sun and the atmosphere drive directly or indirectly almost all
+dynamical processes in the ocean. The dominant external sources and
+sinks of energy are sunlight, evaporation, infrared emissions from the
+sea surface, and sensible heating of the sea by warm or cold winds.
+Winds drive the ocean’s surface circulation down to depths of around a
+kilometer. Wind and tidal mixing drive the deeper currents in the ocean.</p>
+<p>The ocean, in turn, is the dominant source of heat that drives the
+atmospheric circulation. The uneven distribution of heat loss and gain
+by the ocean leads to winds in the atmosphere. Sunlight warms the
+tropical ocean, which evaporate, transferring heat in the form of water
+vapor to the atmosphere. The heat is released when the vapor condenses
+as rain. Winds and ocean currents carry heat poleward, where it is lost
+to space.</p>
+<p>Because the atmosphere drives the ocean, and the ocean drives the
+atmosphere, we must consider the ocean and the atmosphere as a coupled
+dynamic system. In this chapter we will look mainly at the exchange of
+momentum between the atmosphere and the ocean. In the next chapter, we
+will look at heat exchanges. In chapter 14 we will look at how the ocean
+and the atmosphere interact in the Pacific to produce El Niño.</p>
+<section id="the-earth-in-space">
+<h2><span class="section-number">4.1. </span>The Earth in Space<a class="headerlink" href="#the-earth-in-space" title="Link to this heading">#</a></h2>
+<p>Earth’s orbit about the sun is nearly circular at a mean distance of
+<span class="math notranslate nohighlight">\(1.5 \times 10^8\)</span> km. The eccentricity of the orbit is small, 0.0168.
+Thus earth is 3.4% further from the Sun at aphelion than at perihelion,
+the time of closest approach to the sun. Perihelion occurs every year in
+January, and the exact time changes by about 20 minutes per year. In
+1995, it occurred on 3 January. Earth’s axis of rotation is inclined
+23.45° to the plane of earth’s orbit around the sun (<a class="reference internal" href="#fig4-1"><span class="std std-numref">Fig. 4.1</span></a>). The
+orientation is such that the sun is directly overhead at the Equator on
+the vernal and autumnal equinoxes, which occur on or about 21 March and
+21 September each year.</p>
+<figure class="align-default" id="fig4-1">
+<a class="reference internal image-reference" href="../_images/Fig4-1.svg"><img alt="../_images/Fig4-1.svg" src="../_images/Fig4-1.svg" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">The earth in space. The ellipticity of earth’s orbit around the sun and the tilt of earth’s axis
+of rotation relative to the plane of earth orbit leads to an unequal
+distribution of heating and to the seasons. Earth is closest to the sun
+at perihelion.</span><a class="headerlink" href="#fig4-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The latitudes of 23.45° North and South are the Tropics of Cancer and
+Capricorn respectively. The tropics lie equatorward of these latitudes.
+As a result of the eccentricity of earth’s orbit, maximum solar
+insolation averaged over the surface of the earth occurs in early
+January each year. As a result of the inclination of earth’s axis of
+rotation, the maximum insolation at any location outside the tropics
+occurs around 21 June in the northern hemisphere, and around 21 December
+in the southern hemisphere.</p>
+<p>If solar heat was rapidly redistributed over earth, maximum temperature
+would occur in January. Conversely, if heat were poorly redistributed,
+maximum temperature in the northern hemisphere would occur in summer. So
+it is clear that heat is not rapidly redistributed by winds and
+currents.</p>
+</section>
+<section id="atmospheric-wind-systems">
+<h2><span class="section-number">4.2. </span>Atmospheric Wind Systems<a class="headerlink" href="#atmospheric-wind-systems" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#fig4-2"><span class="std std-numref">Fig. 4.2</span></a> shows the distribution of sea-level winds and pressure
+averaged over the year 1989. The map shows strong winds from the west
+between 40° to 60° latitude, the roaring forties, weak winds in the
+subtropics near 30° latitude, trade winds from the east in the tropics,
+and weaker winds from the east along the Equator. The strength and
+direction of winds in the atmosphere is the result of uneven
+distribution of solar heating and continental land masses and the
+circulation of winds in a vertical plane in the atmosphere.</p>
+<figure class="align-default" id="fig4-2">
+<a class="reference internal image-reference" href="../_images/Fig4-2.svg"><img alt="../_images/Fig4-2.svg" src="../_images/Fig4-2.svg" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Map of mean annual wind velocity calculated from Trenberth et al. <span id="id1">[<a class="reference internal" href="chapter18.html#id40" title="K. E. Trenberth, W. G. Large, and J. G. Olson. The mean annual cycle in global ocean wind stress. Journal of Physical Oceanography, 20(11):1742–1760, 1990.">37</a>]</span> and sea-level pressure for 1989
+from the <span class="small">NASA</span> Goddard Space Flight Center’s Data
+Assimilation Office (Schubert et al. <span id="id2">[<a class="reference internal" href="chapter18.html#id39" title="S. D. Schubert, R. B. Rood, and J. Pfaendtner. An assimilated dataset for earth science applications. Bulletin of the American Meteorological Society, 74(12):2331–2342, 1993.">38</a>]</span>). The winds near 140°W in the
+equatorial Pacific are about 8 m/s.</span><a class="headerlink" href="#fig4-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A cartoon of the distribution of winds in the atmosphere (<a class="reference internal" href="#fig4-3"><span class="std std-numref">Fig. 4.3</span></a>)
+shows that the surface winds are influenced by equatorial convection and
+other processes higher in the atmosphere. The mean value of winds over
+the ocean is <span id="id3">[<a class="reference internal" href="chapter18.html#id38" title="P. J. Wentz, S. Peteherych, and L. A. Thomas. A model function for ocean radar cross sections at 14.6 ghz. Journal of Geophysical Research, 89(C3):3689–3704, 1984.">39</a>]</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq4-1">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-eq4-1" title="Link to this equation">#</a></span>\[U_{10} = 7.4 \text{m/s}\]</div>
+<p>Maps of surface winds change somewhat with the seasons. The largest
+changes are in the Indian Ocean and the western Pacific Ocean <a class="reference internal" href="#fig4-4"><span class="std std-numref">Fig. 4.4</span></a>. Both
+regions are strongly influenced by the Asian monsoon.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Fig4-3a.svg"><img alt="../_images/Fig4-3a.svg" src="../_images/Fig4-3a.svg" style="height: 400px;" /></a>
+</figure>
+<figure class="align-default" id="fig4-3">
+<a class="reference internal image-reference" href="../_images/Fig4-3b.svg"><img alt="../_images/Fig4-3b.svg" src="../_images/Fig4-3b.svg" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Sketch of earth’s atmospheric circulation driven by solar heating in the tropics and cooling at high
+latitudes. <strong>Upper:</strong> The meridional cells in the atmosphere and the
+influence of earth’s rotation on the winds. <strong>Bottom:</strong> Cross-section
+through the atmosphere showing the two major cells of meridional
+circulation. After The Open University <span id="id4">[<a class="reference internal" href="chapter18.html#id41" title="Open University. Ocean Circulation. Pergamon Press, Oxford, 1989.">40</a>]</span>:14.</span><a class="headerlink" href="#fig4-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In winter, the cold air mass over Siberia creates a region of high pressure
+at the surface, and cold air blows southeastward across Japan and on
+across the hot Kuroshio, extracting heat from the ocean. In summer, the
+thermal low over Tibet draws warm, moist air from the Indian Ocean
+leading to the rainy season over India.</p>
+<figure class="align-default" id="fig4-4">
+<a class="reference internal image-reference" href="../_images/Fig4-4.svg"><img alt="../_images/Fig4-4.svg" src="../_images/Fig4-4.svg" style="height: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Mean, sea-surface winds for July and January calculated from the Trenberth et al. <span id="id5">[<a class="reference internal" href="chapter18.html#id40" title="K. E. Trenberth, W. G. Large, and J. G. Olson. The mean annual cycle in global ocean wind stress. Journal of Physical Oceanography, 20(11):1742–1760, 1990.">37</a>]</span> data set,
+which is based on the <span class="small">ECMWF</span> reanalyses of
+weather data from 1980 to 1989. The winds near 140°W in the equatorial
+Pacific are about 8 m/s.</span><a class="headerlink" href="#fig4-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-planetary-boundary-layer">
+<span id="ch4-3"></span><h2><span class="section-number">4.3. </span>The Planetary Boundary Layer<a class="headerlink" href="#the-planetary-boundary-layer" title="Link to this heading">#</a></h2>
+<p>The atmosphere within 100 m of the sea surface is influenced by the
+turbulent drag of the wind on the sea and the fluxes of heat through the
+surface. This is the <em>atmospheric boundary layer</em>. It’s thickness <span class="math notranslate nohighlight">\(Z_i\)</span>
+varies from a few tens of meters for weak winds blowing over water
+colder than the air to around a kilometer for stronger winds blowing
+over water warmer than the air.</p>
+<p>The lowest part of the atmospheric boundary layer is the surface layer.
+Within this layer, which has thickness of <span class="math notranslate nohighlight">\(\approx 0.1 Z_i\)</span>, vertical
+fluxes of heat and momentum are nearly constant.</p>
+<p>Wind speed varies as the logarithm of height within the surface layer
+for neutral stability. See “The Turbulent Boundary Layer Over a Flat
+Plate” in Chapter 8. Hence, the height of a wind measurement is
+important. Usually, winds are reported as the value of wind at a height
+10 m above the sea <span class="math notranslate nohighlight">\(U_{10}\)</span>.</p>
+</section>
+<section id="measurement-of-wind">
+<h2><span class="section-number">4.4. </span>Measurement of Wind<a class="headerlink" href="#measurement-of-wind" title="Link to this heading">#</a></h2>
+<p>Wind at sea has been measured for centuries. Maury <span id="id6">[<a class="reference internal" href="chapter18.html#id42" title="M. F. Maury. Physical Geography of the Sea. Harper, 1855.">41</a>]</span> was the first
+to systematically collect and map wind reports. Recently, the US
+National Atmospheric and Oceanic Administration <span class="small">noaa</span> has
+collected, edited, and digitized millions of observations going back
+over a century. The resulting <em>International Comprehensive Ocean,
+Atmosphere Data Set</em> <span class="small">icoads</span> discussed in <a class="reference internal" href="chapter5.html#ch5-5"><span class="std std-ref">§5.5</span></a> is widely
+used for studying atmospheric forcing of the ocean.</p>
+<p>Our knowledge of winds at the sea surface come from many sources. Here
+are the more important, listed in a crude order of relative importance:</p>
+<section id="beaufort-scale">
+<h3><span class="section-number">4.4.1. </span>Beaufort Scale<a class="headerlink" href="#beaufort-scale" title="Link to this heading">#</a></h3>
+<p>By far the most common source of wind data up to 1991 have been reports
+of speed based on the Beaufort scale. The scale is based on features,
+such as foam coverage and wave shape, seen by an observer on a ship
+(<a class="reference internal" href="#table4-1"><span class="std std-numref">Table 4.1</span></a>).</p>
+<p>The scale was originally proposed by Admiral Sir F. Beaufort in 1806 to
+give the force of the wind on a ship’s sails. It was adopted by the
+British Admiralty in 1838 and it soon came into general use.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="table4-1">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Beaufort Wind Scale and State of the Sea.</span><a class="headerlink" href="#table4-1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Beaufort Number</p></th>
+<th class="head"><p>Descriptive term</p></th>
+<th class="head"><p>m/s</p></th>
+<th class="head"><p>Appearance of the Sea</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Calm</p></td>
+<td><p>0</p></td>
+<td><p>Sea like a mirror.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Light Air</p></td>
+<td><p>1.2</p></td>
+<td><p>Ripples with appearance of scales; no foam crests.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Light Breeze</p></td>
+<td><p>2.8</p></td>
+<td><p>Small wavelets; crests of glassy appearance, not breaking.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Gentle Breeze</p></td>
+<td><p>4.9</p></td>
+<td><p>Large wavelets; crests begin to break; scattered whitecaps.</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Moderate Breeze</p></td>
+<td><p>7.7</p></td>
+<td><p>Small waves, becoming longer; numerous whitecaps.</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>Fresh Breeze</p></td>
+<td><p>10.5</p></td>
+<td><p>Moderate waves, taking longer to form; many whitecaps; some spray.</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>Strong Breeze</p></td>
+<td><p>13.1</p></td>
+<td><p>Large waves forming; whitecaps everywhere; more spray.</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Near Gale</p></td>
+<td><p>15.8</p></td>
+<td><p>Sea heaps up; white foam from breaking waves begins to be blown into streaks.</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>Gale</p></td>
+<td><p>18.8</p></td>
+<td><p>Moderately high waves of greater length; edges of crests begin to break into spindrift; foam is blown in well-marked streaks.</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Strong Gale</p></td>
+<td><p>22.1</p></td>
+<td><p>High waves; sea begins to roll; dense streaks of foam; spray may reduce visibility.</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Storm</p></td>
+<td><p>25.9</p></td>
+<td><p>Very high waves with overhanging crests; sea takes white appearance as foam is blown in very dense streaks; rolling is heavy and visibility reduced.</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>Violent Storm</p></td>
+<td><p>30.2</p></td>
+<td><p>Exceptionally high waves; sea covered with white foam patches; visibility still more reduced.</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>Hurricane</p></td>
+<td><p>35.2</p></td>
+<td><p>Air is filled with foam; sea completely white with driving spray; visibility greatly reduced.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>From Kent and Taylor <span id="id7">[<a class="reference internal" href="chapter18.html#id44" title="E. C. Kent and P. K. Taylor. Choice of a beaufort scale. Journal of Atmospheric and Oceanic Technology, 14(2):228–242, 1997.">42</a>]</span>.</p>
+<p>The International Meteorological Committee adopted the force scale for
+international use in 1874. In 1926 they adopted a revised scale giving
+the wind speed at a height of 6 meters corresponding to the Beaufort
+Number. The scale was revised again in 1946 to extend the scale to
+higher wind speeds and to give the equivalent wind speed at a height of
+10 meters. The 1946 scale was based on the equation <span class="math notranslate nohighlight">\(U_{10} = 0.836 B^{3/2}\)</span>, where <span class="math notranslate nohighlight">\(B =\)</span> Beaufort Number and <span class="math notranslate nohighlight">\(U_{10}\)</span> is the wind speed in
+meters per second at a height of 10 meters <span id="id8">[<a class="reference internal" href="chapter18.html#id43" title="R. J. List. Smithsonian Meteorological Tables. The Smithsonian Institution, Washington, DC, 6th edition, 1966.">43</a>]</span>. More recently,
+various groups have revised the Beaufort scale by comparing Beaufort
+force with ship measurements of winds. Kent and Taylor <span id="id9">[<a class="reference internal" href="chapter18.html#id44" title="E. C. Kent and P. K. Taylor. Choice of a beaufort scale. Journal of Atmospheric and Oceanic Technology, 14(2):228–242, 1997.">42</a>]</span> compared
+the various revisions of the scale with winds measured by ships having
+anemometers at known heights. Their recommended values are given in
+<a class="reference internal" href="#table4-1"><span class="std std-numref">Table 4.1</span></a>.</p>
+<p>Observers on ships everywhere in the world usually report weather
+observations, including Beaufort force, at the same four times every
+day. The times are at 0000Z, 0600Z, 1200Z and 1800Z, where Z indicates
+Greenwich Mean Time. The reports are coded and reported by radio to
+national meteorological agencies. The biggest error in the reports is
+the sampling error. Ships are unevenly distributed over the ocean. They
+tend to avoid high latitudes in winter and hurricanes in summer, and few
+ships cross the southern hemisphere (<a class="reference internal" href="#fig4-5"><span class="std std-numref">Fig. 4.5</span></a>). Overall, the accuracy
+is around 10%.</p>
+<figure class="align-default" id="fig4-5">
+<a class="reference internal image-reference" href="../_images/Fig4-5.svg"><img alt="../_images/Fig4-5.svg" src="../_images/Fig4-5.svg" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Location of surface observations
+made from volunteer observing ships and<br />
+reported to national meteorological agencies. From <span class="small">NOAA</span>,
+National Ocean Service.</span><a class="headerlink" href="#fig4-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="scatterometers">
+<h3><span class="section-number">4.4.2. </span>Scatterometers<a class="headerlink" href="#scatterometers" title="Link to this heading">#</a></h3>
+<p>Observations of winds at sea now come mostly from scatterometers on
+satellites <span id="id10">[<a class="reference internal" href="chapter18.html#id45" title="W. T. Liu. Progress in scatterometer application. Journal of Oceanography, 58:121–136, 2002.">44</a>]</span>. The scatterometer is a instrument very much like
+a radar that measures the scatter of centimeter-wavelength radio waves
+from small, centimeter-wavelength waves on the sea surface. The area of
+the sea covered by small waves, their amplitude, and their orientation,
+depend on wind speed and direction. The scatterometer measures scatter
+from 2–4 directions, from which wind speed and direction are
+calculated.</p>
+<p>The scatterometers on <span class="small">ERS-1</span> and 2 have made global
+measurements of winds from space since 1991. The <span class="small">NASA</span>
+scatterometer on <span class="small">ADEOS</span> measured winds for a six-month
+period beginning November 1996 and ending with the premature failure of
+the satellite. It was replaced by another scatterometer on QuikScat,
+launched on 19 June 1999. Quikscat views 93% of the ocean every 24 hr
+with a resolution of 25 km.</p>
+<p>Freilich and Dunbar <span id="id11">[<a class="reference internal" href="chapter18.html#id46" title="M. H. Freilich and R. S. Dunbar. The accuracy of the nscat 1 vector winds: comparisons with national data buoy center buoys. Submitted, 1999.">45</a>]</span> report that, overall, the <span class="small">NASA</span>
+scatterometer on <span class="small">ADEOS</span> measured wind speed with an
+accuracy of <span class="math notranslate nohighlight">\(\pm 1.3\)</span> m/s. The error in wind direction was <span class="math notranslate nohighlight">\(\pm17\)</span>.
+Spatial resolution was 25 km. Data from QuikScat has an accuracy of
+<span class="math notranslate nohighlight">\(\pm 1\)</span> m/s.</p>
+<p>Because scatterometers view a specific oceanic area only once a day, the
+data must be used with numerical weather models to obtain 6-hourly wind
+maps required for some studies.</p>
+</section>
+<section id="windsat">
+<h3><span class="section-number">4.4.3. </span>Windsat<a class="headerlink" href="#windsat" title="Link to this heading">#</a></h3>
+<p>Windsat is an experimental, polarimetric, microwave radiometer developed
+by the US Navy that measures the amount and polarization of microwave
+radiation emitted from the sea at angles between 50° to 55° relative to
+the vertical and at five radio frequencies. It was launched on 6 January
+2003 on the Coriolis satellite. The received radio signal is a function
+of wind speed, sea-surface temperature, water vapor in the atmosphere,
+rain rate, and the amount of water in cloud drops. By observing several
+frequencies simultaneously, data from the instrument are used for
+calculating the surface wind speed and direction, sea-surface
+temperature, total precipitable water, integrated cloud liquid water,
+and rain rate over the ocean regardless of time of day or cloudiness.</p>
+<p>Winds are calculated over most of the ocean on a 25-km grid once a day.
+Winds measured by Windsat have an accuracy of <span class="math notranslate nohighlight">\(\pm 2\)</span> m/s in speed and
+<span class="math notranslate nohighlight">\(\pm 20\)</span> in direction over the range of 5–25 m/s.</p>
+</section>
+<section id="special-sensor-microwave-ssm-i">
+<h3><span class="section-number">4.4.4. </span>Special Sensor Microwave SSM/I<a class="headerlink" href="#special-sensor-microwave-ssm-i" title="Link to this heading">#</a></h3>
+<p>Another satellite instrument that is used to measure wind speed is the
+Special-Sensor Microwave/Imager (<span class="small">SSM/I</span>) carried since 1987
+on the satellites of the U.S. Defense Meteorological Satellite Program
+in orbits similar to the <span class="small">NOAA</span> polar-orbiting
+meteorological satellites. The instrument measures the microwave
+radiation emitted from the sea at an angle near 60° from the vertical.
+The radio signal is a function of wind speed, water vapor in the
+atmosphere, and the amount of water in cloud drops. By observing several
+frequencies simultaneously, data from the instrument are used for
+calculating the surface wind speed, water vapor, cloud water, and rain
+rate.</p>
+<p>Winds measured by <span class="small">SSM/I</span> have an accuracy of <span class="math notranslate nohighlight">\(\pm\)</span> 2 m/s in
+speed. When combined with <span class="small">ECMWF</span> 1000 mb wind analyses,
+wind direction can be calculated with an accuracy of <span class="math notranslate nohighlight">\(\pm\)</span>22° <span id="id12">[<a class="reference internal" href="chapter18.html#id47" title="R. Atlas, R. N. Hoffman, and S. C. Bloom. Surface wind velocity over the oceans. In R. J. Gurney, J. L. Foster, and C. L. Parkinson, editors, Atlas of Satellite Observations Related to Global Change, pages 129–140. Cambridge University Press, Cambridge, 1993.">46</a>]</span>. Global, gridded data are available since July
+1987 on a 0.25° grid every 6 hours. But remember, the instrument views a
+specific oceanic area only once a day, and the gridded, 6-hourly maps
+have big gaps.</p>
+</section>
+<section id="anemometers-on-ships">
+<h3><span class="section-number">4.4.5. </span>Anemometers on Ships<a class="headerlink" href="#anemometers-on-ships" title="Link to this heading">#</a></h3>
+<p>Satellite observations are supplemented by winds reported to
+meteorological agencies by observers reading anemometers on ships. The
+anemometer is read four times a day at the standard Greenwich times and
+reported via radio to meteorological agencies.</p>
+<p>Again, the biggest error is the sampling error. Very few ships carry
+calibrated anemometers. Those that do tend to be commercial ships
+participating in the Volunteer Observing Ship program (<a class="reference internal" href="#fig4-5"><span class="std std-numref">Fig. 4.5</span></a>).
+These ships are met in port by scientists who check the instruments and
+replace them if necessary, and who collect the data measured at sea. The
+accuracy of wind measurements from these ships is about <span class="math notranslate nohighlight">\(\pm 2\)</span> m/s.</p>
+</section>
+<section id="calibrated-anemometers-on-weather-buoys">
+<h3><span class="section-number">4.4.6. </span>Calibrated Anemometers on Weather Buoys<a class="headerlink" href="#calibrated-anemometers-on-weather-buoys" title="Link to this heading">#</a></h3>
+<p>The most accurate measurements of winds at sea are made by calibrated
+anemometers on moored weather buoys. Unfortunately there are few such
+buoys, perhaps only a hundred scattered around the world. Some, such as
+Tropical Atmosphere Ocean <span class="small">TAO</span> array in the tropical
+Pacific (figure 14.14) provide data from remote areas rarely visited by
+ships, but most tend to be located just offshore of coastal areas.
+<span class="small">NOAA</span> operates buoys offshore of the United States and the
+<span class="small">TAO</span> array in the Pacific. Data from the coastal buoys are
+averaged for eight minutes before the hour, and the observations are
+transmitted to shore via satellite links.</p>
+<p>The best accuracy of anemometers on buoys operated by the
+<span class="small">US</span> National Data Buoy Center is the greater of
+<span class="math notranslate nohighlight">\(\pm\)</span>1 m/s or 10% for wind speed and <span class="math notranslate nohighlight">\(\pm 10\)</span>° for wind
+direction <span id="id13">[<a class="reference internal" href="chapter18.html#id48" title="R. C. Beardsley, A. G. Enriquez, C. A. Friehe, and C. A. Alessi. Intercomparison of aircraft and buoy measurements of wind speed and wind stress during SMILE. Journal of Atmospheric and Oceanic Technology, 14:969–977, 1997.">47</a>]</span>.</p>
+</section>
+</section>
+<section id="calculations-of-wind">
+<span id="ch4-5"></span><h2><span class="section-number">4.5. </span>Calculations of Wind<a class="headerlink" href="#calculations-of-wind" title="Link to this heading">#</a></h2>
+<p>Satellites, ships, and buoys measure winds at various locations and
+times of the day. If you wish to use the observations to calculate
+monthly averaged winds over the sea, then the observations can be
+averaged and gridded. If you wish to use wind data in numerical models
+of the ocean’s currents, then the data will be less useful. You are
+faced with a very common problem: How to take all observations made in a
+six-hour period and determine the winds over the ocean on a fixed grid?</p>
+<p>One source of gridded winds over the ocean is the <em>surface analysis</em>
+calculated by numerical weather models. The strategy used to produce the
+six-hourly gridded winds is called <em>sequential estimation techniques</em> or
+<em>data assimilation</em>. “Measurements are used to prepare initial
+conditions for the model, which is then integrated forward in time until
+further measurements are available. The model is thereupon
+re-initialized” <span id="id14">[<a class="reference internal" href="chapter18.html#id49" title="A. F. Bennett. Inverse Methods in Physical Oceanography. Cambridge University Press, Cambridge, 1992.">48</a>]</span>. The initial condition is called the
+<em>analysis</em>.</p>
+<p>Usually, all available measurements are used in the analysis, including
+observations from weather stations on land, pressure and temperature
+reported by ships and buoys, winds from scatterometers in space, and
+data from meteorological satellites. The model interpolates the
+measurements to produce an analysis consistent with previous and present
+observations. Daley <span id="id15">[<a class="reference internal" href="chapter18.html#id50" title="R. Daley. Atmospheric Data Analysis. Cambridge University Press, Cambridge, 1991.">49</a>]</span> describes the techniques in considerable
+detail.</p>
+<section id="surface-analysis-from-numerical-weather-models">
+<h3><span class="section-number">4.5.1. </span>Surface Analysis from Numerical Weather Models<a class="headerlink" href="#surface-analysis-from-numerical-weather-models" title="Link to this heading">#</a></h3>
+<p>Perhaps the most widely used weather model is that run by the European
+Centre for Medium-range Weather Forecasts <span class="small">ECMWF</span>. It
+calculates a surface analysis, including surface winds and heat fluxes
+(see Chapter 5) every six hours on a 1° <span class="math notranslate nohighlight">\(\times\)</span> 1° grid from an explicit
+boundary-layer model. Calculated values are archived on a 2.5° grid. Thus
+the wind maps from the numerical weather models lack the detail seen in
+maps from scatterometer data, which have a 1/4° grid.</p>
+<p><span class="small">ECMWF</span> calculations of winds have relatively good accuracy.
+Frilich and Dunbar <span id="id16">[<a class="reference internal" href="chapter18.html#id46" title="M. H. Freilich and R. S. Dunbar. The accuracy of the nscat 1 vector winds: comparisons with national data buoy center buoys. Submitted, 1999.">45</a>]</span> estimated that the accuracy for wind speed at
+10 meters is <span class="math notranslate nohighlight">\(\pm 1.5\)</span> m/s, and <span class="math notranslate nohighlight">\(\pm 18\)</span> for direction.</p>
+<p>Accuracy in the southern hemisphere is probably as good as in the
+northern hemisphere because continents do not disrupt the flow as much
+as in the northern hemisphere, and because scatterometers give accurate
+positions of storms and fronts over the ocean.</p>
+<p>The <span class="small">NOAA</span> National Centers for Environmental Prediction and
+the US Navy also produces global analyses and forecasts every six hours.</p>
+</section>
+<section id="reanalyzed-data-from-numerical-weather-models">
+<h3><span class="section-number">4.5.2. </span>Reanalyzed Data from Numerical Weather Models<a class="headerlink" href="#reanalyzed-data-from-numerical-weather-models" title="Link to this heading">#</a></h3>
+<p>Surface analyses of weather over some regions have been produced for
+more than a hundred years, and over the whole earth since about 1950.
+Surface analyses calculated by numerical models of the atmospheric
+circulation have been available for decades. Throughout this period, the
+methods for calculating surface analyses have constantly changed as
+meteorologists worked to make ever more accurate forecasts. Fluxes
+calculated from the analyses are therefore not consistent in time. The
+changes can be larger than the interannual variability of the fluxes
+<span id="id17">[<a class="reference internal" href="chapter18.html#id51" title="G. White, editor. WCRP Workshop on Air-Sea Flux Fields for Forcing Ocean Models and Validating GCMs. Number WCRP–95 (WMO/TD Number 762) in WCRP Report. World Meteorological Organization, Geneva, 1996.">50</a>]</span>. To minimize this problem, meteorological agencies have
+taken all archived weather data and reanalyzed them using the best
+numerical models to produce a uniform, internally-consistent, surface
+analysis.</p>
+<p>The reanalyzed data are used to study oceanic and atmospheric processes
+in the past. Surface analyses issued every six hours from weather
+agencies are used only for problems that require up-to-date information.
+For example, if you are designing an offshore structure, you will
+probably use decades of reanalyzed data. If you are operating an
+offshore structure, you will watch the surface analysis and forecasts
+put out every six hours by meteorological agencies.</p>
+</section>
+<section id="sources-of-reanalyzed-data">
+<h3><span class="section-number">4.5.3. </span>Sources of Reanalyzed Data<a class="headerlink" href="#sources-of-reanalyzed-data" title="Link to this heading">#</a></h3>
+<p>Reanalyzed surface flux data are available from national meteorological
+centers operating numerical weather prediction models.</p>
+<ol class="arabic simple">
+<li><p>The U.S. National Centers for Environmental Predictions, working with
+the National Center for Atmospheric Research have produced the <span class="small">NCEP/
+NCAR</span> reanalysis based on 51 years of weather data from 1948
+to 2005 using the 25 January 1995 version of their forecast model. The
+reanalysis period is being extended forward to include all date up to
+the present with about a three-day delay in producing data sets. The
+reanalysis uses surface and ship observations plus sounder data from
+satellites. Reanalysis products are available every six hours on a T62
+grid having <span class="math notranslate nohighlight">\(192 \times 94\)</span> grid points with a spatial resolution of 209
+km and with 28 vertical levels. Important subsets of the reanalysis,
+including surface fluxes, are available on <span class="small">CD–ROM</span> <span id="id18">[<a class="reference internal" href="chapter18.html#id52" title="E. Kalnay, M. Kanamitsu, R. Kistler, W. Collins, D. Deaven, L. Gandin, M. Iredell, S. Saha, G. White, J. Woollen, Y. Zhu, M. Chelliah, W. Ebisuzaki, W. Higgins, J. Janowiak, K. C. Mo, C. Ropelewski, J. Wang, A. Leetmaa, R. Reynolds, R. Jenne, and D. Joseph. The NCEP/NCAR 40-year reanalysis project. Bulletin of the American Meteorological Society, 77:437–471, 1996.">51</a>, <a class="reference internal" href="chapter18.html#id53" title="R. E. Kistler, E. Kalnay, W. Collins, S. Saha, G. White, J. Woolen, M. Chelliah, and W. Ebisuzaki. The NCEP/NCAR 50-year reanalysis. Bulletin of the American Meteorological Society, 82:247–267, 2000.">52</a>]</span>.</p></li>
+<li><p>The European Centre for Medium-range Weather Forecasts
+<span class="small">ECMWF</span> has reanalyzed 45 years of weather data from
+September 1957 to August 2002 (<span class="small">ERA</span>-40) using their
+forecast model of 2001 <span id="id19">[<a class="reference internal" href="chapter18.html#id54" title="S. M. Uppala, P. W. Kållberg, A. J. Simmons, U. Andrae, V. Da Costa Bechtold, M. Fiorino, J. K. Gibson, J. Haseler, A. Hernandez, G. A. Kelly, X. Li, K. Onogi, S. Saarinen, N. Sokka, R. P. Allan, E. Andersson, K. Arpe, M. A. Balmaseda, A. C. M. Beljaars, L. Van De Berg, J. Bidlot, N. Bormann, S. Caires, F. Chevallier, A. Dethof, M. Dragosavac, M. Fisher, M. Fuentes, S. Hagemann, E. Hólm, B. J. Hoskins, L. Isaksen, P. A. E. M. Janssen, R. Jenne, A. P. McNally, J.-F. Mahfouf, J.-J. Morcrette, N. A. Rayner, R. W. Saunders, P. Simon, A. Sterl, K. E. Trenberth, A. Untch, D. Vasiljevic, P. Viterbo, and J. Woollen. The ERA-40 re-analysis. Quarterly Journal of the Royal Meteorological Society, 131(612):2961–3012, 2005.">53</a>]</span>. The reanalysis uses mostly
+the same surface and ship data used by the <span class="small">NCEP/NCAR</span>
+reanalysis plus data from the <span class="small">ERS</span>-1 and
+<span class="small">ERS</span>-2 satellites and <span class="small">SSM/I</span>. The
+<span class="small">ERA</pan>-40 full-resolution products are available every six
+hours on a N80 grid having <span class="math notranslate nohighlight">\(160 \times 320\)</span> grid points with a spatial
+resolution of 1.125° and with 60 vertical levels. The
+<span class="small">ERA</span>-40 basic-resolution products are available every six
+hours with a spatial resolution of 2.5° and with 23 vertical levels. The
+reanalysis includes an ocean-wave model that calculates ocean wave
+heights and wave spectra every six hours on a 1.5° grid.</p></li>
+</ol>
+</section>
+</section>
+<section id="wind-stress">
+<h2><span class="section-number">4.6. </span>Wind Stress<a class="headerlink" href="#wind-stress" title="Link to this heading">#</a></h2>
+<p>The wind, by itself, is usually not very interesting. Often we are much
+more interested in the force of the wind, or the work done by the wind.
+The horizontal force of the wind on the sea surface is called the <em>wind
+stress</em>. Put another way, it is the vertical transfer of horizontal
+momentum. Thus momentum is transferred from the atmosphere to the ocean
+by wind stress.</p>
+<p>Wind stress <span class="math notranslate nohighlight">\(T\)</span> is calculated from:</p>
+<div class="math notranslate nohighlight" id="equation-eq4-2">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-eq4-2" title="Link to this equation">#</a></span>\[T = \rho_a \,C_D U_{10}^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho_a = 1.3\)</span> kg/m<span class="math notranslate nohighlight">\(^3\)</span> is the
+density of air, <span class="math notranslate nohighlight">\(U_{10}\)</span> is wind speed at 10 meters, and <span class="math notranslate nohighlight">\(C_D\)</span> is the
+<em>drag coefficient</em>. <span class="math notranslate nohighlight">\(C_D\)</span> is measured using the techniques described in
+§5.6. Fast response instruments measure wind fluctuations within 10–20
+m of the sea surface, from which <span class="math notranslate nohighlight">\(T\)</span> is directly calculated. The
+correlation of <span class="math notranslate nohighlight">\(T\)</span> with <span class="math notranslate nohighlight">\(U_{10}^2\)</span> gives <span class="math notranslate nohighlight">\(C_D\)</span> (<a class="reference internal" href="#fig4-6"><span class="std std-numref">Fig. 4.6</span></a>).</p>
+<figure class="align-default" id="fig4-6">
+<a class="reference internal image-reference" href="../_images/Fig4-6.svg"><img alt="../_images/Fig4-6.svg" src="../_images/Fig4-6.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">The drag coefficient as a function of wind speed <span class="math notranslate nohighlight">\(U_{10}\)</span> ten meters above the
+sea. Circles: Measured values from Smith <span id="id20">[<a class="reference internal" href="chapter18.html#id55" title="S. D. Smith. Wind stress and heat flux over the ocean in gale force winds. Journal of Physical Oceanography, 10:709–726, 1980.">54</a>]</span>. Triangles: Measured
+values from Powell, Vickery, and Reinhold <span id="id21">[<a class="reference internal" href="chapter18.html#id56" title="M. D. Powell, P. J. Vickery, and T. A. Reinhold. Reduced drag coefficient for high wind speeds in tropical cyclones. Nature, 422(6929):279–283, 2003.">55</a>]</span>. The solid line is from
+equation <a class="reference internal" href="#equation-eq4-3">(4.3)</a> proposed by Yelland and Taylor <span id="id22">[<a class="reference internal" href="chapter18.html#id57" title="M. Yelland and P. K. Taylor. Wind stress measurements from the open ocean. Journal of Physical Oceanography, 26(4):541–558, 1996.">56</a>]</span>. The dashed line is from
+Jarosz <span id="id23">[<a class="reference internal" href="chapter18.html#id58" title="E. Jarosz, D. A. Mitchell, D. W. Wang, and W. J. Teague. Bottom-up determination of air-sea momentum exchange under a major tropical cyclone. Science, 315(5819):1707–1709, 2007.">57</a>]</span>.</span><a class="headerlink" href="#fig4-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Various measurements of <span class="math notranslate nohighlight">\(C_D\)</span> have been published based on careful
+measurements of turbulence in the marine boundary layer. Trenberth et
+al. <span id="id24">[<a class="reference internal" href="chapter18.html#id59" title="K. E. Trenberth, W. G. Large, and J. G. Olson. The effective drag coefficient for evaluating wind stress over the oceans. Journal of Climate, 2:1507–1516, 1989.">58</a>]</span> and Harrison <span id="id25">[<a class="reference internal" href="chapter18.html#id60" title="D. E. Harrison. On climatological monthly mean wind stress and wind stress curl fields over the world ocean. Journal of Climate, 2:57, 1989.">59</a>]</span> discuss the accuracy of an effective drag
+coefficient relating wind stress to wind velocity on a global scale.
+Perhaps the best of the recently published values are those of Yelland
+and Taylor <span id="id26">[<a class="reference internal" href="chapter18.html#id57" title="M. Yelland and P. K. Taylor. Wind stress measurements from the open ocean. Journal of Physical Oceanography, 26(4):541–558, 1996.">56</a>]</span> and Yelland et al. <span id="id27">[<a class="reference internal" href="chapter18.html#id61" title="M. J. Yelland, B. I. Moat, P. K. Taylor, R. W. Pascal, J. Hutchings, and V. C. Cornell. Wind stress measurements from the open ocean corrected for airflow distortion by the ship. Journal of Physical Oceanography, 28(7):1511–1526, 1998.">60</a>]</span> who give:</p>
+<div class="math notranslate nohighlight" id="equation-eq4-3">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-eq4-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+(a) &amp; \quad 1000 \, C_D = 0.29 + \frac{3.1}{U_{10}} + \frac{7.7}{U_{10}^2} \quad (3 \leq U_{10} \leq 6 \, \text{m/s}) \\
+(b) &amp; \quad 1000 \, C_D = 0.60 + 0.071 \, U_{10} \quad (6 \leq U_{10} \leq 26 \, \text{m/s})
+\end{aligned}\end{split}\]</div>
+<p>for neutrally stable boundary layer. Other values are listed in their
+table 1 and in <a class="reference internal" href="#fig4-6"><span class="std std-numref">Fig. 4.6</span></a>.</p>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">4.7. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Sunlight is the primary energy source driving the atmosphere and
+ocean.</p></li>
+<li><p>There is a boundary layer at the bottom of the atmosphere
+where wind speed decreases with as the boundary is approached, and
+in which fluxes of heat and momentum are constant in the lower
+10–20 meters.</p></li>
+<li><p>Wind is measured many different ways. The most common
+until 1995 was from observations made at sea of the Beaufort force
+of the wind.</p></li>
+<li><p>Since 1995, the most important source of wind
+measurements is from scatterometers on satellites. They produce
+daily global maps with 25 km resolution.</p></li>
+<li><p>The surface analysis from numerical models of the atmosphere is the most useful source of
+global, gridded maps of wind velocity for dates before 1995. It also
+is a useful source for 6-hourly maps. Resolution is 100-250 km.</p></li>
+<li><p>The flux of momentum from the atmosphere to the ocean, the wind stress,
+is calculated from wind speed using a drag coefficient.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>The Physical Setting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>The Oceanic Heat Budget</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-earth-in-space">4.1. The Earth in Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atmospheric-wind-systems">4.2. Atmospheric Wind Systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-planetary-boundary-layer">4.3. The Planetary Boundary Layer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-wind">4.4. Measurement of Wind</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beaufort-scale">4.4.1. Beaufort Scale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterometers">4.4.2. Scatterometers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windsat">4.4.3. Windsat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-sensor-microwave-ssm-i">4.4.4. Special Sensor Microwave SSM/I</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anemometers-on-ships">4.4.5. Anemometers on Ships</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrated-anemometers-on-weather-buoys">4.4.6. Calibrated Anemometers on Weather Buoys</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations-of-wind">4.5. Calculations of Wind</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-analysis-from-numerical-weather-models">4.5.1. Surface Analysis from Numerical Weather Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reanalyzed-data-from-numerical-weather-models">4.5.2. Reanalyzed Data from Numerical Weather Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-of-reanalyzed-data">4.5.3. Sources of Reanalyzed Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wind-stress">4.6. Wind Stress</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">4.7. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

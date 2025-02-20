@@ -1,0 +1,1373 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>16. Ocean Waves &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter16';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="17. Coastal Processes and Tides" href="chapter17.html" />
+    <link rel="prev" title="15. Numerical Models" href="chapter15.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter16.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter16.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ocean Waves</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-theory-of-ocean-surface-waves">16.1. Linear Theory of Ocean Surface Waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-relation">16.1.1. Dispersion Relation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-velocity">16.1.2. Phase Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-velocity">16.1.3. Group Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-energy">16.1.4. Wave Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-wave-height">16.1.5. Significant Wave Height</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-waves">16.2. Nonlinear waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-momentum">16.2.1. Wave Momentum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waves-and-the-concept-of-a-wave-spectrum">16.3. Waves and the Concept of a Wave Spectrum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-the-sea-surface">16.3.1. Sampling the Sea Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-the-wave-spectrum">16.3.2. Calculating The Wave Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">16.3.3. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-wave-spectra">16.4. Ocean-Wave Spectra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pierson-moskowitz-spectrum">16.4.1. Pierson-Moskowitz Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jonswap-spectrum">16.4.2. JONSWAP Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generation-of-waves-by-wind">16.4.3. Generation of Waves by Wind</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-forecasting">16.5. Wave Forecasting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-waves">16.6. Measurement of Waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-state-estimated-by-observers-at-sea">16.6.1. Sea State Estimated by Observers at Sea</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-altimeters">16.6.2. Satellite Altimeters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerometer-mounted-on-meteorological-or-other-buoy">16.6.3. Accelerometer Mounted on Meteorological or Other Buoy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-gages">16.6.4. Wave Gages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetic-aperture-radars-on-satellites">16.6.5. Synthetic Aperture Radars on Satellites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">16.7. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ocean-waves">
+<h1><span class="section-number">16. </span>Ocean Waves<a class="headerlink" href="#ocean-waves" title="Link to this heading">#</a></h1>
+<p>Looking out to sea from the shore, we can see waves on the sea surface.
+Looking carefully, we notice the waves are undulations of the sea
+surface with a height of around a meter, where height is the vertical
+distance between the bottom of a trough and the top of a nearby crest.
+The wavelength, which we might take to be the distance between prominent
+crests, is around 50-100 meters. Watching the waves for a few minutes,
+we notice that wave height and wave length are not constant. The heights
+vary randomly in time and space, and the statistical properties of the
+waves, such as the mean height averaged for a few hundred waves, change
+from day to day. These prominent offshore waves are generated by wind.
+Sometimes the local wind generates the waves, other times distant storms
+generate waves which ultimately reach the coast. For example, waves
+breaking on the Southern California coast on a summer day may come from
+vast storms offshore of Antarctica 10,000 km away.</p>
+<p>If we watch closely for a long time, we notice that sea level changes
+from hour to hour. Over a period of a day, sea level increases and
+decreases relative to a point on the shore by about a meter. The slow
+rise and fall of sea level is due to the tides, another type of wave on
+the sea surface. Tides have wavelengths of thousands of kilometers, and
+they are generated by the slow, very small changes in gravity due to the
+motion of the sun and the moon relative to earth.</p>
+<p>In this chapter you will learn how to describe ocean-surface waves
+quantitatively. In the next chapter I will describe tides and waves
+along coasts.</p>
+<section id="linear-theory-of-ocean-surface-waves">
+<h2><span class="section-number">16.1. </span>Linear Theory of Ocean Surface Waves<a class="headerlink" href="#linear-theory-of-ocean-surface-waves" title="Link to this heading">#</a></h2>
+<p>Surface waves are inherently nonlinear: The solution of the equations of
+motion depends on the surface boundary conditions, but the surface
+boundary conditions are the waves we wish to calculate. How can we
+proceed?</p>
+<p>We begin by assuming that the amplitude of waves on the water surface is
+infinitely small so the surface is almost exactly a plane. To simplify
+the mathematics, we can also assume that the flow is 2-dimensional with
+waves traveling in the <span class="math notranslate nohighlight">\(x\)</span>-direction. We also assume that the Coriolis
+force and viscosity can be neglected. If we retain rotation, we get
+Kelvin waves discussed in §14.2.</p>
+<p>With these assumptions, the sea-surface elevation <span class="math notranslate nohighlight">\(\zeta\)</span> of a wave
+traveling in the <span class="math notranslate nohighlight">\(x\)</span> direction is:
+$<span class="math notranslate nohighlight">\(\zeta = a \sin (k \, x - \omega \, t)\)</span><span class="math notranslate nohighlight">\( with \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+\omega = 2 \pi f = \frac{2 \pi}{T}; &amp; &amp; k = \frac{2 \pi}{L}\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>\omega<span class="math notranslate nohighlight">\( is wave frequency in radians per second, \)</span>f<span class="math notranslate nohighlight">\( is the wave
+frequency in Hertz (Hz), \)</span>k<span class="math notranslate nohighlight">\( is wave number, \)</span>T<span class="math notranslate nohighlight">\( is wave period, \)</span>L<span class="math notranslate nohighlight">\( is
+wave length, and where we assume, as stated above, that \)</span>ka = O(0)$.</p>
+<p>The <em>wave period</em> <span class="math notranslate nohighlight">\(T\)</span> is the time it takes two successive wave crests or
+troughs to pass a fixed point. The <em>wave length</em> <span class="math notranslate nohighlight">\(L\)</span> is the distance
+between two successive wave crests or troughs at a fixed time.</p>
+<section id="dispersion-relation">
+<h3><span class="section-number">16.1.1. </span>Dispersion Relation<a class="headerlink" href="#dispersion-relation" title="Link to this heading">#</a></h3>
+<p>Wave frequency <span class="math notranslate nohighlight">\(\omega\)</span> is related to wave number <span class="math notranslate nohighlight">\(k\)</span> by the <em>dispersion
+relation</em> (Lamb, 1945 §228): $<span class="math notranslate nohighlight">\(\omega ^{2} = g \, k \tanh (k d)\)</span><span class="math notranslate nohighlight">\( where
+\)</span>d<span class="math notranslate nohighlight">\( is the water depth and \)</span>g$ is the acceleration of gravity.</p>
+<p>Two approximations are especially useful.</p>
+<ol class="arabic simple">
+<li><p><em>Deep-water approximation</em> is valid if the water depth <span class="math notranslate nohighlight">\(d\)</span> is much
+greater than the wave length <span class="math notranslate nohighlight">\(L\)</span>. In this case, <span class="math notranslate nohighlight">\(d \gg L\)</span>,
+<span class="math notranslate nohighlight">\(kd \gg 1\)</span>, and <span class="math notranslate nohighlight">\(\tanh (kd) = 1\)</span>.</p></li>
+<li><p><em>Shallow-water approximation</em> is valid if the water depth is much
+less than a wavelength. In this case, <span class="math notranslate nohighlight">\(d \ll L\)</span>, <span class="math notranslate nohighlight">\(kd \ll 1\)</span>, and
+<span class="math notranslate nohighlight">\(\tanh (kd) = kd\)</span>.</p></li>
+</ol>
+<p>For these two limits of water depth compared with wavelength the
+dispersion relation reduces to: $<span class="math notranslate nohighlight">\(\begin{aligned}
+  \omega ^2 &amp;= g \, k &amp; &amp; \text{Deep-water dispersion relation}\\
+  d &amp;&gt; L/4 &amp; &amp;  \nonumber \\
+   &amp; &amp; \nonumber \\
+  \omega ^2 &amp;= g \, k^{2} \, d &amp; &amp; \text{Shallow-water dispersion relation}\\
+   d &amp;&lt; L/11 &amp; &amp; \nonumber\end{aligned}\)</span><span class="math notranslate nohighlight">\( The stated limits for \)</span>d/L$
+give a dispersion relation accurate within 10%. Because many wave
+properties can be measured with accuracies of 5–10%, the approximations
+are useful for calculating wave properties. Later we will learn to
+calculate wave properties as the waves propagate from deep to shallow
+water.</p>
+</section>
+<section id="phase-velocity">
+<h3><span class="section-number">16.1.2. </span>Phase Velocity<a class="headerlink" href="#phase-velocity" title="Link to this heading">#</a></h3>
+<p>The phase velocity <span class="math notranslate nohighlight">\(c\)</span> is the speed at which a particular phase of the
+wave propagates, for example, the speed of propagation of the wave
+crest. In one wave period <span class="math notranslate nohighlight">\(T\)</span> the crest advances one wave length <span class="math notranslate nohighlight">\(L\)</span> and
+the phase speed is <span class="math notranslate nohighlight">\(c=L/T= \omega /k\)</span>. Thus, the definition of phase
+speed is: $<span class="math notranslate nohighlight">\(c \equiv \frac {\omega}{k}\)</span><span class="math notranslate nohighlight">\( The direction of propagation is
+perpendicular to the wave crest and toward the positive \)</span>x$ direction.</p>
+<p>The deep- and shallow-water approximations for the dispersion relation
+give: $<span class="math notranslate nohighlight">\(\begin{aligned}
+   c &amp;= \sqrt{\frac{g}{k}} = \frac{g}{\omega} &amp; &amp; \text{ Deep-water phase
+velocity} \\
+   &amp; &amp;  &amp; \nonumber \\
+   c &amp;=\sqrt{g\,d} &amp; &amp; \text{ Shallow-water phase velocity}
+  \end{aligned}\)</span>$ The approximations are accurate to about 5% for limits
+stated in (16.4, 16.5).</p>
+<p>In deep water, the phase speed depends on wave length or wave frequency.
+Longer waves travel faster. Thus, deep-water waves are said to be
+dispersive. In shallow water, the phase speed is independent of the
+wave; it depends only on the depth of the water. Shallow-water waves are
+non-dispersive.</p>
+</section>
+<section id="group-velocity">
+<h3><span class="section-number">16.1.3. </span>Group Velocity<a class="headerlink" href="#group-velocity" title="Link to this heading">#</a></h3>
+<p>The concept of group velocity <span class="math notranslate nohighlight">\(c_{g}\)</span> is fundamental for understanding
+the propagation of linear and nonlinear waves. First, it is the velocity
+at which a group of waves travels across the ocean. More importantly, it
+is also the propagation velocity of wave energy. Whitham (1974, §1.3 and
+§ 11.6) gives a clear derivation of the concept and the fundamental
+equation (16.9).</p>
+<p>The definition of group velocity in two dimensions is:
+$<span class="math notranslate nohighlight">\(c_{g} \equiv \frac {\partial \omega }{\partial k}\)</span><span class="math notranslate nohighlight">\( Using the
+approximations for the dispersion relation: \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+ c_{g} &amp;= \frac{g}{2\omega} = \frac{c}{2} &amp; &amp;   \text{ Deep-water group velocity} \\
+  &amp; &amp; &amp; \nonumber \\
+ c_{g} &amp;= \sqrt{g\,d} \, = c &amp; &amp;   \text{ Shallow-water group velocity}
+ \end{aligned}\)</span><span class="math notranslate nohighlight">\( For ocean-surface waves, the direction of propagation
+is perpendicular to the wave crests in the positive \)</span>x$ direction. In
+the more general case of other types of waves, such as Kelvin and Rossby
+waves that we met in §14.2, the group velocity is not necessarily in the
+direction perpendicular to wave crests.</p>
+<p>Notice that a group of deep-water waves moves at half the phase speed of
+the waves making up the group. How can this happen? If we could watch
+closely a group of waves crossing the sea, we would see waves crests
+appear at the back of the wave train, move through the train, and
+disappear at the leading edge of the group. Each wave crest moves at
+twice the speed of the group.</p>
+<p>Do real ocean waves move in groups governed by the dispersion relation?
+Yes. Walter Munk and colleagues (1963) in a remarkable series of
+experiments in the 1960s showed that ocean waves propagating over great
+distances are dispersive, and that the dispersion could be used to track
+storms. They recorded waves for many days using an array of three
+pressure gauges just offshore of San Clemente Island, 60 miles due west
+of San Diego, California. Wave spectra were calculated for each day’s
+data. (The concept of a spectra is discussed below.) From the spectra,
+the amplitudes and frequencies of the low-frequency waves and the
+propagation direction of the waves were calculated. Finally, they
+plotted contours of wave energy on a frequency-time diagram (figure
+16.1).</p>
+<p>To understand the figure, consider a distant storm that produces waves
+of many frequencies. The lowest-frequency waves (smallest <span class="math notranslate nohighlight">\(\omega\)</span>)
+travel the fastest (16.11), and they arrive before other,
+higher-frequency waves. The further away the storm, the longer the delay
+between arrivals of waves of different frequencies. The ridges of high
+wave energy seen in the figure are produced by individual storms. The
+slope of the ridge gives the distance to the storm in degrees <span class="math notranslate nohighlight">\(\Delta\)</span>
+along a great circle; and the phase information from the array gives the
+angle to the storm <span class="math notranslate nohighlight">\(\theta\)</span>. The two angles give the storm’s location
+relative to San Clemente. Thus waves arriving from 15 to 18 September
+produce a ridge indicating the storm was 115 away at an angle of
+205 which is south of new Zealand near Antarctica.</p>
+<p>The locations of the storms producing the waves recorded from June
+through October 1959 were compared with the location of storms plotted
+on weather maps and in most cases the two agreed well.</p>
+<p>Figure 16.1 Contours</p>
+<p>of wave energy on a frequency-time plot calculated from spectra of waves
+measured by pressure gauges offshore of southern California. The ridges
+of high wave energy show the arrival of dispersed wave trains from
+distant storms. The slope of the ridge is inversely proportional to
+distance to the storm. <span class="math notranslate nohighlight">\(\Delta\)</span> is distance in degrees, <span class="math notranslate nohighlight">\(\theta\)</span> is
+direction of arrival of waves at California. After Munk et al. (1963).
+<span id="fig:dispersedwaves" label="fig:dispersedwaves"></span></p>
+</section>
+<section id="wave-energy">
+<h3><span class="section-number">16.1.4. </span>Wave Energy<a class="headerlink" href="#wave-energy" title="Link to this heading">#</a></h3>
+<p>Wave energy <span class="math notranslate nohighlight">\(E\)</span> in Joules per square meter is related to the variance of
+sea-surface displacement <span class="math notranslate nohighlight">\(\zeta\)</span> by:
+$<span class="math notranslate nohighlight">\(E = \rho _{w} g \, \left&lt; \zeta ^{2} \right&gt;\)</span><span class="math notranslate nohighlight">\( where \)</span>\rho _{w}<span class="math notranslate nohighlight">\( is
+water density, \)</span>g$ is gravity, and the brackets denote a time or space
+average.</p>
+<p>Figure 16.2 A short record</p>
+<p>of wave amplitude measured<br />
+by a wave buoy in the north Atlantic.</p>
+<p><span id="fig:waveheight" label="fig:waveheight"></span></p>
+</section>
+<section id="significant-wave-height">
+<h3><span class="section-number">16.1.5. </span>Significant Wave Height<a class="headerlink" href="#significant-wave-height" title="Link to this heading">#</a></h3>
+<p>What do we mean by wave height? If we look at a wind-driven sea, we see
+waves of various heights. Some are much larger than most, others are
+much smaller (figure 16.2). A practical definition that is often used is
+the height of the highest 1/3 of the waves, <span class="math notranslate nohighlight">\(H_{1/3}\)</span>. The height is
+computed as follows: measure wave height for a few minutes, pick out say
+120 wave crests and record their heights. Pick the 40 largest waves and
+calculate the average height of the 40 values. This is <span class="math notranslate nohighlight">\(H_{1/3}\)</span> for the
+wave record.</p>
+<p>The concept of significant wave height was developed during the World
+War II as part of a project to forecast ocean wave heights and periods.
+Wiegel (1964: p. 198) reports that work at the Scripps Institution of
+Oceanography showed</p>
+<blockquote>
+<div><p>…wave height estimated by observers corresponds to the average of
+the highest 20 to 40 per cent of waves…Originally, the term
+significant wave height was attached to the average of these
+observations, the highest 30 per cent of the waves, but has evolved to
+become the average of the highest one-third of the waves, (designated
+<span class="math notranslate nohighlight">\(H_S\)</span> or <span class="math notranslate nohighlight">\(H_{1/3}\)</span>)</p>
+</div></blockquote>
+<p>More recently, significant wave height is calculated from measured wave
+displacement. If the sea contains a narrow range of wave frequencies,
+<span class="math notranslate nohighlight">\(H_{1/3}\)</span> is related to the standard deviation of sea-surface
+displacement (<span class="smallcaps">nas</span> , 1963: 22; Hoffman and Karst, 1975)
+$<span class="math notranslate nohighlight">\(H_{1/3} = 4 \left&lt; \zeta ^{2}\right&gt;^{1/2}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\left&lt; \zeta ^{2}\right&gt;^{1/2}$ is the standard deviation of surface
+displacement. This relationship is much more useful, and it is now the
+accepted way to calculate wave height from wave measurements.</p>
+</section>
+</section>
+<section id="nonlinear-waves">
+<h2><span class="section-number">16.2. </span>Nonlinear waves<a class="headerlink" href="#nonlinear-waves" title="Link to this heading">#</a></h2>
+<p>We derived the properties of an ocean surface wave assuming the wave
+amplitude was infinitely small <span class="math notranslate nohighlight">\(ka = O(0)\)</span>. If <span class="math notranslate nohighlight">\(ka \ll 1\)</span> but not
+infinitely small, the wave properties can be expanded in a power series
+of <span class="math notranslate nohighlight">\(ka\)</span> (Stokes, 1847). He calculated the properties of a wave of finite
+amplitude and found:
+$<span class="math notranslate nohighlight">\(\zeta = a \cos(kx - \omega t) + \frac{1}{2} k a^{2}\cos 2(kx-\omega t) +
+\frac{3}{8} k^{2} a^{3} \cos 3(k x - \omega t) + \cdots\)</span><span class="math notranslate nohighlight">\( The phases of
+the components for the Fourier series expansion of \)</span>\zeta<span class="math notranslate nohighlight">\( in (16.14)
+are such that non-linear waves have sharpened crests and flattened
+troughs. The maximum amplitude of the Stokes wave is \)</span>a_{max} = 0.07 L<span class="math notranslate nohighlight">\(
+(\)</span>ka = 0.44$). Such steep waves in deep water are called Stokes waves
+(See also Lamb, 1945, §250).</p>
+<p>Knowledge of non-linear waves came slowly until Hasselmann (1961, 1963a,
+1963b, 1966), using the tools of high-energy particle physics, worked
+out to 6th order the interactions of three or more waves on the sea
+surface. He, Phillips (1960), and Longuet-Higgins and Phillips (1962)
+showed that <span class="math notranslate nohighlight">\(n\)</span> free waves on the sea surface can interact to produce
+another free wave only if the frequencies and wave numbers of the
+interacting waves sum to zero:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ &amp; \omega _{1} \pm \omega _{2} \pm \omega _{3} \pm \cdots \omega _{n}  = 0
+&amp; \\
+ &amp; \mathbf{k_{1}} \pm  \mathbf{k_{2}} \pm  \mathbf{k_{3}} \pm \cdots
+\mathbf{k_{n}} =  0  &amp;
+\\
+ &amp; \omega_{i}^{2} = g \, k_{i} &amp;\end{aligned}\end{split}\]</div>
+<p>where we allow waves to travel in any direction, and <span class="math notranslate nohighlight">\(\mathbf{k_{i}}\)</span> is
+the vector wave number giving wave length and direction. (16.15) are
+general requirements for any interacting waves. The fewest number of
+waves that meet the conditions of (16.15) are three waves which interact
+to produce a fourth. The interaction is weak; waves must interact for
+hundreds of wave lengths and periods to produce a fourth wave with
+amplitude comparable to the interacting waves. The Stokes wave does not
+meet the criteria of (16.15) and the wave components are not free waves;
+the higher harmonics are bound to the primary wave.</p>
+<section id="wave-momentum">
+<h3><span class="section-number">16.2.1. </span>Wave Momentum<a class="headerlink" href="#wave-momentum" title="Link to this heading">#</a></h3>
+<p>The concept of wave momentum has caused considerable confusion
+(McIntyre, 1981). In general, waves do not have momentum, a mass flux,
+but they do have a momentum flux. This is true for waves on the sea
+surface. Ursell (1950) showed that ocean swell on a rotating earth has
+no mass transport. His proof seems to contradict the usual textbook
+discussions of steep, non-linear waves such as Stokes waves. Water
+particles in a Stokes wave move along paths that are nearly circular,
+but the paths fail to close, and the particles move slowly in the
+direction of wave propagation. This is a mass transport, and the
+phenomena is called Stokes drift. But the forward transport near the
+surface is balanced by an equal transport in the opposite direction at
+depth, and there is no net mass flux.</p>
+</section>
+</section>
+<section id="waves-and-the-concept-of-a-wave-spectrum">
+<h2><span class="section-number">16.3. </span>Waves and the Concept of a Wave Spectrum<a class="headerlink" href="#waves-and-the-concept-of-a-wave-spectrum" title="Link to this heading">#</a></h2>
+<p>If we look out to sea, we notice that waves on the sea surface are not
+sinusoids. The surface appears to be composed of random waves of various
+lengths and periods. How can we describe this surface? The answer is,
+Not very easily. We can however, with some simplifications, come close
+to describing the surface. The simplifications lead to the concept of
+the spectrum of ocean waves. The spectrum gives the distribution of wave
+energy among different wave frequencies or wave lengths on the sea
+surface.</p>
+<p>The concept of a spectrum is based on work by Joseph Fourier
+(1768–1830), who showed that almost any function <span class="math notranslate nohighlight">\(\zeta (t)\)</span> (or
+<span class="math notranslate nohighlight">\(\zeta (x)\)</span> if you like), can be represented over the interval <span class="math notranslate nohighlight">\(-T/2 \le t \le T/2\)</span> as the sum of an infinite series of sine and cosine
+functions with harmonic wave frequencies:
+$<span class="math notranslate nohighlight">\(\zeta (t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos 2\pi nft + b_n \sin
+2\pi nft)\)</span>$ where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+a_n &amp;= \frac{2}{T} \int_{-T/2}^{T/2} \zeta (t) \cos 2\pi nft \, dt, \qquad
+(n=0,1,2,\ldots) \\
+b_n &amp;= \frac{2}{T} \int_{-T/2}^{T/2} \zeta (t) \sin 2\pi nft \, dt, \qquad
+(n=0,1,2,\ldots)\end{aligned}\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(f = 1/ T\)</span> is the fundamental frequency, and <span class="math notranslate nohighlight">\(nf\)</span> are harmonics of the
+fundamental frequency. This form of <span class="math notranslate nohighlight">\(\zeta (t)\)</span> is called a <em>Fourier
+series</em> (Bracewell, 1986: 204; Whittaker and Watson, 1963: §9.1). Notice
+that <span class="math notranslate nohighlight">\(a_0\)</span> is the mean value of <span class="math notranslate nohighlight">\(\zeta (t)\)</span> over the interval.</p>
+<p>Equations (16.18 and 16.19) can be simplified using
+$<span class="math notranslate nohighlight">\(\exp (2\pi inft) = \cos (2\pi nft) + i \sin (2\pi nft)\)</span><span class="math notranslate nohighlight">\( where
+\)</span>i = \sqrt{-1}<span class="math notranslate nohighlight">\(. Equations (16.18 and 16.19) then become:
+\)</span><span class="math notranslate nohighlight">\(\zeta (t) = \sum_{n=-\infty}^{\infty} Z_n \exp ^{i2\pi nft}\)</span><span class="math notranslate nohighlight">\( where
+\)</span><span class="math notranslate nohighlight">\(Z_n = \frac{1}{T} \int_{-T/2}^{T/2} \zeta (t) \exp ^{-i2\pi nft} \, dt, \qquad
+(n=0,1,2,\ldots)\)</span><span class="math notranslate nohighlight">\( \)</span>Z_n<span class="math notranslate nohighlight">\( is called the *Fourier transform* of
+\)</span>\zeta (t)$.</p>
+<p>The spectrum <span class="math notranslate nohighlight">\(S(f)\)</span> of <span class="math notranslate nohighlight">\(\zeta (t)\)</span> is: $<span class="math notranslate nohighlight">\(S(nf) = Z_n Z^*_n\)</span><span class="math notranslate nohighlight">\( where \)</span>Z^*<span class="math notranslate nohighlight">\(
+is the complex conjugate of \)</span>Z$. We will use these forms for the Fourier
+series and spectra when we describing the computation of ocean wave
+spectra.</p>
+<p>We can expand the idea of a Fourier series to include series that
+represent surfaces <span class="math notranslate nohighlight">\(\zeta (x,y)\)</span> using similar techniques. Thus, any
+surface can be represented as an infinite series of sine and cosine
+functions oriented in all possible directions.</p>
+<p>Now, let’s apply these ideas to the sea surface. Suppose for a moment
+that the sea surface were frozen in time. Using the Fourier expansion,
+the frozen surface can be represented as an infinite series of sine and
+cosine functions of different wave numbers oriented in all possible
+directions. If we unfreeze the surface and let it move, we can represent
+the sea surface as an infinite series of sine and cosine functions of
+different wave lengths moving in all directions. Because wave lengths
+and wave frequencies are related through the dispersion relation, we can
+also represent the sea surface as an infinite sum of sine and cosine
+functions of different frequencies moving in all directions.</p>
+<p>Note in our discussion of Fourier series that we assume the coefficients
+<span class="math notranslate nohighlight">\((a_n, b_n, Z_n)\)</span> are constant. For times of perhaps an hour, and
+distances of perhaps tens of kilometers, the waves on the sea surface
+are sufficiently fixed that the assumption is true. Furthermore,
+non-linear interactions among waves are very weak. Therefore, we can
+represent a local sea surface by a linear superposition of real, sine
+waves having many different wave lengths or frequencies and different
+phases traveling in many different directions. The Fourier series in not
+just a convenient mathematical expression, it states that the sea
+surface is really, truly composed of sine waves, each one propagating
+according to the equations I wrote down in §16.1.</p>
+<p>The concept of the sea surface being composed of independent waves can
+be carried further. Suppose I throw a rock into a calm ocean, making a
+big splash. According to Fourier, the splash can be represented as a
+superposition of cosine waves all of nearly zero phase so the waves add
+up to a big splash at the origin. Each individual Fourier wave begins to
+travel away from the splash. The longest waves travel fastest, and
+eventually, far from the splash, the sea consists of a dispersed train
+of waves with the longest waves further from the splash and the shortest
+waves closest. This is exactly what we see in figure 16.1. The storm
+makes the splash, and the waves disperse as seen in the figure.</p>
+<section id="sampling-the-sea-surface">
+<h3><span class="section-number">16.3.1. </span>Sampling the Sea Surface<a class="headerlink" href="#sampling-the-sea-surface" title="Link to this heading">#</a></h3>
+<p>Calculating the Fourier series that represents the sea surface is
+perhaps impossible. It requires that we measure the height of the sea
+surface <span class="math notranslate nohighlight">\(\zeta (x,y,t)\)</span> everywhere in an area perhaps ten kilometers on
+a side for perhaps an hour. So, let’s simplify. Suppose we install a
+wave staff somewhere in the ocean and record the height of the sea
+surface as a function of time <span class="math notranslate nohighlight">\(\zeta (t)\)</span>. We would obtain a record like
+that in figure 16.2. All waves on the sea surface will be measured, but
+we will know nothing about the direction of the waves. This is a much
+more practical measurement, and it will give the frequency spectrum of
+the waves on the sea surface.</p>
+<p>Working with a trace of wave height on say a piece of paper is
+difficult, so let’s digitize the output of the wave staff to obtain
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+  \zeta _{j} \equiv \zeta (t_{j}), \qquad  t_{j} &amp;\equiv j \Delta  \\
+  j &amp;= 0, 1, 2, \cdots , N-1 \nonumber\end{aligned}\)</span><span class="math notranslate nohighlight">\( where \)</span>\Delta<span class="math notranslate nohighlight">\( is
+the time interval between the samples, and \)</span>N<span class="math notranslate nohighlight">\( is the total number of
+samples. The length \)</span>T<span class="math notranslate nohighlight">\( of the record is \)</span>T = N , \Delta<span class="math notranslate nohighlight">\(. Figure 16.3 shows the first 20 seconds of wave height from
+figure 16.2 digitized at intervals of \)</span>\Delta = 0.32$ s.</p>
+<p>Figure 16.3 The first 20 seconds of</p>
+<p>digitized data from figure 16.2. <span class="math notranslate nohighlight">\(\Delta = 0.32\)</span> s.</p>
+<p><span id="fi2:wavepts" label="fi2:wavepts"></span></p>
+<p>Notice that <span class="math notranslate nohighlight">\(\zeta _{j}\)</span> is not the same as <span class="math notranslate nohighlight">\(\zeta (t)\)</span>. We have
+absolutely no information about the height of the sea surface between
+samples. Thus we have converted from an infinite set of numbers which
+describes <span class="math notranslate nohighlight">\(\zeta (t)\)</span> to a finite set of numbers which describe <span class="math notranslate nohighlight">\(\zeta _{j}\)</span>. By converting from a continuous function to a digitized function,
+we have given up an infinite amount of information about the surface.</p>
+<p>The sampling interval <span class="math notranslate nohighlight">\(\Delta\)</span> defines a <em>Nyquist critical frequency</em>
+(Press et al, 1992: 494) $<span class="math notranslate nohighlight">\(Ny \equiv 1/( 2 \Delta )\)</span>$</p>
+<blockquote>
+<div><p>The Nyquist critical frequency is important for two related, but
+distinct, reasons. One is good news, the other is bad news. First the
+good news. It is the remarkable fact known as the <em>sampling theorem</em>:
+If a continuous function <span class="math notranslate nohighlight">\(\zeta(t)\)</span>, sampled at an interval <span class="math notranslate nohighlight">\(\Delta\)</span>,
+happens to be <em>bandwidth limited</em> to frequencies smaller in magnitude
+than <span class="math notranslate nohighlight">\(Ny\)</span>, i.e., if <span class="math notranslate nohighlight">\(S(nf)=0\)</span> for all <span class="math notranslate nohighlight">\(|nf| \geq Ny\)</span>, then the
+function <span class="math notranslate nohighlight">\(\zeta(t)\)</span> is <em>completely determined</em> by its samples
+<span class="math notranslate nohighlight">\(\zeta _j\)</span>…This is a remarkable theorem for many reasons, among them
+that it shows that the “information content” of a bandwidth limited
+function is, in some sense, infinitely smaller than that of a general
+continuous function…</p>
+<p>Now the bad news. The bad news concerns the effect of sampling a
+continuous function that is <em>not</em> bandwidth limited to less than the
+Nyquist critical frequency. In that case, it turns out that all of the
+power spectral density that lies outside the frequency range
+<span class="math notranslate nohighlight">\(-Ny \le nf \le Ny\)</span> is spuriously moved into that range. This
+phenomenon is called <em>aliasing</em>. Any frequency component outside of
+the range <span class="math notranslate nohighlight">\((-Ny, Ny)\)</span> is <em>aliased</em> (falsely translated) into that
+range by the very act of discrete sampling… There is little that you
+can do to remove aliased power once you have discretely sampled a
+signal. The way to overcome aliasing is to (i) know the natural
+bandwidth limit of the signal — or else enforce a known limit by
+analog filtering of the continuous signal, and then (ii) sample at a
+rate sufficiently rapid to give at least two points per cycle of the
+highest frequency present. —Press et al 1992, but with notation
+changed to our notation.</p>
+</div></blockquote>
+<p>Figure 16.4 illustrates the aliasing problem. Notice how a high
+frequency signal is aliased into a lower frequency if the higher
+frequency is above the critical frequency. Fortunately, we can can
+easily avoid the problem: (i) use instruments that do not respond to
+very short, high frequency waves if we are interested in the bigger
+waves; and (ii) chose <span class="math notranslate nohighlight">\(\Delta t\)</span> small enough that we lose little useful
+information. In the example shown in figure 16.3, there are no waves in
+the signal to be digitized with frequencies higher than <span class="math notranslate nohighlight">\(Ny = 1.5625\)</span> Hz.</p>
+<p>Figure 16.4 Sampling a 4 Hz</p>
+<p>sine wave (heavy line) every 0.2 s aliases the frequency to 1 Hz (light
+line). The critical frequency is 1/(2 <span class="math notranslate nohighlight">\(\times\)</span> 0.2 s) = 2.5 Hz, which is
+less than 4 Hz.</p>
+<p><span id="fig:aliasplot" label="fig:aliasplot"></span></p>
+<p>Let’s summarize. Digitized signals from a wave staff cannot be used to
+study waves with frequencies above the Nyquist critical frequency. Nor
+can the signal be used to study waves with frequencies less than the
+fundamental frequency determined by the duration <span class="math notranslate nohighlight">\(T\)</span> of the wave record.
+The digitized wave record contains information about waves in the
+frequency range: $<span class="math notranslate nohighlight">\(\frac{1}{T} &lt; f &lt; \frac{1}{2 \Delta}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>T = N \Delta<span class="math notranslate nohighlight">\( is the length of the time series, and \)</span>f$ is the
+frequency in Hertz.</p>
+</section>
+<section id="calculating-the-wave-spectrum">
+<h3><span class="section-number">16.3.2. </span>Calculating The Wave Spectrum<a class="headerlink" href="#calculating-the-wave-spectrum" title="Link to this heading">#</a></h3>
+<p>The digital Fourier transform <span class="math notranslate nohighlight">\(Z_n\)</span> of a wave record <span class="math notranslate nohighlight">\(\zeta _j\)</span>
+equivalent to (16.21 and 16.22) is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+Z_{n} &amp;= \frac{1}{N} \sum_{j=0}^{N-1} \zeta_{j} \exp [-i2 \pi j n /N] \\
+\zeta_{n} &amp;= \sum_{n=0}^{N-1} Z_{j} \exp [i 2 \pi j n /N]\end{aligned}\end{split}\]</div>
+<p>for <span class="math notranslate nohighlight">\(j=0,1,\cdots, N-1\)</span>; <span class="math notranslate nohighlight">\(n= 0, 1, \cdots , N-1\)</span>. These equations can be
+summed very quickly using the Fast Fourier Transform, especially if <span class="math notranslate nohighlight">\(N\)</span>
+is a power of 2 (Cooley, Lewis, and Welch, 1970; Press et al. 1992:
+542).</p>
+<p>This spectrum <span class="math notranslate nohighlight">\(S_{n}\)</span> of <span class="math notranslate nohighlight">\(\zeta\)</span>, which is called the <em>periodogram</em>, is:
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+S_{n} &amp;= \frac{1}{N^{2}} \left[ |Z_{n}|^{2} + |Z_{N-n}|^{2} \right] ; \qquad n =
+1, 2, \cdots , ( N/2 - 1 ) \\
+ S_{0} &amp;= \frac{1}{N^{2}} |Z_{0}|^{2} \notag \\
+S_{N/2} &amp;= \frac{1}{N^{2}} |Z_{N/2}|^{2} \notag\end{aligned}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>S_{N}<span class="math notranslate nohighlight">\( is normalized such that:
+\)</span><span class="math notranslate nohighlight">\(\sum_{j=0}^{N-1} |\zeta_{j}|^2 = \sum_{n=0}^{N/2} S_{n}\)</span><span class="math notranslate nohighlight">\( The variance
+of \)</span>\zeta_{j}<span class="math notranslate nohighlight">\( is the sum of the \)</span>(N/2 + 1)<span class="math notranslate nohighlight">\( terms in the periodogram.
+Note, the terms of \)</span>S_{n}<span class="math notranslate nohighlight">\( above the frequency \)</span>(N/2)$ are symmetric
+about that frequency. Figure 16.5 shows the periodogram of the time
+series shown in figure 16.2.</p>
+<p>Figure 16.5 The periodogram calculated</p>
+<p>from the first 164 s of data<br />
+from figure 16.2. The Nyquist frequency is 1.5625 Hz.
+<span id="fig:periodogram" label="fig:periodogram"></span></p>
+<p>The periodogram is a very noisy function. The variance of each point is
+equal to the expected value at the point. By averaging together 10–30
+periodograms we can reduce the uncertainty in the value at each
+frequency. The averaged periodogram is called the spectrum of the wave
+height (figure 16.6). It gives the distribution of the variance of
+sea-surface height at the wave staff as a function of frequency. Because
+wave energy is proportional to the variance (16.12) the spectrum is
+called the <em>energy spectrum</em> or the <em>wave-height spectrum</em>. Typically
+three hours of wave staff data are used to compute a spectrum of wave
+height.</p>
+<p>Figure 16.6 The spectrum of</p>
+<p>waves calculated from 11 minutes of data shown in figure 7.2 by
+averaging four periodograms to reduce uncertainty in the spectral
+values. Spectral values below 0.04 Hz are in error due to noise.
+<span id="fig:wavespectrum" label="fig:wavespectrum"></span></p>
+</section>
+<section id="summary">
+<h3><span class="section-number">16.3.3. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p>We can summarize the calculation of a spectrum into the following steps:</p>
+<p>Digitize a segment of wave-height data to obtain useful limits according
+to (16.26). For example, use 1024 samples from 8.53 minutes of data
+sampled at the rate of 2 samples/second.</p>
+<p>Calculate the digital, fast Fourier transform <span class="math notranslate nohighlight">\(Z_{n}\)</span> of the time
+series.</p>
+<p>Calculate the periodogram <span class="math notranslate nohighlight">\(S_{n}\)</span> from the sum of the squares of the
+real and imaginary parts of the Fourier transform.</p>
+<p>Repeat to produce <span class="math notranslate nohighlight">\(M=20\)</span> periodograms.</p>
+<p>Average the 20 periodograms to produce an averaged spectrum <span class="math notranslate nohighlight">\(S_{M}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(S_{M}\)</span> has values that are <span class="math notranslate nohighlight">\(\chi ^{2}\)</span> distributed with <span class="math notranslate nohighlight">\(2 M\)</span> degrees
+of freedom.</p>
+<p>This outline of the calculation of a spectrum ignores many details. For
+more complete information see, for example, Percival and Walden (1993),
+Press et al. (1992: §12), Oppenheim and Schafer (1975), or other texts
+on digital signal processing.</p>
+</section>
+</section>
+<section id="ocean-wave-spectra">
+<h2><span class="section-number">16.4. </span>Ocean-Wave Spectra<a class="headerlink" href="#ocean-wave-spectra" title="Link to this heading">#</a></h2>
+<p>Ocean waves are produced by the wind. The faster the wind, the longer
+the wind blows, and the bigger the area over which the wind blows, the
+bigger the waves. In designing ships or offshore structures we wish to
+know the biggest waves produced by a given wind speed. Suppose the wind
+blows at 20 m/s for many days over a large area of the North Atlantic.
+What will be the spectrum of ocean waves at the downwind side of the
+area?</p>
+<section id="pierson-moskowitz-spectrum">
+<h3><span class="section-number">16.4.1. </span>Pierson-Moskowitz Spectrum<a class="headerlink" href="#pierson-moskowitz-spectrum" title="Link to this heading">#</a></h3>
+<p>Various idealized spectra are used to answer the question in
+oceanography and ocean engineering. Perhaps the simplest is that
+proposed by Pierson and Moskowitz (1964). They assumed that if the wind
+blew steadily for a long time over a large area, the waves would come
+into equilibrium with the wind. This is the concept of a <em>fully
+developed sea</em>. Here, a “long time” is roughly ten-thousand wave
+periods, and a “large area” is roughly five-thousand wave lengths on a
+side.</p>
+<p>Figure 16.7 Wave spectra of a fully developed</p>
+<p>sea for different<br />
+wind speeds according to Moskowitz (1964).</p>
+<p><span id="fig:PMSpectra" label="fig:PMSpectra"></span></p>
+<p>To obtain a spectrum of a fully developed sea, they used measurements of
+waves made by accelerometers on British weather ships in the north
+Atlantic. First, they selected wave data for times when the wind had
+blown steadily for long times over large areas of the north Atlantic.
+Then they calculated the wave spectra for various wind speeds (figure
+16.7), and they found that the function
+$<span class="math notranslate nohighlight">\(S(\omega) = \frac{\alpha g^{2}}{\omega ^{5}} \exp \left[ - \beta \left(
+\frac{\omega _{0}}{\omega } \right) ^{4} \right]\)</span><span class="math notranslate nohighlight">\( was a good fit to the
+observed spectra, where \)</span>\omega = 2\pi f<span class="math notranslate nohighlight">\(, \)</span>f<span class="math notranslate nohighlight">\( is the wave frequency in
+Hertz, \)</span>\alpha = 8.1 \times 10^{-3}<span class="math notranslate nohighlight">\(, \)</span>\beta = 0.74<span class="math notranslate nohighlight">\(,
+\)</span>\omega <em>{0} = g/U</em>{19.5}<span class="math notranslate nohighlight">\( and \)</span>U_{19.5}$ is the wind speed at a height
+of 19.5 m above the sea surface, the height of the anemometers on the
+weather ships used by Pierson and Moskowitz (1964).</p>
+<p>For most airflow over the sea the atmospheric boundary layer has nearly
+neutral stability, and $<span class="math notranslate nohighlight">\(U_{19.5}\approx 1.026\, U_{10}\)</span><span class="math notranslate nohighlight">\( assuming a
+drag coefficient of \)</span>1.3 \times 10^{-3}$.</p>
+<p>The frequency of the peak of the Pierson-Moskowitz spectrum is
+calculated by solving <span class="math notranslate nohighlight">\(dS/d\omega = 0\)</span> for <span class="math notranslate nohighlight">\(\omega _{p}\)</span>, to obtain
+$<span class="math notranslate nohighlight">\(\omega _{p} = 0.877 \,g/U_{19.5}.\)</span><span class="math notranslate nohighlight">\( The speed of waves at the peak is
+calculated from (16.7), which gives:
+\)</span><span class="math notranslate nohighlight">\(c_{p} = \frac{g}{\omega _{p}} = 1.14 \, U_{19.5} \approx 1.17\,U_{10}\)</span><span class="math notranslate nohighlight">\(
+Hence waves with frequency \)</span>\omega _{p}$ travel 14% faster than the wind
+at a height of 19.5 m or 17% faster than the wind at a height of 10 m.
+This poses a difficult problem: How can the wind produce waves traveling
+faster than the wind? I will return to the problem after I discuss the
+<span class="smallcaps">jonswap</span> spectrum and the influence of nonlinear
+interactions among wind-generated waves.</p>
+<p>Figure 16.8 Significant</p>
+<p>wave height and period at the peak of the spectrum of a fully developed
+sea calculated from the Pierson-Moskowitz spectrum using (16.35 and
+16.32).</p>
+<p><span id="fig:wavehtperiod" label="fig:wavehtperiod"></span></p>
+<p>By integrating <span class="math notranslate nohighlight">\(S(\omega)\)</span> over all <span class="math notranslate nohighlight">\(\omega\)</span> we get the variance of
+surface elevation:
+$<span class="math notranslate nohighlight">\(\left&lt;\zeta ^{2}\right&gt; = \int_{0}^{\infty} S(\omega )\, d \omega = 2.74 \times
+10^{-3}
+\,\frac{\left(U_{19.5}
+\right)^4}{g^2}\)</span><span class="math notranslate nohighlight">\( Remembering that
+\)</span>H_{1/3} = 4 \left&lt;\zeta ^{2}\right&gt;^{1/2}<span class="math notranslate nohighlight">\(, the significant wave height
+is:
+\)</span><span class="math notranslate nohighlight">\(H_{1/3} = 0.21 \, \frac{\left(U_{19.5} \right)^2}{g}\approx 0.22 \,
+\frac{\left(U_{10} \right)^2}{g}\)</span>$ Figure 16.8 gives significant wave
+heights and periods for the Pierson-Moskowitz spectrum.</p>
+</section>
+<section id="jonswap-spectrum">
+<h3><span class="section-number">16.4.2. </span>JONSWAP Spectrum<a class="headerlink" href="#jonswap-spectrum" title="Link to this heading">#</a></h3>
+<p>Hasselmann et al. (1973), after analyzing data collected during the
+Joint North Sea Wave Observation Project <span class="smallcaps">jonswap</span>, found
+that the wave spectrum is never fully developed (figure 16.9). It
+continues to develop through non-linear, wave-wave interactions even for
+very long times and distances. They therefore proposed the spectrum:</p>
+<p>Figure 16.9 Wave spectra of a developing</p>
+<p>sea for different fetches<br />
+measured at <span class="smallcaps">jonswap</span>. After Hasselmann et al. (1973).</p>
+<p><span id="fig:hasselmannspect" label="fig:hasselmannspect"></span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+S(\omega) &amp;= \frac{\alpha g^{2}}{\omega ^{5}} \exp \left[ - \frac{5}{4}
+\left(
+\frac{\omega _{p}}{\omega } \right) ^{4} \right] \gamma ^{r} \\
+r &amp;= \exp \biggl[ - \frac{\left(\omega - \omega _{p}\right)^{2}}{2\, \sigma ^{2}
+\,\omega _{p}^{2}}
+\biggr]\end{aligned}\end{split}\]</div>
+<p>Wave data collected during the <span class="smallcaps">jonswap</span> experiment were
+used to determine the values for the constants in (16.36):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\alpha &amp;= 0.076 \, \left( \frac{U_{10}^{2}}{F \, g} \right)^{0.22} \\
+\omega_p &amp;= 22 \left(\frac{g^2}{U_{10}F}\right)^{1/3} \\
+\gamma &amp;= 3.3 \\
+   \sigma &amp;= \left\{ \begin{array}{ll}
+                    0.07 &amp; \omega \leq \omega _{p} \\
+                    0.09 &amp; \omega &gt; \omega _{p}
+                    \end{array}
+            \right.\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(F\)</span> is the distance from a lee shore, called the <em>fetch</em>, or the
+distance over which the wind blows with constant velocity.</p>
+<p>The energy of the waves increases with fetch:
+$<span class="math notranslate nohighlight">\(\left&lt; \zeta ^{2}\right&gt; = 1.67 \times 10^{-7}\, \frac{\left( U_{10} \right)^{2} }{g}  \, F\)</span><span class="math notranslate nohighlight">\(
+where \)</span>F$ is fetch.</p>
+<p>The <span class="smallcaps">jonswap</span> spectrum is similar to the Pierson-Moskowitz
+spectrum except that waves continues to grow with distance (or time) as
+specified by the <span class="math notranslate nohighlight">\(\alpha\)</span> term, and the peak in the spectrum is more
+pronounced, as specified by the <span class="math notranslate nohighlight">\(\gamma\)</span> term. The latter turns out to
+be particularly important because it leads to enhanced non-linear
+interactions and a spectrum that changes in time according to the theory
+of Hasselmann (1966).</p>
+</section>
+<section id="generation-of-waves-by-wind">
+<h3><span class="section-number">16.4.3. </span>Generation of Waves by Wind<a class="headerlink" href="#generation-of-waves-by-wind" title="Link to this heading">#</a></h3>
+<p>We have seen in the last few paragraphs that waves are related to the
+wind. We have, however, put off until now just how they are generated by
+the wind. Suppose we begin with a mirror-smooth sea (Beaufort Number 0).
+What happens if the wind suddenly begins to blow steadily at say 8 m/s?
+Three different physical processes begin:</p>
+<p>The turbulence in the wind produces random pressure fluctuations at the
+sea surface, which produces small waves with wavelengths of a few
+centimeters (Phillips, 1957).</p>
+<p>Next, the wind acts on the small waves, causing them to become larger.
+Wind blowing over the wave produces pressure differences along the wave
+profile causing the wave to grow. The process is unstable because, as
+the wave gets bigger, the pressure differences get bigger, and the wave
+grows faster. The instability causes the wave to grow exponentially
+(Miles, 1957).</p>
+<p>Finally, the waves begin to interact among themselves to produce longer
+waves (Hasselmann et al. 1973). The interaction transfers wave energy
+from short waves generated by Miles’ mechanism to waves with frequencies
+slightly lower than the frequency of waves at the peak of the spectrum.
+Eventually, this leads to waves going faster than the wind, as noted by
+Pierson and Moskowitz.</p>
+</section>
+</section>
+<section id="wave-forecasting">
+<h2><span class="section-number">16.5. </span>Wave Forecasting<a class="headerlink" href="#wave-forecasting" title="Link to this heading">#</a></h2>
+<p>Our understanding of ocean waves, their spectra, their generation by the
+wind, and their interactions are now sufficiently well understood that
+the wave spectrum can be forecast using winds calculated from numerical
+weather models. If we observe some small ocean area, or some area just
+offshore, we can see waves generated by the local wind, the <em>wind sea</em>,
+plus waves that were generated in other areas at other times and that
+have propagated into the area we are observing, the <em>swell</em>. Forecasts
+of local wave conditions must include both sea and swell, hence wave
+forecasting is not a local problem. We saw, for example, that waves off
+California can be generated by storms more than 10,000 km away.</p>
+<p>Various techniques have been used to forecast waves. The earliest
+attempts were based on empirical relationships between wave height and
+wave length and wind speed, duration, and fetch. The development of the
+wave spectrum allowed evolution of individual wave components with
+frequency <span class="math notranslate nohighlight">\(f\)</span> travelling in direction <span class="math notranslate nohighlight">\(\theta\)</span> of the directional wave
+spectrum <span class="math notranslate nohighlight">\(\psi (f, \theta )\)</span> using
+$$\frac{\partial \psi_0 }{\partial t} + \mathbf{c_g \cdot \nabla }\psi_0 = S_{i}</p>
+<ul class="simple">
+<li><p>S_{nl} + S_{d}$<span class="math notranslate nohighlight">\( where \)</span>\psi_0 = \psi <em>0 (f, \theta ; \mathbf{x},t)<span class="math notranslate nohighlight">\(
+varies in space (\)</span>\mathbf x<span class="math notranslate nohighlight">\() and time \)</span>t<span class="math notranslate nohighlight">\(, \)</span>S</em>{i}<span class="math notranslate nohighlight">\( is input from the
+wind given by the Phillips (1957) and Miles (1957) mechanisms, \)</span>S_{nl}<span class="math notranslate nohighlight">\(
+is the transfer among wave components due to nonlinear interactions, and
+\)</span>S_{d}$ is dissipation.</p></li>
+</ul>
+<p>The third-generation wave-forecasting models now used by meteorological
+agencies throughout the world are based on integrations of (16.39) using
+many individual wave components (The <span class="smallcaps">swamp</span> Group 1985; The
+<span class="smallcaps">wamdi</span> Group, 1988; Komen et al, 1996). The forecasts
+follow individual components of the wave spectrum in space and time,
+allowing each component to grow or decay depending on local winds, and
+allowing wave components to interact according to Hasselmann’s theory.
+Typically the sea is represented by 300 components: 25 wavelengths going
+in 12 directions (30). To reduce computing time, the models use a nested
+grid of points: the grid has a high density of points in storms and near
+coasts and a low density in other regions. Typically, grid points in the
+open ocean are 3 apart.</p>
+<p>Some recent experimental models take the wave-forecasting process one
+step further by assimilating altimeter and scatterometer observations of
+wind speed and wave height into the model. Forecasts of waves using
+assimilated satellite data are available from the European Centre for
+Medium-Range Weather Forecasts.</p>
+<p><span class="smallcaps">Noaa</span>’s Ocean Modeling Branch at the National Centers for
+Environmental Predictions also produces regional and global forecasts of
+waves. The Branch use a third-generation model based on the Cycle-4
+<span class="smallcaps">wam</span> model. It accommodates ever-changing ice edge, and it
+assimilates buoy and satellite altimeter wave data. The model calculates
+directional frequency spectra in 12 directions and 25 frequencies at
+3-hour intervals up to 72 hours in advance. The lowest frequency is
+0.04177 Hz and higher frequencies are spaced logarithmically at
+increments of 0.1 times the lowest frequency. Wave spectral data are
+available on a 2.5<span class="math notranslate nohighlight">\(\times\)</span> 2.5 grid for deep-water points between 67.5S
+and 77.5N. The model is driven using 10-meter winds calculated from the
+lowest winds from the Centers weather model adjusted to a height of 10
+meter by using a logarithmic profile (8.20). The Branch is testing an
+improved forecast with 1<span class="math notranslate nohighlight">\(\times\)</span> 1.25 resolution (figure 16.10).</p>
+<p>Figure 16.10 Output of a third-generation</p>
+<p>wave forecast model produced by <span class="smallcaps">Noaa</span>’s Ocean Modeling
+Branch for 20 August 1998. Contours are significant wave height in
+meters, arrows give direction of waves at the peak of the wave spectrum,
+and barbs give wind speed in m/s and direction. From <span class="smallcaps">noaa</span>
+Ocean Modeling Branch. <span id="fig:noaa.waves" label="fig:noaa.waves"></span></p>
+</section>
+<section id="measurement-of-waves">
+<h2><span class="section-number">16.6. </span>Measurement of Waves<a class="headerlink" href="#measurement-of-waves" title="Link to this heading">#</a></h2>
+<p>Because waves influence so many processes and operations at sea, many
+techniques have been invented for measuring waves. Here are a few of the
+more commonly used. Stewart (1980) gives a more complete description of
+wave measurement techniques, including methods for measuring the
+directional distribution of waves.</p>
+<section id="sea-state-estimated-by-observers-at-sea">
+<h3><span class="section-number">16.6.1. </span>Sea State Estimated by Observers at Sea<a class="headerlink" href="#sea-state-estimated-by-observers-at-sea" title="Link to this heading">#</a></h3>
+<p>This is perhaps the most common observation included in early
+tabulations of wave heights. These are the significant wave heights
+summarized in the U.S. Navy’s <em>Marine Climatological Atlas</em> and other
+such reports printed before the age of satellites.</p>
+</section>
+<section id="satellite-altimeters">
+<h3><span class="section-number">16.6.2. </span>Satellite Altimeters<a class="headerlink" href="#satellite-altimeters" title="Link to this heading">#</a></h3>
+<p>The satellite altimeters used to measure surface geostrophic currents
+also measure wave height. Altimeters were flown on Seasat in 1978,
+Geosat from 1985 to 1988, <span class="smallcaps">ers–1 &amp;2</span> from 1991,
+Topex/Poseidon from 1992, and Jason from 2001. Altimeter data have been
+used to produce monthly mean maps of wave heights and the variability of
+wave energy density in time and space. The next step, just begun, is to
+use altimeter observation with wave forecasting programs, to increase
+the accuracy of wave forecasts.</p>
+<p>The altimeter technique works as follows. Radio pulse from a satellite
+altimeter reflect first from the wave crests, later from the wave
+troughs. The reflection stretches the altimeter pulse in time, and the
+stretching is measured and used to calculate wave height (figure 16.11).
+Accuracy is <span class="math notranslate nohighlight">\(\pm 10\)</span>%.</p>
+<p>Figure 16.11 Shape of</p>
+<p>radio pulse received by the Seasat altimeter, showing the influence of
+ocean waves. The shape of the pulse is used to calculate significant
+wave height. After Stewart (1985: 264). <span id="fig:altimeterpulse" label="fig:altimeterpulse"></span></p>
+</section>
+<section id="accelerometer-mounted-on-meteorological-or-other-buoy">
+<h3><span class="section-number">16.6.3. </span>Accelerometer Mounted on Meteorological or Other Buoy<a class="headerlink" href="#accelerometer-mounted-on-meteorological-or-other-buoy" title="Link to this heading">#</a></h3>
+<p>This is a less common measurement, although it is often used for
+measuring waves during short experiments at sea. For example,
+accelerometers on weather ships measured wave height used by Pierson &amp;
+Moskowitz and the waves shown in figure 16.2. The most accurate
+measurements are made using an accelerometer stabilized by a gyro so the
+axis of the accelerometer is always vertical.</p>
+<p>Double integration of vertical acceleration gives displacement. The
+double integration, however, amplifies low-frequency noise, leading to
+the low frequency signals seen in figures 16.5 and 16.6. In addition,
+the buoy’s heave is not sensitive to wavelengths less than the buoy’s
+diameter, and buoys measure only waves having wavelengths greater than
+the diameter of the buoy. Overall, careful measurements are accurate to
+<span class="math notranslate nohighlight">\(\pm \,\)</span><!-- -->10% or better.</p>
+</section>
+<section id="wave-gages">
+<h3><span class="section-number">16.6.4. </span>Wave Gages<a class="headerlink" href="#wave-gages" title="Link to this heading">#</a></h3>
+<p>Gauges may be mounted on platforms or on the sea floor in shallow water.
+Many different types of sensors are used to measure the height of the
+wave or subsurface pressure which is related to wave height. Sound,
+infrared beams, and radio waves can be used to determine the distance
+from the sensor to the sea surface provided the sensor can be mounted on
+a stable platform that does not interfere with the waves. Pressure
+gauges described in §6.8 can be used to measure the depth from the sea
+surface to the gauge. Arrays of bottom-mounted pressure gauges are
+useful for determining wave directions. Thus arrays are widely used just
+offshore of the surf zone to determine offshore wave directions.</p>
+<p>Pressure gauge must be located within a quarter of a wavelength of the
+surface because wave-induced pressure fluctuations decrease
+exponentially with depth. Thus, both gauges and pressure sensors are
+restricted to shallow water or to large platforms on the continental
+shelf. Again, accuracy is <span class="math notranslate nohighlight">\(\pm \,\)</span><!-- -->10% or better.</p>
+</section>
+<section id="synthetic-aperture-radars-on-satellites">
+<h3><span class="section-number">16.6.5. </span>Synthetic Aperture Radars on Satellites<a class="headerlink" href="#synthetic-aperture-radars-on-satellites" title="Link to this heading">#</a></h3>
+<p>These radars map the radar reflectivity of the sea surface with spatial
+resolution of 6–25 m. Maps of reflectivity often show wave-like
+features related to the real waves on the sea surface. I say ‘wave-like’
+because there is not an exact one-to-one relationship between wave
+height and image density. Some waves are clearly mapped, others less so.
+The maps, however, can be used to obtain additional information about
+waves, especially the spatial distribution of wave directions in shallow
+water (Vesecky and Stewart, 1982). Because the directional information
+can be calculated directly from the radar data without the need to
+calculate an image (Hasselmann, 1991), data from radars and altimeters
+on <span class="smallcaps">ers</span>–1 &amp; 2 are being used to determine if the radar and
+altimeter observations can be used directly in wave forecast programs.</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">16.7. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Wavelength and frequency of waves are related through the dispersion
+relation.</p>
+<p>The velocity of a wave phase can differ from the velocity at which
+wave energy propagates.</p>
+<p>Waves in deep water are dispersive, longer wavelengths travel faster
+than shorter wavelengths. Waves in shallow water are not dispersive.</p>
+<p>The dispersion of ocean waves has been accurately measured, and
+observations of dispersed waves can be used to track distant storms.</p>
+<p>The shape of the sea surface results from a linear superposition of
+waves of all possible wavelengths or frequencies travelling in all
+possible directions.</p>
+<p>The spectrum gives the contributions by wavelength or frequency to
+the variance of surface displacement.</p>
+<p>Wave energy is proportional to variance of surface displacement.</p>
+<p>Digital spectra are band limited, and they contain no information
+about waves with frequencies higher than the Nyquist frequency.</p>
+<p>Waves are generated by wind. Strong winds of long duration generate
+the largest waves.</p>
+<p>Various idealized forms of the wave spectrum generated by steady,
+homogeneous winds have been proposed. Two important ones are the
+Pierson-Moskowitz and <span class="smallcaps">jonswap</span> spectra.</p>
+<p>Observations by mariners on ships and by satellite altimeters have
+been used to make global maps of wave height. Wave gauges are used
+on platforms in shallow water and on the continental shelf to
+measure waves. Bottom-mounted pressure gauges are used to measure
+waves just offshore of beaches. And synthetic-aperture radars are
+used to obtain information about wave directions.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter15.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Numerical Models</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter17.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>Coastal Processes and Tides</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-theory-of-ocean-surface-waves">16.1. Linear Theory of Ocean Surface Waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dispersion-relation">16.1.1. Dispersion Relation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-velocity">16.1.2. Phase Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-velocity">16.1.3. Group Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-energy">16.1.4. Wave Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#significant-wave-height">16.1.5. Significant Wave Height</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-waves">16.2. Nonlinear waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-momentum">16.2.1. Wave Momentum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#waves-and-the-concept-of-a-wave-spectrum">16.3. Waves and the Concept of a Wave Spectrum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-the-sea-surface">16.3.1. Sampling the Sea Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-the-wave-spectrum">16.3.2. Calculating The Wave Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">16.3.3. Summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-wave-spectra">16.4. Ocean-Wave Spectra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pierson-moskowitz-spectrum">16.4.1. Pierson-Moskowitz Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jonswap-spectrum">16.4.2. JONSWAP Spectrum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generation-of-waves-by-wind">16.4.3. Generation of Waves by Wind</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-forecasting">16.5. Wave Forecasting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-waves">16.6. Measurement of Waves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-state-estimated-by-observers-at-sea">16.6.1. Sea State Estimated by Observers at Sea</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-altimeters">16.6.2. Satellite Altimeters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accelerometer-mounted-on-meteorological-or-other-buoy">16.6.3. Accelerometer Mounted on Meteorological or Other Buoy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-gages">16.6.4. Wave Gages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetic-aperture-radars-on-satellites">16.6.5. Synthetic Aperture Radars on Satellites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">16.7. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

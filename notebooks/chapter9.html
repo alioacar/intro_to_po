@@ -1,0 +1,1206 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>9. Response of the Upper Ocean to Winds &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter9';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="10. Geostrophic Currents" href="chapter10.html" />
+    <link rel="prev" title="8. Equations of Motion With Viscosity" href="chapter8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter9.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter9.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Response of the Upper Ocean to Winds</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-motion">9.1. Inertial Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-layer-at-the-sea-surface">9.2. Ekman Layer at the Sea Surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nansens-qualitative-arguments">9.2.1. Nansen’s Qualitative Arguments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekmans-solution">9.2.2. Ekman’s Solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#values-for-ekmans-constants">9.2.3. Values for Ekman’s Constants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-layer-depth">9.2.4. Ekman Layer Depth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ekman-number-coriolis-and-frictional-forces">9.2.5. The Ekman Number: Coriolis and Frictional Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bottom-ekman-layer">9.2.6. Bottom Ekman Layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-ekmans-assumptions">9.2.7. Examining Ekman’s Assumptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-of-flow-near-the-sea-surface">9.2.8. Observations of Flow Near the Sea Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-of-stability-in-the-ekman-layer">9.2.9. Influence of Stability in the Ekman Layer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-mass-transport">9.3. Ekman Mass Transport</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-transports">9.3.1. Use of Transports</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-ekman-theory">9.4. Application of Ekman Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coastal-upwelling">9.4.1. Coastal Upwelling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping">9.4.2. Ekman Pumping</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langmuir-circulation">9.5. Langmuir Circulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">9.6. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="response-of-the-upper-ocean-to-winds">
+<h1><span class="section-number">9. </span>Response of the Upper Ocean to Winds<a class="headerlink" href="#response-of-the-upper-ocean-to-winds" title="Link to this heading">#</a></h1>
+<p>If you have had a chance to travel around the United States, you may
+have noticed that the climate of the east coast differs considerably
+from that on the west coast. Why? Why is the climate of Charleston,
+South Carolina so different from that of San Diego, although both are
+near 32N, and both are on or near the ocean? Charleston has 125–150 cm
+of rain a year, San Diego has 25–50 cm, Charleston has hot summers, San
+Diego has cool summers. Or why is the climate of San Francisco so
+different from that of Norfolk, Virginia?</p>
+<p>If we look closely at the characteristics of the atmosphere along the
+two coasts near 32N, we find more differences that may explain the
+climate. For example, when the wind blows onshore toward San Diego, it
+brings a cool, moist, marine, boundary layer a few hundred meters thick
+capped by much warmer, dry air. On the east coast, when the wind blows
+onshore, it brings a warm, moist, marine, boundary layer that is much
+thicker. Convection, which produces rain, is much easier on the east
+coast than on the west coast. Why then is the atmospheric boundary layer
+over the water so different on the two coasts? The answer can be found
+in part by studying the ocean’s response to local winds, the subject of
+this chapter.</p>
+<section id="inertial-motion">
+<h2><span class="section-number">9.1. </span>Inertial Motion<a class="headerlink" href="#inertial-motion" title="Link to this heading">#</a></h2>
+<p>To begin our study of currents near the sea surface, let’s consider
+first a very simple solution to the equations of motion, the response of
+the ocean to an impulse that sets the water in motion. For example, the
+impulse can be a strong wind blowing for a few hours. The water then
+moves only under the influence of Coriolis force. No other force acts on
+the water.</p>
+<p>Such motion is said to be inertial. The mass of water continues to move
+due to its inertia. If the water were in space, it would move in a
+straight line according to Newton’s second law. But on a rotating earth,
+the motion is much different.</p>
+<p>From (7.12) the equations of motion for a parcel of water moving in the
+ocean without friction are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{du}{dt}&amp;=-\frac{1}{\rho}\,\frac{\partial{p}}{\partial{x}} + 2\Omega v\,\sin\varphi \\
+\frac{dv}{dt}&amp;=-\frac{1}{\rho}\,\frac{\partial{p}}{\partial{y}} - 2\Omega u\,\sin\varphi \\
+\frac{dw}{dt}&amp;=-\frac{1}{\rho}\,\frac{\partial{p}}{\partial{z}} + 2\Omega u\,\cos\varphi - g\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> is pressure, <span class="math notranslate nohighlight">\(\Omega = 2\,\pi\)</span>/(sidereal day)
+<span class="math notranslate nohighlight">\(= 7.292 \times 10^{-5}\)</span> rad/s is the rotation of the earth in fixed
+coordinates, and <span class="math notranslate nohighlight">\(\varphi\)</span> is latitude.</p>
+<p>Let’s now look for simple solutions to these equations. To do this we
+must simplify the momentum equations. First, if only the Coriolis force
+acts on the water, there must be no horizontal pressure gradient:
+$<span class="math notranslate nohighlight">\(\frac{\partial{p}}{\partial{x}} = \frac{\partial{p}}{\partial{y}} = 0\)</span>$
+Furthermore, we can assume that the flow is horizontal, and (9.1)
+becomes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{du}{dt}&amp;=2\Omega \,v \sin\varphi =fv \\
+\frac{dv}{dt}&amp;=-2\Omega \,u \sin\varphi = -fu\end{aligned}\end{split}\]</div>
+<p>where: $<span class="math notranslate nohighlight">\(\boxed{f = 2\,\Omega\,\sin\varphi }\)</span><span class="math notranslate nohighlight">\( is the *Coriolis
+Parameter* and \)</span>\Omega = 7.292 \times 10^{-5}$/s is the rotation rate of
+earth.</p>
+<p>Equations (9.2) are two coupled, first-order, linear, differential
+equations which can be solved with standard techniques. If we solve the
+second equation for <span class="math notranslate nohighlight">\(u\)</span>, and insert it into the first equation we
+obtain: $<span class="math notranslate nohighlight">\(\frac{du}{dt}=-\frac{1}{f}\,\frac{d^2v}{dt^2}=fv\)</span><span class="math notranslate nohighlight">\( Rearranging
+the equation puts it into a standard form we should recognize, the
+equation for the harmonic oscillator: \)</span><span class="math notranslate nohighlight">\(\frac{d^2v}{dt^2} + f^2v = 0\)</span><span class="math notranslate nohighlight">\(
+which has the solution (9.5). This current is called an *inertial
+current* or *inertial oscillation*: \)</span><span class="math notranslate nohighlight">\(\fbox{\)</span> \D \begin{aligned}%{cc}
+u &amp;= V, \sin ft \
+v &amp;= V, \cos ft \
+V^2  &amp;= u^2+v^2 \end{aligned}<span class="math notranslate nohighlight">\(}\)</span><span class="math notranslate nohighlight">\( Note that (9.5) are the parametric
+equations for a circle with diameter \)</span>D_i = 2V/f<span class="math notranslate nohighlight">\( and period
+\)</span>T_i = (2\pi)/f=T_{sd}/(2\sin\varphi)<span class="math notranslate nohighlight">\( where \)</span>T_{sd}$ is a sidereal day.</p>
+<p>Figure 9.1 Inertial currents</p>
+<p>in the North Pacific in October 1987 (days 275–300) measured by
+holey-sock drifting buoys drogued at a depth of 15 meters. Positions
+were observed 10–12 times per day by the Argos system on
+<span class="smallcaps">noaa</span> polar-orbiting weather satellites and interpolated to
+positions every three hours. The largest currents were generated by a
+storm on day 277. Note these are not individual eddies. The entire
+surface is rotating. A drogue placed anywhere in the region would have
+the same circular motion. After van Meurs (1998). <span id="fig:inertialcur" label="fig:inertialcur"></span></p>
+<p><span class="math notranslate nohighlight">\(T_i\)</span> is the <em>inertial period</em>. It is one half the time required for the
+rotation of a local plane on earth’s surface (Table 9.1). The rotation
+is <em>anti-cyclonic</em>: clockwise in the northern hemisphere,
+counterclockwise in the southern. Inertial currents are the free motion
+of parcels of water on a rotating plane.</p>
+<p>50mm&#64;ccc&#64; <strong>Table 9.1 Inertial Oscillations</strong><br />
+Latitude <span class="math notranslate nohighlight">\((\varphi)\)</span> &amp; <span class="math notranslate nohighlight">\(T_i\)</span> (hr) &amp; D</p>
+<p>(km)<br />
+&amp;<br />
+&amp; 11.97</p>
+<p>&amp; 2.7<br />
+35&amp; 20.87 &amp; 4.8<br />
+10&amp; 68.93 &amp; 15.8</p>
+<p>Inertial currents are the most common currents in the ocean (figure
+9.1). Webster (1968) reviewed many published reports of inertial
+currents and found that currents have been observed at all depths in the
+ocean and at all latitudes. The motions are transient and decay in a few
+days. Oscillations at different depths or at different nearby sites are
+usually incoherent.</p>
+<p>Inertial currents are caused by rapid changes of wind at the sea
+surface, with rapid changes of strong winds producing the largest
+oscillations. Although we have derived the equations for the oscillation
+assuming frictionless flow, friction cannot be completely neglected.
+With time, the oscillations decay into other surface currents. (See, for
+example, Apel, 1987: §6.3 for more information.)</p>
+</section>
+<section id="ekman-layer-at-the-sea-surface">
+<h2><span class="section-number">9.2. </span>Ekman Layer at the Sea Surface<a class="headerlink" href="#ekman-layer-at-the-sea-surface" title="Link to this heading">#</a></h2>
+<p>Steady winds blowing on (the sea surface produce a thin, horizontal
+boundary layer, the <em>Ekman layer</em>. By thin, I mean a layer that is at
+most a few-hundred meters thick, which is thin compared with the depth
+of the water in the deep ocean. A similar boundary layer exists at the
+bottom of the ocean, the <em>bottom Ekman layer</em>, and at the bottom of the
+atmosphere just above the sea surface, the planetary boundary layer or
+frictional layer described in §4.3. The Ekman layer is named after
+Professor Walfrid Ekman, who worked out its dynamics for his doctoral
+thesis.</p>
+<p>Ekman’s work was the first of a remarkable series of studies conducted
+during the first half of the twentieth century that led to an
+understanding of how winds drive the ocean’s circulation (Table 9.1). In
+this chapter we consider Nansen and Ekman’s work. The rest of the story
+is given in chapters 11 and 13.</p>
+<p>120mm&#64;lcl&#64;<br />
+Fridtjof Nansen &amp; (1898) &amp; Qualitative</p>
+<p>theory, currents transport water at an<br />
+&amp;&amp;angle to the wind.<br />
+Vagn Walfrid Ekman &amp; (1902) &amp; Quantitative theory for wind-driven
+transport at<br />
+&amp;&amp;the sea surface.<br />
+Harald Sverdrup &amp; (1947) &amp; Theory for wind-driven circulation in the
+eastern<br />
+&amp;&amp;Pacific.<br />
+Henry Stommel &amp; (1948) &amp; Theory for westward intensification of
+wind-driven<br />
+&amp;&amp;circulation (western boundary currents).<br />
+Walter Munk &amp; (1950) &amp; Quantitative theory for main features of the
+wind-<br />
+&amp;&amp;driven circulation.<br />
+Kirk Bryan &amp; (1963) &amp; Numerical models of the oceanic circulation.<br />
+Bert Semtner &amp; (1988) &amp; Global, eddy-resolving, realistic model of the<br />
+  and Robert Chervin &amp;&amp;ocean’s circulation.</p>
+<section id="nansens-qualitative-arguments">
+<h3><span class="section-number">9.2.1. </span>Nansen’s Qualitative Arguments<a class="headerlink" href="#nansens-qualitative-arguments" title="Link to this heading">#</a></h3>
+<p>Fridtjof Nansen noticed that wind tended to blow ice at an angle of
+20–40 to the right of the wind in the Arctic, by which he meant that
+the track of the iceberg was to the right of the wind looking downwind
+(See figure 9.2). He later worked out the balance of forces that must
+exist when wind tried to push icebergs downwind on a rotating earth.</p>
+<p>Nansen argued that three forces must be important:</p>
+<p>Wind Stress, <strong>W</strong>; Friction <strong>F</strong> (otherwise the iceberg would move as
+fast as the wind); Coriolis Force, <strong>C</strong>.</p>
+<p>Nansen argued further that the forces must have the following
+attributes:</p>
+<p>Drag must be opposite the direction of the ice’s velocity; Coriolis
+force must be perpendicular to the velocity; The forces must balance for
+steady flow.</p>
+<p><strong>W</strong> + <strong>F</strong> + <strong>C</strong> = 0</p>
+</section>
+<section id="ekmans-solution">
+<h3><span class="section-number">9.2.2. </span>Ekman’s Solution<a class="headerlink" href="#ekmans-solution" title="Link to this heading">#</a></h3>
+<p>Nansen asked Vilhelm Bjerknes to let one of Bjerknes’ students make a
+theoretical study of the influence of earth’s rotation on wind-driven
+currents. Walfrid Ekman was chosen, and he presented the results in his
+thesis at Uppsala (Kullenberg, 1954). Ekman later expanded the study to
+include the influence of continents and differences of density of water
+(Ekman, 1905). The following follows Ekman’s line of reasoning in that
+paper.</p>
+<p>Figure 9.2 The balance of forces</p>
+<p>acting on an iceberg in a wind on a rotating earth.</p>
+<p><span id="fig:forcesketch" label="fig:forcesketch"></span></p>
+<p>Ekman assumed a steady, homogeneous, horizontal flow with friction on a
+rotating earth. Thus horizontal and temporal derivatives are zero:
+$<span class="math notranslate nohighlight">\(\frac{\partial}{\partial{t}}=\frac{\partial}{\partial{x}}=\frac{\partial}{\partial{y}}=0\)</span><span class="math notranslate nohighlight">\(
+For flow on a rotating earth, this leaves a balance between frictional
+and Coriolis forces (8.15). Ekman further assumed a constant vertical
+eddy viscosity of the form (8:13):
+\)</span><span class="math notranslate nohighlight">\(T_{xz} \,=\,\rho\, A_z \,\frac{\partial{u}}{\partial{z}}\: , \qquad T_{yz}\,=\,\rho\, A_z \,\frac{\partial{v}}{\partial{z}}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>T_{xz}<span class="math notranslate nohighlight">\(, \)</span>T_{yz}<span class="math notranslate nohighlight">\( are the components of the wind stress in the
+\)</span>x<span class="math notranslate nohighlight">\(, \)</span>y<span class="math notranslate nohighlight">\( directions, and \)</span>\rho$ is the density of sea water.</p>
+<p>Using (9.7) in (8.15), the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> momentum equations are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+fv +  A_z \, \frac{\partial{^2 u}}{\partial{z^2}} &amp;= 0  \\
+-fu + A_z \, \frac{\partial{^2 v}}{\partial{z^2}} &amp;= 0\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(f\)</span> is the Coriolis parameter.</p>
+<p>It is easy to verify that the equations (9.9) have solutions:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+u &amp;=  V_0\,\exp(az)\,\cos(\pi/4 + az)  \\
+v &amp;=  V_0\,\exp(az)\,\sin(\pi/4 + az)\end{aligned}\end{split}\]</div>
+<p>when the wind is blowing to the north <span class="math notranslate nohighlight">\((T = T_{yz})\)</span>. The constants are
+$<span class="math notranslate nohighlight">\(V_0 = \frac{T}{\sqrt{\rho^2_w\,f\,A_z}} \qquad \text{and} \qquad
+a=\sqrt{\frac{f}{2A_z}}\)</span><span class="math notranslate nohighlight">\( and \)</span>V_0$ is the velocity of the current at
+the sea surface.</p>
+<p>Now let’s look at the form of the solutions. At the sea surface <span class="math notranslate nohighlight">\(z = 0\)</span>,
+<span class="math notranslate nohighlight">\(\exp(z=0) = 1\)</span>, and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+u(0) &amp;= V_0\, \cos(\pi/4)  \\
+v(0) &amp;= V_0\, \sin(\pi/4)\end{aligned}\end{split}\]</div>
+<p>The current has a speed of <span class="math notranslate nohighlight">\(V_0\)</span> to the northeast. In general, the
+surface current is 45 to the right of the wind when looking downwind in
+the northern hemisphere. The current is 45 to the left of the wind in
+the southern hemisphere. Below the surface, the velocity decays
+exponentially with depth (figure 9.3):
+$<span class="math notranslate nohighlight">\(\left[u^2(z) + v^2(z) \right]^{1/2} =V_0\,\exp(az)\)</span>$</p>
+<p>Figure 9.3. Ekman current</p>
+<p>generated by a 10 m/s wind at 35 N.</p>
+<p><span id="fig:ekmancurrent" label="fig:ekmancurrent"></span></p>
+</section>
+<section id="values-for-ekmans-constants">
+<h3><span class="section-number">9.2.3. </span>Values for Ekman’s Constants<a class="headerlink" href="#values-for-ekmans-constants" title="Link to this heading">#</a></h3>
+<p>To proceed further, we need values for any two of the free parameters:
+the velocity at the surface, <span class="math notranslate nohighlight">\(V_0\)</span>; the coefficient of eddy viscosity,
+<span class="math notranslate nohighlight">\(A_z\)</span>; or the wind stress <span class="math notranslate nohighlight">\(T\)</span>.</p>
+<p>The wind stress is well known, and Ekman used the bulk formula (4.2):
+$<span class="math notranslate nohighlight">\(T_{yz} = T = \rho_{air}\, C_D \,U_{10}^2\)</span><span class="math notranslate nohighlight">\( where \)</span>\rho_{air}<span class="math notranslate nohighlight">\( is the
+density of air, \)</span>C_D<span class="math notranslate nohighlight">\( is the drag coefficient, and \)</span>U_{10}<span class="math notranslate nohighlight">\( is the wind
+speed at 10 m above the sea. Ekman turned to the literature to obtain
+values for \)</span>V_0<span class="math notranslate nohighlight">\( as a function of wind speed. He found:
+\)</span><span class="math notranslate nohighlight">\(V_0 = \frac{0.0127}{\sqrt{\sin|\varphi|}}\, U_{10}, \qquad \qquad
+|\varphi|\ge 10\)</span>$</p>
+<p>With this information, he could then calculate the velocity as a
+function of depth knowing the wind speed <span class="math notranslate nohighlight">\(U_{10}\)</span> and wind direction.</p>
+</section>
+<section id="ekman-layer-depth">
+<h3><span class="section-number">9.2.4. </span>Ekman Layer Depth<a class="headerlink" href="#ekman-layer-depth" title="Link to this heading">#</a></h3>
+<p>The thickness of the Ekman layer is arbitrary because the Ekman currents
+decrease exponentially with depth. Ekman proposed that the thickness be
+the depth <span class="math notranslate nohighlight">\(D_E\)</span> at which the current velocity is opposite the velocity
+at the surface, which occurs at a depth <span class="math notranslate nohighlight">\(D_E = \pi/a\)</span>, and the <em>Ekman
+layer depth</em> is: $<span class="math notranslate nohighlight">\(\boxed{D_E = \sqrt{\frac{2\pi^2\,A_z}{f}}}\)</span>$</p>
+<p>Using (9.13) in (9.10), dividing by <span class="math notranslate nohighlight">\(U_{10}\)</span>, and using (9.14) and
+(9.15) gives: $<span class="math notranslate nohighlight">\(D_E = \frac{7.6}{\sqrt{\sin|\varphi|}}\, U_{10}\)</span><span class="math notranslate nohighlight">\( in SI
+units. Wind in meters per second gives depth in meters. The constant in
+(9.16) is based on \)</span>\rho = 1027<span class="math notranslate nohighlight">\( kg/m\)</span>^3<span class="math notranslate nohighlight">\(, \)</span>\rho_{air} = 1.25<span class="math notranslate nohighlight">\( kg/m\)</span>^3<span class="math notranslate nohighlight">\(,
+and Ekman’s value of \)</span>C_D = 2.6 \times 10^{-3}$ for the drag
+coefficient.</p>
+<p>Using (9.16) with typical winds, the depth of the Ekman layer varies
+from about 45 to 300 meters (Table 9.3), and the velocity of the surface
+current varies from 2.5% to 1.1% of the wind speed depending on
+latitude.</p>
+<p>60mm&#64;c|cc<br />
+&amp;<br />
+U<span class="math notranslate nohighlight">\(_{10}\)</span> [m/s] &amp; 15&amp; 45<br />
+&amp;</p>
+<p>75 m &amp; 45 m<br />
+10 &amp; 150 m &amp; 90 m<br />
+20 &amp; 300 m &amp; 180 m</p>
+</section>
+<section id="the-ekman-number-coriolis-and-frictional-forces">
+<h3><span class="section-number">9.2.5. </span>The Ekman Number: Coriolis and Frictional Forces<a class="headerlink" href="#the-ekman-number-coriolis-and-frictional-forces" title="Link to this heading">#</a></h3>
+<p>The depth of the Ekman layer is closely related to the depth at which
+frictional force is equal to the Coriolis force in the momentum equation
+(9.9). The Coriolis force is <span class="math notranslate nohighlight">\(f u\)</span>, and the frictional force is
+<span class="math notranslate nohighlight">\(A_z \partial^2 U/\partial z^2\)</span>. The ratio of the forces, which is non
+dimensional, is called the <em>Ekman Number</em> <span class="math notranslate nohighlight">\(E_z\)</span>:
+$<span class="math notranslate nohighlight">\(E_z=\frac{\text{Friction Force}}{\text{Coriolis Force}} = \frac{\D A_z\frac{\D\partial^2u}{\partial{z^2}}}{fu} = \frac{\D A_z\frac{\D
+u}{\D d^2}}{\D fu}\)</span><span class="math notranslate nohighlight">\( \)</span><span class="math notranslate nohighlight">\(\boxed{E_z = \frac{A_z}{f\,d^2}}\)</span><span class="math notranslate nohighlight">\( where we have
+approximated the terms using typical velocities \)</span>u<span class="math notranslate nohighlight">\(, and typical depths
+\)</span>d<span class="math notranslate nohighlight">\(. The subscript \)</span>z$ is needed because the ocean is stratified and
+mixing in the vertical is much less than mixing in the horizontal. Note
+that as depth increases, friction becomes small, and eventually, only
+the Coriolis force remains.</p>
+<p>Solving (9.17) for <span class="math notranslate nohighlight">\(d\)</span> gives $<span class="math notranslate nohighlight">\(d = \sqrt{\frac{A_z}{fE_z}}\)</span><span class="math notranslate nohighlight">\( which
+agrees with the functional form (9.15) proposed by Ekman. Equating
+(9.18) and (9.15) requires \)</span>E_z = 1/(2\pi^2) = 0.05$ at the Ekman depth.
+Thus Ekman chose a depth at which frictional forces are much smaller
+than the Coriolis force.</p>
+</section>
+<section id="bottom-ekman-layer">
+<h3><span class="section-number">9.2.6. </span>Bottom Ekman Layer<a class="headerlink" href="#bottom-ekman-layer" title="Link to this heading">#</a></h3>
+<p>The Ekman layer at the bottom of the ocean and the atmosphere differs
+from the layer at the ocean surface. The solution for a bottom layer
+below a fluid with velocity <span class="math notranslate nohighlight">\(U\)</span> in the <span class="math notranslate nohighlight">\(x\)</span>-direction is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+u&amp;=U[1 - \exp(-az)\,\cos\,az]  \\
+v&amp;=U\,\exp(-az)\,\sin\,az\end{aligned}\end{split}\]</div>
+<p>The velocity goes to zero at the boundary, <span class="math notranslate nohighlight">\(u = v = 0\)</span> at <span class="math notranslate nohighlight">\(z = 0\)</span>. The
+direction of the flow close to the boundary is 45 to the left of the
+flow <span class="math notranslate nohighlight">\(U\)</span> outside the boundary layer in the northern hemisphere, and the
+direction of the flow rotates with distance above the boundary (figure
+9.4). The direction of rotation is anticyclonic with distance above the
+bottom.</p>
+<p>Figure 9.4 Ekman</p>
+<p>layer in the lowest kilometer of the atmosphere (solid line), with wind
+velocity measured by Dobson (1914) - - -  . The numbers give height
+above the surface in meters. The Ekman layer at the sea floor has a
+similar shape. After Houghton (1977: 107). <span id="fig:bottomekman" label="fig:bottomekman"></span></p>
+<p>Winds above the planetary boundary layer are perpendicular to the
+pressure gradient in the atmosphere and parallel to lines of constant
+surface pressure. Winds at the surface are 45 to the left of the winds
+aloft, and surface currents are 45 to the right of the wind at the
+surface. Therefore we expect currents at the sea surface to be nearly in
+the direction of winds above the planetary boundary layer and parallel
+to lines of constant pressure. Observations of surface drifters in the
+Pacific tend to confirm the hypothesis (figure 9.5).</p>
+<p>Figure 9.5 Trajectories</p>
+<p>of surface drifters in April 1978 together with surface pressure in the
+atmosphere averaged for the month. Note that drifters tend to follow
+lines of constant pressure except in the Kuroshio where ocean currents
+are fast compared with velocities in the Ekman layer in the ocean. After
+McNally et al. (1983). <span id="drifterplot" label="drifterplot"></span></p>
+</section>
+<section id="examining-ekmans-assumptions">
+<h3><span class="section-number">9.2.7. </span>Examining Ekman’s Assumptions<a class="headerlink" href="#examining-ekmans-assumptions" title="Link to this heading">#</a></h3>
+<p>Before considering the validity of Ekman’s theory for describing flow in
+the surface boundary layer of the ocean, let’s first examine the
+validity of Ekman’s assumptions. He assumed:</p>
+<p>No boundaries. This is valid away from coasts.</p>
+<p>Deep water. This is valid if depth <span class="math notranslate nohighlight">\(\gg 200\)</span> m.</p>
+<p><span class="math notranslate nohighlight">\(f\)</span>-plane. This is valid.</p>
+<p>Steady state. This is valid if wind blows for longer than a pendulum
+day. Note however that Ekman also calculated a time-dependent solution,
+as did Hasselmann (1970).</p>
+<p><span class="math notranslate nohighlight">\(A_z\)</span> is a function of <span class="math notranslate nohighlight">\(U^2_{10}\)</span> only. It is assumed to be independent
+of depth. This is not a good assumption. The mixed layer may be thinner
+than the Ekman depth, and <span class="math notranslate nohighlight">\(A_z\)</span> will change rapidly at the bottom of the
+mixed layer because mixing is a function of stability. Mixing across a
+stable layer is much less than mixing through a layer of a neutral
+stability. More realistic profiles for the coefficient of eddy viscosity
+as a function of depth change the shape of the calculated velocity
+profile. I reconsider this problem below.</p>
+<p>Homogeneous density. This is probably good, except as it effects
+stability.</p>
+</section>
+<section id="observations-of-flow-near-the-sea-surface">
+<h3><span class="section-number">9.2.8. </span>Observations of Flow Near the Sea Surface<a class="headerlink" href="#observations-of-flow-near-the-sea-surface" title="Link to this heading">#</a></h3>
+<p>Does the flow close to the sea surface agree with Ekman’s theory?
+Measurements of currents made during several, very careful experiments
+indicate that Ekman’s theory is remarkably good. The theory accurately
+describes the flow averaged over many days.</p>
+<p>Weller and Plueddmann (1996) measured currents from 2 m to 132 m using
+14 vector-measuring current meters deployed from the Floating Instrument
+Platform <span class="smallcaps">flip</span> in February and March 1990 500 km west of
+point Conception, California. This was the last of a remarkable series
+of experiments coordinated by Weller using instruments on
+<span class="smallcaps">flip</span>.</p>
+<p>Davis, DeSzoeke, and Niiler (1981) measured currents from 2 m to 175 m
+using 19 vector-measuring current meters deployed from a mooring for 19
+days in August and September 1977 at 50N, 145W in the northeast Pacific.</p>
+<p>Ralph and Niiler (2000) tracked 1503 drifters drogued to 15 m depth in
+the Pacific from March 1987 to December 1994. Wind velocity was obtained
+every 6 hours from the European Centre for Medium-Range Weather
+Forecasts <span class="smallcaps">ecmwf</span>.</p>
+<p>The results of the experiments indicate that:</p>
+<p>Inertial currents are the largest component of the flow.</p>
+<p>The flow is nearly independent of depth within the mixed layer for
+periods near the inertial period. Thus the mixed layer moves like a slab
+at the inertial period. Current shear is concentrated at the top of the
+thermocline.</p>
+<p>The flow averaged over many inertial periods is almost exactly that
+calculated from Ekman’s theory. The shear of the Ekman currents extends
+through the averaged mixed layer and into the thermocline. Ralph and
+Niiler found (using SI units, <span class="math notranslate nohighlight">\(U\)</span> in m/s): $<span class="math notranslate nohighlight">\(\begin{aligned}
+D_E =&amp; \frac{7.12}{\sqrt{\sin|\varphi|}}\, U_{10}\\
+V_0 =&amp; \frac{0.0068}{\sqrt{\sin|\varphi|}}\, U_{10}\end{aligned}\)</span><span class="math notranslate nohighlight">\( The
+Ekman-layer depth \)</span>D_E<span class="math notranslate nohighlight">\( is almost exactly that proposed by Ekman (9.16),
+but the surface current \)</span>V_0$ is half his value (9.14).</p>
+<p>The angle between the wind and the flow at the surface depends on
+latitude, and it is near 45 at mid latitudes (figure 9.6).</p>
+<p>The transport is 90 to the right of the wind in the northern hemisphere.
+The transport direction agrees well with Ekman’s theory.</p>
+<p>Figure 9.6 Angle</p>
+<p>between the wind and flow at the surface calculated by Maximenko and
+Niiler using positions from drifters drogued at 15 m with
+satellite-altimeter, gravity, and <span class="smallcaps">grace</span> data and winds
+from the <span class="smallcaps">ncar/ncep</span> reanalysis. <span id="fig:ekmanangle" label="fig:ekmanangle"></span></p>
+</section>
+<section id="influence-of-stability-in-the-ekman-layer">
+<h3><span class="section-number">9.2.9. </span>Influence of Stability in the Ekman Layer<a class="headerlink" href="#influence-of-stability-in-the-ekman-layer" title="Link to this heading">#</a></h3>
+<p>Ralph and Niiler (2000) point out that Ekman’s choice of an equation for
+surface currents (9.14), which leads to (9.16), is consistent with
+theories that include the influence of stability in the upper ocean.
+Currents with periods near the inertial period produce shear in the
+thermocline. The shear mixes the surface layers when the Richardson
+number falls below the critical value (Pollard et al. 1973). This idea,
+when included in mixed-layer theories, leads to a surface current <span class="math notranslate nohighlight">\(V_0\)</span>
+that is proportional to <span class="math notranslate nohighlight">\(\sqrt{N/f}\)</span> $<span class="math notranslate nohighlight">\(V_0 \sim U_{10}  \sqrt{N/f}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>N<span class="math notranslate nohighlight">\( is the stability frequency defined by (8.36). Furthermore
+\)</span><span class="math notranslate nohighlight">\(A_z \sim U_{10}^2 / N \qquad \text{and} \qquad D_E \sim U_{10} / \sqrt{Nf}\)</span>$
+Notice that (9.22) and (9.23) are now dimensionally correct. The
+equations used earlier, (9.14), (9.16), (9.20), and (9.21) all required
+a dimensional coefficient.</p>
+</section>
+</section>
+<section id="ekman-mass-transport">
+<h2><span class="section-number">9.3. </span>Ekman Mass Transport<a class="headerlink" href="#ekman-mass-transport" title="Link to this heading">#</a></h2>
+<p>Flow in the Ekman layer at the sea surface carries mass. For many
+reasons we may want to know the total mass transported in the layer. The
+<em>Ekman mass transport</em> <span class="math notranslate nohighlight">\(M_E\)</span> is defined as the integral of the Ekman
+velocity <span class="math notranslate nohighlight">\(U_E, V_E\)</span> from the surface to a depth <span class="math notranslate nohighlight">\(d\)</span> below the Ekman
+layer. The two components of the transport are <span class="math notranslate nohighlight">\(M_{Ex}\)</span>, <span class="math notranslate nohighlight">\(M_{Ey}\)</span> :
+$<span class="math notranslate nohighlight">\(M_{Ex} = \int^0_{-d} \rho U_E \, dz, \qquad
+M_{Ey} = \int^0_{-d} \rho V_E \, dz\)</span><span class="math notranslate nohighlight">\( The transport has units
+kg/(m\)</span>\cdot<span class="math notranslate nohighlight">\(s). It is the mass of water passing through a vertical plane
+one meter wide that is perpendicular to the transport and extending from
+the surface to depth \)</span>-d$ (figure 9.7).</p>
+<p>Figure 9.7 Sketch for</p>
+<p>defining <strong>Left:</strong> mass transports, and <strong>Right:</strong> volume transports.
+<span id="fig:transportsketch" label="fig:transportsketch"></span></p>
+<p>We calculate the Ekman mass transports by integrating (8.15) in (9.24):
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+f\int_{-d}^0\rho\,V_E\,dz =f\,M_{Ey} &amp;=-\int_{-d}^0 \,d T_{xz}   \notag \\
+f\,M_{Ey} &amp;=-T_{xz}\big|_{z=0} + T_{xz}\big|_{z=-d}\end{aligned}\)</span><span class="math notranslate nohighlight">\( A few
+hundred meters below the surface the Ekman velocities approach zero, and
+the last term of (9.25) is zero. Thus mass transport is due only to wind
+stress at the sea surface \)</span>(z = 0)<span class="math notranslate nohighlight">\(. In a similar way, we can calculate
+the transport in the \)</span>x$ direction to obtain the two components of the
+<em>Ekman transport</em>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+f\,M_{Ey} &amp;= -T_{xz}(0) \\
+f\,M_{Ex} &amp;= \;\;\; T_{yz}(0)\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(T_{xz}(0), T_{yz}(0)\)</span> are the two components of the stress at the
+sea surface.</p>
+<p>Notice that the transport is perpendicular to the wind stress, and to
+the right of the wind in the northern hemisphere. If the wind is to the
+north in the positive <span class="math notranslate nohighlight">\(y\)</span> direction (a south wind), then <span class="math notranslate nohighlight">\(T_{xz}(0) = 0\)</span>, <span class="math notranslate nohighlight">\(M_{Ey} = 0\)</span>, and <span class="math notranslate nohighlight">\(M_{Ex} = T_{yz}(0)/f\)</span>. In the northern
+hemisphere, <span class="math notranslate nohighlight">\(f\)</span> is positive, and the mass transport is in the <span class="math notranslate nohighlight">\(x\)</span>
+direction, to the east.</p>
+<p>It may seem strange that the drag of the wind on the water leads to a
+current at right angles to the drag. The result follows from the
+assumption that friction is confined to a thin surface boundary layer,
+that it is zero in the interior of the ocean, and that the current is in
+equilibrium with the wind so that it is no longer accelerating.</p>
+<p><em>Volume transport</em> <span class="math notranslate nohighlight">\(Q\)</span> is the mass transport divided by the density of
+water and multiplied by the width perpendicular to the transport.
+$<span class="math notranslate nohighlight">\(Q_x=\frac{Y M_x}{\rho}, \qquad Q_y=\frac{X M_y}{\rho}\)</span><span class="math notranslate nohighlight">\( where \)</span>Y<span class="math notranslate nohighlight">\( is
+the north-south distance across which the eastward transport \)</span>Q_x<span class="math notranslate nohighlight">\( is
+calculated, and \)</span>X<span class="math notranslate nohighlight">\( in the east-west distance across which the northward
+transport \)</span>Q_y$ is calculated. Volume transport has dimensions of cubic
+meters per second. A convenient unit for volume transport in the ocean
+is a million cubic meters per second. This unit is called a <em>Sverdrup</em>,
+and it is abbreviated Sv.</p>
+<p>Recent observations of Ekman transport in the ocean agree with the
+theoretical values (9.26). Chereskin and Roemmich (1991) measured the
+Ekman volume transport across 11N in the Atlantic using an acoustic
+Doppler current profiler described in Chapter 10. They calculated a
+transport of <span class="math notranslate nohighlight">\(Q_y = 12.0 \pm 5.5\)</span> Sv (northward) from direct
+measurements of current, <span class="math notranslate nohighlight">\(Q_y = 8.8 \pm 1.9\)</span> Sv from measured winds
+using (9.26) and (9.27), and <span class="math notranslate nohighlight">\(Q_y = 13.5 \pm 0.3\)</span> Sv from mean winds
+averaged over many years at 11N.</p>
+<section id="use-of-transports">
+<h3><span class="section-number">9.3.1. </span>Use of Transports<a class="headerlink" href="#use-of-transports" title="Link to this heading">#</a></h3>
+<p>Mass transports are widely used for two important reasons. First, the
+calculation is much more robust than calculations of velocities in the
+Ekman layer. By robust, I mean that the calculation is based on fewer
+assumptions, and that the results are more likely to be correct. Thus
+the calculated mass transport does not depend on knowing the
+distribution of velocity in the Ekman layer or the eddy viscosity.</p>
+<p>Second, the variability of transport in space has important
+consequences. Let’s look at a few applications.</p>
+</section>
+</section>
+<section id="application-of-ekman-theory">
+<h2><span class="section-number">9.4. </span>Application of Ekman Theory<a class="headerlink" href="#application-of-ekman-theory" title="Link to this heading">#</a></h2>
+<p>Because steady winds blowing on the sea surface produce an Ekman layer
+that transports water at right angles to the wind direction, any spatial
+variability of the wind, or winds blowing along some coasts, can lead to
+upwelling. And upwelling is important:</p>
+<p>Upwelling enhances biological productivity, which feeds fisheries.</p>
+<p>Cold upwelled water alters local weather. Weather onshore of regions of
+upwelling tend to have fog, low stratus clouds, a stable stratified
+atmosphere, little convection, and little rain.</p>
+<p>Spatial variability of transports in the open ocean leads to upwelling
+and downwelling, which leads to redistribution of mass in the ocean,
+which leads to wind-driven geostrophic currents via Ekman pumping.</p>
+<section id="coastal-upwelling">
+<h3><span class="section-number">9.4.1. </span>Coastal Upwelling<a class="headerlink" href="#coastal-upwelling" title="Link to this heading">#</a></h3>
+<p>To see how winds lead to upwelling, consider north winds blowing
+parallel to the California Coast (figure 9.8 left). The winds produce a
+mass transport away from the shore everywhere along the shore. The water
+pushed offshore can be replaced only by water from below the Ekman
+layer. This is <em>upwelling</em> (figure 9.8 right). Because the upwelled
+water is cold, the upwelling leads to a region of cold water at the
+surface along the coast. Figure 10.16 shows the distribution of cold
+water off the coast of California.</p>
+<p>Figure 9.8 Sketch of</p>
+<p>Ekman transport along a coast leading to upwelling of cold water along
+the coast. <strong>Left:</strong> Plan view. North winds along a west coast in the
+northern hemisphere cause Ekman transports away from the shore.
+<strong>Right:</strong> Cross section. The water transported offshore must be
+replaced by water upwelling from below the mixed layer.
+<span id="fig:upwelling" label="fig:upwelling"></span></p>
+<p>Upwelled water is colder than water normally found on the surface, and
+it is richer in nutrients. The nutrients fertilize phytoplankton in the
+mixed layer, which are eaten by zooplankton, which are eaten by small
+fish, which are eaten by larger fish and so on to infinity. As a result,
+upwelling regions are productive waters supporting the world’s major
+fisheries. The important regions are offshore of Peru, California,
+Somalia, Morocco, and Namibia.</p>
+<p>Now I can answer the question I asked at the beginning of the chapter:
+Why is the climate of San Francisco so different from that of Norfolk,
+Virginia? Figures 4.2 or 9.8 show that wind along the California and
+Oregon coasts has a strong southward component. The wind causes
+upwelling along the coast, which leads to cold water close to shore. The
+shoreward component of the wind brings warmer air from far offshore over
+the colder water, which cools the incoming air close to the sea, leading
+to a thin, cool atmospheric boundary layer. As the air cools, fog forms
+along the coast. Finally, the cool layer of air is blown over San
+Francisco, cooling the city. The warmer air above the boundary layer,
+due to downward velocity of the Hadley circulation in the atmosphere
+(see figure 4.3), inhibits vertical convection, and rain is rare. Rain
+forms only when winter storms coming ashore bring strong convection
+higher up in the atmosphere.</p>
+<p>In addition to upwelling, other processes influence weather in
+California and Virginia.</p>
+<p>The oceanic mixed layer tends to be thin on the eastern side of ocean,
+and upwelling can easily bring up cold water.</p>
+<p>Currents along the eastern side of the ocean at mid-latitudes tend to
+bring colder water from higher latitudes.</p>
+<p>All these processes are reversed offshore of east coasts, leading to
+warm water close to shore, thick atmospheric boundary layers, and
+frequent convective rain. Thus Norfolk is much different that San
+Francisco due to upwelling and the direction of the coastal currents.</p>
+</section>
+<section id="ekman-pumping">
+<h3><span class="section-number">9.4.2. </span>Ekman Pumping<a class="headerlink" href="#ekman-pumping" title="Link to this heading">#</a></h3>
+<p>The horizontal variability of the wind blowing on the sea surface leads
+to horizontal variability of the Ekman transports. Because mass must be
+conserved, the spatial variability of the transports must lead to
+vertical velocities at the top of the Ekman layer. To calculate this
+velocity, we first integrate the continuity equation (7.19) in the
+vertical:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\rho\int_{-d}^0 \left( \frac{\partial{u}}{\partial{x}}+\frac{\partial{v}}{\partial{y}}+\frac{\partial{w}}{\partial{z}} \right) dz &amp;=0
+\notag
+\\
+\frac{\partial}{\partial{x}}\int_{-d}^0 \rho\,u\,dz +\frac{\partial}{\partial{y}}\int_{-d}^0\rho\,v\,dz
+&amp;=- \rho \int_{-d}^0 \frac{\partial{w}}{\partial{z}}\, dz
+\notag \\
+\frac{\partial{M_{Ex}}}{\partial{x}}+\frac{\partial{M_{Ey}}}{\partial{y}} &amp;=-\rho \left[ w(0)-w(-d)\right]
+\end{aligned}\end{split}\]</div>
+<p>By definition, the Ekman velocities approach zero at the base of the
+Ekman layer, and the vertical velocity at the base of the layer
+<span class="math notranslate nohighlight">\(w_E(-d)\)</span> due to divergence of the Ekman flow must be zero. Therefore:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial M_{Ex}}{\partial{x}}+\frac{\partial M_{Ey}}{\partial{y}} = -
+\rho\,w_E(0)$$ $$\boxed{\nabla_H \cdot \mathbf{M}_E = -\rho\,w_E(0)}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\mathbf{M}_E\)</span> is the vector mass transport due to Ekman flow in
+the upper boundary layer of the ocean, and <span class="math notranslate nohighlight">\(\nabla_H\)</span> is the horizontal
+divergence operator. (9.28) states that the horizontal divergence of the
+Ekman transports leads to a vertical velocity in the upper boundary
+layer of the ocean, a process called <em>Ekman Pumping</em>.</p>
+<p>If we use the Ekman mass transports (9.26) in (9.28) we can relate Ekman
+pumping to the wind stress.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+w_E(0)
+&amp;=-\frac{1}{\rho}\left[ \frac{\partial}{\partial{x}} \left( \frac{T_{yz}(0)}{f}
+\right) -\frac{\partial}{\partial{y}} \left( \frac{T_{xz}(0)}{f} \right) \right]
+\\ w_E(0) &amp;=-\text{curl}_z  \left( \frac{\mathbf{T}}{\rho\,f} \right)\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{T}\)</span> is the vector wind stress and the subscript <span class="math notranslate nohighlight">\(z\)</span>
+indicates the vertical component of the curl.</p>
+<p>The vertical velocity at the sea surface <span class="math notranslate nohighlight">\(w(0)\)</span> must be zero because the
+surface cannot rise into the air, so <span class="math notranslate nohighlight">\(w_E(0)\)</span> must be balanced by
+another vertical velocity. We will see in Chapter 12 that it is balanced
+by a geostrophic velocity <span class="math notranslate nohighlight">\(w_G(0)\)</span> at the top of the interior flow in
+the ocean.</p>
+<p>Note that the derivation above follows Pedlosky (1996: 13), and it
+differs from the traditional approach that leads to a vertical velocity
+at the base of the Ekman layer. Pedlosky points out that if the Ekman
+layer is very thin compared with the depth of the ocean, it makes no
+difference whether the velocity is calculated at the top or bottom of
+the Ekman layer, but this is usually not true for the ocean. Hence, we
+must compute vertical velocity at the top of the layer.</p>
+<p>Figure 9.9 A three-dimensional</p>
+<p>view of the Langmuir circulation at the surface of the Pacific observed
+from the Floating Instrument Platform <span class="smallcaps">flip</span>. The heavy
+dashed line on the sea surface indicate lines of convergence marked by
+cards on the surface. Vertical arrows are individual values of vertical
+velocity measured every 14 seconds at 23 m depth as the platform drifted
+through the Langmuir currents. Horizontal arrows, which are drawn on the
+surface for clarity, are values of horizontal velocity at 23 m. The
+broad arrow gives the direction of the wind. After Weller et al. (1985).
+<span id="fig:langmuir" label="fig:langmuir"></span></p>
+</section>
+</section>
+<section id="langmuir-circulation">
+<h2><span class="section-number">9.5. </span>Langmuir Circulation<a class="headerlink" href="#langmuir-circulation" title="Link to this heading">#</a></h2>
+<p>Measurements of surface currents show that winds generate more than
+Ekman and inertial currents at the sea surface. They also generate a
+Langmuir circulation (Langmuir, 1938), a current that spiral around an
+axis parallel to the wind direction. Weller et al. (1985) observed such
+a flow during an experiment to measure the wind-driven circulation in
+the upper 50 meters of the sea. They found that during a period when the
+wind speed was 14 m/s, surface currents were organized into Langmuir
+cells spaced 20 m apart, the cells were aligned at an angle of 15 to the
+right of the wind, and vertical velocity at 23 m depth was concentrated
+in narrow jets under the areas of surface convergence (figure 9.9).
+Maximum vertical velocity was <span class="math notranslate nohighlight">\(-0.18\)</span> m/s. The seasonal thermocline was
+at 50 m, and no downward velocity was observed in or below the
+thermocline.</p>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">9.6. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Changes in wind stress produce transient oscillations in the ocean
+called inertial currents</p>
+<p>Inertial currents are very common in the ocean.</p>
+<p>The period of the current is <span class="math notranslate nohighlight">\((2 \pi)/f\)</span>.</p>
+<p>Steady winds produce a thin boundary layer, the Ekman layer, at the
+top of the ocean. Ekman boundary layers also exist at the bottom of
+the ocean and the atmosphere. The Ekman layer in the atmosphere
+above the sea surface is called the planetary boundary layer.</p>
+<p>The Ekman layer at the sea surface has the following
+characteristics:</p>
+<p><em>Direction</em>: 45to the right of the wind looking downwind in the
+Northern Hemisphere.</p>
+<p><em>Surface Speed</em>: 1–2.5% of wind speed depending on latitude.</p>
+<p><em>Depth</em>: approximately 40–300 m depending on latitude and wind
+velocity.</p>
+<p>Careful measurements of currents near the sea surface show that:</p>
+<p>Inertial oscillations are the largest component of the current in
+the mixed layer.</p>
+<p>The flow is nearly independent of depth within the mixed layer for
+periods near the inertial period. Thus the mixed layer moves like a
+slab at the inertial period.</p>
+<p>An Ekman layer exists in the atmosphere just above the sea (and
+land) surface.</p>
+<p>Surface drifters tend to drift parallel to lines of constant
+atmospheric pressure at the sea surface. This is consistent with
+Ekman’s theory.</p>
+<p>The flow averaged over many inertial periods is almost exactly that
+calculated from Ekman’s theory.</p>
+<p>Transport is 90 to the right of the wind in the northern hemisphere.</p>
+<p>Spatial variability of Ekman transport, due to spatial variability
+of winds over distances of hundreds of kilometers and days, leads to
+convergence and divergence of the transport.</p>
+<p>Winds blowing toward the equator along west coasts of continents
+produces upwelling along the coast. This leads to cold, productive
+waters within about 100 km of the shore.</p>
+<p>Upwelled water along west coasts of continents modifies the weather
+along the west coasts.</p>
+<p>Ekman pumping, which is driven by spatial variability of winds,
+drives a vertical current, which drives the interior geostrophic
+circulation of the ocean.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Equations of Motion With Viscosity</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter10.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Geostrophic Currents</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inertial-motion">9.1. Inertial Motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-layer-at-the-sea-surface">9.2. Ekman Layer at the Sea Surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nansens-qualitative-arguments">9.2.1. Nansen’s Qualitative Arguments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekmans-solution">9.2.2. Ekman’s Solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#values-for-ekmans-constants">9.2.3. Values for Ekman’s Constants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-layer-depth">9.2.4. Ekman Layer Depth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ekman-number-coriolis-and-frictional-forces">9.2.5. The Ekman Number: Coriolis and Frictional Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bottom-ekman-layer">9.2.6. Bottom Ekman Layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-ekmans-assumptions">9.2.7. Examining Ekman’s Assumptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-of-flow-near-the-sea-surface">9.2.8. Observations of Flow Near the Sea Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-of-stability-in-the-ekman-layer">9.2.9. Influence of Stability in the Ekman Layer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-mass-transport">9.3. Ekman Mass Transport</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-transports">9.3.1. Use of Transports</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-ekman-theory">9.4. Application of Ekman Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coastal-upwelling">9.4.1. Coastal Upwelling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping">9.4.2. Ekman Pumping</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langmuir-circulation">9.5. Langmuir Circulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">9.6. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

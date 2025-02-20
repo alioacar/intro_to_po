@@ -1,0 +1,1891 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6. Temperature, Salinity, and Density &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter6';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. Some Mathematics, The Equations of Motion" href="chapter7.html" />
+    <link rel="prev" title="5. The Oceanic Heat Budget" href="chapter5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter6.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Temperature, Salinity, and Density</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-salinity">6.1. Definition of Salinity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-definition">6.1.1. A Simple Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-more-complete-definition">6.1.2. A More Complete Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salinity-based-on-chlorinity">6.1.3. Salinity Based on Chlorinity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salinity-based-on-conductivity">6.1.4. Salinity Based on Conductivity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-salinity-scale-of-1978">6.1.5. Practical Salinity Scale of 1978</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">6.1.6. Comments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-seawater-and-salinity">6.1.7. Reference Seawater and Salinity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-temperature">6.2. Definition of Temperature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographical-distribution-of-surface-temperature-and-salinity">6.3. Geographical Distribution of Surface Temperature and Salinity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oceanic-mixed-layer-and-thermocline">6.4. The Oceanic Mixed Layer and Thermocline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#density-potential-temperature-and-neutral-density">6.5. Density, Potential Temperature, and Neutral Density</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-sigma-t">6.5.1. Density and sigma-t</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-temperature">6.5.2. Potential Temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-density">6.5.3. Potential Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-surfaces-and-density">6.5.4. Neutral Surfaces and Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-state-of-sea-water">6.5.5. Equation of state of sea water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-of-temperature-salinity-and-density">6.5.6. Accuracy of Temperature, Salinity, and Density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-temperature">6.6. Measurement of Temperature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mercury-thermometer">6.6.1. Mercury Thermometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#platinum-resistance-thermometer">6.6.2. Platinum Resistance Thermometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermistor">6.6.3. Thermistor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bucket-temperatures">6.6.4. Bucket temperatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ship-injection-temperature">6.6.5. Ship Injection Temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-very-high-resolution-radiometer">6.6.6. Advanced Very High Resolution Radiometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-maps-of-sea-surface-temperature">6.6.7. Global Maps of Sea-Surface Temperature</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-conductivity-or-salinity">6.7. Measurement of Conductivity or Salinity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-pressure">6.8. Measurement of Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strain-gage">6.8.1. Strain Gage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibratron">6.8.2. Vibratron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartz-crystal">6.8.3. Quartz crystal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartz-bourdon-gage">6.8.4. Quartz Bourdon Gage</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-temperature-and-salinity-with-depth">6.9. Measurement of Temperature and Salinity with Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bathythermograph-bt">6.9.1. Bathythermograph (BT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expendable-bathythermograph-xbt">6.9.2. Expendable Bathythermograph (XBT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nansen-bottles">6.9.3. Nansen Bottles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ctd">6.9.4. CTD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ctd-on-drifters">6.9.5. CTD on Drifters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">6.9.6. Data Sets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-in-the-ocean-and-absorption-of-light">6.10. Light in the Ocean and Absorption of Light</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-chlorophyll-from-space">6.10.1. Measurement of Chlorophyll from Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">6.11. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="temperature-salinity-and-density">
+<h1><span class="section-number">6. </span>Temperature, Salinity, and Density<a class="headerlink" href="#temperature-salinity-and-density" title="Link to this heading">#</a></h1>
+<p>Heat fluxes, evaporation, rain, river inflow, and freezing and melting
+of sea ice all influence the distribution of temperature and salinity at
+the ocean’s surface. Changes in temperature and salinity can increase or
+decrease the density of water at the surface, which can lead to
+convection. If water from the surface sinks into the deeper ocean, it
+retains a distinctive relationship between temperature and salinity
+which helps oceanographers track the movement of deep water. In
+addition, temperature, salinity, and pressure are used to calculate
+density. The distribution of density inside the ocean is directly
+related to the distribution of horizontal pressure gradients and ocean
+currents. For all these reasons, we need to know the distribution of
+temperature, salinity, and density in the ocean.</p>
+<p>Before discussing the distribution of temperature and salinity, let’s
+first define what we mean by the terms, especially salinity.</p>
+<section id="definition-of-salinity">
+<h2><span class="section-number">6.1. </span>Definition of Salinity<a class="headerlink" href="#definition-of-salinity" title="Link to this heading">#</a></h2>
+<p>At the simplest level, salinity is the total amount of dissolved
+material in grams in one kilogram of sea water. Thus salinity is a
+dimensionless quantity. It has no units. The variability of dissolved
+salt is very small, and we must be very careful to define salinity in
+ways that are accurate and practical. To better understand the need for
+accuracy, look at <a class="reference internal" href="#fig6-1"><span class="std std-numref">Fig. 6.1</span></a>. Notice that the range of salinity for most
+of the ocean’s water is from 34.60 to 34.80 parts per thousand, which is
+200 parts per million. The variability in the deep North Pacific is even
+smaller, about 20 parts per million. If we want to classify water with
+different salinity, we need definitions and instruments accurate to
+about one part per million. Notice that the range of temperature is much
+larger, about 1, and temperature is easier to measure.</p>
+<p>Writing a practical definition of salinity that has useful accuracy is
+difficult (see Lewis <span id="id1">[<a class="reference internal" href="chapter18.html#id91" title="E. L. Lewis. The practical salinity scale 1978 and its antecedents. IEEE Journal of Oceanic Engineering, OE-5:3–8, 1980.">90</a>]</span>,for the details), and various definitions
+have been used.</p>
+<figure class="align-default" id="fig6-1">
+<a class="reference internal image-reference" href="../_images/Fig6-1.svg"><img alt="../_images/Fig6-1.svg" src="../_images/Fig6-1.svg" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Histogram of temperature and salinity of ocean water colder than 4°C. Height is proportional to
+volume. Height of highest peak corresponds to a volume of 26 million
+cubic kilometers per bivariate class of 0.1°C and 0.01. After Worthington (<span id="id2">[<a class="reference internal" href="chapter18.html#id92" title="L. V. Worthington. The water masses of the world ocean: some results of a fine-scale census. In B. A. Warren and C. Wunsch, editors, Evolution of Physical Oceanography: Scientific Surveys in Honor of Henry Stommel, pages 42–69. Massachusetts Institute of Technology, Cambridge, 1981.">91</a>]</span>: 47).</span><a class="headerlink" href="#fig6-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="a-simple-definition">
+<h3><span class="section-number">6.1.1. </span>A Simple Definition<a class="headerlink" href="#a-simple-definition" title="Link to this heading">#</a></h3>
+<p>Originally salinity was defined to be the “Total amount of dissolved
+material in grams in one kilogram of sea water.” This is not useful
+because the dissolved material is almost impossible to measure in
+practice. For example, how do we measure volatile material like gasses?
+Nor can we evaporate sea-water to dryness because chlorides are lost in
+the last stages of drying (Sverdrup, Johnson, and Fleming, <span id="id3">[<a class="reference internal" href="chapter18.html#id23" title="H. U. Sverdrup, M. W. Johnson, and R. H. Fleming. The Oceans: Their Physics, Chemistry, and General Biology. Prentice-Hall, Englewood Cliffs, New Jersey, 1942.">22</a>]</span>: 50).</p>
+</section>
+<section id="a-more-complete-definition">
+<h3><span class="section-number">6.1.2. </span>A More Complete Definition<a class="headerlink" href="#a-more-complete-definition" title="Link to this heading">#</a></h3>
+<p>To avoid these difficulties, the International Council for the
+Exploration of the Sea set up a commission in 1889 which recommended
+that salinity be defined as the “Total amount of solid materials in
+grams dissolved in one kilogram of sea water when all the carbonate has
+been converted to oxide, the bromine and iodine replaced by chlorine and
+all organic matter completely oxidized.” The definition was published in
+1902. <em>This is useful but difficult to use routinely</em>.</p>
+</section>
+<section id="salinity-based-on-chlorinity">
+<h3><span class="section-number">6.1.3. </span>Salinity Based on Chlorinity<a class="headerlink" href="#salinity-based-on-chlorinity" title="Link to this heading">#</a></h3>
+<p>Because the above definition was difficult to implement in practice,
+because salinity is directly proportional to the amount of chlorine in
+sea water, and because chlorine can be measured accurately by a simple
+chemical analysis, salinity <span class="math notranslate nohighlight">\(S\)</span> was redefined using chlorinity:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-1">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-eq6-1" title="Link to this equation">#</a></span>\[S = 0.03 + 1.805\, Cl\]</div>
+<p>where <em>chlorinity</em> <span class="math notranslate nohighlight">\(Cl\)</span> is defined as “the
+mass of silver required to precipitate completely the halogens in 0.328
+523 4 kg of the sea-water sample.”</p>
+<p>As more and more accurate measurements were made, equation <a class="reference internal" href="#equation-eq6-1">(6.1)</a> turned out to be
+too inaccurate. In 1964 <span class="small">UNESCO</span> and other international
+organizations appointed a Joint Panel on Oceanographic Tables and
+Standards to produce a more accurate definition. The Joint Panel
+recommended in 1966 (Wooster, Lee, and Dietrich <span id="id4">[<a class="reference internal" href="chapter18.html#id93" title="W. S. Wooster, A. J. Lee, and G. Dietrich. Redefinition of salinity. Deep-Sea Research, 16(3):321–322, 1969.">92</a>]</span>) that salinity and
+chlorinity be related using:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-2">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-eq6-2" title="Link to this equation">#</a></span>\[S = 1.806\,55\,Cl\]</div>
+<p>This is the same as <a class="reference internal" href="#equation-eq6-1">(6.1)</a> for <span class="math notranslate nohighlight">\(S=35\)</span>.</p>
+</section>
+<section id="salinity-based-on-conductivity">
+<h3><span class="section-number">6.1.4. </span>Salinity Based on Conductivity<a class="headerlink" href="#salinity-based-on-conductivity" title="Link to this heading">#</a></h3>
+<p>At the same time equation <a class="reference internal" href="#equation-eq6-2">(6.2)</a> was adopted, oceanographers had began using
+conductivity meters to measure salinity. The meters were very precise
+and relatively easy to use compared with the chemical techniques used to
+measure chlorinity. As a result, the Joint Panel also recommended that
+salinity be related to conductivity of sea water using:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-3">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-eq6-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+(a) &amp; \ S  = -0.089\,96 + 28.297\,29\,R_{15} + 12.808\,32\,R^2_{15} \notag \\
+    &amp; \ -10.678\,69\,R^3_{15} + 5.986\,24\,R^4_{15} - 1.323\,11\,R^5_{15} \\
+(b) &amp; \ R_{15} = C(S,15,0)/C(35,15,0)
+\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C(S, 15, 0)\)</span> is the conductivity of the sea-water sample at 15°C
+and atmospheric pressure, having a salinity <span class="math notranslate nohighlight">\(S\)</span> derived from equation <a class="reference internal" href="#equation-eq6-4">(6.4)</a>, and
+<span class="math notranslate nohighlight">\(C(35, 15, 0)\)</span> is the conductivity of standard “Copenhagen” sea water.
+Millero <span id="id5">[<a class="reference internal" href="chapter18.html#id94" title="F. J. Millero. Chemical Oceanography. CRC Press, New York, 2nd edition, 1996.">93</a>]</span> points out that equation <a class="reference internal" href="#equation-eq6-3">(6.3)</a> is not a new definition of
+salinity, it merely gives chlorinity as a function of conductivity of
+seawater relative to standard seawater.</p>
+</section>
+<section id="practical-salinity-scale-of-1978">
+<h3><span class="section-number">6.1.5. </span>Practical Salinity Scale of 1978<a class="headerlink" href="#practical-salinity-scale-of-1978" title="Link to this heading">#</a></h3>
+<p>By the early 1970s, accurate conductivity meters could be deployed from
+ships to measure conductivity at depth. The need to re-evaluate the
+salinity scale led the Joint Panel to recommend in 1981
+(<span class="small">JPOTS</span> <span id="id6">[<a class="reference internal" href="chapter18.html#id95" title="Joint Panel on Oceanographic Tables and Standards. The practical salinity scale 1978 and the international equation of state of seawater 1980. Technical Report 36, UNESCO, Paris, 1981.">94</a>]</span>; Lewis <span id="id7">[<a class="reference internal" href="chapter18.html#id91" title="E. L. Lewis. The practical salinity scale 1978 and its antecedents. IEEE Journal of Oceanic Engineering, OE-5:3–8, 1980.">90</a>]</span>) that salinity be defined using
+only conductivity, breaking the link with chlorinity. All water samples
+with the same conductivity ratio have the same salinity even though the
+their chlorinity may differ.</p>
+<p>The <em>Practical Salinity Scale of 1978</em> is now the official definition:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-4">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-eq6-4" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+(a) &amp; \ S = 0.0080  -0.1692\,K^{1/2}_{15} + 25.3851\,K_{15} + 14.0941\,K^{3/2}_{15} \notag \\
+    &amp; \ - 7.0261\,K^{2}_{15} + 2.7081\,K^{5/2}_{15} \\
+(b) &amp; \ K_{15}  = C(S,15,0)/C(KCl,15,0) \\
+    &amp; \ 2 \leq S \leq 42 \notag
+\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C(S, 15, 0)\)</span> is the conductivity of the sea-water sample at a
+temperature of 14.996°C on the International Temperature Scale of 1990
+(<span class="small">ITS-90</span>, see <a class="reference internal" href="#ch6-2"><span class="std std-ref">§6.2</span></a>) and standard atmospheric pressure of
+101 325 Pa. <span class="math notranslate nohighlight">\(C(KCl, 15, 0)\)</span> is the conductivity of the standard
+potassium chloride (<span class="math notranslate nohighlight">\(KCl\)</span>) solution at a temperature of 15°C and standard
+atmospheric pressure. The standard <span class="math notranslate nohighlight">\(KCl\)</span> solution contains a mass of
+<span class="math notranslate nohighlight">\(32.435\,6\)</span> grams of <span class="math notranslate nohighlight">\(KCl\)</span> in a mass of <span class="math notranslate nohighlight">\(1.000\,000\)</span> kg of solution.
+Millero (<span id="id8">[<a class="reference internal" href="chapter18.html#id94" title="F. J. Millero. Chemical Oceanography. CRC Press, New York, 2nd edition, 1996.">93</a>]</span>: 72) and Lewis <span id="id9">[<a class="reference internal" href="chapter18.html#id91" title="E. L. Lewis. The practical salinity scale 1978 and its antecedents. IEEE Journal of Oceanic Engineering, OE-5:3–8, 1980.">90</a>]</span> gives equations for calculating
+salinity at other pressures and temperatures.</p>
+</section>
+<section id="comments">
+<h3><span class="section-number">6.1.6. </span>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h3>
+<p>The various definitions of salinity work well because the ratios of the
+various ions in sea water are nearly independent of salinity and
+location in the ocean (<a class="reference internal" href="#table6-1"><span class="std std-numref">Table 6.1</span></a>). Only very fresh waters, such as are
+found in estuaries, have significantly different ratios. The result is
+based on Dittmar’s <span id="id10">[<a class="reference internal" href="chapter18.html#id96">95</a>]</span> chemical analysis of 77 samples of sea water
+collected by the <em>Challenger</em> Expedition and further studies by Carritt
+and Carpenter <span id="id11">[<a class="reference internal" href="chapter18.html#id97" title="D. E. Carritt and J. H. Carpenter. The composition of sea water and the salinity-chlorinity-density problems. Technical Report 600, National Academy of Sciences-National Research Council, 1959.">96</a>]</span>.</p>
+<blockquote>
+<div><p>The importance of this result cannot be over emphasized, as upon it
+depends the validity of the chlorinity: salinity: density
+relationships and, hence, the accuracy of all conclusions based on the
+distribution of density where the latter is determined by chemical or
+indirect physical methods such as electrical
+conductivity<span class="math notranslate nohighlight">\(\ldots\)</span>—Sverdrup, Johnson, Fleming <span id="id12">[<a class="reference internal" href="chapter18.html#id23" title="H. U. Sverdrup, M. W. Johnson, and R. H. Fleming. The Oceans: Their Physics, Chemistry, and General Biology. Prentice-Hall, Englewood Cliffs, New Jersey, 1942.">22</a>]</span>.</p>
+</div></blockquote>
+<p>The relationship between conductivity and salinity has an accuracy of
+around <span class="math notranslate nohighlight">\(\pm 0.003\)</span> in salinity. The very small error is caused by
+variations in constituents such as SiO<span class="math notranslate nohighlight">\(_2\)</span> which cause small changes in
+density but no change in conductivity.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="table6-1">
+<caption><span class="caption-number">Table 6.1 </span><span class="caption-text">Major Constituents of Sea Water</span><a class="headerlink" href="#table6-1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Ion</p></th>
+<th class="head"></th>
+<th class="head"><p>Atoms</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>55.3%</p></td>
+<td><p>Chlorine</p></td>
+<td><p>55.3%</p></td>
+<td><p>Chlorine</p></td>
+</tr>
+<tr class="row-odd"><td><p>30.8%</p></td>
+<td><p>Sodium</p></td>
+<td><p>30.8%</p></td>
+<td><p>Sodium</p></td>
+</tr>
+<tr class="row-even"><td><p>7.7%</p></td>
+<td><p>Sulfate</p></td>
+<td><p>3.7%</p></td>
+<td><p>Magnesium</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.7%</p></td>
+<td><p>Magnesium</p></td>
+<td><p>2.6%</p></td>
+<td><p>Sulfur</p></td>
+</tr>
+<tr class="row-even"><td><p>1.2%</p></td>
+<td><p>Calcium</p></td>
+<td><p>1.2%</p></td>
+<td><p>Calcium</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.1%</p></td>
+<td><p>Potassium</p></td>
+<td><p>1.1%</p></td>
+<td><p>Potassium</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="reference-seawater-and-salinity">
+<h3><span class="section-number">6.1.7. </span>Reference Seawater and Salinity<a class="headerlink" href="#reference-seawater-and-salinity" title="Link to this heading">#</a></h3>
+<p>The Practical Salinity Scale of 1978 introduced several small problems.
+It led to confusion about units and to the use of “practical salinity
+units” that are not part of the definition of Practical Salinity. In
+addition, absolute salinity differs from salinity by about 0.5%. And,
+the composition of seawater differs slightly from place to place in the
+ocean, leading to small errors in measuring salinity.</p>
+<p>To avoid these and other problems, Millero et al. <span id="id13">[<a class="reference internal" href="chapter18.html#id98" title="F. J. Millero, R. Feistel, and others. The composition of standard seawater and the definition of the reference-composition salinity scale. Deep Sea Research Part I: Oceanographic Research Papers, 55(1):50–72, 2008.">97</a>]</span> defined a new
+measure of salinity, the Reference Salinity, that accurately represents
+the Absolute Salinity of an artificial seawater solution. It is based on
+a Reference Composition of seawater that is much more accurate than the
+values in <a class="reference internal" href="#table6-1"><span class="std std-numref">Table 6.1</span></a> above. The <em>Reference Composition</em> of the artificial
+seawater is defined by a list of solutes and their mole fractions given
+in Table 4 of their paper. From this, they defined artificial <em>Reference
+Seawater</em> to be seawater having a Reference Composition solute dissolved
+in pure water as the solvent, and adjusted to its thermodynamic
+equilibrium state. Finally, the <em>Reference Salinity</em> of Reference
+Seawater was defined to be exactly 35.16504 g kg<span class="math notranslate nohighlight">\(^{-1}\)</span>.</p>
+<p>With these definitions, plus many details described in their paper,
+Millero et al. <span id="id14">[<a class="reference internal" href="chapter18.html#id98" title="F. J. Millero, R. Feistel, and others. The composition of standard seawater and the definition of the reference-composition salinity scale. Deep Sea Research Part I: Oceanographic Research Papers, 55(1):50–72, 2008.">97</a>]</span> show Reference Salinity is related to Practical
+Salinity by:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-5">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-eq6-5" title="Link to this equation">#</a></span>\[S_R \approx (35.16504/35) \text{g kg}^{-1} \times S\]</div>
+<p>The equation is exact at <span class="math notranslate nohighlight">\(S =\)</span> 35. Reference Salinity is approximately 0.47%
+larger than Practical Salinity. Reference Salinity <span class="math notranslate nohighlight">\(S_R\)</span> is intended to
+be used as an SI-based extension of Practical Salinity.</p>
+</section>
+</section>
+<section id="definition-of-temperature">
+<span id="ch6-2"></span><h2><span class="section-number">6.2. </span>Definition of Temperature<a class="headerlink" href="#definition-of-temperature" title="Link to this heading">#</a></h2>
+<p>Many physical processes depend on temperature. A few can be used to
+define absolute temperature <span class="math notranslate nohighlight">\(T\)</span>. The unit of <span class="math notranslate nohighlight">\(T\)</span> is the kelvin, which
+has the symbol K. The fundamental processes used for defining an
+absolute temperature scale over the range of temperatures found in the
+ocean include (Soulen and Fogle <span id="id15">[<a class="reference internal" href="chapter18.html#id99" title="R. J. Soulen and W. E. Fogle. Temperature scales below 1 kelvin. Physics Today, 50(8 Part 1):36–42, 1997.">98</a>]</span>): 1) the gas laws relating
+pressure to temperature of an ideal gas with corrections for the density
+of the gas; and 2) the voltage noise of a resistance <span class="math notranslate nohighlight">\(R\)</span>.</p>
+<p>The measurement of temperature using an absolute scale is difficult and
+the measurement is usually made by national standards laboratories. The
+absolute measurements are used to define a practical temperature scale
+based on the temperature of a few fixed points and interpolating devices
+which are calibrated at the fixed points.</p>
+<p>For temperatures commonly found in the ocean, the interpolating device
+is a platinum-resistance thermometer. It consists of a loosely wound,
+strain-free, pure platinum wire whose resistance is a function of
+temperature. It is calibrated at fixed points between the triple point
+of equilibrium hydrogen at 13.8033 K and the freezing point of silver at
+961.78 K, including the triple point of water at 0.060°C, the melting
+point of Gallium at 29.7646 °C, and the freezing point of Indium at
+156.5985 °C (Preston-Thomas <span id="id16">[<a class="reference internal" href="chapter18.html#id100" title="H. Preston-Thomas. The international temperature scale of 1990 (ITS-90). Metrologia, 27(1):3–10, 1990.">99</a>]</span>). The triple point of water is the
+temperature at which ice, water, and water vapor are in equilibrium. The
+temperature scale in kelvin <span class="math notranslate nohighlight">\(T\)</span> is related to the temperature scale in
+degrees Celsius <span class="math notranslate nohighlight">\(t\)</span>[°C] by:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-6">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-eq6-6" title="Link to this equation">#</a></span>\[t [⁰C] = T \text{ [K]} -273.15\]</div>
+<p>The practical temperature scale was revised in 1887, 1927, 1948, 1968,
+and 1990 as more accurate determinations of absolute temperature became
+accepted. The most recent scale is the International Temperature Scale
+of 1990 (<span class="small">ITS</span>-90). It differs slightly from the
+International Practical Temperature Scale of 1968 <span class="small">IPTS</span>-68.
+At 0°C they are the same, and above 0°C <span class="small">ITS</span>-90 is slightly
+cooler. <span class="math notranslate nohighlight">\(t_{90}-t_{68} = -0.002\)</span> at 10°C, <span class="math notranslate nohighlight">\(-0.005\)</span> at 20°C, <span class="math notranslate nohighlight">\(-0.007\)</span> at
+30°C and <span class="math notranslate nohighlight">\(-0.010\)</span> at 40°C.</p>
+<p>Notice that while oceanographers use thermometers calibrated with an
+accuracy of a millidegree, which is 0.001°C, the temperature scale itself
+has uncertainties of a few millidegrees.</p>
+</section>
+<section id="geographical-distribution-of-surface-temperature-and-salinity">
+<h2><span class="section-number">6.3. </span>Geographical Distribution of Surface Temperature and Salinity<a class="headerlink" href="#geographical-distribution-of-surface-temperature-and-salinity" title="Link to this heading">#</a></h2>
+<p>The distribution of temperature at the sea surface tends to be <em>zonal</em>,
+that is, it is independent of longitude (<a class="reference internal" href="#fig6-2"><span class="std std-numref">Fig. 6.2</span></a>). Warmest water is
+near the equator, coldest water is near the poles. The deviations from
+zonal are small. Equatorward of 40°, cooler waters tend to be on the
+eastern side of the basin. North of this latitude, cooler waters tend to
+be on the western side.</p>
+<figure class="align-default" id="fig6-2">
+<a class="reference internal image-reference" href="../_images/Fig6-2.svg"><img alt="../_images/Fig6-2.svg" src="../_images/Fig6-2.svg" style="height: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Mean sea-surface temperature calculated from the optimal interpolation technique
+(Reynolds and Smith <span id="id17">[<a class="reference internal" href="chapter18.html#id101" title="R. W. Reynolds and T. M. Smith. A high-resolution global sea surface climatology. Journal of Climate, 8(6):1571–1583, 1995.">100</a>]</span>) using ship reports and <span class="small">AVHRR</span>
+measurements of temperature. Contour interval is 1°C with heavy contours
+every 5°C. Shaded areas exceed 29°C.</span><a class="headerlink" href="#fig6-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The <em>anomalies</em> of sea-surface temperature, the deviation from a long
+term average, are small, less than 1.5°C (Harrison and Larkin <span id="id18">[<a class="reference internal" href="chapter18.html#id102" title="D. E. Harrison and N. K. Larkin. El niño-southern oscillation sea surface temperature and wind anomalies, 1946–1993. Reviews of Geophysics, 36(3):353–399, 1998.">101</a>]</span>)
+except in the equatorial Pacific where the deviations can be 3°C (<a class="reference internal" href="#fig6-3"><span class="std std-numref">Fig. 6.3</span></a>:top).</p>
+<figure class="align-default" id="fig6-3">
+<a class="reference internal image-reference" href="../_images/Fig6-3.svg"><img alt="../_images/Fig6-3.svg" src="../_images/Fig6-3.svg" style="height: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Top:</span></code> Sea-surface temperature anomaly for January 1996 relative to mean temperature shown
+in <a class="reference internal" href="#fig6-2"><span class="std std-numref">Fig. 6.2</span></a> using data published by Reynolds and Smith <span id="id19">[<a class="reference internal" href="chapter18.html#id101" title="R. W. Reynolds and T. M. Smith. A high-resolution global sea surface climatology. Journal of Climate, 8(6):1571–1583, 1995.">100</a>]</span> in the
+<em>Climate Diagnostics Bulletin</em> for February 1995. Contour interval is
+1°C. Shaded areas are positive. <code class="docutils literal notranslate"><span class="pre">Bottom:</span></code> Annual range of sea-surface
+temperature in calculated from the Reynolds and Smith <span id="id20">[<a class="reference internal" href="chapter18.html#id101" title="R. W. Reynolds and T. M. Smith. A high-resolution global sea surface climatology. Journal of Climate, 8(6):1571–1583, 1995.">100</a>]</span> mean
+sea-surface temperature data set. Contour interval is 1°C with heavy
+contours at 4°C and 8°C. Shaded areas exceed 8°C.</span><a class="headerlink" href="#fig6-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The annual range of surface temperature is highest at mid-latitudes,
+especially on the western side of the ocean (<a class="reference internal" href="#fig6-3"><span class="std std-numref">Fig. 6.3</span></a>: bottom). In the
+west, cold air blows off the continents in winter and cools the ocean.
+The cooling dominates the heat budget. In the tropics the temperature
+range is mostly less than 2°.</p>
+<p>The distribution of sea-surface salinity also tends to be zonal. The
+saltiest waters are at mid-latitudes where evaporation is high. Less
+salty waters are near the equator where rain freshens the surface, and
+at high latitudes where melted sea ice freshens the surface (<a class="reference internal" href="#fig6-4"><span class="std std-numref">Fig. 6.4</span></a>).
+The zonal (east-west) average of salinity shows a close
+correlation between salinity and evaporation minus precipitation plus
+river input (<a class="reference internal" href="#fig6-5"><span class="std std-numref">Fig. 6.5</span></a>).</p>
+<figure class="align-default" id="fig6-4">
+<a class="reference internal image-reference" href="../_images/Fig6-4.svg"><img alt="../_images/Fig6-4.svg" src="../_images/Fig6-4.svg" style="height: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Top:</span></code> Mean sea-surface salinity. Contour interval is 0.25. Shaded areas exceed a salinity of 36. From
+Levitus <span id="id21">[<a class="reference internal" href="chapter18.html#id103" title="S. Levitus. Climatological atlas of the world ocean. Technical Report 13, NOAA, 1982.">102</a>]</span>. <code class="docutils literal notranslate"><span class="pre">Bottom</span></code>: Precipitation minus evaporation in meters
+per year calculated from global rainfall by the Global Precipitation
+Climatology Project and latent heat flux calculated by the Data
+Assimilation Office, both at <span class="small">NASA</span>’s Goddard Space Flight
+Center. Precipitation exceeds evaporation in the shaded regions, contour
+interval is 0.5 m.</span><a class="headerlink" href="#fig6-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig6-5">
+<a class="reference internal image-reference" href="../_images/Fig6-5.svg"><img alt="../_images/Fig6-5.svg" src="../_images/Fig6-5.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Zonal average of sea-surface salinity calculated for all the ocean from Levitus <span id="id22">[<a class="reference internal" href="chapter18.html#id103" title="S. Levitus. Climatological atlas of the world ocean. Technical Report 13, NOAA, 1982.">102</a>]</span> and the
+difference between evaporation and precipitation (<span class="math notranslate nohighlight">\(E - P\)</span>) calculated
+from data shown in <a class="reference internal" href="#fig6-4"><span class="std std-numref">Fig. 6.4</span></a> (bottom).</span><a class="headerlink" href="#fig6-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Because many large rivers drain into the Atlantic and the Arctic Sea,
+why is the Atlantic saltier than the Pacific? Broecker <span id="id23">[<a class="reference internal" href="chapter18.html#id104" title="W. S. Broecker. Thermohaline circulation, the achilles heel of our climate system: will man-made co$_2$ upset the current balance? Science, 278(5343):1582–1588, 1997.">103</a>]</span> showed
+that 0.32 Sv of the water evaporated from the Atlantic does not fall as
+rain on land. Instead, it is carried by winds into the Pacific (<a class="reference internal" href="#fig6-6"><span class="std std-numref">Fig. 6.6</span></a>).
+Broecker points out that the quantity is small, equivalent to a
+little more than the flow in the Amazon River, but “were this flux not
+compensated by an exchange of more salty Atlantic waters for less salty
+Pacific waters, the salinity of the entire Atlantic would rise about 1
+gram per liter per millennium.”</p>
+<figure class="align-default" id="fig6-6">
+<a class="reference internal image-reference" href="../_images/Fig6-6.svg"><img alt="../_images/Fig6-6.svg" src="../_images/Fig6-6.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Water transported by the atmosphere into and out of the Atlantic. Basins
+draining into the Atlantic are black, deserts are white, and other
+drainage basins are shaded. Arrows give direction of water transport by
+the atmosphere, and values are in Sverdrups. Bold numbers give the net
+transport for the Atlantic at each latitude band. Overall, the Atlantic
+loses 0.32 Sv, an amount approximately equal to the flow in the Amazon
+River. After Broecker <span id="id24">[<a class="reference internal" href="chapter18.html#id104" title="W. S. Broecker. Thermohaline circulation, the achilles heel of our climate system: will man-made co$_2$ upset the current balance? Science, 278(5343):1582–1588, 1997.">103</a>]</span>.</span><a class="headerlink" href="#fig6-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em>Mean Temperature and Salinity of the Ocean</em> The mean temperature of the
+ocean’s waters is: t = 3.5°C. The mean salinity is S = 34.7. The
+distribution about the mean is small: 50% of the water is in the range:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}1.3^{\circ}C &lt; t &lt; 3.8^{\circ}\text{C} \\
+34.6 &lt; S &lt; 34.8\end{split}\]</div>
+</section>
+<section id="the-oceanic-mixed-layer-and-thermocline">
+<h2><span class="section-number">6.4. </span>The Oceanic Mixed Layer and Thermocline<a class="headerlink" href="#the-oceanic-mixed-layer-and-thermocline" title="Link to this heading">#</a></h2>
+<p>Wind blowing on the ocean stirs the upper layers leading to a thin
+<em>mixed layer</em> at the sea surface having constant temperature and
+salinity from the surface down to a depth where the values differ from
+those at the surface. The magnitude of the difference is arbitrary, but
+typically the temperature at the bottom of the layer must be no more
+than 0.02–0.1° colder than at the surface. Note that both temperature
+and salinity must be constant in the mixed layer. We will see later that
+mean velocity is not constant. The mixed layer is roughly 10–200 m
+thick over most of the tropical and mid-latitude belts.</p>
+<p>The depth and temperature of the mixed layer varies from day to day and
+from season to season in response to two processes:</p>
+<ol class="arabic simple">
+<li><p>Heat fluxes through the surface heat and cool the surface waters.
+Changes in temperature change the density contrast between the mixed
+layer and deeper waters. The greater the contrast, the more work is
+needed to mix the layer downward and vice versa.</p></li>
+<li><p>Turbulence in the mixed layer mixes heat downward. The turbulence
+depends on the wind speed and on the intensity of breaking waves.
+Turbulence mixes water in the layer, and it mixes the water in the layer
+with water in the thermocline.</p></li>
+</ol>
+<p>The mid-latitude mixed layer is thinnest in late summer when winds are
+weak, and sunlight warms the surface layer (<a class="reference internal" href="#fig6-7"><span class="std std-numref">Fig. 6.7</span></a>). At times, the
+heating is so strong, and the winds so weak, that the layer is only a
+few meters thick. In fall, the first storms of the season mix the heat
+down into the ocean thickening the mixed layer, but little heat is lost.
+In winter, heat is lost, and the mixed layer continues to thicken,
+becoming thickest in late winter. In spring, winds weaken, sunlight
+increases, and a new mixed layer forms.</p>
+<figure class="align-default" id="fig6-7">
+<a class="reference internal image-reference" href="../_images/Fig6-7.svg"><img alt="../_images/Fig6-7.svg" src="../_images/Fig6-7.svg" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Growth and decay of the mixed layer and seasonal thermocline from November 1989 to
+September 1990 at the Bermuda Atlantic Time-series Station
+(<span class="small">BATS</span>) at 31.8°N 64.1°W. Data were collected by the Bermuda
+Biological Station for Research, Inc. Note that pressure in decibars is
+nearly the same as depth in meters (see See <a class="reference internal" href="#ch6-8"><span class="std std-ref">§6.8</span></a> for a definition of
+decibars).</span><a class="headerlink" href="#fig6-7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Below the mixed layer, water temperature decreases rapidly with depth
+except at high latitudes. The range of depths where the rate of change,
+the gradient of temperature, is large is called the <em>thermocline</em>.
+Because density is closely related to temperature, the thermocline also
+tends to be the layer where density gradient is greatest, the
+<em>pycnocline</em>.</p>
+<figure class="align-default" id="fig6-8">
+<a class="reference internal image-reference" href="../_images/Fig6-8.svg"><img alt="../_images/Fig6-8.svg" src="../_images/Fig6-8.svg" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.8 </span><span class="caption-text">Typical temperature and salinity profiles in the open ocean. AAC: At 62.0°S,
+170.0°E in the Antarctic Circumpolar Current on 16 January 1969 as
+measured by the <em>R/V Hakuho Maru</em>. Warm Pool: At 9.5°N 176.3°E in the
+tropical west Pacific warm pool on 12 March 1989 as measured by Bryden
+and Hall on the <em>R/V Moana Wave</em>. <span class="small">BATS</span>: At 31.8°N 64.1°W
+near Bermuda on 17 April and 10 September 1990 as measured by the
+Bermuda Biological Station for Research, Inc. Data are included with
+Java OceanAtlas.</span><a class="headerlink" href="#fig6-8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The shape of the thermocline varies slightly with the seasons (<a class="reference internal" href="#fig6-7"><span class="std std-numref">Fig. 6.7</span></a>).
+This is the <em>seasonal thermocline</em>. The <em>permanent thermocline</em>
+extends from below the seasonal thermocline to depths of 1500–2000
+meters (<a class="reference internal" href="#fig6-8"><span class="std std-numref">Fig. 6.8</span></a>). At high latitudes, such as at the <span class="small">AAC</span>
+station in the figure, there may be a cooler, fresher layer above the
+permanent thermocline.</p>
+<p>The mixed layer tends to be saltier than the thermocline between 10° and
+40° latitude, where evaporation exceeds precipitation. At high latitudes
+the mixed layer is fresher because rain and melting ice reduce salinity.
+In some tropical regions, such as the warm pool in the western tropical
+Pacific, rain also produces a thin fresher mixed layer.</p>
+</section>
+<section id="density-potential-temperature-and-neutral-density">
+<h2><span class="section-number">6.5. </span>Density, Potential Temperature, and Neutral Density<a class="headerlink" href="#density-potential-temperature-and-neutral-density" title="Link to this heading">#</a></h2>
+<p>During winter, cold water formed at the surface sinks to a depth
+determined by its density relative to the density of the deeper water.
+Currents then carry the water to other parts of the ocean. At all times,
+the water parcel moves to stay below less dense water and above more
+dense water. The distribution of currents within the ocean depends on
+the distribution of pressure, which depends on the variations of density
+inside the ocean as outlined in <a class="reference internal" href="chapter10.html#ch10-4"><span class="std std-ref">§10.4</span></a>. So, if we want to follow water
+movement within the ocean, we need to know the distribution of density
+within the ocean.</p>
+<section id="density-and-sigma-t">
+<h3><span class="section-number">6.5.1. </span>Density and sigma-t<a class="headerlink" href="#density-and-sigma-t" title="Link to this heading">#</a></h3>
+<p>The calculation of water movement requires measurements of density with
+an accuracy of a few parts per million. This is not easy.</p>
+<p><em>Absolute Density</em> of water can only be measured in special
+laboratories, and only with difficulty. The best accuracy is
+<span class="math notranslate nohighlight">\(1\,:\, 2.5 \times 10^5 = 4\)</span> parts per million.</p>
+<p>To avoid the difficulty of working with absolute density, oceanographers
+use density relative to density of pure water. Density <span class="math notranslate nohighlight">\(\rho (S, t, p)\)</span>
+is now defined using Standard Mean Ocean Water of known isotopic
+composition, assuming saturation of dissolved atmospheric gasses. Here
+<span class="math notranslate nohighlight">\(S, t, p\)</span> refers to salinity, temperature, and pressure.</p>
+<p>In practice, density is not measured, it is calculated from <em>in situ</em>
+measurements of pressure, temperature, and conductivity using the
+equation of state for sea water. This can be done with an accuracy of
+two parts per million.</p>
+<p>Density of water at the sea surface is typically 1027 kg/m<span class="math notranslate nohighlight">\(^3\)</span>. For
+simplification, physical oceanographers often quote only the last 2
+digits of the density, a quantity they call <em>density anomaly</em> or <em>Sigma
+(S,t,p)</em>:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-7">
+<span class="eqno">(6.7)<a class="headerlink" href="#equation-eq6-7" title="Link to this equation">#</a></span>\[\sigma(S,t,p) = \rho (S, t, p) - 1000 \ \text{kg/m$^3$}\]</div>
+<p>The Working Group on Symbols, Units and Nomenclature in Physical
+Oceanography (<span class="smallcaps">sun</span>, 1985) recommends that <span class="math notranslate nohighlight">\(\sigma\)</span> be
+replaced by <span class="math notranslate nohighlight">\(\gamma\)</span> because <span class="math notranslate nohighlight">\(\sigma\)</span> was originally defined relative to
+pure water and it was dimensionless. Here, however, I will follow common
+practice and use <span class="math notranslate nohighlight">\(\sigma\)</span>.</p>
+<p>If we are studying surface layers of the ocean, we can ignore
+compressibility, and we use a new quantity sigma-t (written <span class="math notranslate nohighlight">\(\sigma_t\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-eq6-8">
+<span class="eqno">(6.8)<a class="headerlink" href="#equation-eq6-8" title="Link to this equation">#</a></span>\[\sigma _t =  \sigma(S,t,0)\]</div>
+<p>This is the density anomaly of a water sample when the total pressure on it has been reduced to atmospheric
+pressure (<em>i.e.</em> zero water pressure), but the temperature and salinity are <em>in situ</em> values.</p>
+</section>
+<section id="potential-temperature">
+<h3><span class="section-number">6.5.2. </span>Potential Temperature<a class="headerlink" href="#potential-temperature" title="Link to this heading">#</a></h3>
+<p>As a water parcel moves within the ocean below the mixed layer, its salt
+and heat content can change only by mixing with other water. Thus we can
+use measurements of temperature and salinity to trace the path of the
+water. This is best done if we remove the effect of compressibility.</p>
+<p>As water sinks, pressure increases, the water is compressed, and the
+compression does work on the water. This increases the internal energy
+of the water. To understand how compression increases energy, consider a
+cube containing a fixed mass of water. As the cube sinks, its sides move
+inward as the cube is compressed. Recalling that work is force times
+distance, the work is the distance the side moves times the force
+exerted on the side by pressure. The change in internal energy may or
+may not result in a change in temperature (McDougall and Feistel <span id="id25">[<a class="reference internal" href="chapter18.html#id105" title="T. J. McDougall and R. Feistel. What causes the adiabatic lapse rate? Deep Sea Research Part I: Oceanographic Research Papers, 50(12):1523–1535, 2003.">104</a>]</span>).
+The internal energy of a fluid is the sum of molecular kinetic energy
+(temperature) and molecular potential energy. In sea water, the later
+term dominates, and the change of internal energy produces the
+temperature change shown in <a class="reference internal" href="#fig6-9"><span class="std std-numref">Fig. 6.9</span></a>. At a depth of 8 km, the increase
+in temperature is almost 0.9°C.</p>
+<figure class="align-default" id="fig6-9">
+<a class="reference internal image-reference" href="../_images/Fig6-9.svg"><img alt="../_images/Fig6-9.svg" src="../_images/Fig6-9.svg" style="height: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.9 </span><span class="caption-text">Profiles of <code class="docutils literal notranslate"><span class="pre">Left</span></code> <em>in situ</em> <span class="math notranslate nohighlight">\(t\)</span> and potential <span class="math notranslate nohighlight">\(\theta\)</span> temperature and
+<code class="docutils literal notranslate"><span class="pre">Right</span></code> sigma-t and sigma-theta in the Kermadec Trench in the Pacific
+measured by the R/V Eltanin during the Scorpio Expedition on 13 July
+1967 at 175.825° E and 28.258° S. Data from Warren <span id="id26">[<a class="reference internal" href="chapter18.html#id106" title="B. A. Warren. Transpacific hydrographic sections at latitudes 43° s and 28° s: the SCORPIO expedition–ii. deep water. Deep-Sea Research, 20:9–38, 1973.">105</a>]</span>.</span><a class="headerlink" href="#fig6-9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To remove the influence of compressibility from measurements of
+temperature, oceanographers (and meteorologists who have the same
+problem in the atmosphere) use the concept of potential temperature.
+<em>Potential temperature</em> <span class="math notranslate nohighlight">\(\Theta\)</span> is defined as the temperature of a
+parcel of water at the sea surface after it has been raised
+adiabatically from some depth in the ocean. Raising the parcel
+<em>adiabatically</em> means that it is raised in an insulated container so it
+does not exchange heat with its surroundings. Of course, the parcel is
+not actually brought to the surface. Potential temperature is calculated
+from the temperature in the water at depth, the <em>in situ</em> temperature.</p>
+</section>
+<section id="potential-density">
+<h3><span class="section-number">6.5.3. </span>Potential Density<a class="headerlink" href="#potential-density" title="Link to this heading">#</a></h3>
+<p>If we are studying intermediate layers of the ocean, say at depths near
+a kilometer, we cannot ignore compressibility. Because changes in
+pressure primarily influence the temperature of the water, the influence
+of pressure can be removed, to a first approximation, by using the
+<em>potential density</em>.</p>
+<p><em>Potential density</em> <span class="math notranslate nohighlight">\(\rho _{\Theta}\)</span> is the density a parcel of water
+would have if it were raised adiabatically to the surface without change
+in salinity. Written as sigma,</p>
+<div class="math notranslate nohighlight" id="equation-eq6-9">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-eq6-9" title="Link to this equation">#</a></span>\[\sigma _{\Theta} = \sigma(S, \Theta, 0)\]</div>
+<p><span class="math notranslate nohighlight">\(\sigma _{\Theta}\)</span> is especially useful because it is a conserved thermodynamic property.</p>
+<p>Potential density is not useful for comparing density of water at great
+depths. If we bring water parcels to the surface and compare their
+densities, the calculation of potential density ignores the effect of
+pressure on the coefficients for thermal and salt expansion. As a
+result, two water samples having the same density but different
+temperature and salinity at a depth of four kilometers can have
+noticeably different potential density. In some regions the use of
+<span class="math notranslate nohighlight">\(\rho(\Theta)\)</span> can lead to an apparent decrease of density with depth
+(<a class="reference internal" href="#fig6-10"><span class="std std-numref">Fig. 6.10</span></a>) although we know that this is not possible because such a
+column of water would be unstable.</p>
+<figure class="align-default" id="fig6-10">
+<a class="reference internal image-reference" href="../_images/Fig6-10.svg"><img alt="../_images/Fig6-10.svg" src="../_images/Fig6-10.svg" style="height: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.10 </span><span class="caption-text">Vertical sections of density in the western Atlantic. Note that the depth scale
+changes at 1000 m depth. <code class="docutils literal notranslate"><span class="pre">Upper</span></code>: <span class="math notranslate nohighlight">\(\sigma _{\Theta}\)</span>, showing an
+apparent density inversion below 3,000 m. <code class="docutils literal notranslate"><span class="pre">Lower</span></code>: <span class="math notranslate nohighlight">\(\sigma _4\)</span> showing
+continuous increase in density with depth. After Lynn and Reid <span id="id27">[<a class="reference internal" href="chapter18.html#id107" title="R. J. Lynn and J. L. Reid. Characteristics and circulation of deep and abyssal waters. Deep-Sea Research, 15(5):577–598, 1968.">106</a>]</span>.</span><a class="headerlink" href="#fig6-10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To compare samples from great depths, it is better to bring both samples
+to a nearby depth instead of to the surface <span class="math notranslate nohighlight">\(p = 0\)</span>. For example, we can
+bring both parcels to a pressure of 4,000 decibars, which is near a
+depth of 4 km:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-10">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-eq6-10" title="Link to this equation">#</a></span>\[\sigma_4 = \sigma(S, \Theta, 4000)\]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma_4\)</span> is the density of a parcel of water brought adiabatically to a pressure
+of 4,000 decibars. More generally, oceanographers sometimes use <span class="math notranslate nohighlight">\(\rho_r\)</span></p>
+<div class="math notranslate nohighlight" id="equation-eq6-11">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-eq6-11" title="Link to this equation">#</a></span>\[\sigma _r = \sigma(S, \Theta, p, p_r)\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> is pressure, and <span class="math notranslate nohighlight">\(p_r\)</span> is pressure at some reference level. In eq. <a class="reference internal" href="#equation-eq6-9">(6.9)</a> the level is
+<span class="math notranslate nohighlight">\(p_r = 0\)</span> decibars, and in eq. <a class="reference internal" href="#equation-eq6-10">(6.10)</a> <span class="math notranslate nohighlight">\(p_r = 4000\)</span> decibars.</p>
+<p>The use of <span class="math notranslate nohighlight">\(\sigma_r\)</span> leads to problems. If we wish to follow parcels of
+water deep in the ocean, we might use <span class="math notranslate nohighlight">\(\sigma_3\)</span> in some areas, and
+<span class="math notranslate nohighlight">\(\sigma_4\)</span> in others. But what happens when a parcel moves from a depth
+of 3 km in one area to a depth of 4 km in another? There is a small
+discontinuity between the density of the parcel expressed as <span class="math notranslate nohighlight">\(\sigma_3\)</span>
+compared with density expressed as <span class="math notranslate nohighlight">\(\sigma_4\)</span>. To avoid this difficulty,
+Jackett and McDougall <span id="id28">[<a class="reference internal" href="chapter18.html#id108" title="D. R. Jackett and T. J. McDougall. A neutral density variable for the world's oceans. Journal of Physical Oceanography, 27:237–263, 1997.">107</a>]</span> proposed a new
+variable they called neutral density.</p>
+</section>
+<section id="neutral-surfaces-and-density">
+<h3><span class="section-number">6.5.4. </span>Neutral Surfaces and Density<a class="headerlink" href="#neutral-surfaces-and-density" title="Link to this heading">#</a></h3>
+<p>A parcel of water moves locally along a path of constant density so that
+it is always below less dense water and above more dense water. More
+precisely, it moves along a path of constant potential density
+<span class="math notranslate nohighlight">\(\sigma_r\)</span> referenced to the local depth <span class="math notranslate nohighlight">\(r\)</span>. Such a path is called a
+<em>neutral path</em> (Eden and Willebrand <span id="id29">[<a class="reference internal" href="chapter18.html#id109" title="C. Eden and J. Willebrand. Neutral density revisited. Deep-Sea Research Part II: Topical Studies in Oceanography, 46:33–54, 1999.">108</a>]</span>). A <em>neutral surface element</em>
+is the surface tangent to the neutral paths through a point in the
+water. No work is required to move a parcel on this surface because
+there is no buoyancy force acting on the parcel as it moves (if we
+ignore friction).</p>
+<p>Now let’s follow the parcel as it moves away from a local region. At
+first we might think that because we know the tangents to the surface
+everywhere, we can define a surface that is the envelope of the
+tangents. But an exact surface is not mathematically possible in the
+real ocean, although we can come very close.</p>
+<p>Jackett and McDougall <span id="id30">[<a class="reference internal" href="chapter18.html#id108" title="D. R. Jackett and T. J. McDougall. A neutral density variable for the world's oceans. Journal of Physical Oceanography, 27:237–263, 1997.">107</a>]</span> developed a practical neutral density
+variable <span class="math notranslate nohighlight">\(\gamma^n\)</span> and surface that stays within a few tens meters of
+an ideal surface anywhere in the world. They constructed their variables
+using data in the Levitus <span id="id31">[<a class="reference internal" href="chapter18.html#id103" title="S. Levitus. Climatological atlas of the world ocean. Technical Report 13, NOAA, 1982.">102</a>]</span> atlas. The neutral density values were
+then used to label the data in the Levitus atlas. This prelabeled data
+set is used to calculate <span class="math notranslate nohighlight">\(\gamma^n\)</span> at new locations where <span class="math notranslate nohighlight">\(t, S\)</span> are
+measured as a function of depth by interpolation to the four closest
+points in the Levitus atlas. Through this practice, neutral density
+<span class="math notranslate nohighlight">\(\gamma^n\)</span> is a function of salinity <span class="math notranslate nohighlight">\(S\)</span>, <em>in situ</em> temperature <span class="math notranslate nohighlight">\(t\)</span>,
+pressure <span class="math notranslate nohighlight">\(p\)</span>, longitude, and latitude.</p>
+<p>The neutral surface defined above differs only slightly from an ideal
+neutral surface. If a parcel moves around a gyre on the neutral surface
+and returns to its starting location, its depth at the end will differ
+by around 10 meters from the depth at the start. If potential density
+surfaces are used, the difference can be hundreds of meters, a far
+larger error.</p>
+</section>
+<section id="equation-of-state-of-sea-water">
+<h3><span class="section-number">6.5.5. </span>Equation of state of sea water<a class="headerlink" href="#equation-of-state-of-sea-water" title="Link to this heading">#</a></h3>
+<p>Density of sea water is rarely measured. <em>Density is calculated from
+measurements of temperature, conductivity, or salinity, and pressure
+using the equation of state of sea water</em>. The <em>equation of state</em> is an
+equation relating density to temperature, salinity, and pressure.</p>
+<p>The equation is derived by fitting curves through laboratory
+measurements of density as a function of temperature, pressure, and
+salinity, chlorinity, or conductivity. The International Equation of
+State (1980) published by the Joint Panel on Oceanographic Tables and
+Standards <span id="id32">[<a class="reference internal" href="chapter18.html#id95" title="Joint Panel on Oceanographic Tables and Standards. The practical salinity scale 1978 and the international equation of state of seawater 1980. Technical Report 36, UNESCO, Paris, 1981.">94</a>]</span> is now used. See also Millero
+and Poisson <span id="id33">[<a class="reference internal" href="chapter18.html#id110" title="F. J. Millero and A. Poisson. International one-atmosphere equation of state of seawater. Deep-Sea Research, 28A(6):625–629, 1981.">109</a>]</span> and
+Millero et al <span id="id34">[<a class="reference internal" href="chapter18.html#id111" title="F. J. Millero, C.-T. Chen, A. Bradshaw, and K. Schleicher. A new high pressure equation of state for seawater. Deep-Sea Research, 27A:255–264, 1980.">110</a>]</span>. The equation has
+an accuracy of 10 parts per million, which is 0.01 units of <span class="math notranslate nohighlight">\(\sigma(\Theta)\)</span>.</p>
+<p>I have not actually written out the equation of state because it
+consists of three polynomials with 41 constants (<span class="small">JPOTS</span>,
+<span id="id35">[<a class="reference internal" href="chapter18.html#id36" title="Joint Panel on Oceanographic Tables and Standards. Processing of Oceanographic Station Data. UNESCO, Paris, 1991.">35</a>]</span>).</p>
+</section>
+<section id="accuracy-of-temperature-salinity-and-density">
+<h3><span class="section-number">6.5.6. </span>Accuracy of Temperature, Salinity, and Density<a class="headerlink" href="#accuracy-of-temperature-salinity-and-density" title="Link to this heading">#</a></h3>
+<p>If we want to distinguish between different water masses in the ocean,
+and if the total range of temperature and salinity is as small as the
+range in <a class="reference internal" href="#fig6-1"><span class="std std-numref">Fig. 6.1</span></a>, then we must measure temperature, salinity, and
+pressure very carefully. We will need an accuracy of a few parts per
+million.</p>
+<p>Such accuracy can be achieved only if all quantities are carefully
+defined, if all measurements are made with great care, if all
+instruments are carefully calibrated, and if all work is done according
+to internationally accepted standards. The standards are laid out in
+<em>Processing of Oceanographic Station Data</em> (<span class="small">JPOTS</span>, <span id="id36">[<a class="reference internal" href="chapter18.html#id36" title="Joint Panel on Oceanographic Tables and Standards. Processing of Oceanographic Station Data. UNESCO, Paris, 1991.">35</a>]</span>)
+published by <span class="small">UNESCO</span>. The book contains internationally
+accepted definitions of primary variables such as temperature and
+salinity and methods for the measuring the primary variables. It also
+describes accepted methods for calculating quantities derived from
+primary variables, such as potential temperature, density, and
+stability.</p>
+</section>
+</section>
+<section id="measurement-of-temperature">
+<h2><span class="section-number">6.6. </span>Measurement of Temperature<a class="headerlink" href="#measurement-of-temperature" title="Link to this heading">#</a></h2>
+<p>Temperature in the ocean is measured many ways. Thermistors and mercury
+thermometers are commonly used on ships and buoys. These are calibrated
+in the laboratory before being used, and after use if possible, using
+mercury or platinum thermometers with accuracy traceable to national
+standards laboratories. Infrared radiometers on satellites measure the
+ocean’s surface temperature.</p>
+<section id="mercury-thermometer">
+<h3><span class="section-number">6.6.1. </span>Mercury Thermometer<a class="headerlink" href="#mercury-thermometer" title="Link to this heading">#</a></h3>
+<p>This is the most widely used, non-electronic thermometer. It was widely
+used in buckets dropped over the side of a ship to measure the
+temperature of surface waters, on Nansen bottles to measure sub-sea
+temperatures, and in the laboratory to calibrate other thermometers.
+Accuracy of the best thermometers is about <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.001°C with very careful calibration.</p>
+<p>One very important mercury thermometer is the reversing thermometer
+(<a class="reference internal" href="#fig6-11"><span class="std std-numref">Fig. 6.11</span></a>) carried on Nansen bottles, which are described in the next
+section. It is a thermometer that has a constriction in the mercury
+capillary that causes the thread of mercury to break at a precisely
+determined point when the thermometer is turned upside down. The
+thermometer is lowered deep into the ocean in the normal position, and
+it is allowed to come to equilibrium with the water. Mercury expands
+into the capillary, and the amount of mercury in the capillary is
+proportional to temperature. The thermometer is then flipped upside
+down, the thread of mercury breaks trapping the mercury in the
+capillary, and the thermometer is brought back. The mercury in the
+capillary of the reversed thermometer is read on deck along with the
+temperature of a normal thermometer, which gives the temperature at
+which the reversed thermometer is read. The two readings give the
+temperature of the water at the depth where the thermometer was
+reversed.</p>
+<figure class="align-default" id="fig6-11">
+<a class="reference internal image-reference" href="../_images/Fig6-11.svg"><img alt="../_images/Fig6-11.svg" src="../_images/Fig6-11.svg" style="height: 850px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.11 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Left</span></code>: Protected and unprotected reversing thermometers is set position, before reversal.
+<code class="docutils literal notranslate"><span class="pre">Right</span></code>: The constricted part of the capillary in set and reversed
+positions. After von Arx (<span id="id37">[<a class="reference internal" href="chapter18.html#id15" title="W. S. von Arx. An Introduction to Physical Oceanography. Addison-Wesley, Reading, Massachusetts, 1962.">14</a>]</span>: 259).</span><a class="headerlink" href="#fig6-11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The reversing thermometer is carried inside a glass tube which protects
+the thermometer from the ocean’s pressure because high pressure can
+squeeze additional mercury into the capillary. If the thermometer is
+unprotected, the apparent temperature read on deck is proportional to
+temperature and pressure at the depth where the thermometer was flipped.
+A pair of protected and unprotected thermometers gives temperature and
+pressure of the water at the depth the thermometer was reversed.</p>
+<p>Pairs of reversing thermometers carried on Nansen bottles were the
+primary source of sub-sea measurements of temperature as a function of
+pressure from around 1900 to 1970.</p>
+</section>
+<section id="platinum-resistance-thermometer">
+<h3><span class="section-number">6.6.2. </span>Platinum Resistance Thermometer<a class="headerlink" href="#platinum-resistance-thermometer" title="Link to this heading">#</a></h3>
+<p>This is the standard for temperature. It is used by national standards
+laboratories to interpolate between defined points on the practical
+temperature scale. It is used primarily to calibrate other temperature
+sensors.</p>
+</section>
+<section id="thermistor">
+<h3><span class="section-number">6.6.3. </span>Thermistor<a class="headerlink" href="#thermistor" title="Link to this heading">#</a></h3>
+<p>A thermistor is a semiconductor having resistance that varies rapidly
+and predictably with temperature. It has been widely used on moored
+instruments and on instruments deployed from ships since about 1970. It
+has high resolution and an accuracy of about <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.001°C
+when carefully calibrated.</p>
+</section>
+<section id="bucket-temperatures">
+<h3><span class="section-number">6.6.4. </span>Bucket temperatures<a class="headerlink" href="#bucket-temperatures" title="Link to this heading">#</a></h3>
+<p>The temperature of surface waters has been routinely measured at sea by
+putting a mercury thermometer into a bucket which is lowered into the
+water, letting it sit at a depth of about a meter for a few minutes
+until the thermometer comes to equilibrium, then bringing it aboard and
+reading the temperature before water in the bucket has time to change
+temperature. The accuracy is around 0.1°C. This is a very common source of
+direct surface temperature measurements.</p>
+</section>
+<section id="ship-injection-temperature">
+<h3><span class="section-number">6.6.5. </span>Ship Injection Temperature<a class="headerlink" href="#ship-injection-temperature" title="Link to this heading">#</a></h3>
+<p>The temperature of the water drawn into the ship to cool the engines has
+been recorded routinely for decades. These recorded values of
+temperature are called injection temperatures. Errors are due to ship’s
+structure warming water before it is recorded. This happens when the
+temperature recorder is not placed close to the point on the hull where
+water is brought in. Accuracy is 0.5°–1°C.</p>
+</section>
+<section id="advanced-very-high-resolution-radiometer">
+<h3><span class="section-number">6.6.6. </span>Advanced Very High Resolution Radiometer<a class="headerlink" href="#advanced-very-high-resolution-radiometer" title="Link to this heading">#</a></h3>
+<p>The most commonly used instrument to measure sea-surface temperature
+from space is the Advanced Very High Resolution Radiometer
+<span class="small">AVHRR</span>. The instrument has been carried on all
+polar-orbiting meteorological satellites operated by <span class="small">NOAA</span>
+since Tiros-N was launched in 1978.</p>
+<p>The instrument was originally designed to measure cloud temperatures and
+hence cloud height. The instrument had, however, sufficient accuracy and
+precision that it was soon used to measure regional and global
+temperature patterns at the sea surface.</p>
+<p>The instrument is a radiometer that converts infrared radiation into an
+electrical voltage. It includes a mirror that scans from side to side
+across the sub-satellite track and reflects radiance from the ground
+into a telescope, a telescope that focuses the radiance on detectors,
+detectors sensitive to different wavelengths that convert the radiance
+at those wavelengths into electrical signals, and electronic circuitry
+to digitize and store the radiance values. The instruments observes a
+2700-km wide swath centered on the sub-satellite track. Each observation
+along the scan is from a pixel that is roughly one kilometer in diameter
+near the center of the scan and that increases in size with distance
+from the sub-satellite track.</p>
+<p>The radiometers measures infrared radiation emitted from the surface in
+five wavelength bands: three infrared bands: 3.55–3.99 <span class="math notranslate nohighlight">\(\mu\)</span>m,
+10.3–11.3 <span class="math notranslate nohighlight">\(\mu\)</span>m, and 11.5–12.5 <span class="math notranslate nohighlight">\(\mu\)</span>m; a near-infrared band at
+0.725–1.10 <span class="math notranslate nohighlight">\(\mu\)</span>m; and a visible-light band at 0.55–0.90 <span class="math notranslate nohighlight">\(\mu\)</span>m. All
+infrared bands include radiation emitted from the sea and from water
+vapor in the air along the path from the satellite to the ground. The
+3.7 <span class="math notranslate nohighlight">\(\mu\)</span>m band is least sensitive to water vapor and other errors, but
+it works only at night because sunlight has radiance in this band. The
+two longest wavelength bands at 10.8 <span class="math notranslate nohighlight">\(\mu\)</span>m and 12.0 <span class="math notranslate nohighlight">\(\mu\)</span>m are used to
+observe sea-surface temperature and water vapor along the path in
+daylight.</p>
+<p>Data with 1-km resolution are transmitted directly to ground stations
+that view the satellite as it passes the station. This is the Local Area
+Coverage mode. Data are also averaged to produce observations from 4
+<span class="math notranslate nohighlight">\(\times\)</span> 4 km pixels. These data are stored by the satellite and later
+transmitted to <span class="small">NOAA</span> receiving stations. This is the Global
+Area Coverage mode.</p>
+<p>The swath width is sufficiently wide that the satellite views the entire
+earth twice per day, at approximately 09:00 AM and 9:00 PM local time.
+Areas at high latitudes may be observed as often as eight or more times
+per day.</p>
+<p>The most important errors are due to:</p>
+<ol class="arabic simple">
+<li><p>Unresolved or undetected clouds: Large, thick clouds are obvious in the
+images of water temperature Thin clouds such as low stratus and high
+cirrus produce much small errors that are difficult or almost impossible
+to detect. Clouds smaller in diameter than 1 km, such as trade-wind
+cumuli, are also difficult to detect. Special techniques have been
+developed for detecting small clouds (<a class="reference internal" href="#fig6-12"><span class="std std-numref">Fig. 6.12</span></a>).</p></li>
+<li><p>Water vapor, which absorbs part of the energy radiated from the sea
+surface: Water vapor reduces the apparent temperature of the sea
+surface. The influence is different in the 10.8 <span class="math notranslate nohighlight">\(\mu\)</span>m and 12.0 <span class="math notranslate nohighlight">\(\mu\)</span>m
+channels, allowing the difference in the two signals to be used to
+reduce the error.</p></li>
+<li><p>Aerosols, which absorb infrared radiation. They radiate at temperatures
+found high in the atmosphere. Stratospheric aerosols generated by
+volcanic eruptions can lower the observed temperatures by up to a few
+degrees Celsius. Dust particles carried over the Atlantic from Saharan
+dust storms can also cause errors.</p></li>
+</ol>
+<figure class="align-default" id="fig6-12">
+<a class="reference internal image-reference" href="../_images/Fig6-12.svg"><img alt="../_images/Fig6-12.svg" src="../_images/Fig6-12.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.12 </span><span class="caption-text">The influence of clouds on infrared observations. <code class="docutils literal notranslate"><span class="pre">Left:</span></code> The standard deviation of
+the radiance from small, partly cloudy areas each containing 64 pixels.
+The feet of the arch-like distribution of points are the sea-surface and
+cloud-top temperatures. After Coakley and Bretherton <span id="id38">[<a class="reference internal" href="chapter18.html#id112" title="J. A. Coakley and F. P. Bretherton. Cloud cover from high resolution scanner data: detecting and allowing for partially filled fields of view. Journal of Geophysical Research, 87(C7):4917–4932, 1982.">111</a>]</span>. <code class="docutils literal notranslate"><span class="pre">Right:</span></code>
+The maximum difference between local values of <span class="math notranslate nohighlight">\(T_{11} - T_{3.7}\)</span> and
+the local mean values of the same quantity. Values inside the dashed box
+indicate cloud-free pixels. <span class="math notranslate nohighlight">\(T_{11}\)</span> and <span class="math notranslate nohighlight">\(T_{3.7}\)</span> are the apparent
+temperatures at 11.0 and 3.7 <span class="math notranslate nohighlight">\(\mu\)</span>m (data from K. Kelly). After Stewart (<span id="id39">[<a class="reference internal" href="chapter18.html#id30" title="R. H. Stewart. Methods of Satellite Oceanography. University of California Press, 1985.">29</a>]</span>: 137).</span><a class="headerlink" href="#fig6-12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Skin temperature errors. The infrared radiation seen by the instrument
+comes from a layer at the sea surface that is only a few micrometers
+thick. The temperature in this layer is not quite the same as
+temperature a meter below the sea surface. They can differ by several
+degrees when winds are light (Emery and Schussel <span id="id40">[<a class="reference internal" href="chapter18.html#id113" title="W. Emery and P. Schussel. Global difference between skin and bulk sea surface temperatures. EOS: Transactions of the American Geophysical Union, 70(14):210–211, 1989.">112</a>]</span>). This error is
+greatly reduced when <span class="smallcaps">AVHRR</span> data are used to interpolate
+between ship measurements of surface temperature.</p>
+<p>Maps of temperature processed from Local Area Coverage of cloud-free
+regions show variations of temperature with a precision of 0.1°C. These
+maps are useful for observing local phenomena including patterns
+produced by local currents. Figure 10.16 shows such patterns off the
+California coast.</p>
+<p>Global maps are made by the U.S. Naval Oceanographic Office, which
+receives the global <span class="small">AVHRR</span> data directly from
+<span class="small">NOAA</span>’s National Environmental Satellite, Data and
+Information Service in near-real time each day. The data are carefully
+processed to remove the influence of clouds, water vapor, aerosols, and
+other sources of error. Data are then used to produce global maps
+between <span class="math notranslate nohighlight">\(\pm 70\)</span>°C with an accuracy of <span class="math notranslate nohighlight">\(\pm 0.6\)</span>°C (May et al. <span id="id41">[<a class="reference internal" href="chapter18.html#id114" title="D. A. May, M. M. Parmenter, D. S. Olszewski, and B. D. McKenzie. Operational processing of satellite sea surface temperature retrievals at the naval oceanographic office. Bulletin of the American Meteorological Society, 79(3):397–407, 1998.">113</a>]</span>). The maps of
+sea-surface temperature are sent to the U.S. Navy and to
+<span class="small">NOAA</span>’s National Centers for Environmental Prediction. In
+addition, the office produces daily 100-km global and 14-km regional
+maps of temperature.</p>
+</section>
+<section id="global-maps-of-sea-surface-temperature">
+<h3><span class="section-number">6.6.7. </span>Global Maps of Sea-Surface Temperature<a class="headerlink" href="#global-maps-of-sea-surface-temperature" title="Link to this heading">#</a></h3>
+<p>Global, monthly maps of surface temperature are produced by the National
+Centers for Environmental Prediction using Reynolds et al. <span id="id42">[<a class="reference internal" href="chapter18.html#id115" title="R. W. Reynolds, N. A. Rayner, T. M. Smith, D. C. Stokes, and W. Wang. An improved in situ and satellite sst analysis for climate. Journal of Climate, 15:1609–1625, 2002.">114</a>]</span>
+optimal-interpolation method. The technique blends ship and buoy
+measurements of sea-surface temperature with <span class="small">AVHRR</span> data
+processed by the Naval Oceanographic Office in 1 areas for a month.
+Essentially, <span class="small">AVHRR</span> data are interpolated between buoy and
+ship reports using previous information about the temperature field.
+Overall accuracy ranges from approximately <span class="math notranslate nohighlight">\(\pm 0.3\)</span>°C in the tropics to
+<span class="math notranslate nohighlight">\(\pm 0.5\)</span>°C near western boundary currents in the northern hemisphere where
+temperature gradients are large. Maps are available from November 1981.
+Figures 6.2–6.4 were made by <span class="small">NOAA</span> using Reynolds’ technique. Other data sets have been produced by the
+<span class="small">NOAA/NASA</span> Pathfinder program (Kilpatrick, Podesta, and Evans <span id="id43">[<a class="reference internal" href="chapter18.html#id116" title="K. A. Kilpatrick, G. P. Podesta, and R. Evans. Overview of the NOAA/NASA advanced very high resolution radiometer pathfinder algorithm for sea surface temperature and associated matchup database. Journal of Geophysical Research, 106:9179–9198, 2001.">115</a>]</span>).</p>
+<p>Maps of mean temperature have also been made from <span class="small">ICOADS</span>
+data (Smith and Reynolds <span id="id44">[<a class="reference internal" href="chapter18.html#id117" title="T. M. Smith and R. W. Reynolds. Improved extended reconstruction of SST (1854–1997). Journal of Climate, 17(6):2466–2477, 2004.">116</a>]</span>). Because the data are poorly distributed
+in time and space, errors also vary in time and space. Smith and
+Reynolds <span id="id45">[<a class="reference internal" href="chapter18.html#id117" title="T. M. Smith and R. W. Reynolds. Improved extended reconstruction of SST (1854–1997). Journal of Climate, 17(6):2466–2477, 2004.">116</a>]</span> estimated the error in the global mean temperature and
+found the 95% confidence uncertainty for the near-global average is
+0.48°C or more in the nineteenth century, near 0.28°C for the first half
+of the twentieth century, and 0.18°C or less after 1950. Anomalies of
+sea-surface temperature were calculated using mean sea-surface
+temperature from the period 1854–1997 using <span class="small">ICOADS</span>
+supplemented with satellite data since 1981.</p>
+</section>
+</section>
+<section id="measurement-of-conductivity-or-salinity">
+<h2><span class="section-number">6.7. </span>Measurement of Conductivity or Salinity<a class="headerlink" href="#measurement-of-conductivity-or-salinity" title="Link to this heading">#</a></h2>
+<p>Conductivity is measured by placing platinum electrodes in seawater and
+measuring the current that flows when there is a known voltage between
+the electrodes. The current depends on conductivity, voltage, and volume
+of sea water in the path between electrodes. If the electrodes are in a
+tube of non-conducting glass, the volume of water is accurately known,
+and the current is independent of other objects near the conductivity
+cell (<a class="reference internal" href="#fig6-13"><span class="std std-numref">Fig. 6.13</span></a>). The best measurements of salinity from conductivity
+give salinity with an accuracy of <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.005.</p>
+<figure class="align-default" id="fig6-13">
+<a class="reference internal image-reference" href="../_images/Fig6-13.svg"><img alt="../_images/Fig6-13.svg" src="../_images/Fig6-13.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.13 </span><span class="caption-text">A conductivity cell. Current flows through the seawater between platinum electrodes in
+a cylinder of borosilicate glass 191 mm long with an inside diameter
+between the electrodes of 4 mm. The electric field lines (solid lines)
+are confined to the interior of the cell in this design making the
+measured conductivity (and instrument calibration) independent of
+objects near the cell. This is the cell used to measure conductivity and
+salinity shown in <a class="reference internal" href="#fig6-15"><span class="std std-numref">Fig. 6.15</span></a>. From Sea-Bird Electronics.</span><a class="headerlink" href="#fig6-13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Before conductivity measurements were widely used, salinity was measured
+using chemical titration of the water sample with silver salts. The best
+measurements of salinity from titration give salinity with an accuracy
+of <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.02.</p>
+<p>Individual salinity measurements are calibrated using standard seawater.
+Long-term studies of accuracy use data from measurements of deep water
+masses of known, stable, salinity. For example, Saunders <span id="id46">[<a class="reference internal" href="chapter18.html#id118" title="P. M. Saunders. The accuracy of measurements of salinity, oxygen and temperature in the deep ocean. Journal of Physical Oceanography, 16(1):189–195, 1986.">117</a>]</span> noted
+that temperature is very accurately related to salinity for a large
+volume of water contained in the deep basin of the northwest Atlantic
+under the Mediterranean outflow. He used the consistency of measurements
+of temperature and salinity made at many hydrographic stations in the
+area to estimate the accuracy of temperature, salinity and oxygen
+measurements. He concluded that the most careful measurements made since
+1970 have an accuracy of 0.005 for salinity and 0.005 for temperature.
+The largest source of salinity error was the error in determination of
+the standard water used for calibrating the salinity measurements.</p>
+<p>Gouretski and Jancke <span id="id47">[<a class="reference internal" href="chapter18.html#id119" title="V. Gouretski and K. Jancke. A consistent pre-WOCE hydrographic data set for the south atlantic: station data and gridded fields. Technical Report, WOCE Report No. 127/95, 1995.">118</a>]</span> estimated accuracy of salinity measurements
+as a function of time. Using high quality measurements from 16,000
+hydrographic stations in the south Atlantic from 1912 to 1991, they
+estimated accuracy by plotting salinity as a function of temperature
+using all data collected below 1500 m in twelve regions for each decade
+from 1920 to 1990. A plot of accuracy as a function of time since 1920
+shows consistent improvement in accuracy since 1950 (<a class="reference internal" href="#fig6-14"><span class="std std-numref">Fig. 6.14</span></a>).
+Recent measurements of salinity are the most accurate. The standard
+deviation of salinity data collected from all areas in the south
+Atlantic from 1970 to 1993 adjusted as described by Gouretski and Jancke
+<span id="id48">[<a class="reference internal" href="chapter18.html#id119" title="V. Gouretski and K. Jancke. A consistent pre-WOCE hydrographic data set for the south atlantic: station data and gridded fields. Technical Report, WOCE Report No. 127/95, 1995.">118</a>]</span> was 0.0033. Recent instruments such as the Sea-Bird Electronics
+Model 911 Plus have an accuracy of better than 0.005 without
+adjustments. A comparison of salinity measured at 43° 10’N, 14° 4.5’W by
+the 911 Plus with historic data collected by Saunders <span id="id49">[<a class="reference internal" href="chapter18.html#id118" title="P. M. Saunders. The accuracy of measurements of salinity, oxygen and temperature in the deep ocean. Journal of Physical Oceanography, 16(1):189–195, 1986.">117</a>]</span> gives an
+accuracy of 0.002 (<a class="reference internal" href="#fig6-15"><span class="std std-numref">Fig. 6.15</span></a>).</p>
+<figure class="align-default" id="fig6-14">
+<a class="reference internal image-reference" href="../_images/Fig6-14.svg"><img alt="../_images/Fig6-14.svg" src="../_images/Fig6-14.svg" style="height: 350px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.14 </span><span class="caption-text">Standard deviation of salinity measurements below 1500 m in the south Atlantic. Each point
+is the average for the decade centered on the point. The value for 1995
+is an estimate of the accuracy of recent measurements. From Gouretski
+and Jancke <span id="id50">[<a class="reference internal" href="chapter18.html#id119" title="V. Gouretski and K. Jancke. A consistent pre-WOCE hydrographic data set for the south atlantic: station data and gridded fields. Technical Report, WOCE Report No. 127/95, 1995.">118</a>]</span>.</span><a class="headerlink" href="#fig6-14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig6-15">
+<a class="reference internal image-reference" href="../_images/Fig6-15.svg"><img alt="../_images/Fig6-15.svg" src="../_images/Fig6-15.svg" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.15 </span><span class="caption-text">Results from a test of the Sea-Bird Electronics 911 Plus CTD in the North Atlantic
+Deep Water in 1992. Data were collected at 43.17° N and 14.08° W from the
+R/V Poseidon. From Sea-Bird Electronics (1992).</span><a class="headerlink" href="#fig6-15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="measurement-of-pressure">
+<span id="ch6-8"></span><h2><span class="section-number">6.8. </span>Measurement of Pressure<a class="headerlink" href="#measurement-of-pressure" title="Link to this heading">#</a></h2>
+<p>Pressure is routinely measured by many different types of instruments.
+The SI unit of pressure is the pascal (Pa), but oceanographers normally
+report pressure in decibars (dbar), where:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-12">
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-eq6-12" title="Link to this equation">#</a></span>\[1 \text{ dbar} = 10^4 \text{ Pa}\]</div>
+<p>because the pressure in decibars is almost exactly equal to the depth in meters. Thus 1000 dbar is the
+pressure at a depth of about 1000 m.</p>
+<section id="strain-gage">
+<h3><span class="section-number">6.8.1. </span>Strain Gage<a class="headerlink" href="#strain-gage" title="Link to this heading">#</a></h3>
+<p>This is the simplest and cheapest instrument, and it is widely used.
+Accuracy is about <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->1%.</p>
+</section>
+<section id="vibratron">
+<h3><span class="section-number">6.8.2. </span>Vibratron<a class="headerlink" href="#vibratron" title="Link to this heading">#</a></h3>
+<p>Much more accurate measurements of pressure can be made by measuring the
+natural frequency of a vibrating tungsten wire stretched in a magnetic
+field between diaphragms closing the ends of a cylinder. Pressure
+distorts the diaphragm, which changes the tension on the wire and its
+frequency. The frequency can be measured from the changing voltage
+induced as the wire vibrates in the magnetic field. Accuracy is about
+<span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.1%, or better when temperature controlled.
+Precision is 100–1000 times better than accuracy. The instrument is
+used to detect small changes in pressure at great depths. Snodgrass
+<span id="id51">[<a class="reference internal" href="chapter18.html#id120" title="F. E. Snodgrass. Precision digital tide gauge. Science, 146(3641):198–208, 1964.">119</a>]</span> obtained a precision equivalent to a change in depth of
+<span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.8 mm at a depth of 3 km.</p>
+</section>
+<section id="quartz-crystal">
+<h3><span class="section-number">6.8.3. </span>Quartz crystal<a class="headerlink" href="#quartz-crystal" title="Link to this heading">#</a></h3>
+<p>Very accurate measurements of pressure can also be made by measuring the
+natural frequency of a quartz crystal cut for minimum temperature
+dependence. The best accuracy is obtained when the temperature of the
+crystal is held constant. The accuracy is <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.015%,
+and precision is <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.001% of full-scale values.</p>
+</section>
+<section id="quartz-bourdon-gage">
+<h3><span class="section-number">6.8.4. </span>Quartz Bourdon Gage<a class="headerlink" href="#quartz-bourdon-gage" title="Link to this heading">#</a></h3>
+<p>has accuracy and stability comparable to quartz crystals. It too is used
+for long-term measurements of pressure in the deep sea.</p>
+</section>
+</section>
+<section id="measurement-of-temperature-and-salinity-with-depth">
+<h2><span class="section-number">6.9. </span>Measurement of Temperature and Salinity with Depth<a class="headerlink" href="#measurement-of-temperature-and-salinity-with-depth" title="Link to this heading">#</a></h2>
+<p>Temperature, salinity, and pressure are measured as a function of depth
+using various instruments or techniques, and density is calculated from
+the measurements.</p>
+<section id="bathythermograph-bt">
+<h3><span class="section-number">6.9.1. </span>Bathythermograph (BT)<a class="headerlink" href="#bathythermograph-bt" title="Link to this heading">#</a></h3>
+<p>was a mechanical device that measured temperature vs depth on a smoked
+glass slide. The device was widely used to map the thermal structure of
+the upper ocean, including the depth of the mixed layer before being
+replaced by the expendable bathythermograph in the 1970s.</p>
+</section>
+<section id="expendable-bathythermograph-xbt">
+<h3><span class="section-number">6.9.2. </span>Expendable Bathythermograph (XBT)<a class="headerlink" href="#expendable-bathythermograph-xbt" title="Link to this heading">#</a></h3>
+<p>is an electronic device that measures temperature vs depth using a
+thermistor on a free-falling streamlined weight. The thermistor is
+connected to an ohm-meter on the ship by a thin copper wire that is
+spooled out from the sinking weight and from the moving ship. The
+<span class="small">XBT</span> is now the most widely used instrument for measuring
+the thermal structure of the upper ocean. Approximately 65,000 are used
+each year.</p>
+<p>The streamlined weight falls through the water at a constant velocity.
+So depth can be calculated from fall time with an accuracy of
+<span class="math notranslate nohighlight">\(\pm\)</span><!-- -->2%. Temperature accuracy is
+<span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.1. And, vertical resolution is typically 65 cm.
+Probes reach to depths of 200 m to 1830 m depending on model.</p>
+</section>
+<section id="nansen-bottles">
+<h3><span class="section-number">6.9.3. </span>Nansen Bottles<a class="headerlink" href="#nansen-bottles" title="Link to this heading">#</a></h3>
+<p>Nansen Bottles (<a class="reference internal" href="#fig6-16"><span class="std std-numref">Fig. 6.16</span></a>) were deployed from ships stopped at hydrographic stations.
+<em>Hydrographic stations</em> are places where oceanographers measure water
+properties from the surface to some depth, or to the bottom, using
+instruments lowered from a ship. Usually 20 bottles were attached at
+intervals of a few tens to hundreds of meters to a wire lowered over the
+side of the ship. The distribution with depth was selected so that most
+bottles are in the upper layers of the water column where the rate of
+change of temperature in the vertical is greatest. A protected reversing
+thermometer for measuring temperature was attached to each bottle along
+with an unprotected reversing thermometer for measuring depth. The
+bottle contains a tube with valves on each end to collect sea water at
+depth. Salinity was determined by laboratory analysis of water sample
+collected at depth.</p>
+<figure class="align-default" id="fig6-16">
+<a class="reference internal image-reference" href="../_images/Fig6-16.svg"><img alt="../_images/Fig6-16.svg" src="../_images/Fig6-16.svg" style="height: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.16 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Left</span></code> A CTD ready to be lowered over the side of a ship. From Davis <span id="id52">[<a class="reference internal" href="chapter18.html#id121" title="R. A. Davis. Oceanography: An Introduction to the Marine Environment. Wm. C. Brown Publishers, Dubuque, 1987.">120</a>]</span>.
+<code class="docutils literal notranslate"><span class="pre">Right</span></code> Nansen water bottles before (I), during (II), and after (III)
+reversing. Both instruments are shown at close to the same scale. After
+Defant (<span id="id53">[<a class="reference internal" href="chapter18.html#id122" title="A. Defant. Physical Oceanography. Macmillan Company, New York, 1961.">121</a>]</span>: 33).</span><a class="headerlink" href="#fig6-16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>After bottles had been attached to the wire and all had been lowered to
+their selected depths, a lead weight was dropped down the wire. The
+weight tripped a mechanism on each bottle, and the bottle flipped over,
+reversing the thermometers, shutting the valves and trapping water in
+the tube, and releasing another weight. When all bottles had been
+tripped, the string of bottles was recovered. The deployment and
+retrieval typically took several hours.</p>
+</section>
+<section id="ctd">
+<h3><span class="section-number">6.9.4. </span>CTD<a class="headerlink" href="#ctd" title="Link to this heading">#</a></h3>
+<p>Mechanical instruments on Nansen bottles were replaced beginning in the
+1960s by an electronic instrument, called a <span class="small">CTD</span>, that
+measured conductivity, temperature, and depth (<a class="reference internal" href="#fig6-16"><span class="std std-numref">Fig. 6.16</span></a>). The
+measurements are recorded in digital form either within the instrument
+as it is lowered from a ship or on the ship. Temperature is usually
+measured by a thermistor. Conductivity is measured by a conductivity
+cell. Pressure is measured by a quartz crystal. Modern instruments have
+accuracy summarized in <a class="reference internal" href="#table6-2"><span class="std std-numref">Table 6.2</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="table6-2">
+<caption><span class="caption-number">Table 6.2 </span><span class="caption-text">Summary of Measurement Accuracy</span><a class="headerlink" href="#table6-2" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Best Accuracy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Temperature</p></td>
+<td><p>42°C</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm\)</span> 0.001°C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Salinity</p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm\)</span> 0.02 by titration and <span class="math notranslate nohighlight">\(\pm\)</span> 0.005 by conductivity</p></td>
+</tr>
+<tr class="row-even"><td><p>Pressure</p></td>
+<td><p>10,00 dbar</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm\)</span> 0.65 dbar</p></td>
+</tr>
+<tr class="row-odd"><td><p>Density</p></td>
+<td><p>2 kg/m³</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm\)</span> 0.005 kg/m³</p></td>
+</tr>
+<tr class="row-even"><td><p>Equation of State</p></td>
+<td></td>
+<td><p><span class="math notranslate nohighlight">\(\pm\)</span> 0.005 kg/m³</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ctd-on-drifters">
+<h3><span class="section-number">6.9.5. </span>CTD on Drifters<a class="headerlink" href="#ctd-on-drifters" title="Link to this heading">#</a></h3>
+<p>Perhaps the most common source of temperature and salinity as a function
+of depth in the upper two kilometers of the ocean is the set of
+profiling <span class="small">ARGO</span> floats described in <a class="reference internal" href="chapter10.html#ch10-8"><span class="std std-ref">§10.8</span></a>. The floats drift
+at a depth of 1 km, sink to 2 km, then rise to the surface. They profile
+temperature and salinity while changing depth using instruments very
+similar to those on a <span class="small">CTD</span>. Data are sent to shore via the
+Argos system on the <span class="small">NOAA</span> polar-orbiting satellites. In
+2006, nearly 2500 floats were producing one profile every 10 days
+throughout most of the ocean. The accuracy of data from the floats is
+0.005°C for temperature, 5 decibars for pressure, and 0.01 for salinity
+(Riser et al. <span id="id54">[<a class="reference internal" href="chapter18.html#id123" title="S. C. Riser, L. Ren, and others. Salinity in argo. Oceanography, 21(1):56–67, 2008.">122</a>]</span>).</p>
+</section>
+<section id="data-sets">
+<h3><span class="section-number">6.9.6. </span>Data Sets<a class="headerlink" href="#data-sets" title="Link to this heading">#</a></h3>
+<p>Data are in the Marine Environment and Security For European Area
+<span class="small">MERSEA</span> Enact/Ensembles (<span class="small">EN3</span> Quality
+Controlled in situ Ocean Temperature and Salinity Profiles database. As
+of 2008 the database contained about one million <span class="small">XBT</span>
+profiles, 700,000 <span class="small">CTD</span> profiles, 60,000 <span class="small">ARGOS</span>
+profiles, 1,100,000 Nansen bottle data of high quality in the upper 700
+m of the ocean (Domingues et al. <span id="id55">[<a class="reference internal" href="chapter18.html#id124" title="C. M. Domingues, J. A. Church, and others. Improved estimates of upper-ocean warming and multi-decadal sea-level rise. Nature, 453(7198):1090–1093, 2008.">123</a>]</span>).</p>
+</section>
+</section>
+<section id="light-in-the-ocean-and-absorption-of-light">
+<h2><span class="section-number">6.10. </span>Light in the Ocean and Absorption of Light<a class="headerlink" href="#light-in-the-ocean-and-absorption-of-light" title="Link to this heading">#</a></h2>
+<p>Sunlight in the ocean is important for many reasons: It heats sea water,
+warming the surface layers; it provides energy required by
+phytoplankton; it is used for navigation by animals near the surface;
+and reflected subsurface light is used for mapping chlorophyll
+concentration from space.</p>
+<p>Light in the ocean travels at a velocity equal to the velocity of light
+in a vacuum divided by the index of refraction (<span class="math notranslate nohighlight">\(n\)</span>), which is typically
+<span class="math notranslate nohighlight">\(n = 1.33\)</span>. Hence the velocity in water is about <span class="math notranslate nohighlight">\(2.25 \times 10^8\)</span> m/s. Because light travels slower in water than in air,
+some light is reflected at the sea surface. For light shining straight
+down on the sea, the reflectivity is <span class="math notranslate nohighlight">\((n - 1)^2 /(n + 1)^2\)</span>. For
+seawater, the reflectivity is <span class="math notranslate nohighlight">\(0.02 = 2\)</span>%. Hence most sunlight reaching
+the sea surface is transmitted into the sea, little is reflected. This
+means that sunlight incident on the ocean in the tropics is mostly
+absorbed below the sea surface.</p>
+<p>The rate at which sunlight is attenuated determines the depth which is
+lighted and heated by the sun. Attenuation is due to absorption by
+pigments and scattering by molecules and particles. Attenuation depends
+on wavelength. Blue light is absorbed least, red light is absorbed most
+strongly. Attenuation per unit distance is proportional to the radiance
+or the irradiance of light:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-13">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-eq6-13" title="Link to this equation">#</a></span>\[\frac{dI}{dx} = -c \, I\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the distance along beam, <span class="math notranslate nohighlight">\(c\)</span> is an attenuation coefficient (<a class="reference internal" href="#fig6-17"><span class="std std-numref">Fig. 6.17</span></a>),
+and <span class="math notranslate nohighlight">\(I\)</span> is irradiance or radiance.</p>
+<figure class="align-default" id="fig6-17">
+<a class="reference internal image-reference" href="../_images/Fig6-17.svg"><img alt="../_images/Fig6-17.svg" src="../_images/Fig6-17.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.17 </span><span class="caption-text">Absorption coefficient for pure water as a function of wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> of the
+radiation. Redrawn from Morel (<span id="id56">[<a class="reference internal" href="chapter18.html#id125" title="A. Morel. Optical properties of pure water and pure seawater. In N. G. Jerlov and E. S. Nielson, editors, Optical Aspects of Oceanography, pages 1–24. Academic Press, 1974.">124</a>]</span>: 18, 19).
+See Morel <span id="id57">[<a class="reference internal" href="chapter18.html#id125" title="A. Morel. Optical properties of pure water and pure seawater. In N. G. Jerlov and E. S. Nielson, editors, Optical Aspects of Oceanography, pages 1–24. Academic Press, 1974.">124</a>]</span> for references.</span><a class="headerlink" href="#fig6-17" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em>Radiance</em> is the power per unit area per solid angle. It is useful for
+describing the energy in a beam of light coming from a particular
+direction. Sometimes we want to know how much light reaches some depth
+in the ocean regardless of which direction it is going. In this case we
+use <em>irradiance</em>, which is the power per unit area of surface.</p>
+<p>If the absorption coefficient is constant, the light intensity decreases
+exponentially with distance.</p>
+<div class="math notranslate nohighlight" id="equation-eq6-14">
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-eq6-14" title="Link to this equation">#</a></span>\[I_2 = I_1 \: \exp(-cx)\]</div>
+<p>where <span class="math notranslate nohighlight">\(I_1\)</span> is the original radiance or irradiance of light, and <span class="math notranslate nohighlight">\(I_2\)</span> is the radiance
+or irradiance of light after absorption.</p>
+<p><em>Clarity of Ocean Water</em> Sea water in the middle of the ocean is very
+clear—clearer than distilled water. These waters are a very deep,
+cobalt, blue—almost black. Thus the strong current which flows
+northward offshore of Japan carrying very clear water from the central
+Pacific into higher latitudes is known as the Black Current, or Kuroshio
+in Japanese. The clearest ocean water is called Type I waters by Jerlov
+(<a class="reference internal" href="#fig6-18"><span class="std std-numref">Fig. 6.18</span></a>). The water is so clear that 10% of the light transmitted
+below the sea surface reaches a depth of 90 m.</p>
+<figure class="align-default" id="fig6-18">
+<a class="reference internal image-reference" href="../_images/Fig6-18.svg"><img alt="../_images/Fig6-18.svg" src="../_images/Fig6-18.svg" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.18 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Left</span></code> Transmittance of daylight in the ocean in % per meter as a function of wavelength. I:
+extremely pure ocean water; II: turbid tropical-subtropical water; III:
+mid-latitude water; 1-9: coastal waters of increasing turbidity.
+Incidence angle is 90for the first three cases, 45for the other cases.
+<code class="docutils literal notranslate"><span class="pre">Right</span></code> Percentage of 465 nm light reaching indicated depths for the
+same types of water. After Jerlov <span id="id58">[<a class="reference internal" href="chapter18.html#id126" title="N. G. Jerlov. Marine Optics. Elsevier Scientific Publishing Company, Amsterdam, 1976.">125</a>]</span>.</span><a class="headerlink" href="#fig6-18" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the subtropics and mid-latitudes closer to the coast, sea water
+contains more phytoplankton than the very clear central-ocean waters.
+Chlorophyll pigments in phytoplankton absorb light, and the plants
+themselves scatter light. Together, the processes change the color of
+the ocean as seen by observer looking downward into the sea. Very
+productive waters, those with high concentrations of phytoplankton,
+appear blue-green or green (<a class="reference internal" href="#fig6-19"><span class="std std-numref">Fig. 6.19</span></a>). On clear days the color can be
+observed from space. This allows ocean-color scanners, such as those on
+SeaWiFS, to map the distribution of phytoplankton over large areas.</p>
+<p>As the concentration of phytoplankton increases, the depth where
+sunlight is absorbed in the ocean decreases. The more turbid tropical
+and mid-latitude waters are classified as type II and III waters by
+Jerlov (<a class="reference internal" href="#fig6-18"><span class="std std-numref">Fig. 6.18</span></a>). Thus the depth where sunlight warms the water
+depends on the productivity of the waters. This complicates the
+calculation of solar heating of the mixed layer.</p>
+<p>Coastal waters are much less clear than waters offshore. These are the
+type 1–9 waters shown in <a class="reference internal" href="#fig6-18"><span class="std std-numref">Fig. 6.18</span></a>. They contain pigments from land,
+sometimes called gelbstoffe, which just means yellow stuff, muddy water
+from rivers, and mud stirred up by waves in shallow water. Very little
+light penetrates more than a few meters into these waters.</p>
+<figure class="align-default" id="fig6-19">
+<a class="reference internal image-reference" href="../_images/Fig6-19.svg"><img alt="../_images/Fig6-19.svg" src="../_images/Fig6-19.svg" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.19 </span><span class="caption-text">Spectral reflectance of sea water observed from an aircraft flying at 305 m over
+waters of different colors in the Northwest Atlantic. The numerical
+values are the average chlorophyll concentration in the euphotic
+(sunlit) zone in units of mg/m<span class="math notranslate nohighlight">\(^3\)</span>. The reflectance is for vertically
+polarized light observed at Brewster’s angle of 53. This angle minimizes
+reflected skylight and emphasizes the light from below the sea surface.
+After Clarke, Ewing, and Lorenzen <span id="id59">[<a class="reference internal" href="chapter18.html#id127" title="G. L. Clarke, G. C. Ewing, and C. J. Lorenzen. Spectra of backscattered light from the sea obtained from aircraft as a measure of chlorophyll concentration. Science, 167:1119–1121, 1970.">126</a>]</span>.</span><a class="headerlink" href="#fig6-19" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="measurement-of-chlorophyll-from-space">
+<h3><span class="section-number">6.10.1. </span>Measurement of Chlorophyll from Space<a class="headerlink" href="#measurement-of-chlorophyll-from-space" title="Link to this heading">#</a></h3>
+<p>The color of the ocean, and hence the chlorophyll concentration in the
+upper layers of the ocean has been measured by the Coastal Zone Color
+Scanner carried on the Nimbus-7 satellite launched in 1978, by the
+Sea-viewing Wide Field-of-view Sensor (SeaWiFS) carried on SeaStar,
+launched in 1997, and on the Moderate Resolution Imaging Spectrometer
+(<span class="small">MODIS</span>) carried on the Terra and Aqua satellites launched
+in 1999 and 2002 respectively. <span class="small">MODUS</span> measures upwelling
+radiance in 36 wavelength bands between 405 nm and 14,385 nm.</p>
+<p>Most of the upwelling radiance seen by the satellite comes from the
+atmosphere. Only about 10% comes from the sea surface. Both air
+molecules and aerosols scatter light, and very accurate techniques have
+been developed to remove the influence of the atmosphere.</p>
+<p>The total radiance <span class="math notranslate nohighlight">\(L_t\)</span> received by an instrument in space is:</p>
+<div class="math notranslate nohighlight" id="equation-eq6-15">
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-eq6-15" title="Link to this equation">#</a></span>\[L_t(\lambda_i) = t(\lambda_i)L_W(\lambda_i)+L_r(\lambda_i)+L_a(\lambda_i)\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda_i\)</span> is the wavelength of the radiation in the band
+measured by the instrument, <span class="math notranslate nohighlight">\(L_W\)</span> is the radiance leaving the sea
+surface, <span class="math notranslate nohighlight">\(L_r\)</span> is radiance scattered by molecules, called the Rayleigh
+radiance, <span class="math notranslate nohighlight">\(L_a\)</span> is radiance scattered from aerosols, and <span class="math notranslate nohighlight">\(t\)</span> is the
+transmittance of the atmosphere. <span class="math notranslate nohighlight">\(L_r\)</span> can be calculated from theory,
+and <span class="math notranslate nohighlight">\(L_a\)</span> can be calculated from the amount of red light received at the
+instrument because very little red light is reflected from the water.
+Therefore <span class="math notranslate nohighlight">\(L_W\)</span> can be calculated from the radiance measured at the
+spacecraft.</p>
+<p>Chlorophyll concentration in the water column is calculated from the
+ratio of <span class="math notranslate nohighlight">\(L_W\)</span> at two frequencies. Using data from the Coastal Zone
+Color Scanner, Gordon et al. <span id="id60">[<a class="reference internal" href="chapter18.html#id128" title="H. R. Gordon, D. K. Clark, J. W. Brown, O. B. Brown, R. H. Evans, and W. W. Broenkow. Phytoplankton pigment concentrations in the middle atlantic bight: comparison of ship determinations and CZCS estimates. Applied Physics, 22(1):20–36, 1983.">127</a>]</span> proposed</p>
+<div class="math notranslate nohighlight" id="equation-eq6-16">
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-eq6-16" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+(a) &amp; \ C_{13} = &amp; 1.1298 \left[ \frac{L_W(443)}{L_W(550)}\right]^{-1.71}\\
+(b) &amp; \ C_{23} = &amp; 3.3266 \left[ \frac{L_W(520)}{L_W(550)}\right]^{-2.40}
+\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is the chlorophyll concentration in the surface layers in mg
+pigment/m<span class="math notranslate nohighlight">\(^3\)</span>, and <span class="math notranslate nohighlight">\(L_W(443), L_W(520)\)</span>, and <span class="math notranslate nohighlight">\(L_W(550)\)</span> is the radiance at
+wavelengths of 443, 520, and 550 nm. <span class="math notranslate nohighlight">\(C_{13}\)</span> is used when <span class="math notranslate nohighlight">\(C_{13} \le 1.5\)</span> mg/m<span class="math notranslate nohighlight">\(^3\)</span>,
+otherwise <span class="math notranslate nohighlight">\(C_{23}\)</span> is used.</p>
+<p>The technique is used to calculate chlorophyll concentration within a
+factor of 50% over a wide range of concentrations from 0.01 to 10
+mg/m<span class="math notranslate nohighlight">\(^3\)</span>.</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">6.11. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Density in the ocean is determined by temperature, salinity, and
+pressure.</p></li>
+<li><p>Density changes in the ocean are very small, and studies of water
+masses and currents require density with an accuracy of 10 parts per
+million.</p></li>
+<li><p>Density is not measured, it is calculated from measurements of
+temperature, salinity, and pressure using the equation of state of
+sea water.</p></li>
+<li><p>Accurate calculations of density require accurate definitions of
+temperature and salinity and an accurate equation of state.</p></li>
+<li><p>Salinity is difficult to define and to measure. To avoid the
+difficulty, oceanographers use conductivity instead of salinity.
+They measure conductivity and calculate density from temperature,
+conductivity, and pressure.</p></li>
+<li><p>A mixed layer of constant temperature and salinity is usually found
+in the top 1–100 meters of the ocean. The depth is determined by
+wind speed and the flux of heat through the sea surface.</p></li>
+<li><p>To compare temperature and density of water masses at different
+depths in the ocean, oceanographers use potential temperature and
+potential density which remove most of the influence of pressure on
+density.</p></li>
+<li><p>Water parcels below the mixed layer move along neutral surfaces.</p></li>
+<li><p>Surface temperature of the ocean was usually measured at sea using
+bucket or injection temperatures. Global maps of temperature combine
+these observations with observations of infrared radiance from the
+sea surface measured by an <span class="smallcaps">avhrr</span> in space.</p></li>
+<li><p>Temperature and conductivity are usually measured digitally as a
+function of pressure using a <span class="smallcaps">ctd</span>. Before 1960–1970
+the salinity and temperature were measured at roughly 20 depths
+using Nansen bottles lowered on a line from a ship. The bottles
+carried reversing thermometers which recorded temperature and depth
+and they returned a water sample from that depth which was used to
+determine salinity on board the ship.</p></li>
+<li><p>Light is rapidly absorbed in the ocean. 95% of sunlight is absorbed
+in the upper 100 m of the clearest sea water. Sunlight rarely
+penetrates deeper than a few meters in turbid coastal waters.</p></li>
+<li><p>Phytoplankton change the color of sea water, and the change in color
+can be observed from space. Water color is used to measure
+phytoplankton concentration from space.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>The Oceanic Heat Budget</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Some Mathematics, The Equations of Motion</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-salinity">6.1. Definition of Salinity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-definition">6.1.1. A Simple Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-more-complete-definition">6.1.2. A More Complete Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salinity-based-on-chlorinity">6.1.3. Salinity Based on Chlorinity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salinity-based-on-conductivity">6.1.4. Salinity Based on Conductivity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-salinity-scale-of-1978">6.1.5. Practical Salinity Scale of 1978</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">6.1.6. Comments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-seawater-and-salinity">6.1.7. Reference Seawater and Salinity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-temperature">6.2. Definition of Temperature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographical-distribution-of-surface-temperature-and-salinity">6.3. Geographical Distribution of Surface Temperature and Salinity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oceanic-mixed-layer-and-thermocline">6.4. The Oceanic Mixed Layer and Thermocline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#density-potential-temperature-and-neutral-density">6.5. Density, Potential Temperature, and Neutral Density</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-sigma-t">6.5.1. Density and sigma-t</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-temperature">6.5.2. Potential Temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-density">6.5.3. Potential Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutral-surfaces-and-density">6.5.4. Neutral Surfaces and Density</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-state-of-sea-water">6.5.5. Equation of state of sea water</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-of-temperature-salinity-and-density">6.5.6. Accuracy of Temperature, Salinity, and Density</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-temperature">6.6. Measurement of Temperature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mercury-thermometer">6.6.1. Mercury Thermometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#platinum-resistance-thermometer">6.6.2. Platinum Resistance Thermometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermistor">6.6.3. Thermistor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bucket-temperatures">6.6.4. Bucket temperatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ship-injection-temperature">6.6.5. Ship Injection Temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-very-high-resolution-radiometer">6.6.6. Advanced Very High Resolution Radiometer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-maps-of-sea-surface-temperature">6.6.7. Global Maps of Sea-Surface Temperature</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-conductivity-or-salinity">6.7. Measurement of Conductivity or Salinity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-pressure">6.8. Measurement of Pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strain-gage">6.8.1. Strain Gage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibratron">6.8.2. Vibratron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartz-crystal">6.8.3. Quartz crystal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quartz-bourdon-gage">6.8.4. Quartz Bourdon Gage</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-temperature-and-salinity-with-depth">6.9. Measurement of Temperature and Salinity with Depth</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bathythermograph-bt">6.9.1. Bathythermograph (BT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expendable-bathythermograph-xbt">6.9.2. Expendable Bathythermograph (XBT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nansen-bottles">6.9.3. Nansen Bottles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ctd">6.9.4. CTD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ctd-on-drifters">6.9.5. CTD on Drifters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">6.9.6. Data Sets</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-in-the-ocean-and-absorption-of-light">6.10. Light in the Ocean and Absorption of Light</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-of-chlorophyll-from-space">6.10.1. Measurement of Chlorophyll from Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">6.11. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

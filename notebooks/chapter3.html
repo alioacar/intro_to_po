@@ -1,0 +1,1126 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. The Physical Setting &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter3';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Atmospheric Influences" href="chapter4.html" />
+    <link rel="prev" title="2. The Historical Setting" href="chapter2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Physical Setting</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-and-seas">3.1. Ocean and Seas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions-of-the-ocean">3.2. Dimensions of the ocean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-floor-features">3.3. Sea-Floor Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-the-depth-of-the-ocean">3.4. Measuring the Depth of the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echo-sounders">3.4.1. Echo Sounders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-altimetry">3.4.2. Satellite Altimetry</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-floor-charts-and-data-sets">3.5. Sea Floor Charts and Data Sets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-in-the-ocean">3.6. Sound in the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-speed">3.6.1. Sound Speed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-of-sound">3.6.2. Absorption of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-sound">3.6.3. Use of Sound</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">3.7. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-physical-setting">
+<h1><span class="section-number">3. </span>The Physical Setting<a class="headerlink" href="#the-physical-setting" title="Link to this heading">#</a></h1>
+<p>Earth is an oblate ellipsoid, an ellipse rotated about its minor axis,
+with an equatorial radius of <span class="math notranslate nohighlight">\(R_e = 6,378.1349\)</span> km <span id="id1">[<a class="reference internal" href="chapter18.html#id21" title="G. B. West. Mean earth ellipsoid determined from seasat 1 altimetric observations. Journal of Geophysical Research, 87(B7):5538–5540, 1982.">20</a>]</span> slightly
+greater than the polar radius of <span class="math notranslate nohighlight">\(R_p = 6,356.7497\)</span> km. The small equatorial bulge is due to earth’s rotation.</p>
+<p>Distances on earth are measured in many different units, the most common
+are degrees of latitude or longitude, meters, miles, and nautical miles.
+<em>Latitude</em> is the angle between the local vertical and the equatorial
+plane. A meridian is the intersection at earth’s surface of a plane
+perpendicular to the equatorial plane and passing through earth’s axis
+of rotation. <em>Longitude</em> is the angle between the standard meridian and
+any other meridian, where the standard meridian is the one that passes
+through a point at the Royal Observatory at Greenwich, England. Thus
+longitude is measured east or west of Greenwich.</p>
+<p>A degree of latitude is not the same length as a degree of longitude
+except at the equator. Latitude is measured along great circles with
+radius <span class="math notranslate nohighlight">\(R\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is the mean radius of earth. Longitude is measured
+along circles with radius <span class="math notranslate nohighlight">\(R \cos \varphi\)</span>, where <span class="math notranslate nohighlight">\(\varphi\)</span> is latitude.
+Thus <span class="math notranslate nohighlight">\(1^{\circ}\)</span> latitude <span class="math notranslate nohighlight">\(= 111\)</span> km, and <span class="math notranslate nohighlight">\(1^{\circ}\)</span> longitude
+<span class="math notranslate nohighlight">\(= 111 \cos \varphi\)</span> km.</p>
+<p>Because distance in degrees of longitude is not constant, oceanographers
+measure distance on maps using degrees of latitude.</p>
+<p>Nautical miles and meters are connected historically to the size of
+earth. Gabriel Mouton proposed in 1670 a decimal system of measurement
+based on the length of an arc that is one minute of a great circle of
+earth. This eventually became the nautical mile. Mouton’s decimal system
+eventually became the metric system based on a different unit of length,
+the meter, which was originally intended to be one ten-millionth the
+distance from the Equator to the pole along the Paris meridian. Although
+the tie between nautical miles, meters, and earth’s radius was soon
+abandoned because it was not practical, the approximations are very
+good. For example, earth’s polar circumference is approximately 40,008
+km. Therefore one ten-millionth of a quadrant is 1.0002 m. Similarly, a
+nautical mile should be 1.8522 km, which is very close to the official
+definition of the <em>international nautical mile</em>: 1 nm <span class="math notranslate nohighlight">\(\equiv\)</span> 1.8520
+km.</p>
+<section id="ocean-and-seas">
+<h2><span class="section-number">3.1. </span>Ocean and Seas<a class="headerlink" href="#ocean-and-seas" title="Link to this heading">#</a></h2>
+<p>There is only one ocean. It is divided into three named parts by
+international agreement: the Atlantic, Pacific, and Indian ocean
+(International Hydrographic Bureau, 1953). Seas, which are part of the
+ocean, are defined in several ways. I consider two.</p>
+<p><strong>The Atlantic Ocean</strong> extends northward from Antarctica and includes
+all of the Arctic Sea, the European Mediterranean, and the American
+Mediterranean more commonly known as the Caribbean sea <a class="reference internal" href="#fig3-1"><span class="std std-numref">Fig. 3.1</span></a>. The
+boundary between the Atlantic and Indian Ocean is the meridian of Cape
+Agulhas (20°E). The boundary between the Atlantic and Pacific is the
+line forming the shortest distance from Cape Horn to the South Shetland
+Islands. In the north, the Arctic Sea is part of the Atlantic Ocean, and
+the Bering Strait is the boundary between the Atlantic and Pacific.</p>
+<figure class="align-default" id="fig3-1">
+<a class="reference internal image-reference" href="../_images/Fig3-1.svg"><img alt="../_images/Fig3-1.svg" src="../_images/Fig3-1.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">The Atlantic Ocean viewed with an Eckert VI
+equal-area projection. Depths, in meters, are from the
+<span class="smallcaps">ETOPO</span> 30<span class="math notranslate nohighlight">\('\)</span> data set. The 200 m contour outlines
+continental shelves.</span><a class="headerlink" href="#fig3-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>The Pacific Ocean</strong> extends northward from Antarctica to the Bering
+Strait (<a class="reference internal" href="#fig3-2"><span class="std std-numref">Fig. 3.2</span></a>). The boundary between the Pacific and Indian Ocean
+follows the line from the Malay Peninsula through Sumatra, Java, Timor,
+Australia at Cape Londonderry, and Tasmania. From Tasmania to Antarctica
+it is the meridian of South East Cape on Tasmania 147E.</p>
+<figure class="align-default" id="fig3-2">
+<a class="reference internal image-reference" href="../_images/Fig3-2.svg"><img alt="../_images/Fig3-2.svg" src="../_images/Fig3-2.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">The Pacific Ocean viewed with an Eckert VI equal-area projection. Depths, in meters, are from the
+<span class="smallcaps">ETOPO</span> 30<span class="math notranslate nohighlight">\('\)</span> data set. The 200 m contour outlines
+continental shelves.</span><a class="headerlink" href="#fig3-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>The Indian Ocean</strong> extends from Antarctica to the continent of Asia
+including the Red Sea and Persian Gulf (<a class="reference internal" href="#fig3-3"><span class="std std-numref">Fig. 3.3</span></a>). Some authors use
+the name Southern Ocean to describe the ocean surrounding Antarctica.</p>
+<figure class="align-default" id="fig3-3">
+<a class="reference internal image-reference" href="../_images/Fig3-3.svg"><img alt="../_images/Fig3-3.svg" src="../_images/Fig3-3.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">The Indian Ocean viewed with an Eckert VI equal-area projection. Depths, in meters, are from the
+<span class="smallcaps">ETOPO</span> 30<span class="math notranslate nohighlight">\('\)</span> data set. The 200 m contour outlines
+continental shelves.</span><a class="headerlink" href="#fig3-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Mediterranean Seas</strong> are mostly surrounded by land. By this
+definition, the Arctic and Caribbean Seas are both Mediterranean Seas,
+the Arctic Mediterranean and the Caribbean Mediterranean.</p>
+<p><strong>Marginal Seas</strong> are defined by only an indentation in the coast. The
+Arabian Sea and South China Sea are marginal seas.</p>
+</section>
+<section id="dimensions-of-the-ocean">
+<h2><span class="section-number">3.2. </span>Dimensions of the ocean<a class="headerlink" href="#dimensions-of-the-ocean" title="Link to this heading">#</a></h2>
+<p>The ocean and seas cover 70.8% of the surface of earth, which amounts to
+361,254,000 km<span class="math notranslate nohighlight">\(^2\)</span>. The areas of the named parts vary considerably
+(<a class="reference internal" href="#table3-1"><span class="std std-numref">Table 3.1</span></a>).</p>
+<div class="pst-scrollable-table-container"><table class="table" id="table3-1" style="width: 50%">
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">Surface Area of the ocean</span><a class="headerlink" href="#table3-1" title="Link to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Pacific Ocean</p></td>
+<td><p><span class="math notranslate nohighlight">\(181.34 * 10^6 \ km^2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Atlantic Ocean</p></td>
+<td><p><span class="math notranslate nohighlight">\(106.57 * 10^6 \ km^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Indian Ocean</p></td>
+<td><p><span class="math notranslate nohighlight">\(74.12 * 10^6 \ km^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Oceanic dimensions range from around 1500 km for the minimum width of
+the Atlantic to more than 13,000 km for the north-south extent of the
+Atlantic and the width of the Pacific. Typical depths are only 3–4 km.
+So horizontal dimensions of ocean basins are 1,000 times greater than
+the vertical dimension. A scale model of the Pacific, the size of an
+<span class="math notranslate nohighlight">\(8.5 \times 11\)</span> in sheet of paper, would have dimensions similar to the
+paper: a width of 10,000 km scales to 10 in, and a depth of 3 km scales
+to 0.003 in, the typical thickness of a piece of paper.</p>
+<p>Because the ocean is so thin, cross-sectional plots of ocean basins must
+have a greatly exaggerated vertical scale to be useful. Typical plots
+have a vertical scale that is 200 times the horizontal scale (<a class="reference internal" href="#fig3-4"><span class="std std-numref">Fig. 3.4</span></a>).
+This exaggeration distorts our view of the ocean. The edges of the
+ocean basins, the continental slopes, are not steep cliffs as shown in
+the figure at 41°W and 12°E. Rather, they are gentle slopes dropping down
+1 meter for every 20 meters in the horizontal.</p>
+<figure class="align-default" id="fig3-4">
+<a class="reference internal image-reference" href="../_images/Fig3-4.svg"><img alt="../_images/Fig3-4.svg" src="../_images/Fig3-4.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Cross-section of the south Atlantic along 25°S showing the continental shelf offshore of South America, a
+seamount near 35°W, the mid-Atlantic Ridge near 14°W, the Walvis Ridge
+near 6°E, and the narrow continental shelf off South Africa. <strong>Upper</strong>
+Vertical exaggeration of 180:1. <strong>Lower</strong> Vertical exaggeration of 30:1.
+If shown with true aspect ratio, the plot would be the thickness of the
+line at the sea surface in the lower plot.</span><a class="headerlink" href="#fig3-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The small ratio of depth to width of the ocean basins is very important
+for understanding ocean currents. Vertical velocities must be much
+smaller than horizontal velocities. Even over distances of a few hundred
+kilometers, the vertical velocity must be less than 1% of the horizontal
+velocity. I will use this information later to simplify the equations of
+motion.</p>
+<p>The relatively small vertical velocities have great influence on
+turbulence. Three dimensional turbulence is fundamentally different than
+two-dimensional turbulence. In two dimensions, vortex lines must always
+be vertical, and there can be little vortex stretching. In three
+dimensions, vortex stretching plays a fundamental role in turbulence.</p>
+</section>
+<section id="sea-floor-features">
+<h2><span class="section-number">3.3. </span>Sea-Floor Features<a class="headerlink" href="#sea-floor-features" title="Link to this heading">#</a></h2>
+<p>Earth’s rocky surface is divided into two types: oceanic, with a thin
+dense crust about 10 km thick, and continental, with a thick light crust
+about 40 km thick. The deep, lighter continental crust floats higher on
+the denser mantle than does the oceanic crust, and the mean height of
+the crust relative to sea level has two distinct values: continents have
+a mean elevation of 1100 m, the ocean has a mean depth of -3400 m
+(<a class="reference internal" href="#fig3-5"><span class="std std-numref">Fig. 3.5</span></a>).</p>
+<figure class="align-default" id="fig3-5">
+<a class="reference internal image-reference" href="../_images/Fig3-5.svg"><img alt="../_images/Fig3-5.svg" src="../_images/Fig3-5.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Histogram of height of land and depth of the sea as percentage of area of earth in 100 m
+intervals, showing the clear distinction between continents and sea
+floor. The cumulative frequency curve is the integral of the histogram.
+The curves are calculated from the <span class="smallcaps">ETOPO</span> 2 data set by
+George Sharman of the <span class="smallcaps">NOAA</span> National Geophysical Data
+Center.</span><a class="headerlink" href="#fig3-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The volume of the water in the ocean exceeds the volume of the ocean
+basins, and some water spills over on to the low lying areas of the
+continents. These shallow seas are the continental shelves. Some, such
+as the South China Sea, are more than 1100 km wide. Most are relatively
+shallow, with typical depths of 50–100 m. A few of the more important
+shelves are: the East China Sea, the Bering Sea, the North Sea, the
+Grand Banks, the Patagonian Shelf, the Arafura Sea and Gulf of
+Carpentaria, and the Siberian Shelf. The shallow seas help dissipate
+tides, they are often areas of high biological productivity, and they
+are usually included in the exclusive economic zone of adjacent
+countries.</p>
+<figure class="align-default" id="fig3-6">
+<a class="reference internal image-reference" href="../_images/Fig3-6.svg"><img alt="../_images/Fig3-6.svg" src="../_images/Fig3-6.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Schematic section through the ocean showing principal features of the sea floor. Note that the slope of the sea
+floor is greatly exaggerated in the figure.</span><a class="headerlink" href="#fig3-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The crust is broken into large plates that move relative to each other.
+New crust is created at the mid-ocean ridges, and old crust is lost at
+trenches. The relative motion of crust, due to plate tectonics, produces
+the distinctive features of the sea floor sketched in <a class="reference internal" href="#fig3-6"><span class="std std-numref">Fig. 3.6</span></a>,
+including mid-ocean ridges, trenches, island arcs, and basins. The names
+of the sub-sea features have been defined by the International Hydrographic Organization <span id="id2">[<a class="reference internal" href="chapter18.html#id22" title="International Hydrographic Bureau. Limits of Oceans and Seas. Number 53 in Special Report. International Hydrographic Bureau, Monte Carlo, 3rd edition, 1953.">21</a>]</span>, and the following definitions are
+taken from Sverdrup, Johnson and Fleming <span id="id3">[<a class="reference internal" href="chapter18.html#id23" title="H. U. Sverdrup, M. W. Johnson, and R. H. Fleming. The Oceans: Their Physics, Chemistry, and General Biology. Prentice-Hall, Englewood Cliffs, New Jersey, 1942.">22</a>]</span>, Shepard <span id="id4">[<a class="reference internal" href="chapter18.html#id24" title="F. P. Shepard. Submarine Geology. Harper and Row, New York, 2nd edition, 1963.">23</a>]</span>, and Dietrich et al. <span id="id5">[<a class="reference internal" href="chapter18.html#id25" title="G. Dietrich, K. Kalle, W. Krauss, and G. Siedler. General Oceanography. John Wiley and Sons (Wiley-Interscience), New York, 2nd edition, 1980.">24</a>]</span>.</p>
+<p><em>Basins</em> are deep depressions of the sea floor of more or less circular
+or oval form.</p>
+<p><em>Canyons</em> are relatively narrow, deep furrows with steep slopes, cutting
+across the continental shelf and slope, with bottoms sloping
+continuously downward.</p>
+<p><em>Continental shelves</em> are zones adjacent to a continent (or around an
+island) and extending from the low-water line to the depth, usually
+about 120 m, where there is a marked or rather steep descent toward
+great depths. (<a class="reference internal" href="#fig3-7"><span class="std std-numref">Fig. 3.7</span></a>)</p>
+<figure class="align-default" id="fig3-7">
+<a class="reference internal image-reference" href="../_images/Fig3-7.svg"><img alt="../_images/Fig3-7.svg" src="../_images/Fig3-7.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">An example of a continental shelf, the shelf offshore of Monterey California showing the Monterey and other
+canyons. Canyons are common on shelves, often extending across the shelf
+and down the continental slope to deep water. Figure copyright Monterey
+Bay Aquarium Research Institute (<span class="smallcaps">MBARI</span>).</span><a class="headerlink" href="#fig3-7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em>Continental slopes</em> are the declivities seaward from the shelf edge
+into greater depth.</p>
+<p><em>Plains</em> are very flat surfaces found in many deep ocean basins.</p>
+<p><em>Ridges</em> are long, narrow elevations of the sea floor with steep sides
+and rough topography.</p>
+<p><em>Seamounts</em> are isolated or comparatively isolated elevations rising
+1000 m or more from the sea floor and with small summit area (<a class="reference internal" href="#fig3-8"><span class="std std-numref">Fig. 3.8</span></a>).</p>
+<figure class="align-default" id="fig3-8">
+<a class="reference internal image-reference" href="../_images/Fig3-8.svg"><img alt="../_images/Fig3-8.svg" src="../_images/Fig3-8.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.8 </span><span class="caption-text">An example of a seamount, the Wilde Guyot. A guyot is a seamount with a flat top created by wave action when the
+seamount extended above sea level. As the seamount is carried by plate
+motion, it gradually sinks deeper below sea level. The depth was
+contoured from echo sounder data collected along the ship track (thin
+straight lines) supplemented with side-scan sonar data. Depths are in
+units of 100 m. From William Sager, Texas A&amp;M University.</span><a class="headerlink" href="#fig3-8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em>Sills</em> are the low parts of the ridges separating ocean basins from one
+another or from the adjacent sea floor.</p>
+<p><em>Trenches</em> are long, narrow, and deep depressions of the sea floor, with
+relatively steep sides (<a class="reference internal" href="#fig3-9"><span class="std std-numref">Fig. 3.9</span></a>).</p>
+<figure class="align-default" id="fig3-9">
+<a class="reference internal image-reference" href="../_images/Fig3-9.svg"><img alt="../_images/Fig3-9.svg" src="../_images/Fig3-9.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">An example of a trench, the Aleutian Trench; an island arc, the Alaskan Peninsula; and a
+continental shelf, the Bering Sea. The island arc is composed of
+volcanos produced when oceanic crust carried deep into a trench melts
+and rises to the surface. <strong>Top:</strong> Map of the Aleutian region of the
+North Pacific. <strong>Bottom:</strong> Cross-section through the region.</span><a class="headerlink" href="#fig3-9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Sub-sea features strongly influences the ocean circulation. Ridges
+separate deep waters of the ocean into distinct basins. Water deeper
+than the sill between two basins cannot move from one to the other. Tens
+of thousands of seamounts are scattered throughout the ocean basins.
+They interrupt ocean currents, and produce turbulence leading to
+vertical mixing in the ocean.</p>
+</section>
+<section id="measuring-the-depth-of-the-ocean">
+<h2><span class="section-number">3.4. </span>Measuring the Depth of the Ocean<a class="headerlink" href="#measuring-the-depth-of-the-ocean" title="Link to this heading">#</a></h2>
+<p>The depth of the ocean is usually measured two ways: 1) using acoustic
+echo-sounders on ships, or 2) using data from satellite altimeters.</p>
+<section id="echo-sounders">
+<h3><span class="section-number">3.4.1. </span>Echo Sounders<a class="headerlink" href="#echo-sounders" title="Link to this heading">#</a></h3>
+<p>Most maps of the ocean are based on measurements made by echo sounders.
+The instrument transmits a burst of 10–30 kHz sound and listens for the
+echo from the sea floor. The time interval between transmission of the
+pulse and reception of the echo, when multiplied by the velocity of
+sound, gives twice the depth of the ocean (<a class="reference internal" href="#fig3-10"><span class="std std-numref">Fig. 3.10</span></a>).</p>
+<figure class="align-default" id="fig3-10">
+<a class="reference internal image-reference" href="../_images/Fig3-10.svg"><img alt="../_images/Fig3-10.svg" src="../_images/Fig3-10.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.10 </span><span class="caption-text"><strong>Left:</strong> Echo sounders measure depth of the ocean by transmitting pulses of sound and
+observing the time required to receive the echo from the bottom.
+<strong>Right:</strong> The time is recorded by a spark burning a mark on a slowly
+moving roll of paper. After Dietrich et al. <span id="id6">[<a class="reference internal" href="chapter18.html#id25" title="G. Dietrich, K. Kalle, W. Krauss, and G. Siedler. General Oceanography. John Wiley and Sons (Wiley-Interscience), New York, 2nd edition, 1980.">24</a>]</span>:124.</span><a class="headerlink" href="#fig3-10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The first transatlantic echo soundings were made by the U.S. Navy
+Destroyer <em>Stewart</em> in 1922. This was quickly followed by the first
+systematic survey of an ocean basin, made by the German research and
+survey ship <em>Meteor</em> during its expedition to the south Atlantic from
+1925 to 1927. Since then, oceanographic and naval ships have operated
+echo sounders almost continuously while at sea. Millions of miles of
+ship-track data recorded on paper have been digitized to produce data
+bases used to make maps. The tracks are not well distributed. Tracks
+tend to be far apart in the southern hemisphere, even near Australia
+(<a class="reference internal" href="#fig3-11"><span class="std std-numref">Fig. 3.11</span></a>) and closer together in well mapped areas such as the North
+Atlantic. Echo sounders make the most accurate measurements of ocean depth. Their
+accuracy is <span class="math notranslate nohighlight">\(\pm\)</span>1%.</p>
+<figure class="align-default" id="fig3-11">
+<a class="reference internal image-reference" href="../_images/Fig3-11.svg"><img alt="../_images/Fig3-11.svg" src="../_images/Fig3-11.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.11 </span><span class="caption-text">Locations of echo-sounder data used for mapping the ocean floor near Australia. Note
+the large areas where depths have not been measured from ships. From
+David Sandwell, Scripps Institution of Oceanography.</span><a class="headerlink" href="#fig3-11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="satellite-altimetry">
+<h3><span class="section-number">3.4.2. </span>Satellite Altimetry<a class="headerlink" href="#satellite-altimetry" title="Link to this heading">#</a></h3>
+<p>Gaps in our knowledge of ocean depths between ship tracks have now been
+filled by satellite-altimeter data. Altimeters profile the shape of the
+sea surface, and its shape is very similar to the shape of the sea floor
+(<span id="id7">[<a class="reference internal" href="chapter18.html#id26" title="B. D. Tapley and M.-C. Kim. Applications to geodesy. In L.-L. Fu and A. Cazenave, editors, Satellite Altimetry and Earth Sciences, pages 371–406. Academic Press, San Diego, 2001.">25</a>]</span>, <span id="id8">[<a class="reference internal" href="chapter18.html#id27" title="A. Cazenave and J. Y. Royer. Applications to marine geophysics. In Satellite Altimetry and Earth Sciences, pages 407–439. Academic Press, San Diego, 2001.">26</a>]</span>, <span id="id9">[<a class="reference internal" href="chapter18.html#id28" title="D. T. Sandwell and W. H. F. Smith. Bathymetric estimation. In L.-L. Fu and A. Cazenave, editors, Satellite Altimetry and Earth Sciences, pages 441–457. Academic Press, San Diego, 2001.">27</a>]</span>). To see this,
+we must first consider how gravity influences sea level.</p>
+<p><em>The Relationship Between Sea Level and the Ocean’s Depth</em> Excess mass
+at the sea floor, for example the mass of a seamount, increases local
+gravity because the mass of the seamount is larger than the mass of
+water it displaces. Rocks are more than three times denser than water.
+The excess mass increases local gravity, which attracts water toward the
+seamount. This changes the shape of the sea surface (<a class="reference internal" href="#fig3-12"><span class="std std-numref">Fig. 3.12</span></a>).</p>
+<p>Let’s make the concept more exact. To a very good approximation, the sea
+surface is a particular <em>level surface</em> called the <em>geoid</em> (see <a class="reference internal" href="#geoid"><span class="std std-ref">Geoid</span></a>). By
+definition a level surface is a surface of constant gravitational
+potential, and it is everywhere perpendicular to gravity. In particular,
+it must be perpendicular to the local vertical determined by a plumb
+line, which is “a line or cord having at one end a metal weight for
+determining vertical direction” (Oxford English Dictionary).</p>
+<div class="tip admonition" id="geoid">
+<p class="admonition-title">Geoid</p>
+<p>The level surface that corresponds to the surface of an
+ocean at rest is a special surface, the <em>geoid</em>. To a first
+approximation, the geoid is an ellipsoid that corresponds
+to the surface of a rotating, homogeneous fluid in solid-body
+rotation, which means that the fluid has no internal flow. To a second
+approximation, the geoid differs from the ellipsoid because of local
+variations in gravity. The deviations are called <em>geoid undulations</em>. The maximum amplitude
+of the undulations is roughly <span class="math notranslate nohighlight">\(\pm 60\)</span> m. To a third approximation,
+the geoid deviates from the sea surface because the ocean is not at
+rest. The deviation of sea level from the geoid is defined to be the <em>topography</em>. The
+definition is identical to the definition for land topography, for
+example the heights given on a topographic map.</p>
+<p>The ocean’s topography is caused by tides, heat content
+of the water, and ocean surface currents. I will return to their
+influence in chapters 10 and 17. The maximum amplitude of the
+topography is roughly <span class="math notranslate nohighlight">\(\pm 1\)</span> m, so it is small compared to the
+geoid undulations.</p>
+<p>Geoid undulations are caused by local variations in
+gravity due to the uneven distribution of mass at the sea floor.
+Seamounts have an excess of mass because they are more dense than
+water. They produce an upward bulge in the geoid (see below). Trenches
+have a deficiency of mass. They produce a downward deflection of the
+geoid. Thus the geoid is closely related to
+sea-floor topography. Maps of the oceanic geoid have a
+remarkable resemblance to the sea-floor topography.</p>
+<figure class="align-default" id="fig3-12">
+<a class="reference internal image-reference" href="../_images/Fig3-12.svg"><img alt="../_images/Fig3-12.svg" src="../_images/Fig3-12.svg" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.12 </span><span class="caption-text">Seamounts are more dense than sea
+water. They increase local gravity, causing a plumb line at the sea
+surface (arrows) to be deflected toward the seamount. Because the
+surface of an ocean at rest must be perpendicular to gravity, the sea
+surface and the local geoid must have a slight bulge as
+shown. Such bulges are easily measured by satellite altimeters.  As a
+result, satellite altimeter data can be used to map the sea
+floor. Note, the bulge at the sea surface is greatly exaggerated, a
+two-kilometer high seamount would produce a bulge of approximately 10 m.</span><a class="headerlink" href="#fig3-12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>The excess mass of the seamount attracts the plumb line’s weight,
+causing the plumb line to point a little toward the seamount instead of
+toward earth’s center of mass. Because the sea surface must be
+perpendicular to gravity, it must have a slight bulge above a seamount
+as shown in <a class="reference internal" href="#fig3-12"><span class="std std-numref">Fig. 3.12</span></a>. If there were no bulge, the sea surface would
+not be perpendicular to gravity. Typical seamounts produce a bulge that
+is 1–20 m high over distances of 100–200 kilometers. This bulge is far
+too small to be seen from a ship, but it is easily measured by satellite
+altimeters. Oceanic trenches have a deficit of mass, and they produce a
+depression of the sea surface.</p>
+<p>The correspondence between the shape of the sea surface and the depth of
+the water is not exact. It depends on the strength of the sea floor, the
+age of the sea-floor feature, and the thickness of sediments. If a
+seamount floats on the sea floor like ice on water, the gravitational
+signal is much weaker than it would be if the seamount rested on the sea
+floor like ice resting on a table top. As a result, the relationship
+between gravity and sea-floor topography varies from region to region.</p>
+<p>Depths measured by acoustic echo sounders are used to determine the
+regional relationships. Hence, altimetry is used to interpolate between
+acoustic echo sounder measurements <span id="id10">[<a class="reference internal" href="chapter18.html#id29" title="W. H. F. Smith and D. T. Sandwell. Bathymetric prediction from dense satellite altimetry and sparse shipboard bathymetry. Journal of Geophysical Research, 99(B11):21803–21824, 1994.">28</a>]</span>.</p>
+<p><em>Satellite-altimeter systems</em> Now let’s see how altimeters measure the
+shape of the sea surface. Satellite altimeter systems include a radar to
+measure the height of the satellite above the sea surface and a tracking
+system to determine the height of the satellite in geocentric
+coordinates. The system measures the height of the sea surface relative
+to the center of mass of earth (<a class="reference internal" href="#fig3-13"><span class="std std-numref">Fig. 3.13</span></a>). This gives the shape of
+the sea surface.</p>
+<figure class="align-default" id="fig3-13">
+<a class="reference internal image-reference" href="../_images/Fig3-13.svg"><img alt="../_images/Fig3-13.svg" src="../_images/Fig3-13.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">A satellite altimeter measures the height of the satellite above the sea surface. When this is
+subtracted from the height <span class="math notranslate nohighlight">\(r\)</span> of the satellite’s orbit, the difference
+is sea level relative to the center of earth. The shape of the surface
+is due to variations in gravity, which produce the geoid undulations,
+and to ocean currents which produce the oceanic topography, the
+departure of the sea surface from the geoid. The reference ellipsoid is
+the best smooth approximation to the geoid. The variations in the geoid,
+geoid undulations, and topography are greatly exaggerated in the figure.
+From Stewart <span id="id11">[<a class="reference internal" href="chapter18.html#id30" title="R. H. Stewart. Methods of Satellite Oceanography. University of California Press, 1985.">29</a>]</span>.</span><a class="headerlink" href="#fig3-13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Many altimetric satellites have flown in space. All observed the marine
+geoid and the influence of sea-floor features on the geoid. The
+altimeters that produced the most useful data include Seasat (1978),
+<span class="small">GEOSAT</span> (1985–1988), <span class="small">ERS</span>–1 (1991–1996),
+<span class="small">ERS</span>–2 (1995– ), Topex/Poseidon (1992–2006), Jason
+(2002–), and Envisat (2002). Topex/Poseidon and Jason were specially
+designed to make extremely accurate measurements of sea-surface height.
+They measure sea-surface height with an accuracy of <span class="math notranslate nohighlight">\(\pm 0.05\)</span> m.</p>
+<p><em>Satellite Altimeter Maps of the Sea-floor Topography</em> Seasat,
+<span class="small">GEOSAT</span>, <span class="small">ERS</span>–1, and <span class="small">ERS</span>–2
+were operated in orbits with ground tracks spaced 3–10 km apart, which
+was sufficient to map the geoid. By combining data from echo-sounders
+with data from <span class="small">GEOSAT</span> and <span class="small">ERS</span>–1 altimeter
+systems, Smith and Sandwell <span id="id12">[<a class="reference internal" href="chapter18.html#id31" title="W. H. F. Smith and D. T. Sandwell. Global sea floor topography from satellite altimetry and ship depth soundings. Science, 277(5334):1956–1962, 1997.">30</a>]</span> produced maps of the sea floor with
+horizontal resolution of 5–10 km and a global average depth accuracy of
+<span class="math notranslate nohighlight">\(\pm 100\)</span> m.</p>
+</section>
+</section>
+<section id="sea-floor-charts-and-data-sets">
+<h2><span class="section-number">3.5. </span>Sea Floor Charts and Data Sets<a class="headerlink" href="#sea-floor-charts-and-data-sets" title="Link to this heading">#</a></h2>
+<p>Almost all echo-sounder data have been digitized and combined to make
+sea-floor charts. Data have been further processed and edited to produce
+digital data sets which are widely distributed in <span class="smallcaps">cd-rom</span>
+format. These data have been supplemented with data from altimetric
+satellites to produce maps of the sea floor with horizontal resolution
+around 3 km.</p>
+<p>The British Oceanographic Data Centre publishes the General Bathymetric
+Chart of the ocean (<span class="small">GEBCO</span>) Digital Atlas on behalf of the
+Intergovernmental Oceanographic Commission of <span class="small">UNESCO</span> and
+the International Hydrographic Organization. The atlas consists
+primarily of the location of depth contours, coastlines, and tracklines
+from the <span class="small">GEBCO</span> 5th Edition published at a scale of 1:10
+million. The original contours were drawn by hand based on digitized
+echo-sounder data plotted on base maps.</p>
+<p>The U.S. National Geophysical Data Center publishes the <span class="small">ETOPO-2
+cd-rom</span> containing digital values of oceanic depths from
+echo sounders and altimetry and land heights from surveys. Data are
+interpolated to a 2-minute (2 nautical mile) grid. Ocean data between
+64°N and 72°S are from the work of Smith and Sandwell <span id="id13">[<a class="reference internal" href="chapter18.html#id31" title="W. H. F. Smith and D. T. Sandwell. Global sea floor topography from satellite altimetry and ship depth soundings. Science, 277(5334):1956–1962, 1997.">30</a>]</span>, who combined
+echo-sounder data with altimeter data from <span class="small">GEOSAT</span> and
+<span class="small">ERS-1</span>. Seafloor data northward of 64°N are from the
+International Bathymetric Chart of the Arctic Ocean. Seafloor data
+southward of 72°S are from are from the US Naval Oceanographic Office’s
+Digital Bathymetric Data Base Variable Resolution. Land data are from
+the <span class="small">GLOBE</span> Project, that produced a digital elevation model
+with 0.5-minute (0.5 nautical mile) grid spacing using data from many
+nations.</p>
+<figure class="align-default" id="fig3-14">
+<a class="reference internal image-reference" href="../_images/Fig3-14.svg"><img alt="../_images/Fig3-14.svg" src="../_images/Fig3-14.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.14 </span><span class="caption-text">The sea-floor topography of the ocean with 3 km resolution produced from satellite
+altimeter observations of the shape of the sea surface. From Smith and Sandwell <span id="id14">[<a class="reference internal" href="chapter18.html#id31" title="W. H. F. Smith and D. T. Sandwell. Global sea floor topography from satellite altimetry and ship depth soundings. Science, 277(5334):1956–1962, 1997.">30</a>]</span>.</span><a class="headerlink" href="#fig3-14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>National governments publish coastal and harbor maps. In the USA, the
+<span class="small">NOAA</span> National Ocean Service publishes nautical charts
+useful for navigation of ships in harbors and offshore waters.</p>
+</section>
+<section id="sound-in-the-ocean">
+<h2><span class="section-number">3.6. </span>Sound in the Ocean<a class="headerlink" href="#sound-in-the-ocean" title="Link to this heading">#</a></h2>
+<p>Sound provides the only convenient means for transmitting information
+over great distances in the ocean. Sound is used to measure the
+properties of the sea floor, the depth of the ocean, temperature, and
+currents. Whales and other ocean animals use sound to navigate,
+communicate over great distances, and find food.</p>
+<section id="sound-speed">
+<h3><span class="section-number">3.6.1. </span>Sound Speed<a class="headerlink" href="#sound-speed" title="Link to this heading">#</a></h3>
+<p>The sound speed in the ocean varies with temperature, salinity, and
+pressure (<span id="id15">[<a class="reference internal" href="chapter18.html#id32" title="K. V. MacKenzie. Nine-term equation for sound speed in the ocean. Journal of the Acoustical Society of America, 70:807–812, 1981.">31</a>]</span>, <span id="id16">[<a class="reference internal" href="chapter18.html#id33" title="W. Munk, P. Worcester, and C. Wunsch. Ocean Acoustic Tomography. Cambridge University Press, Cambridge, 1995.">32</a>]</span>:p33):</p>
+<div class="math notranslate nohighlight" id="equation-eq3-1">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-eq3-1" title="Link to this equation">#</a></span>\[\begin{split}  C &amp; = 1448.96 + 4.591\,t - 0.05304\,t^2 + 0.0002374\,t^3+ 0.0160\,Z \\
+  &amp;+ (1.340 - 0.01025\,t) (S - 35) + 1.675 \times 10^{-7}\,Z^2 - 7.139 \times
+10^{-13}\,t\,Z^3\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is speed in m/s, <span class="math notranslate nohighlight">\(t\)</span> is temperature in Celsius, <span class="math notranslate nohighlight">\(S\)</span> is salinity (see Chapter 6 for a definition
+of salinity), and <span class="math notranslate nohighlight">\(Z\)</span> is depth in meters. The equation has an accuracy
+of about 0.1 m/s <span id="id17">[<a class="reference internal" href="chapter18.html#id34" title="B. D. Dushaw, P. F. Worcester, B. D. Cornuelle, and B. M. Howe. On equations for the speed of sound in sea water. Journal of the Acoustical Society of America, 93:255–275, 1993.">33</a>]</span>. Other sound-speed equations have
+been widely used, especially an equation proposed by Wilson <span id="id18">[<a class="reference internal" href="chapter18.html#id35" title="W. D. Wilson. Equation for the speed of sound in sea water. Journal of the Acoustical Society of America, 32(10):1357, 1960.">34</a>]</span> which
+has been widely used by the U.S. Navy.</p>
+<p>For typical oceanic conditions, <span class="math notranslate nohighlight">\(C\)</span> is usually between 1450 m/s and 1550
+m/s (<a class="reference internal" href="#fig3-15"><span class="std std-numref">Fig. 3.15</span></a>). Using equation <a class="reference internal" href="#equation-eq3-1">(3.1)</a>, we can calculate the sensitivity of <span class="math notranslate nohighlight">\(C\)</span>
+to changes of temperature, depth, and salinity typical of the ocean. The
+approximate values are: 40 m/s per 10°C rise of temperature, 16 m/s per
+1000 m increase in depth, and 1.5 m/s per 1 increase in salinity. Thus
+the primary causes of variability of sound speed is temperature and
+depth (pressure). Variations of salinity are too small to have much
+influence.</p>
+<figure class="align-default" id="fig3-15">
+<a class="reference internal image-reference" href="../_images/Fig3-15.svg"><img alt="../_images/Fig3-15.svg" src="../_images/Fig3-15.svg" style="height: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">Processes producing the sound channel in the ocean. <strong>Left:</strong> Temperature <span class="math notranslate nohighlight">\(T\)</span> and
+salinity <span class="math notranslate nohighlight">\(S\)</span> measured as a function of depth during the R.V. <em>Hakuho
+Maru</em> cruise KH-87-1, station JT, on 28 January 1987 at Latitude 33°N, Long 141°E in the North Pacific. <strong>Center:</strong> Variations in sound
+speed due to variations in temperature, salinity, and depth. <strong>Right:</strong>
+Sound speed as a function of depth showing the velocity minimum near 1
+km depth which defines the sound channel in the ocean. (Data from
+JPOTS Editorial Panel <span id="id19">[<a class="reference internal" href="chapter18.html#id36" title="Joint Panel on Oceanographic Tables and Standards. Processing of Oceanographic Station Data. UNESCO, Paris, 1991.">35</a>]</span>).</span><a class="headerlink" href="#fig3-15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If we plot sound speed as a function of depth, we find that the speed
+usually has a minimum at a depth around 1000 m (<a class="reference internal" href="#fig3-16"><span class="std std-numref">Fig. 3.16</span></a>). The depth
+of minimum speed is called the <em>sound channel</em>. It occurs in all ocean,
+and it usually reaches the surface at very high latitudes.</p>
+<p>The sound channel is important because sound in the channel can travel
+very far, sometimes half way around the earth. Here is how the channel
+works: Sound rays that begin to travel out of the channel are refracted
+back toward the center of the channel. Rays propagating upward at small
+angles to the horizontal are bent downward, and rays propagating
+downward at small angles to the horizontal are bent upward (<a class="reference internal" href="#fig3-16"><span class="std std-numref">Fig. 3.16</span></a>). Typical depths of the channel vary from 10 m to 1200 m depending
+on geographical area.</p>
+<figure class="align-default" id="fig3-16">
+<a class="reference internal image-reference" href="../_images/Fig3-16.svg"><img alt="../_images/Fig3-16.svg" src="../_images/Fig3-16.svg" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Ray paths of sound in the ocean for a source near<br />
+the axis of the sound channel. After Munk et al. <span id="id20">[<a class="reference internal" href="chapter18.html#id33" title="W. Munk, P. Worcester, and C. Wunsch. Ocean Acoustic Tomography. Cambridge University Press, Cambridge, 1995.">32</a>]</span>.</span><a class="headerlink" href="#fig3-16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="absorption-of-sound">
+<h3><span class="section-number">3.6.2. </span>Absorption of Sound<a class="headerlink" href="#absorption-of-sound" title="Link to this heading">#</a></h3>
+<p>Absorption of sound per unit distance depends on the intensity <span class="math notranslate nohighlight">\(I\)</span> of
+the sound: <span class="math notranslate nohighlight">\(dI = -k I_0 \, dx\)</span> where <span class="math notranslate nohighlight">\(I_0\)</span> is the intensity before
+absorption and <span class="math notranslate nohighlight">\(k\)</span> is an absorption coefficient which depends on
+frequency of the sound. The equation has the solution:
+<span class="math notranslate nohighlight">\(I = I_0 \exp(-kx)\)</span> Typical values of <span class="math notranslate nohighlight">\(k\)</span> (in decibels dB per
+kilometer) are: 0.08 dB/km at 1000 Hz, and 50 dB/km at 100,000 Hz.
+Decibels are calculated from: <span class="math notranslate nohighlight">\(dB = 10 \log(I/I_0)\)</span>, where <span class="math notranslate nohighlight">\(I_0\)</span> is the
+original acoustic power, <span class="math notranslate nohighlight">\(I\)</span> is the acoustic power after absorption.</p>
+<p>For example, at a range of 1 km a 1000 Hz signal is attenuated by only
+1.8%: <span class="math notranslate nohighlight">\(I = 0.982 I_0\)</span>. At a range of 1 km a 100,000 Hz signal is reduced
+to <span class="math notranslate nohighlight">\(I = 10^{-5} I_0\)</span>. The 30,000 Hz signal used by typical echo sounders
+to map the ocean’s depths are little attenuated going from the surface
+to the bottom and back.</p>
+<p>Very low frequency sounds in the sound channel, those with frequencies
+below 500 Hz have been detected at distances of megameters. In 1960
+15-Hz sounds from explosions set off in the sound channel off Perth
+Australia were heard in the sound channel near Bermuda, nearly halfway
+around the world. Later experiment showed that 57-Hz signals transmitted
+in the sound channel near Heard Island (75°E, 53°S) could be heard at
+Bermuda in the Atlantic and at Monterey, California in the Pacific <span id="id21">[<a class="reference internal" href="chapter18.html#id37" title="W. H. Munk, R. C. Spindel, A. Baggeroer, and T. G. Birdsall. The heard island feasibility test. Journal of the Acoustical Society of America, 96(4):2330–2342, 1994.">36</a>]</span>.</p>
+</section>
+<section id="use-of-sound">
+<h3><span class="section-number">3.6.3. </span>Use of Sound<a class="headerlink" href="#use-of-sound" title="Link to this heading">#</a></h3>
+<p>Because low frequency sound can be heard at great distances, the US
+Navy, in the 1950s, placed arrays of microphones on the sea floor in
+deep and shallow water and connected them to shore stations. The Sound
+Surveillance System <span class="small">SOSUS</span>, although designed to track
+submarines, has found many other uses. It has been used to listen to and
+track whales up to 1,700 km away, and to find the location of sub-sea
+volcanic eruptions.</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">3.7. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>If the ocean were scaled down to a width of 8 inches it would have
+depths about the same as the thickness of a piece of paper. As a
+result, the velocity field in the ocean is nearly 2-dimensional.
+Vertical velocities are much smaller than horizontal velocities.</p></li>
+<li><p>There are only three official ocean.</p></li>
+<li><p>The volume of ocean water exceeds the capacity of the ocean basins,
+and the ocean overflows on to the continents creating continental
+shelves.</p></li>
+<li><p>The depths of the ocean are mapped by echo sounders which measure
+the time required for a sound pulse to travel from the surface to
+the bottom and back. Depths measured by ship-based echo sounders
+have been used to produce maps of the sea floor. The maps have poor
+horizontal resolution in some regions because the regions were
+seldom visited by ships and ship tracks are far apart.</p></li>
+<li><p>The depths of the ocean are also measured by satellite altimeter
+systems which profile the shape of the sea surface. The local shape
+of the surface is influenced by changes in gravity due to sub-sea
+features. Recent maps based on satellite altimeter measurements of
+the shape of the sea surface combined with ship data have depth
+accuracy of <span class="math notranslate nohighlight">\(\pm\)</span>100 m and horizontal resolutions
+of <span class="math notranslate nohighlight">\(\pm\)</span>3 km.</p></li>
+<li><p>Typical sound speed in the ocean is 1480 m/s. Speed depends
+primarily on temperature, less on pressure, and very little on
+salinity. The variability of sound speed as a function of pressure
+and temperature produces a horizontal sound channel in the ocean.
+Sound in the channel can travel great distances. Low-frequency
+sounds below 500 Hz can travel halfway around the world provided the
+path is not interrupted by land.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>The Historical Setting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Atmospheric Influences</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ocean-and-seas">3.1. Ocean and Seas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions-of-the-ocean">3.2. Dimensions of the ocean</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-floor-features">3.3. Sea-Floor Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-the-depth-of-the-ocean">3.4. Measuring the Depth of the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echo-sounders">3.4.1. Echo Sounders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satellite-altimetry">3.4.2. Satellite Altimetry</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-floor-charts-and-data-sets">3.5. Sea Floor Charts and Data Sets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-in-the-ocean">3.6. Sound in the Ocean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sound-speed">3.6.1. Sound Speed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-of-sound">3.6.2. Absorption of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-sound">3.6.3. Use of Sound</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">3.7. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

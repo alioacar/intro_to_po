@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>11. Wind Driven Ocean Circulation &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter11';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="12. Vorticity in the Ocean" href="chapter12.html" />
+    <link rel="prev" title="10. Geostrophic Currents" href="chapter10.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter11.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter11.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Wind Driven Ocean Circulation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sverdrups-theory-of-the-oceanic-circulation">11.1. Sverdrup’s Theory of the Oceanic Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-sverdrups-solutions">11.1.1. Comments on Sverdrup’s Solutions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-lines-path-lines-and-the-stream-function">11.1.2. Stream Lines, Path Lines, and the Stream Function</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stommels-theory-of-western-boundary-currents">11.2. Stommel’s Theory of Western Boundary Currents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#munks-solution">11.3. Munk’s Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observed-surface-circulation-in-the-atlantic">11.4. Observed Surface Circulation in the Atlantic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#north-atlantic-circulation">11.4.1. North Atlantic Circulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gulf-stream-recirculation-region">11.4.2. Gulf Stream Recirculation Region</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">11.5. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="wind-driven-ocean-circulation">
+<h1><span class="section-number">11. </span>Wind Driven Ocean Circulation<a class="headerlink" href="#wind-driven-ocean-circulation" title="Link to this heading">#</a></h1>
+<p>What drives the ocean currents? At first, we might answer, the winds.
+But if we think more carefully about the question, we might not be so
+sure. We might notice, for example, that strong currents, such as the
+North Equatorial Countercurrents in the Atlantic and Pacific Ocean go
+upwind. Spanish navigators in the 16th century noticed strong northward
+currents along the Florida coast that seemed to be unrelated to the
+wind. How can this happen? And, why are strong currents found offshore
+of east coasts but not offshore of west coasts?</p>
+<p>Answers to the questions can be found in a series of three remarkable
+papers published from 1947 to 1951. In the first, Harald Sverdrup (1947)
+showed that the circulation in the upper kilometer or so of the ocean is
+directly related to the curl of the wind stress if the Coriolis force
+varies with latitude. Henry Stommel (1948) showed that the circulation
+in oceanic gyres is asymmetric also because the Coriolis force varies
+with latitude. Finally, Walter Munk (1950) added eddy viscosity and
+calculated the circulation of the upper layers of the Pacific. Together
+the three oceanographers laid the foundations for a modern theory of
+ocean circulation.</p>
+<section id="sverdrups-theory-of-the-oceanic-circulation">
+<h2><span class="section-number">11.1. </span>Sverdrup’s Theory of the Oceanic Circulation<a class="headerlink" href="#sverdrups-theory-of-the-oceanic-circulation" title="Link to this heading">#</a></h2>
+<p>While Sverdrup was analyzing observations of equatorial currents, he
+came upon (11.6) below relating the curl of the wind stress to mass
+transport within the upper ocean. To derive the relationship, Sverdrup
+assumed that the flow is stationary, that lateral friction and molecular
+viscosity are small, that non-linear terms such as
+<span class="math notranslate nohighlight">\(u\, \partial{u} / \partial{x}\)</span> are small, and that turbulence near the
+sea surface can be described using a vertical eddy viscosity. He also
+assumed that the wind-driven circulation vanishes at some depth of no
+motion. With these assumptions, the horizontal components of the
+momentum equation from 8.9 and 8.12 become:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial{p}}{\partial{x}} =  f\,\rho\,v + \frac{\partial{T_{xz}}}{\partial{z}}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\partial{p}}{\partial{y}} = -f\,\rho\,u + \frac{\partial{T_{yz}}}{\partial{z}}\]</div>
+<p>Sverdrup integrated these equations from the surface to a depth <span class="math notranslate nohighlight">\(-D\)</span>
+equal to or greater than the depth at which the horizontal pressure
+gradient becomes zero. He defined:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+{2}
+\frac{\partial{P}}{\partial{x}} &amp;= \int\limits_{-D}^{0} \frac{\partial{p}}{\partial{x}}\,dz,  &amp;\qquad
+\frac{\partial{P}}{\partial{y}} &amp;= \int\limits_{-D}^{0} \frac{\partial{p}}{\partial{y}}\,dz,  \\
+M_x &amp;\equiv \int\limits_{-D}^{0} \rho\,u(z)\,dz,          &amp;\qquad M_y &amp;\equiv \int\limits_{-D}^{0} \rho\,v(z)\,dz,\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_x, M_y\)</span> are the mass transports in the wind-driven layer
+extending down to an assumed depth of no motion.</p>
+<p>The horizontal boundary condition at the sea surface is the wind stress.
+At depth <span class="math notranslate nohighlight">\(-D\)</span> the stress is zero because the currents go to zero:
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+{2}
+T_{xz}(0) &amp;= T_x &amp; \qquad T_{xz}(-D) &amp;= 0
+\notag \\
+T_{yz}(0) &amp;= T_y &amp; \qquad T_{yz}(-D) &amp;= 0\end{aligned}\)</span><span class="math notranslate nohighlight">\( where \)</span>T_x<span class="math notranslate nohighlight">\( and
+\)</span>T_y$ are the components of the wind stress.</p>
+<p>Using these definitions and boundary conditions, (11.1) become:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{\partial{P}}{\partial{x}} &amp;= f\,M_y + T_x  \\
+\frac{\partial{P}}{\partial{y}} &amp;= -f\,M_x + T_y\end{aligned}\end{split}\]</div>
+<p>In a similar way, Sverdrup integrated the continuity equation (7.19)
+over the same vertical depth, assuming the vertical velocity at the
+surface and at depth <span class="math notranslate nohighlight">\(-D\)</span> are zero, to obtain:
+$<span class="math notranslate nohighlight">\(\frac{\partial{M_x}}{\partial{x}} + \frac{\partial{M_y}}{\partial{y}} = 0\)</span>$</p>
+<p>Differentiating (11.4a) with respect to <span class="math notranslate nohighlight">\(y\)</span> and (11.4b) with respect to
+<span class="math notranslate nohighlight">\(x\)</span>, subtracting, and using (11.5) gives: $<span class="math notranslate nohighlight">\(\begin{aligned}
+\beta\,M_y &amp;= \frac{\partial{T_y}}{\partial{x}} - \frac{\partial{T_x}}{\partial{y}}
+\notag \\
+\beta\,M_y &amp;= \text{curl}_z(T)\end{aligned}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\beta \equiv \partial{f}/\partial{y}<span class="math notranslate nohighlight">\( is the rate of change of Coriolis
+parameter with latitude, and where curl\)</span>_z(T)$ is the vertical component
+of the curl of the wind stress.</p>
+<p>This is an important and fundamental result—the northward mass
+transport of wind driven currents is equal to the curl of the wind
+stress. Note that Sverdrup allowed <span class="math notranslate nohighlight">\(f\)</span> to vary with latitude. We will
+see later that this is essential.</p>
+<p>We calculate <span class="math notranslate nohighlight">\(\beta\)</span> from
+$<span class="math notranslate nohighlight">\(\beta \equiv \frac{\partial{f}}{\partial{y}} = \frac{2\,\Omega\cos\varphi}{R}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>R<span class="math notranslate nohighlight">\( is earth’s radius and \)</span>\varphi$ is latitude.</p>
+<p>Over much of the open ocean, especially in the tropics, the wind is
+zonal and <span class="math notranslate nohighlight">\(\partial{T_y}/\partial{x}\)</span> is sufficiently small that
+$<span class="math notranslate nohighlight">\(M_y \approx -\frac{1}{\beta}\,\frac{\partial T_x}{\partial y}\)</span><span class="math notranslate nohighlight">\(
+Substituting (11.8) into (11.5), assuming \)</span>\beta<span class="math notranslate nohighlight">\( varies with latitude,
+Sverdrup obtained: \)</span><span class="math notranslate nohighlight">\(\frac{\partial{M_x}}{\partial{x}}=-
+\frac{1}{2\,\Omega\cos\varphi}\left(\frac{\partial{T_x}}{\partial{y}}\tan\varphi +
+\frac{\partial^2{T_x}}{\partial{y}^2}R \right)\)</span>$</p>
+<p>Figure 11.1 Streamlines of</p>
+<p>mass transport in the eastern Pacific calculated<br />
+from Sverdrup’s theory using mean annual wind stress. After Reid (1948).</p>
+<p><span id="fig:sverdrupmap" label="fig:sverdrupmap"></span></p>
+<p>Sverdrup integrated this equation from a north-south eastern boundary at
+<span class="math notranslate nohighlight">\(x = 0\)</span>, assuming no flow into the boundary. This requires <span class="math notranslate nohighlight">\(M_x = 0\)</span> at
+<span class="math notranslate nohighlight">\(x = 0\)</span>. Then
+$<span class="math notranslate nohighlight">\(M_x =- \frac{\Delta{x}}{2\,\Omega\cos\varphi}\left[ \left&lt;
+\frac{\partial{T_x}}{\partial{y}}\right &gt; \tan\varphi +
+\left&lt; \frac{\partial^2{T_x}}{\partial{y}^2} \right&gt; R \right]\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\Delta x$ is the distance from the eastern boundary of the ocean basin,
+and brackets indicate zonal averages of the wind stress (figure 11.1).</p>
+<p>To test his theory, Sverdrup compared transports calculated from known
+winds in the eastern tropical Pacific with transports calculated from
+hydrographic data collected by the <em>Carnegie</em> and <em>Bushnell</em> in October
+and November 1928, 1929, and 1939 between 34N and 10S and between 80W
+and 160W. The hydrographic data were used to compute <span class="math notranslate nohighlight">\(P\)</span> by integrating
+from a depth of <span class="math notranslate nohighlight">\(D = -1000\)</span> m. The comparison, figures 11.2, showed not
+only that the transports can be accurately calculated from the wind, but
+also that the theory predicts wind-driven currents going upwind.</p>
+<p>Figure 11.2 Mass</p>
+<p>transport in the eastern Pacific calculated from Sverdrup’s theory using
+observed winds with 11.8 and 11.10 (solid lines) and pressure calculated
+from hydrographic data from ships with 11.4 (dots). Transport is in tons
+per second through a section one meter wide extending from the sea
+surface to a depth of one kilometer. Note the difference in scale
+between <span class="math notranslate nohighlight">\(M_y\)</span> and <span class="math notranslate nohighlight">\(M_x\)</span>. After Reid (1948). <span id="fig:windpacific" label="fig:windpacific"></span></p>
+<section id="comments-on-sverdrups-solutions">
+<h3><span class="section-number">11.1.1. </span>Comments on Sverdrup’s Solutions<a class="headerlink" href="#comments-on-sverdrups-solutions" title="Link to this heading">#</a></h3>
+<p>Sverdrup assumed i) The internal flow in the ocean is geostrophic; ii)
+there is a uniform depth of no motion; and iii) Ekman’s transport is
+correct. I examined Ekman’s theory in Chapter 9, and the geostrophic
+balance in Chapter 10. We know little about the depth of no motion in
+the tropical Pacific.</p>
+<p>The solutions are limited to the east side of the ocean because <span class="math notranslate nohighlight">\(M_x\)</span>
+grows with <span class="math notranslate nohighlight">\(x\)</span>. The result comes from neglecting friction which would
+eventually balance the wind-driven flow. Nevertheless, Sverdrup
+solutions have been used for describing the global system of surface
+currents. The solutions are applied throughout each basin all the way to
+the western limit of the basin. There, conservation of mass is forced by
+including north-south currents confined to a thin, horizontal boundary
+layer (figure 11.3).</p>
+<p>Only one boundary condition can be satisfied, no flow through the
+eastern boundary. More complete descriptions of the flow require more
+complete equations.</p>
+<p>The solutions do not give the vertical distribution of the current.</p>
+<p>Results were based on data from two cruises plus average wind data
+assuming a steady state. Later calculations by Leetmaa, McCreary, and
+Moore (1981) using more recent wind data produces solutions with
+seasonal variability that agrees well with observations provided the
+level of no motion is at 500 m. If another depth were chosen, the
+results are not as good.</p>
+<p>Wunsch (1996: §2.2.3) after carefully examining the evidence for a
+Sverdrup balance in the ocean concluded we do not have sufficient
+information to test the theory. He writes</p>
+<blockquote>
+<div><p>The purpose of this extended discussion has not been to disapprove the
+validity of Sverdrup balance. Rather, it was to emphasize the gap
+commonly existing in oceanography between a plausible and attractive
+theoretical idea and the ability to demonstrate its quantitative
+applicability to actual oceanic flow fields.—Wunsch (1996).</p>
+</div></blockquote>
+<p>Figure 11.3 Depth-integrated</p>
+<p>Sverdrup transport applied globally using the wind stress from Hellerman
+and Rosenstein (1983). Contour interval is 10 Sverdrups. After Tomczak
+and Godfrey (1994: 46). <span id="fig:sverdrupxport" label="fig:sverdrupxport"></span></p>
+<p>Wunsch, however, notes</p>
+<blockquote>
+<div><p>Sverdrup’s relationship is so central to theories of the ocean
+circulation that almost all discussions assume it to be valid without
+any comment at all and proceed to calculate its consequences for
+higher-order dynamics…it is difficult to overestimate the importance
+of Sverdrup balance.—Wunsch (1996).</p>
+</div></blockquote>
+<p>But the gap is shrinking. Measurements of mean stress in the equatorial
+Pacific (Yu and McPhaden, 1999) show that the flow there is in Sverdrup
+balance.</p>
+</section>
+<section id="stream-lines-path-lines-and-the-stream-function">
+<h3><span class="section-number">11.1.2. </span>Stream Lines, Path Lines, and the Stream Function<a class="headerlink" href="#stream-lines-path-lines-and-the-stream-function" title="Link to this heading">#</a></h3>
+<p>Before discussing more about the ocean’s wind-driven circulation, we
+need to introduce the concept of stream lines and the stream function
+(see Kundu, 1990: 51 &amp; 66).</p>
+<p>At each instant in time, we can represent a flow field by a vector
+velocity at each point in space. The instantaneous curves that are
+everywhere tangent to the direction of the vectors are called the
+<em>stream lines</em> of the flow. If the flow is unsteady, the pattern of
+stream lines change with time.</p>
+<p>The trajectory of a fluid particle, the path followed by a Lagrangian
+drifter, is called the <em>path line</em> in fluid mechanics. The path line is
+the same as the stream line for steady flow, and they are different for
+an unsteady flow.</p>
+<p>We can simplify the description of two-dimensional, incompressible flows
+by using the <em>stream function</em> <span class="math notranslate nohighlight">\(\psi\)</span> defined by:
+$<span class="math notranslate nohighlight">\(u \equiv \frac{\partial{\psi}}{\partial{y}}, \qquad v \equiv -
+\frac{\partial{\psi}}{\partial{x}},\)</span>$</p>
+<p>The stream function is often used because it is a scalar from which the
+vector velocity field can be calculated. This leads to simpler equations
+for some flows.</p>
+<p>Stream functions are also useful for visualizing the flow. At each
+instant, the flow is parallel to lines of constant <span class="math notranslate nohighlight">\(\psi\)</span>. Thus if the
+flow is steady, the lines of constant stream function are the paths
+followed by water parcels.</p>
+<p>The volume rate of flow between any two stream lines of a steady flow is
+<span class="math notranslate nohighlight">\(d\psi\)</span>, and the volume rate of flow between two stream lines <span class="math notranslate nohighlight">\(\psi_1\)</span>
+and <span class="math notranslate nohighlight">\(\psi _2\)</span> is equal to <span class="math notranslate nohighlight">\(\psi _1 - \psi _2\)</span>. To see this, consider an
+arbitrary line <span class="math notranslate nohighlight">\(dx = (dx, dy)\)</span> between two stream lines (figure 11.4).
+The volume rate of flow between the stream lines is:</p>
+<p>Figure 11.4 Volume transport</p>
+<p>between stream lines in a<br />
+two-dimensional, steady flow. After Kundu (1990: 68).</p>
+<p><span id="fig:volxportsketch" label="fig:volxportsketch"></span></p>
+<div class="math notranslate nohighlight">
+\[v\,dx+(-u)\,dy=-\frac{\partial{\psi}}{\partial{x}}\,dx-\frac{\partial{\psi}}{\partial{y}}\,dy=-d\psi\]</div>
+<p>and the volume rate of flow between the two stream lines is numerically
+equal to the difference in their values of <span class="math notranslate nohighlight">\(\psi\)</span>.</p>
+<p>Now, lets apply the concepts to satellite-altimeter maps of the oceanic
+topography. In §10.3 I wrote (10.10) $<span class="math notranslate nohighlight">\(\begin{aligned}
+u_s &amp;= -\frac{g}{f}\,\frac{\partial{\zeta}}{\partial{y}} \notag \\
+v_s &amp;= \frac{g}{f}\,\frac{\partial{\zeta}}{\partial{x}}\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+Comparing (11.13) with (11.11) it is clear that
+\)</span><span class="math notranslate nohighlight">\(\psi = -\frac{g}{f}\,\zeta\)</span><span class="math notranslate nohighlight">\( and the sea surface is a stream function
+scaled by \)</span>g/f$. Turning to figure 10.5, the lines of constant height
+are stream lines, and flow is along the lines. The surface geostrophic
+transport is proportional to the difference in height, independent of
+distance between the stream lines. The same statements apply to figure
+10.9, except that the transport is relative to transport at the 1000
+decibars surface, which is roughly one kilometer deep.</p>
+<p>In addition to the stream function, oceanographers use the
+mass-transport stream function <span class="math notranslate nohighlight">\(\Psi\)</span> defined by:
+$<span class="math notranslate nohighlight">\(M_x \equiv \frac{\partial{\Psi}}{\partial{y}}, \qquad M_y \equiv -
+\frac{\partial{\Psi}}{\partial{x}}\)</span>$ This is the function shown in
+figures 11.2 and 11.3.</p>
+</section>
+</section>
+<section id="stommels-theory-of-western-boundary-currents">
+<h2><span class="section-number">11.2. </span>Stommel’s Theory of Western Boundary Currents<a class="headerlink" href="#stommels-theory-of-western-boundary-currents" title="Link to this heading">#</a></h2>
+<p>At the same time Sverdrup was beginning to understand circulation in the
+eastern Pacific, Stommel was beginning to understand why western
+boundary currents occur in ocean basins. To study the circulation in the
+north Atlantic, Stommel (1948) used essentially the same equations used
+by Sverdrup (11.1, 11.2, and 11.3) but he added a bottom stress
+proportional to velocity to (11.3):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+{2}
+\left(A_z \frac{\partial{u}}{\partial{z}}\right)_0 &amp;= -T_x =-F\cos(\pi \,y/b)&amp; \qquad \left(A_z \frac{\partial{u}}{\partial{z}}\right)_D &amp;= -R\,u \\
+\left(A_z \frac{\partial{v}}{\partial{z}}\right)_0 &amp;= -T_y =0 &amp; \qquad \left(A_z \frac{\partial{v}}{\partial{z}}\right)_D &amp;= -R\,v\end{aligned}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(R\)</span> are constants.</p>
+<p>Stommel calculated steady-state solutions for flow in a rectangular
+basin <span class="math notranslate nohighlight">\(0\leq y\leq b\)</span>, <span class="math notranslate nohighlight">\(0\leq x\leq \lambda\)</span> of constant depth <span class="math notranslate nohighlight">\(D\)</span>
+filled with water of constant density. His first solution was for a
+non-rotating earth. This solution had a symmetric flow pattern with no
+western boundary current (figure 11.5, left). Next, Stommel assumed a
+constant rotation, which again led to a symmetric solution with no
+western boundary current. Finally, he assumed that the Coriolis force
+varies with latitude. This led to a solution with western
+intensification (figure 11.5, right). Stommel suggested that the
+crowding of stream lines in the west indicated that the variation of
+Coriolis force with latitude may explain why the Gulf Stream is found in
+the ocean. We now know that the variation of Coriolis force with
+latitude is required for the existence of the western boundary current,
+and that other models for the flow which use different formulations for
+friction, lead to western boundary currents with different structure.
+Pedlosky (1987, Chapter 5) gives a very useful, succinct, and
+mathematically clear description of the various theories for western
+boundary currents.</p>
+<p>In the next chapter, we will see that Stommel’s results can also be
+explained in terms of vorticity—wind produces clockwise torque
+(vorticity), which must be balanced by a counterclockwise torque
+produced at the western boundary.</p>
+<p>Figure 11.5 Stream function</p>
+<p>for flow in a basin as calculated by Stommel (1948). <strong>Left:</strong> Flow for
+non-rotating basin or flow for a basin with constant rotation.
+<strong>Right:</strong> Flow when rotation varies linearly with y.
+<span id="fig:stommelcurrents" label="fig:stommelcurrents"></span></p>
+</section>
+<section id="munks-solution">
+<h2><span class="section-number">11.3. </span>Munk’s Solution<a class="headerlink" href="#munks-solution" title="Link to this heading">#</a></h2>
+<p>Sverdrup’s and Stommel’s work suggested the dominant processes producing
+a basin-wide, wind-driven circulation. Munk (1950) built upon this
+foundation, adding information from Rossby (1936) on lateral eddy
+viscosity, to obtain a solution for the circulation within an ocean
+basin. Munk used Sverdrup’s idea of a vertically integrated mass
+transport flowing over a motionless deeper layer. This simplified the
+mathematical problem, and it is more realistic. The ocean currents are
+concentrated in the upper kilometer of the ocean, they are not
+barotropic and independent of depth. To include friction, Munk used
+lateral eddy friction with constant <span class="math notranslate nohighlight">\(A_H = A_x = A_y\)</span>. Equations (11.1)
+become:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{1}{\rho}\, \frac{\partial{p}}{\partial{x}}
+&amp;=\quad f \,v+\frac{\partial}{\partial{z}}\left(A_z
+\frac{\partial{u}}{\partial{z}}\right) + A_H\,
+\frac{\partial^2{u}}{\partial{x}^2} + A_H\, \frac{\partial^2{u}}{\partial{y}^2} \\
+\frac{1}{\rho}\, \frac{\partial{p}}{\partial{y}} &amp;=\:-f \,u+\frac{\partial}{\partial{z}}\left(A_z
+\frac{\partial{v}}{\partial{z}}\right) + A_H\, \frac{\partial^2{v}}{\partial{x}^2} + A_H\,
+\frac{\partial^2{v}}{\partial{y}^2}\end{aligned}\end{split}\]</div>
+<p>Munk integrated the equations from a depth <span class="math notranslate nohighlight">\(-D\)</span> to the surface at
+<span class="math notranslate nohighlight">\(z = z_0\)</span> which is similar to Sverdrup’s integration except that the
+surface is not at <span class="math notranslate nohighlight">\(z = 0\)</span>. Munk assumed that currents at the depth <span class="math notranslate nohighlight">\(-D\)</span>
+vanish, that (11.3) apply at the horizontal boundaries at the top and
+bottom of the layer, and that <span class="math notranslate nohighlight">\(A_H\)</span> is constant.</p>
+<p>To simplify the equations, Munk used the mass-transport stream function
+(11.15), and he proceeded along the lines of Sverdrup. He eliminated the
+pressure term by taking the <span class="math notranslate nohighlight">\(y\)</span> derivative of (11.17a) and the <span class="math notranslate nohighlight">\(x\)</span>
+derivative of (11.17b) to obtain the equation for mass transport:
+$<span class="math notranslate nohighlight">\(\underbrace{A_H \nabla^{4}
+\Psi\vphantom{\frac{\partial\Psi}{\partial{x}}}}_{\text{Friction}}\:-\:\underbrace{\beta\,\frac{\partial\Psi}{\partial{x}} =-\,\text{curl}_z T
+\,}_{\text{Sverdrup Balance}}\)</span><span class="math notranslate nohighlight">\( where
+\)</span><span class="math notranslate nohighlight">\(\nabla^4 =\frac{\partial^4}{\partial{x}^4}+2\,\frac{\partial^4}{\partial{x}^2
+\,\partial{y}^2} + \frac{\partial^4}{\partial{y}^4}\)</span><span class="math notranslate nohighlight">\( is the biharmonic
+operator. Equation (11.18) is the same as (11.6) with the addition of
+the lateral friction term \)</span>A_H$. The friction term is large close to a
+lateral boundary where the horizontal derivatives of the velocity field
+are large, and it is small in the interior of the ocean basin. Thus in
+the interior, the balance of forces is the same as that in Sverdrup’s
+solution.</p>
+<p><span class="image">image</span> Figure 11.6 <strong>Left:</strong> Mean</p>
+<p>annual wind stress <span class="math notranslate nohighlight">\(T_x (y)\)</span> over the Pacific and the curl of the wind
+stress. <span class="math notranslate nohighlight">\(\varphi _b\)</span> are the northern and southern boundaries of the
+gyres, where <span class="math notranslate nohighlight">\(M_y = 0\)</span> and curl <span class="math notranslate nohighlight">\(\tau = 0\)</span>. <span class="math notranslate nohighlight">\(\varphi _0\)</span> is the center
+of the gyre. <strong>Upper Right:</strong> The mass transport stream function for a
+rectangular basin calculated by Munk (1950) using observed wind stress
+for the Pacific. Contour interval is 10 Sverdrups. The total transport
+between the coast and any point <span class="math notranslate nohighlight">\(x,y\)</span> is <span class="math notranslate nohighlight">\(\psi (x,y)\)</span>.The transport in
+the relatively narrow northern section is greatly exaggerated. <strong>Lower
+Right:</strong> North-South component of the mass transport. After Munk (1950).
+<span id="fig:munkcurrents" label="fig:munkcurrents"></span></p>
+<p>Equation (11.18) is a fourth-order partial differential equation, and
+four boundary conditions are needed. Munk assumed the flow at a boundary
+is parallel to a boundary and that there is no slip at the boundary:
+$<span class="math notranslate nohighlight">\(\Psi_{bdry} = 0, \qquad \left(\frac{\partial{\Psi}}{\partial{n}}\right)_{bdry} = 0\)</span><span class="math notranslate nohighlight">\(
+where \)</span>n<span class="math notranslate nohighlight">\( is normal to the boundary. Munk then solved (11.18) with
+(11.20) assuming the flow was in a rectangular basin extending from \)</span>x = 0<span class="math notranslate nohighlight">\( to \)</span>x = r<span class="math notranslate nohighlight">\(, and from \)</span>y = -s<span class="math notranslate nohighlight">\( to \)</span>y = +s<span class="math notranslate nohighlight">\(. He further assumed that
+the wind stress was zonal and in the form: \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+T&amp;=a\,\cos ny + b\,\sin ny \,+\, c  \notag \\
+n&amp;=j\,\pi/s, \qquad j=1,\,2,\,\dots\end{aligned}\)</span>$</p>
+<p>Munk’s solution (figure 11.6) shows the dominant features of the
+gyre-scale circulation in an ocean basin. It has a circulation similar
+to Sverdrup’s in the eastern parts of the ocean basin and a strong
+western boundary current in the west. Using <span class="math notranslate nohighlight">\(A_H = 5 \times 10^{3}\)</span>
+m<span class="math notranslate nohighlight">\(^2\)</span>/s gives a boundary current roughly 225 km wide with a shape
+similar to the flow observed in the Gulf Stream and the Kuroshio.</p>
+<p>The transport in western boundary currents is independent of <span class="math notranslate nohighlight">\(A_H\)</span>, and
+it depends only on (11.6) integrated across the width of the ocean
+basin. Hence, it depends on the width of the ocean, the curl of the wind
+stress, and <span class="math notranslate nohighlight">\(\beta\)</span>. Using the best available estimates of the wind
+stress, Munk calculated that the Gulf Stream should have a transport of
+36 Sv and that the Kuroshio should have a transport of 39 Sv. The values
+are about one half of the measured values of the flow available to Munk.
+This is very good agreement considering the wind stress was not well
+known.</p>
+<p>Recent recalculations show good agreement except for the region offshore
+of Cape Hatteras where there is a strong recirculation. Munk’s solution
+was based on wind stress averaged aver 5squares. This underestimated the
+curl of the stress. Leetmaa and Bunker (1978) used modern drag
+coefficient and 2<span class="math notranslate nohighlight">\(\times\)</span> 5 averages of stress to obtain 32 Sv transport
+in the Gulf Stream, a value very close to that calculated by Munk.</p>
+</section>
+<section id="observed-surface-circulation-in-the-atlantic">
+<h2><span class="section-number">11.4. </span>Observed Surface Circulation in the Atlantic<a class="headerlink" href="#observed-surface-circulation-in-the-atlantic" title="Link to this heading">#</a></h2>
+<p>The theories by Sverdrup, Munk, and Stommel describe an idealized flow.
+But the ocean is much more complicated. To see just how complicated the
+flow is at the surface, let’s look at a whole ocean basin, the north
+Atlantic. I have chosen this region because it is the best observed, and
+because mid-latitude processes in the Atlantic are similar to
+mid-latitude processes in the other ocean. Thus, for example, I use the
+Gulf Stream as an example of a western boundary current.</p>
+<p>Let’s begin with the Gulf Stream to see how our understanding of ocean
+surface currents has evolved. Of course, we can’t look at all aspects of
+theflow. You can find out much more by reading Tomczak and Godfrey
+(1994) book on<em>Regional Oceanography: An Introduction</em>.</p>
+<section id="north-atlantic-circulation">
+<h3><span class="section-number">11.4.1. </span>North Atlantic Circulation<a class="headerlink" href="#north-atlantic-circulation" title="Link to this heading">#</a></h3>
+<p>The north Atlantic is the most thoroughly studied ocean basin. There is
+an extensive body of theory to describe most aspects of the circulation,
+including flow at the surface, in the thermocline, and at depth,
+together with an extensive body of field observations. By looking at
+figures showing the circulation, we can learn more about the
+circulation, and by looking at the figures produced over the past few
+decades we can trace an ever more complete understanding of the
+circulation.</p>
+<p>Let’s begin with the traditional view of the time-averaged surface flow
+in the north Atlantic based mostly on hydrographic observations of the
+density field (figure 2.7). It is a contemporary view of the mean
+circulation of the entire ocean based on a century of more of
+observations. Because the figure includes all the ocean, perhaps it is
+overly simplified. So, let’s look then at a similar view of the mean
+circulation of just the north Atlantic (figure 11.7).</p>
+<p>The figure shows a broad, basin-wide, mid latitude gyre as we expect
+from Sverdrup’s theory described in §11.1. In the west, a western
+boundary current, the Gulf Stream, completes the gyre. In the north a
+subpolar gyre includes the Labrador current. An equatorial current
+system and countercurrent are found at low latitudes with flow similar
+to that in the Pacific. Note, however, the strong cross equatorial flow
+in the west which flows along the northeast coast of Brazil toward the
+Caribbean.</p>
+<p>Figure 11.7 Sketch</p>
+<p>of the major surface currents in the North Atlantic. Values are
+transport in units of <span class="math notranslate nohighlight">\(10^6\)</span> m<span class="math notranslate nohighlight">\(^3\)</span>/s. After Sverdrup, Johnson, and
+Fleming (1942: fig. 187).</p>
+<p><span id="fig:NAtlcur1" label="fig:NAtlcur1"></span></p>
+<p>Figure 11.8 Detailed schematic</p>
+<p>of named currents in the north Atlantic. The numbers give the transport
+in units on <span class="math notranslate nohighlight">\(10^6 m^3/s\)</span> from the surface to a depth of 1 km. <strong>Eg</strong>:
+East Greenland Current; <strong>Ei</strong>: East Iceland Current; <strong>Gu</strong>: Gulf
+Stream; <strong>Ir</strong>: Irminger Current; <strong>La</strong>: Labrador Current; <strong>Na</strong>:
+North Atlantic Current; <strong>Nc</strong>: North Cape Current; <strong>Ng</strong>: Norwegian
+Current; <strong>Ni</strong>: North Iceland Current; <strong>Po</strong>: Portugal Current;
+<strong>Sb</strong>: Spitsbergen Current; <strong>Wg</strong>: West Greenland Current. Numbers
+within squares give sinking water in units on <span class="math notranslate nohighlight">\(10^6 m^3 /s\)</span>. Solid
+Lines: Warmer currents. Broken Lines: Colder currents. After Dietrich et
+al. (1980: 542). <span id="fig:NATLcur1" label="fig:NATLcur1"></span></p>
+<p>If we look closer at the flow in the far north Atlantic (figure 11.8) we
+see that the flow is still more complex. This figure includes much more
+detail of a region important for fisheries and commerce. Because it is
+based on an extensive base of hydrographic observations, is this
+reality? For example, if we were to drop a Lagrangian float into the
+Atlantic would it follow the streamline shown in the figure?</p>
+<p>To answer the question, let’s look at the tracks of a 110 buoys drifting
+on the sea surface compiled by Phil Richardson (figure 11.9 top). The
+tracks give a very different view of the currents in the north Atlantic.
+It is hard to distinguish the flow from the jumble of lines, sometimes
+called spaghetti tracks. Clearly, the flow is very turbulent, especially
+in the Gulf Stream, a fast, western-boundary current. Furthermore, the
+turbulent eddies seem to have a diameter of a few degrees. This is much
+different than turbulence in the atmosphere. In the air, the large
+eddies are called storms, and storms have diameters of 10–20. Thus
+oceanic “storms” are much smaller than atmospheric storms.</p>
+<p>Perhaps we can see the mean flow if we average the drifter tracks. What
+happens when Richardson averages the tracks through
+<span class="math notranslate nohighlight">\(2^{\circ} \times 2^{\circ}\)</span> boxes? The averages (figure 11.9 bottom)
+begin to show some trends, but note that in some regions, such as east
+of the Gulf Stream, adjacent boxes have very different means, some
+having currents going in different directions. This indicates the flow
+is so variable, that the average is not stable. Forty or more
+observations do not yields a stable mean value. Overall, Richardson
+finds that the kinetic energy of the eddies is 8 to 37 times larger than
+the kinetic energy of the mean flow. Thus oceanic turbulence is very
+different than laboratory turbulence. In the lab, the mean flow is
+typically much faster than the eddies.</p>
+<p>Further work by Richardson (1993) based on subsurface buoys freely
+drifting at depths between 500 and 3,500 m, shows that the current
+extends deep below the surface, and that typical eddy diameter is 80 km.</p>
+<p>Figure 11.9 <strong>Top</strong> Tracks</p>
+<p>of 110 drifting buoys deployed in the western north Atlantic. <strong>Bottom</strong>
+Mean velocity of currents in <span class="math notranslate nohighlight">\(2^{\circ} \times 2^{\circ}\)</span> boxes calculated from tracks above. Boxes with fewer
+than 40 observations were omitted. Length of arrow is proportional to
+speed. Maximum values are near 0.6 m/s in the Gulf Stream near 37N 71W.
+After Richardson (1981).</p>
+<p><span id="fig:drifters" label="fig:drifters"></span></p>
+</section>
+<section id="gulf-stream-recirculation-region">
+<h3><span class="section-number">11.4.2. </span>Gulf Stream Recirculation Region<a class="headerlink" href="#gulf-stream-recirculation-region" title="Link to this heading">#</a></h3>
+<p>If we look closely at figure 11.7 we see that the transport in the Gulf
+Stream increases from 26 Sv in the Florida Strait (between Florida and
+Cuba) to 55 Sv offshore of Cape Hatteras. Later measurements showed the
+transport increases from 30 Sv in the Florida Strait to 150 Sv near 40N.</p>
+<p>The observed increase, and the large transport off Hatteras, disagree
+with transports calculated from Sverdrup’s theory. Theory predicts a
+much smaller maximum transport of 30 Sv, and that the maximum ought to
+be near 28N. Now we have a problem: What causes the high transports near
+40N?</p>
+<p>Figure 11.10 Gulf Stream</p>
+<p>meanders lead to the formation of a spinning eddy, a ring.<br />
+Notice that rings have a diameter of about 1. After Ring Group (1981).</p>
+<p><span id="fig:ringformation" label="fig:ringformation"></span></p>
+<p>Niiler (1987) summarizes the theory and observations. First, there is no
+hydrographic evidence for a large influx of water from the Antilles
+Current that flows north of the Bahamas and into the Gulf Stream. This
+rules out the possibility that the Sverdrup flow is larger than the
+calculated value, and that the flow bypasses the Gulf of Mexico. The
+flow seems to come primarily from the Gulf Stream itself. The flow
+between 60W and 55W is to the south. The water then flows south and
+west, and rejoins the Stream between 65W and 75W. Thus, there are two
+subtropical gyres: a small gyre directly south of the Stream centered on
+65W, called the Gulf Stream recirculation region, and the broad,
+wind-driven gyre near the surface seen in figure 11.7 that extends all
+the way to Europe.</p>
+<p>Figure 11.11 Sketch</p>
+<p>of the position of the Gulf Stream, warm core, and cold core eddies
+observed in infrared images of the sea surface collected by the infrared
+radiometer on <span class="smallcaps">noaa</span>-5 in October and December 1978. After
+Tolmazin (1985: 91).</p>
+<p><span id="fig:ringsmap" label="fig:ringsmap"></span></p>
+<p>The Gulf Stream recirculation carries two to three times the mass of the
+broader gyre. Current meters deployed in the recirculation region show
+that the flow extends to the bottom. This explains why the recirculation
+is weak in the maps calculated from hydrographic data. Currents
+calculated from the density distribution give only the baroclinic
+component of the flow, and they miss the component that is independent
+of depth, the barotropic component.</p>
+<p>The Gulf Stream recirculation is driven by the potential energy of the
+steeply sloping thermocline at the Gulf Stream. The depth of the 27.00
+sigma-theta (<span class="math notranslate nohighlight">\(\sigma_{\theta}\)</span>) surface drops from 250 meters near 41N
+in figure 10.8 to 800 m near 38N south of the Stream. Eddies in the
+Stream convert the potential energy to kinetic energy through baroclinic
+instability. The instability leads to an interesting phenomena: negative
+viscosity. The Gulf Stream accelerates not decelerates. It acts as
+though it were under the influence of a negative viscosity. The same
+process drives the jet stream in the atmosphere. The steeply sloping
+density surface separating the polar air mass from mid-latitude air
+masses at the atmosphere’s polar front also leads to baroclinic
+instability. For more on this topic see Starr’s (1968) book on <em>Physics
+of Negative Viscosity Phenomena</em>.</p>
+<p>Let’s look at this process in the Gulf Stream (figure 11.10). The strong
+current shear in the Stream causes the flow to begin to meander. The
+meander intensifies, and eventually the Stream throws off a ring. Those
+on the south side drift southwest, and eventually merge with the stream
+several months later (figure 11.11). The process occurs all along the
+recirculation region, and satellite images show nearly a dozen or so
+rings occur north and south of the stream (figure 11.11).</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">11.5. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>The theory for wind-driven, geostrophic currents was first outlined
+in a series of papers by Sverdrup, Stommel, and Munk between 1947
+and 1951.</p>
+<p>They showed that realistic currents can be calculated only if the
+Coriolis parameter varies with latitude.</p>
+<p>Sverdrup showed that the curl of the wind stress drives a northward
+mass transport, and that this can be used to calculate currents in
+the ocean away from western boundary currents.</p>
+<p>Stommel showed that western boundary currents are required for flow
+to circulate around an ocean basin when the Coriolis parameter
+varies with latitude.</p>
+<p>Munk showed how to combine the two solutions to calculate the
+wind-driven geostrophic circulation in an ocean basin. In all cases,
+the current is driven by the curl of the wind stress.</p>
+<p>The observed circulation in the ocean is very turbulent. Many years
+of observations may need to be averaged together to obtain a stable
+map of the mean flow.</p>
+<p>The Gulf Stream is a region of baroclinic instability in which
+turbulence accelerates the stream. This creates a Gulf Stream
+recirculation. Transports in the recirculation region are much
+larger than transports calculated from the Sverdrup-Munk theory.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter10.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Geostrophic Currents</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter12.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Vorticity in the Ocean</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sverdrups-theory-of-the-oceanic-circulation">11.1. Sverdrup’s Theory of the Oceanic Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-sverdrups-solutions">11.1.1. Comments on Sverdrup’s Solutions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stream-lines-path-lines-and-the-stream-function">11.1.2. Stream Lines, Path Lines, and the Stream Function</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stommels-theory-of-western-boundary-currents">11.2. Stommel’s Theory of Western Boundary Currents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#munks-solution">11.3. Munk’s Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observed-surface-circulation-in-the-atlantic">11.4. Observed Surface Circulation in the Atlantic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#north-atlantic-circulation">11.4.1. North Atlantic Circulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gulf-stream-recirculation-region">11.4.2. Gulf Stream Recirculation Region</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">11.5. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

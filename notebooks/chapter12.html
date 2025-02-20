@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>12. Vorticity in the Ocean &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter12';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="13. Deep Circulation in the Ocean" href="chapter13.html" />
+    <link rel="prev" title="11. Wind Driven Ocean Circulation" href="chapter11.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter13.html">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter12.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter12.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vorticity in the Ocean</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-of-vorticity">12.1. Definitions of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planetary-vorticity">12.1.1. Planetary Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-vorticity">12.1.2. Relative Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-vorticity">12.1.3. Absolute Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-vorticity">12.1.4. Potential Vorticity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-vorticity">12.2. Conservation of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-potential-vorticity">12.2.1. Conservation of Potential Vorticity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-of-vorticity">12.3. Influence of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-tends-to-be-zonal">12.3.1. Flow Tends to be Zonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topographic-steering">12.3.2. Topographic Steering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#western-boundary-currents">12.3.3. Western Boundary Currents</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorticity-and-ekman-pumping">12.4. Vorticity and Ekman Pumping</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics-on-the-f-plane-the-taylor-proudman-theorem">12.4.1. Fluid dynamics on the <em><strong>f</strong></em> Plane: the Taylor-Proudman Theorem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics-on-the-beta-plane-ekman-pumping">12.4.2. Fluid Dynamics on the Beta Plane: Ekman Pumping</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping-in-the-ocean">12.4.3. Ekman Pumping in the Ocean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping-an-example">12.4.4. Ekman Pumping: An Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">12.5. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vorticity-in-the-ocean">
+<h1><span class="section-number">12. </span>Vorticity in the Ocean<a class="headerlink" href="#vorticity-in-the-ocean" title="Link to this heading">#</a></h1>
+<p>Most of the fluid flows with which we are familiar, from bathtubs to
+swimming pools, are not rotating, or they are rotating so slowly that
+rotation is not important except maybe at the drain of a bathtub as
+water is let out. As a result, we do not have a good intuitive
+understanding of rotating flows. In the ocean, rotation and the
+conservation of vorticity strongly influence flow over distances
+exceeding a few tens of kilometers. The consequences of the rotation
+leads to results we have not seen before in our day-to-day dealings with
+fluids. For example, did you ask yourself why the curl of the wind
+stress leads to a mass transport in the north-south direction and not in
+the east-west direction? What is special about north-south motion? In
+this chapter, I will explore some of the consequences of rotation for
+flow in the ocean.</p>
+<section id="definitions-of-vorticity">
+<h2><span class="section-number">12.1. </span>Definitions of Vorticity<a class="headerlink" href="#definitions-of-vorticity" title="Link to this heading">#</a></h2>
+<p>In simple words, vorticity is the rotation of the fluid. The rate of
+rotation can be defined various ways. Consider a bowl of water sitting
+on a table in a laboratory. The water may be spinning in the bowl. In
+addition to the spinning of the water, the bowl and the laboratory are
+rotating because they are on a rotating earth. The two processes are
+separate and lead to two types of vorticity.</p>
+<section id="planetary-vorticity">
+<h3><span class="section-number">12.1.1. </span>Planetary Vorticity<a class="headerlink" href="#planetary-vorticity" title="Link to this heading">#</a></h3>
+<p>Everything on earth, including the ocean, the atmosphere, and bowls of
+water, rotates with the earth. This rotation is the <em>planetary
+vorticity</em> <span class="math notranslate nohighlight">\(f\)</span>. It is twice the local rate of rotation of earth:
+$<span class="math notranslate nohighlight">\(\boxed{f \equiv 2\,\Omega \sin \varphi \,\, \text{(radians/s)} = 2 \sin \varphi
+\,\, \text{(cycles/day)}}\)</span><span class="math notranslate nohighlight">\( Planetary vorticity is the Coriolis
+parameter I used earlier to discuss flow in the ocean. It is greatest at
+the poles where it is twice the rotation rate of earth. Note that the
+vorticity vanishes at the equator and that the vorticity in the southern
+hemisphere is negative because \)</span>\varphi$ is negative.</p>
+</section>
+<section id="relative-vorticity">
+<h3><span class="section-number">12.1.2. </span>Relative Vorticity<a class="headerlink" href="#relative-vorticity" title="Link to this heading">#</a></h3>
+<p>The ocean and atmosphere do not rotate at exactly the same rate as
+earth. They have some rotation relative to earth due to currents and
+winds. <em>Relative vorticity</em> <span class="math notranslate nohighlight">\(\zeta\)</span> is the vorticity due to currents in
+the ocean. Mathematically it is:
+$<span class="math notranslate nohighlight">\(\boxed{ \zeta \equiv \text{curl}_z\, \textbf{V} =
+\frac{\partial{v}}{\partial{x}}-\frac{\partial{u}}{\partial{y}} }\)</span><span class="math notranslate nohighlight">\(
+where \)</span>\textbf{V} = (u, v)<span class="math notranslate nohighlight">\( is the horizontal velocity vector, and where
+we have assumed that the flow is two-dimensional. This is true if the
+flow extends over distances greater than a few tens of kilometers.
+\)</span>\zeta<span class="math notranslate nohighlight">\( is the vertical component of the three-dimensional vorticity
+vector \)</span>\omega<span class="math notranslate nohighlight">\(, and it is sometimes written \)</span>\omega{_z}<span class="math notranslate nohighlight">\(. \)</span>\zeta$ is
+positive for counter-clockwise rotation viewed from above. This is the
+same sense as earth’s rotation in the northern hemisphere.</p>
+<p><em>Note on Symbols</em> Symbols commonly used in one part of oceanography
+often have very different meaning in another part. Here I use <span class="math notranslate nohighlight">\(\zeta\)</span>
+for vorticity, but in Chapter 10, I used <span class="math notranslate nohighlight">\(\zeta\)</span> to mean the height of
+the sea surface. I could use <span class="math notranslate nohighlight">\(\omega_z\)</span> for relative vorticity, but
+<span class="math notranslate nohighlight">\(\omega\)</span> is also commonly used to mean frequency in radians per second.
+I have tried to eliminate most confusing uses, but the dual use of
+<span class="math notranslate nohighlight">\(\zeta\)</span> is one we will have to live with. Fortunately, it shouldn’t
+cause much confusion.</p>
+<p>For a rigid body rotating at rate <span class="math notranslate nohighlight">\(\Omega\)</span>, curl<strong>V</strong> <span class="math notranslate nohighlight">\(=2\,\Omega\)</span>. Of
+course, the flow does not need to rotate as a rigid body to have
+relative vorticity. Vorticity can also result from shear. For example,
+at a north/south western boundary in the ocean, <span class="math notranslate nohighlight">\(u=0\)</span>, <span class="math notranslate nohighlight">\(v=v(x)\)</span> and
+<span class="math notranslate nohighlight">\(\zeta = \partial{v(x)}/\partial{x}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\zeta\)</span> is usually much smaller than <span class="math notranslate nohighlight">\(f\)</span>, and it is greatest at the edge
+of fast currents such as the Gulf Stream. To obtain some understanding
+of the size of <span class="math notranslate nohighlight">\(\zeta\)</span>, consider the edge of the Gulf Stream off Cape
+Hatteras where the velocity decreases by 1 m/s in 100 km at the
+boundary. The curl of the current is approximately (1 m/s)/(100 km) =
+0.14 cycles/day = 1 cycle/week. Hence even this large relative vorticity
+is still almost seven times smaller than <span class="math notranslate nohighlight">\(f\)</span>. A more typical values of
+relative vorticity, such as the vorticity of eddies, is a cycle per
+month.</p>
+</section>
+<section id="absolute-vorticity">
+<h3><span class="section-number">12.1.3. </span>Absolute Vorticity<a class="headerlink" href="#absolute-vorticity" title="Link to this heading">#</a></h3>
+<p>The sum of the planetary and relative vorticity is called <em>absolute
+vorticity</em>: $<span class="math notranslate nohighlight">\(\boxed{ \text{Absolute Vorticity} \equiv (\zeta + f) }\)</span>$</p>
+<p>We can obtain an equation for absolute vorticity in the ocean by
+manipulating the equations of motion for frictionless flow. We begin
+with:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{Du}{Dt} -f\,v &amp;= -\frac{1}{\rho}\,\frac{\partial{p}}{\partial{x}} \\
+\frac{Dv}{Dt} +f\,u &amp;= -\frac{1}{\rho}\,\frac{\partial{p}}{\partial{y}}\end{aligned}\end{split}\]</div>
+<p>If we expand the substantial derivative, and if we subtract
+<span class="math notranslate nohighlight">\(\partial\:/\partial{y}\)</span> of (12.4a) from <span class="math notranslate nohighlight">\(\partial\:/\partial{x}\)</span> of
+(12.4b) to eliminate the pressure terms, we obtain after some algebraic
+manipulations:
+$<span class="math notranslate nohighlight">\(\boxed{ \frac{D}{Dt}\left(\zeta +f  \right) + \left(\zeta +f  \right)
+\left(\frac{\partial{u}}{\partial{x}} +
+\frac{\partial{v}}{\partial{y}} \right) = 0 }\)</span><span class="math notranslate nohighlight">\( In deriving (12.5) we
+used: \)</span><span class="math notranslate nohighlight">\(\frac{Df}{Dt} = \frac{\partial{f}}{\partial{t}}
++u\,\frac{\partial{f}}{\partial{x}} +v\,\frac{\partial{f}}{\partial{y}} = \beta
+\,v \notag\)</span><span class="math notranslate nohighlight">\( because \)</span>f<span class="math notranslate nohighlight">\( is independent of time \)</span>t<span class="math notranslate nohighlight">\( and eastward
+distance \)</span>x$.</p>
+</section>
+<section id="potential-vorticity">
+<h3><span class="section-number">12.1.4. </span>Potential Vorticity<a class="headerlink" href="#potential-vorticity" title="Link to this heading">#</a></h3>
+<p>The rotation rate of a column of fluid changes as the column is expanded
+or contracted. This changes the vorticity through changes in <span class="math notranslate nohighlight">\(\zeta\)</span>. To
+see how this happens, consider barotropic, geostrophic flow in an ocean
+with depth <span class="math notranslate nohighlight">\(H(x, y, t)\)</span>, where <span class="math notranslate nohighlight">\(H\)</span> is the distance from the sea surface
+to the bottom. That is, we allow the surface to have topography (figure
+12.1).</p>
+<p>Figure 12.1 Sketch of fluid flow used</p>
+<p>for deriving conservation of<br />
+potential vorticity. After Cushman-Roisin (1994: 55).</p>
+<p><span id="fig:vorticitysketch" label="fig:vorticitysketch"></span></p>
+<p>Integrating the continuity equation (7.19) from the bottom to the top of
+the ocean gives (Cushman-Roisin, 1994):
+$<span class="math notranslate nohighlight">\(\left( \frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}}\right) \int_{b}^{b+H} dz + w \bigr|_{b}^{b+H} = 0\)</span><span class="math notranslate nohighlight">\(
+where \)</span>b<span class="math notranslate nohighlight">\( is the topography of the bottom, and \)</span>H<span class="math notranslate nohighlight">\( is the depth of the
+water. Notice that \)</span>\partial{u}/\partial{x}<span class="math notranslate nohighlight">\( and
+\)</span>\partial{v}/\partial{y}<span class="math notranslate nohighlight">\( are independent of \)</span>z$ because they are
+barotropic, and the terms can be taken outside the integral.</p>
+<p>The boundary conditions require that flow at the surface and the bottom
+be along the surface and the bottom. Thus the vertical velocities at the
+top and the bottom are: $<span class="math notranslate nohighlight">\(\begin{aligned}
+w(b+H) &amp;= \frac{\partial{(b+H)}}{\partial{t}} + u\,\frac{\partial{(b+H)}}{\partial{x}}+v\, \frac{\partial{(b+H)}}{\partial{y}} \\
+w(b) &amp;= u\,\frac{\partial{(b)}}{\partial{x}}+v\,\frac{\partial{(b)}}{\partial{y}}\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+where we used \)</span>\partial{b}/\partial{t} = 0<span class="math notranslate nohighlight">\( because the bottom does not
+move, and \)</span>\partial{H}/\partial{z} = 0<span class="math notranslate nohighlight">\(. Substituting (12.7) and (12.8)
+into (12.6) we obtain
+\)</span><span class="math notranslate nohighlight">\(\left( \frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}}\right) + \frac{1}{H}\,\frac{DH}{Dt} = 0\)</span><span class="math notranslate nohighlight">\(
+Substituting this into (12.5) gives:
+\)</span><span class="math notranslate nohighlight">\(\frac{D}{Dt}\left(\zeta +f  \right) -\frac{\left(\zeta +f
+\right)}{H}\,\frac{DH}{Dt} = 0\)</span><span class="math notranslate nohighlight">\( which can be written:
+\)</span><span class="math notranslate nohighlight">\(\frac{D }{Dt}\,\left( \frac{\zeta + f}{H} \right) = 0\)</span><span class="math notranslate nohighlight">\( The quantity
+within the parentheses must be constant. It is called *potential
+vorticity* \)</span>\Pi<span class="math notranslate nohighlight">\(. Potential vorticity is conserved along a fluid
+trajectory:
+\)</span><span class="math notranslate nohighlight">\(\boxed{\text{Potential Vorticity} = \Pi \equiv \frac{\zeta + f}{H} }\)</span>$</p>
+<p>For baroclinic flow in a continuously stratified fluid, the potential
+vorticity can be written (Pedlosky, 1987: §2.5):
+$<span class="math notranslate nohighlight">\(\Pi = \frac{\zeta + f}{\rho} \cdot \nabla \lambda\)</span><span class="math notranslate nohighlight">\( where \)</span>\lambda<span class="math notranslate nohighlight">\( is
+any conserved quantity for each fluid element. In, particular, if
+\)</span>\lambda = \rho<span class="math notranslate nohighlight">\( then:
+\)</span><span class="math notranslate nohighlight">\(\Pi = \frac{\zeta + f}{\rho}\,\frac{\partial{\rho}}{\partial{z}}\)</span><span class="math notranslate nohighlight">\(
+assuming the horizontal gradients of density are small compared with the
+vertical gradients, a good assumption in the thermocline. In most of the
+interior of the ocean, \)</span>f \gg \zeta<span class="math notranslate nohighlight">\( and (12.11) is written (Pedlosky,
+1996, eq 3.11.2):
+\)</span><span class="math notranslate nohighlight">\(\Pi = \frac{f}{\rho}\,\frac{\partial{\rho}}{\partial{z}}\)</span>$ This allows
+the potential vorticity of various layers of the ocean to be determined
+directly from hydrographic data without knowledge of the velocity field.</p>
+</section>
+</section>
+<section id="conservation-of-vorticity">
+<h2><span class="section-number">12.2. </span>Conservation of Vorticity<a class="headerlink" href="#conservation-of-vorticity" title="Link to this heading">#</a></h2>
+<p>The angular momentum of any isolated spinning body is conserved. The
+spinning body can be an eddy in the ocean or the earth in space. If the
+the spinning body is not isolated, that is, if it is linked to another
+body, then angular momentum can be transferred between the bodies. The
+two bodies need not be in physical contact. Gravitational forces can
+transfer momentum between bodies in space. I will return to this topic
+in Chapter 17 when I discuss tides in the ocean. Here, let’s look at
+conservation of vorticity in a spinning ocean.</p>
+<p>Friction is essential for the transfer of momentum in a fluid. Friction
+transfers momentum from the atmosphere to the ocean through the thin,
+frictional, Ekman layer at the sea surface. Friction transfers momentum
+from the ocean to the solid earth through the Ekman layer at the sea
+floor. Friction along the sides of sub-sea mountains leads to pressure
+differences on either side of the mountain which causes another kind of
+drag called <em>form drag</em>. This is the same drag that causes wind force on
+cars moving at high speed. In the vast interior of the ocean, however,
+the flow is frictionless, and vorticity is conserved. Such a flow is
+said to be <em>conservative</em>.</p>
+<section id="conservation-of-potential-vorticity">
+<h3><span class="section-number">12.2.1. </span>Conservation of Potential Vorticity<a class="headerlink" href="#conservation-of-potential-vorticity" title="Link to this heading">#</a></h3>
+<p>The conservation of potential vorticity couples changes in depth,
+relative vorticity, and changes in latitude. All three interact.</p>
+<p>Changes in the depth <span class="math notranslate nohighlight">\(H\)</span> of the flow changes in the relative vorticity.
+The concept is analogous with the way figure skaters decreases their
+spin by extending their arms and legs. The action increases their moment
+of inertia and decreases their rate of spin (figure 12.2).</p>
+<p>Figure 12.2 Sketch of the</p>
+<p>production of relative vorticity by the changes in the height of a fluid
+column. As the vertical fluid column moves from left to right, vertical
+stretching reduces the moment of inertia of the column, causing it to
+spin faster. <span id="fig:spinsketch" label="fig:spinsketch"></span></p>
+<p>Changes in latitude require a corresponding change in <span class="math notranslate nohighlight">\(\zeta\)</span>. As a
+column of water moves equatorward, <span class="math notranslate nohighlight">\(f\)</span> decreases, and <span class="math notranslate nohighlight">\(\zeta\)</span> must
+increase (figure 12.3). If this seems somewhat mysterious, von Arx
+(1962) suggests we consider a barrel of water at rest at the north pole.
+If the barrel is moved southward, the water in it retains the rotation
+it had at the pole, and it will appear to rotate counterclockwise at the
+new latitude where <span class="math notranslate nohighlight">\(f\)</span> is smaller.</p>
+<p>Figure 12.3 Angular</p>
+<p>momentum tends to be conserved as columns of water change latitude. This
+changes the relative vorticity of the columns. After von Arx (1962:
+110).</p>
+<p><span id="fig:planetaryvorticity" label="fig:planetaryvorticity"></span></p>
+</section>
+</section>
+<section id="influence-of-vorticity">
+<h2><span class="section-number">12.3. </span>Influence of Vorticity<a class="headerlink" href="#influence-of-vorticity" title="Link to this heading">#</a></h2>
+<p>The concept of conservation of potential vorticity has far reaching
+consequences, and its application to fluid flow in the ocean gives a
+deeper understanding of ocean currents.</p>
+<section id="flow-tends-to-be-zonal">
+<h3><span class="section-number">12.3.1. </span>Flow Tends to be Zonal<a class="headerlink" href="#flow-tends-to-be-zonal" title="Link to this heading">#</a></h3>
+<p>In the ocean <span class="math notranslate nohighlight">\(f\)</span> tends to be much larger than <span class="math notranslate nohighlight">\(\zeta\)</span> and thus <span class="math notranslate nohighlight">\(f/H =\)</span>
+constant. This requires that the flow in an ocean of constant depth be
+zonal. Of course, depth is not constant, but in general, currents tend
+to be east-west rather than north south. Wind makes small changes in
+<span class="math notranslate nohighlight">\(\zeta\)</span>, leading to a small meridional component to the flow (see figure
+11.3).</p>
+</section>
+<section id="topographic-steering">
+<h3><span class="section-number">12.3.2. </span>Topographic Steering<a class="headerlink" href="#topographic-steering" title="Link to this heading">#</a></h3>
+<p>Barotropic flows are diverted by sea floor features. Consider what
+happens when a flow that extends from the surface to the bottom
+encounters a sub-sea ridge (figure 12.4). As the depth decreases,
+<span class="math notranslate nohighlight">\(\zeta + f\)</span> must also decrease, which requires that <span class="math notranslate nohighlight">\(f\)</span> decrease, and
+the flow is turned toward the equator. This is called <em>topographic
+steering</em>. If the change in depth is sufficiently large, no change in
+latitude will be sufficient to conserve potential vorticity, and the
+flow will be unable to cross the ridge. This is called <em>topographic
+blocking</em>.</p>
+<p>Figure 12.4 Barotropic</p>
+<p>flow over a sub-sea ridge is turned equatorward<br />
+to conserve potential vorticity. After Dietrich et al. (1980: 333).</p>
+<p><span id="fig:ridgevorticity" label="fig:ridgevorticity"></span></p>
+</section>
+<section id="western-boundary-currents">
+<h3><span class="section-number">12.3.3. </span>Western Boundary Currents<a class="headerlink" href="#western-boundary-currents" title="Link to this heading">#</a></h3>
+<p>The balance of vorticity provides an alternate explanation for the
+existence of western boundary currents. Consider the gyre-scale flow in
+an ocean basin (figure 12.5), say in the north Atlantic from 10N to 50N.
+The wind blowing over the Atlantic adds negative vorticity
+<span class="math notranslate nohighlight">\(\zeta_{\tau}\)</span>. As the water flows around the gyre, the vorticity of the
+gyre must remain nearly constant, else the flow would spin faster or
+slower. Overall, the negative vorticity input by the wind must be
+balanced by a source of positive vorticity.</p>
+<p>Throughout most of the basin the negative vorticity input by the wind is
+balanced by an increase in relative vorticity. As the flow moves
+southward throughout the basin, <span class="math notranslate nohighlight">\(f\)</span> decreases and <span class="math notranslate nohighlight">\(\zeta\)</span> must increase
+according to (12.9) because <span class="math notranslate nohighlight">\(H\)</span>, the depth of the wind-driven
+circulation, does not change much.</p>
+<p>The balance breaks down, however, in the west where the flow returns
+northward. In the west, <span class="math notranslate nohighlight">\(f\)</span> increases, <span class="math notranslate nohighlight">\(\zeta\)</span> decreases, and a source
+of positive vorticity is needed. The positive vorticity <span class="math notranslate nohighlight">\(\zeta_{b}\)</span> is
+produced by the western boundary boundary current.</p>
+<p>Figure 12.5 The balance</p>
+<p>of potential vorticity can clarify why western boundary currents are
+necessary. <strong>Left:</strong> Vorticity input by the wind <span class="math notranslate nohighlight">\(\zeta_{\tau}\)</span> balances
+the change in relative vorticity <span class="math notranslate nohighlight">\(\zeta\)</span> in the east as the flow moves
+southward and <span class="math notranslate nohighlight">\(f\)</span> decreases. The two do not balance in the west where
+<span class="math notranslate nohighlight">\(\zeta\)</span> must decrease as the flow moves northward and <span class="math notranslate nohighlight">\(f\)</span> increases.
+<strong>Right:</strong> Vorticity in the west is balanced by relative vorticity
+<span class="math notranslate nohighlight">\(\zeta_b\)</span> generated by shear in the western boundary current.
+<span id="fig:westbdycurrent" label="fig:westbdycurrent"></span></p>
+</section>
+</section>
+<section id="vorticity-and-ekman-pumping">
+<h2><span class="section-number">12.4. </span>Vorticity and Ekman Pumping<a class="headerlink" href="#vorticity-and-ekman-pumping" title="Link to this heading">#</a></h2>
+<p>Rotation places another very interesting constraint on the geostrophic
+flow field. To help understand the constraints, let’s first consider
+flow in a fluid with constant rotation. Then we will look into how
+vorticity constrains the flow of a fluid with rotation that varies with
+latitude. An understanding of the constraints leads to a deeper
+understanding of Sverdrup’s and Stommel’s results discussed in the last
+chapter.</p>
+<section id="fluid-dynamics-on-the-f-plane-the-taylor-proudman-theorem">
+<h3><span class="section-number">12.4.1. </span>Fluid dynamics on the <em><strong>f</strong></em> Plane: the Taylor-Proudman Theorem<a class="headerlink" href="#fluid-dynamics-on-the-f-plane-the-taylor-proudman-theorem" title="Link to this heading">#</a></h3>
+<p>The influence of vorticity due to earth’s rotation is most striking for
+geostrophic flow of a fluid with constant density <span class="math notranslate nohighlight">\(\rho{_0}\)</span> on a plane
+with constant rotation <span class="math notranslate nohighlight">\(f = f_0\)</span>. From Chapter 10, the three components
+of the geostrophic equations (10.4) are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+f\,v &amp;= \;\;\, \frac{1}{\rho_{0}}\,\frac{\partial{p}}{\partial{x}} \\
+f\,u  &amp;= -\frac{1}{\rho_{0}}\,\frac{\partial{p}}{\partial{y}} \\
+g     &amp;= -\frac{1}{\rho_{0}}\,\frac{\partial{p}}{\partial{z}}
+%0     &amp;= \frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} +
+%\frac{\partial{w}}{\partial{z}}\end{aligned}$$ and the continuity
+equations (7.19) is:
+$$0 = \frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} +
+\frac{\partial{w}}{\partial{z}}\end{split}\]</div>
+<p>Taking the <span class="math notranslate nohighlight">\(z\)</span> derivative of (12.13a) and using (12.13c) gives:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-f_0\,\frac{\partial{v}}{\partial{z}} &amp;= -\frac{1}{\rho_{0}}\,\frac{\partial
+}{\partial{z}}\,
+\left(\frac{\partial{p}}{\partial{x}}\right) = \frac{\partial
+}{\partial{x}}\left(-\frac{1}{\rho_{0}}\,\frac{\partial{p}}{\partial{z}}\right) =
+\frac{\partial g}{\partial x}= 0
+\notag \\
+ f_{0} \frac{\partial{v}}{\partial{z}} &amp;= 0 \notag \\
+\therefore \quad \frac{\partial{v}}{\partial{z}} &amp;= 0 \notag\end{aligned}\end{split}\]</div>
+<p>Similarly, for the u-component of velocity (12.13b). Thus, the vertical
+derivative of the horizontal velocity field must be zero.
+$<span class="math notranslate nohighlight">\(\boxed{ \frac{\partial{u}}{\partial{z}} = \frac{\partial{v}}{\partial{z}} =0  }\)</span>$</p>
+<p>This is the <em>Taylor-Proudman Theorem</em>, which applies to slowly varying
+flows in a homogeneous, rotating, inviscid fluid. The theorem places
+strong constraints on the flow:</p>
+<blockquote>
+<div><p>If therefore any small motion be communicated to a rotating fluid the
+resulting motion of the fluid must be one in which any two particles
+originally in a line parallel to the axis of rotation must remain so,
+except for possible small oscillations about that position—Taylor
+(1921).</p>
+</div></blockquote>
+<p>Hence, rotation greatly stiffens the flow! Geostrophic flow cannot go
+over a seamount, it must go around it. Taylor (1921) explicitly derived
+(12.14) and (12.16) below. Proudman (1916) independently derived the
+same theorem but not as explicitly.</p>
+<p>Further consequences of the theorem can be obtained by eliminating the
+pressure terms from (12.13a &amp; 12.13b) to obtain:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} &amp;= -\frac{\partial }{\partial{x}} \left(\frac{1}{f_{0}\,\rho_{0}}\,
+\frac{\partial{p}}{\partial{y}} \right) + \frac{\partial }{\partial{y}} \left(\frac{1}{f_{0}\,\rho_{0}}\,
+\frac{\partial{p}}{\partial{x}} \right) \\
+\frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} &amp;= \frac{1}{f_{0}\,\rho_{0}} \left( -\frac{\partial ^2 p}{\partial{x}\,\partial{y}} + \frac{\partial ^2
+p}{\partial{x}\,\partial{y}} \right)  \\
+\frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} &amp;= 0\end{aligned}\end{split}\]</div>
+<p>Because the fluid is incompressible, the continuity equation (12.13d)
+requires $<span class="math notranslate nohighlight">\(\frac{\partial{w}}{\partial{z}} = 0\)</span><span class="math notranslate nohighlight">\( Furthermore, because
+\)</span>w = 0<span class="math notranslate nohighlight">\( at the sea surface and at the sea floor, if the bottom is level,
+there can be no vertical velocity on an \)</span>f$–plane. Note that the
+derivation of (12.16) did not require that density be constant. It
+requires only slow motion in a frictionless, rotating fluid.</p>
+</section>
+<section id="fluid-dynamics-on-the-beta-plane-ekman-pumping">
+<h3><span class="section-number">12.4.2. </span>Fluid Dynamics on the Beta Plane: Ekman Pumping<a class="headerlink" href="#fluid-dynamics-on-the-beta-plane-ekman-pumping" title="Link to this heading">#</a></h3>
+<p>If (12.16) is true, the flow cannot expand or contract in the vertical
+direction, and it is indeed as rigid as a steel bar. There can be no
+gradient of vertical velocity in an ocean with constant planetary
+vorticity. How then can the divergence of the Ekman transport at the sea
+surface lead to vertical velocities at the surface or at the base of the
+Ekman layer? The answer can only be that one of the constraints used in
+deriving (12.16) must be violated. One constraint that can be relaxed is
+the requirement that <span class="math notranslate nohighlight">\(f = f_0\)</span>.</p>
+<p>Consider then flow on a beta plane. If <span class="math notranslate nohighlight">\(f = f_0 + \beta\,y\)</span>, then
+(12.15a) becomes: $<span class="math notranslate nohighlight">\(\begin{aligned}
+\frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} &amp;= - \frac{1}{f\,\rho_{0}}\, \frac{\partial ^2 p}{\partial{x}\,\partial{y}} +
+\frac{1}{f\,\rho_{0}} \, \frac{\partial ^2 p}{\partial{x}\,\partial{y}} - \frac{\beta}{f} \,\frac{1}{f\,\rho_{0}}\,\frac{\partial{p}}{\partial{x}} \\
+f \left( \frac{\partial{u}}{\partial{x}} + \frac{\partial{v}}{\partial{y}} \right) &amp;= - \beta \, v\end{aligned}\)</span><span class="math notranslate nohighlight">\(
+where we have used (12.13a) to obtain \)</span>v$ in the right-hand side of
+(12.18).</p>
+<p>Using the continuity equation, and recalling that <span class="math notranslate nohighlight">\(\beta\, y \ll f_0\)</span>
+$<span class="math notranslate nohighlight">\(f_0 \frac{\partial{w_G}}{\partial{z}} = \beta \, v\)</span><span class="math notranslate nohighlight">\( where we have
+used the subscript \)</span>G<span class="math notranslate nohighlight">\( to emphasize that (12.19) applies to the ocean’s
+interior, geostrophic flow. Thus the variation of Coriolis force with
+latitude allows vertical velocity gradients in the geostrophic interior
+of the ocean, and the vertical velocity leads to north-south currents.
+This explains why Sverdrup and Stommel both needed to do their
+calculations on a \)</span>\beta$-plane.</p>
+</section>
+<section id="ekman-pumping-in-the-ocean">
+<h3><span class="section-number">12.4.3. </span>Ekman Pumping in the Ocean<a class="headerlink" href="#ekman-pumping-in-the-ocean" title="Link to this heading">#</a></h3>
+<p>In Chapter 9, we saw that the curl of the wind stress <span class="math notranslate nohighlight">\(\mathbf{T}\)</span>
+produced a divergence of the Ekman transports leading to a vertical
+velocity <span class="math notranslate nohighlight">\(w_E (0)\)</span> at the top of the Ekman layer. In Chapter 9 we
+derived
+$<span class="math notranslate nohighlight">\(w_E (0) = -\text{curl}\left(\frac{\mathbf{T}}{\rho f} \right)\)</span><span class="math notranslate nohighlight">\( which
+is (9.30b) where \)</span>\rho<span class="math notranslate nohighlight">\( is density and \)</span>f<span class="math notranslate nohighlight">\( is the Coriolis parameter.
+Because the vertical velocity at the sea surface must be zero, the Ekman
+vertical velocity must be balanced by a vertical geostrophic velocity
+\)</span>w_G(0)<span class="math notranslate nohighlight">\(.
+\)</span><span class="math notranslate nohighlight">\(w_E (0) = - w_G (0) = -\text{curl}\left(\frac{\mathbf{T}}{\rho f} \right)\)</span>$</p>
+<p>Ekman pumping (<span class="math notranslate nohighlight">\(w_E (0)\)</span>) drives a vertical geostrophic current (<span class="math notranslate nohighlight">\(-w_G (0)\)</span>) in the ocean’s interior. But why does this produce the northward
+current calculated by Sverdrup (11.6)? Peter Niiler (1987: 16) gives an
+explanation.</p>
+<blockquote>
+<div><p>Let us postulate there exists a deep level where horizontal and
+vertical motion of the water is much reduced from what it is just
+below the mixed layer [figure 12.6]<span class="math notranslate nohighlight">\(\ldots\)</span> Also let us assume that
+vorticity is conserved there (or mixing is small) and the flow is so
+slow that accelerations over the earth’s surface are much smaller than
+Coriolis accelerations. In such a situation a column of water of depth
+<span class="math notranslate nohighlight">\(H\)</span> will conserve its spin per unit volume, <span class="math notranslate nohighlight">\(f/H\)</span> (relative to the
+sun, parallel to the earth’s axis of rotation). A vortex column which
+is compressed from the top by wind-forced sinking (<span class="math notranslate nohighlight">\(H\)</span> decreases) and
+whose bottom is in relatively quiescent water would tend to shorten
+and slow its spin. Thus because of the curved ocean surface it has to
+move southward (or extend its column) to regain its spin. Therefore,
+there should be a massive flow of water at some depth below the
+surface to the south in areas where the surface layers produce a
+sinking motion and to the north where rising motion is produced. This
+phenomenon was first modeled correctly by Sverdrup (1947) (after he
+wrote “ocean”) and gives a dynamically plausible explanation of how
+wind produces deeper circulation in the ocean.</p>
+</div></blockquote>
+<p>Peter Rhines (1984) points out that the rigid column of water trying to
+escape the squeezing imposed by the atmosphere escapes by moving
+southward. The southward velocity is about 5,000 times greater than the
+vertical Ekman velocity.</p>
+<p>Figure 12.6 Ekman pumping</p>
+<p>that produces a downward velocity at the base of the Ekman layer forces
+the fluid in the interior of the ocean to move southward. See text for
+why this happens. After Niiler (1987).</p>
+<p><span id="fig:vorticity" label="fig:vorticity"></span></p>
+</section>
+<section id="ekman-pumping-an-example">
+<h3><span class="section-number">12.4.4. </span>Ekman Pumping: An Example<a class="headerlink" href="#ekman-pumping-an-example" title="Link to this heading">#</a></h3>
+<p>Now let’s see how Ekman pumping drives geostrophic flow in say the
+central north Pacific (figure 12.7) where the curl of the wind stress is
+negative. Westerlies in the north drive a southward transport, the
+trades in the south drive a northward transport. The converging Ekman
+transports must be balanced by downward geostrophic velocity (12.21).</p>
+<p>Figure 12.7 Winds</p>
+<p>at the sea surface drive Ekman transports to the right of the wind in
+this northern hemisphere example (bold arrows in shaded Ekman layer).
+The converging Ekman transports driven by the trades and westerlies
+drives a downward geostrophic flow just below the Ekman layer (bold
+vertical arrows), leading to downward bowing constant density surfaces
+<span class="math notranslate nohighlight">\(\rho_i\)</span>. Geostrophic currents associated with the warm water are shown
+by bold arrows. After Tolmazin (1985: 64). <span id="fig:EkmanPumping" label="fig:EkmanPumping"></span></p>
+<p>Figure 12.8 An example of how</p>
+<p>winds produce geostrophic currents running upwind. Ekman transports due
+to winds in the north Pacific (<strong>Left</strong>) lead to Ekman pumping
+(<strong>Center</strong>), which sets up north-south pressure gradients in the upper
+ocean. The pressure gradients are balanced by the Coriolis force due to
+east-west geostrophic currents (<strong>Right</strong>). Horizontal lines indicate
+regions where the curl of the zonal wind stress changes sign. <strong>AK</strong>:
+Alaskan Current, <strong>NEC</strong>: North Equatorial Current, <strong>NECC</strong>: North
+Equatorial Counter Current. <span id="fig:zonalmeanwinds" label="fig:zonalmeanwinds"></span></p>
+<p>Because the water near the surface is warmer than the deeper water, the
+vertical velocity produces a pool of warm water. Much deeper in the
+ocean, the wind-driven geostrophic current must go to zero (Sverdrup’s
+hypothesis) and the deep pressure gradients must be zero. As a result,
+the surface must dome upward because a column of warm water is longer
+than a column of cold water having the same weight (they must have the
+same weight, otherwise, the deep pressure would not be constant, and
+there would be a deep horizontal pressure gradient). Such a density
+distribution produces north-south pressure gradients at mid depths that
+must be balanced by east-west geostrophic currents. In short, the
+divergence of the Ekman transports redistributes mass within the
+frictionless interior of the ocean leading to the wind-driven
+geostrophic currents.</p>
+<p>Now let’s continue the idea to include the entire north Pacific to see
+how winds produce currents flowing upwind. The example will give a
+deeper understanding of Sverdrup’s results we discussed in §11.1.</p>
+<p>Figure 12.8 shows shows the mean zonal winds in the Pacific, together
+with the north-south Ekman transports driven by the zonal winds. Notice
+that convergence of transport leads to downwelling, which produces a
+thick layer of warm water in the upper kilometer of the water column,
+and high sea level. Figure 12.6 is a sketch of the cross section of the
+region between 10N and 60N, and it shows the pool of warm water in the
+upper kilometer centered on 30N. Conversely, divergent transports leads
+to low sea level. The mean north-south pressure gradients associated
+with the highs and lows are balanced by the Coriolis force of east-west
+geostrophic currents in the upper ocean (shown at the right in the
+figure).</p>
+</section>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">12.5. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Vorticity strongly constrains ocean dynamics.</p>
+<p>Vorticity due to earth’s rotation is much greater than other sources
+of vorticity.</p>
+<p>Taylor and Proudman showed that vertical velocity is impossible in a
+uniformly rotating flow. The ocean is rigid in the direction
+parallel to the rotation axis. Hence Ekman pumping requires that
+planetary vorticity vary with latitude. This explains why Sverdrup
+and Stommel found that realistic oceanic circulation, which is
+driven by Ekman pumping, requires that <span class="math notranslate nohighlight">\(f\)</span> vary with latitude.</p>
+<p>The curl of the wind stress adds relative vorticity to central gyres
+of each ocean basin. For steady state circulation in the gyre, the
+ocean must lose vorticity in western boundary currents.</p>
+<p>Positive wind stress curl leads to divergent flow in the Ekman
+layer. The ocean’s interior geostrophic circulation adjusts through
+a northward mass transport.</p>
+<p>Conservation of absolute vorticity in an ocean with constant density
+leads to the conservation of potential vorticity. Thus changes in
+depth in an ocean of constant density requires changes of latitude
+of the current.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter11.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Wind Driven Ocean Circulation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter13.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Deep Circulation in the Ocean</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-of-vorticity">12.1. Definitions of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planetary-vorticity">12.1.1. Planetary Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-vorticity">12.1.2. Relative Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-vorticity">12.1.3. Absolute Vorticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-vorticity">12.1.4. Potential Vorticity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-vorticity">12.2. Conservation of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-potential-vorticity">12.2.1. Conservation of Potential Vorticity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#influence-of-vorticity">12.3. Influence of Vorticity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flow-tends-to-be-zonal">12.3.1. Flow Tends to be Zonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topographic-steering">12.3.2. Topographic Steering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#western-boundary-currents">12.3.3. Western Boundary Currents</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorticity-and-ekman-pumping">12.4. Vorticity and Ekman Pumping</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics-on-the-f-plane-the-taylor-proudman-theorem">12.4.1. Fluid dynamics on the <em><strong>f</strong></em> Plane: the Taylor-Proudman Theorem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-dynamics-on-the-beta-plane-ekman-pumping">12.4.2. Fluid Dynamics on the Beta Plane: Ekman Pumping</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping-in-the-ocean">12.4.3. Ekman Pumping in the Ocean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekman-pumping-an-example">12.4.4. Ekman Pumping: An Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">12.5. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

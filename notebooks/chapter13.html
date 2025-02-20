@@ -1,0 +1,1422 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>13. Deep Circulation in the Ocean &#8212; Introduction to Physical Oceanography</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/chapter13';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="14. Equatorial Processes" href="chapter14.html" />
+    <link rel="prev" title="12. Vorticity in the Ocean" href="chapter12.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../docs/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo2.png" class="logo__image only-light" alt="Introduction to Physical Oceanography - Home"/>
+    <img src="../_static/logo2.png" class="logo__image only-dark pst-js-only" alt="Introduction to Physical Oceanography - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../docs/intro.html">
+                    Introduction to Physical Oceanography, open-source edition
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. A Voyage of Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. The Historical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. The Physical Setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Atmospheric Influences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. The Oceanic Heat Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Temperature, Salinity, and Density</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Some Mathematics, The Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Equations of Motion With Viscosity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter9.html">9. Response of the Upper Ocean to Winds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">10. Geostrophic Currents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">11. Wind Driven Ocean Circulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter12.html">12. Vorticity in the Ocean</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Deep Circulation in the Ocean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter14.html">14. Equatorial Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter15.html">15. Numerical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter16.html">16. Ocean Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter17.html">17. Coastal Processes and Tides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter18.html">18. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/alioacar/intro_to_po/issues/new?title=Issue%20on%20page%20%2Fnotebooks/chapter13.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/chapter13.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Deep Circulation in the Ocean</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-deep-circulation">13.1. Defining the Deep Circulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importance-of-the-deep-circulation">13.2. Importance of the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ocean-as-a-reservoir-of-carbon-dioxide">13.2.1. The ocean as a Reservoir of Carbon Dioxide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oceanic-transport-of-heat">13.2.2. Oceanic Transport of Heat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#role-of-the-ocean-in-ice-age-climate-fluctuations">13.2.3. Role of the Ocean in Ice-Age Climate Fluctuations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-for-the-deep-circulation">13.3. Theory for the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-comments-on-the-theory-for-the-deep-circulation">13.3.1. Some Comments on the Theory for the Deep Circulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-of-the-deep-circulation">13.4. Observations of the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-masses">13.4.1. Water Masses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-masses-and-the-deep-circulation">13.4.2. Water Masses and the Deep Circulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-method">13.4.3. Core Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tracers">13.4.4. Other Tracers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#north-atlantic-meridional-overturning-circulation">13.4.5. North Atlantic Meridional Overturning Circulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antarctic-circumpolar-current">13.5. Antarctic Circumpolar Current</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">13.6. Important Concepts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="deep-circulation-in-the-ocean">
+<h1><span class="section-number">13. </span>Deep Circulation in the Ocean<a class="headerlink" href="#deep-circulation-in-the-ocean" title="Link to this heading">#</a></h1>
+<p>The direct forcing of the oceanic circulation by wind discussed in the
+last few chapters is strongest in the upper kilometer of the water
+column. Below a kilometer lies the vast water masses of the ocean
+extending to depths of 4–5 km. The water is everywhere cold, with a
+potential temperature less than 4C. The water mass is formed when cold,
+dense water sinks from the surface to great depths at high latitudes. It
+spreads out from these regions to fill the ocean basins. Deep mixing
+eventually pulls the water up through the thermocline over large areas
+of the ocean. It is this upward mixing that drives the deep circulation.
+The vast deep ocean is usually referred to as the <em>abyss</em>, and the
+circulation as the <em>abyssal circulation</em>.</p>
+<p>The densest water at the sea surface, water that is dense enough to sink
+to the bottom, is formed when frigid air blows across the ocean at high
+latitudes in winter in the Atlantic between Norway and Greenland and
+near Antarctica. The wind cools and evaporates water. If the wind is
+cold enough, sea ice forms, further increasing the salinity of the water
+because ice is fresher than sea water. Bottom water is produced only in
+these two regions. Cold, dense water is formed in the North Pacific, but
+it is not salty enough to sink to the bottom.</p>
+<p>At mid and low latitudes, the density, even in winter, is sufficiently
+low that the water cannot sink more than a few hundred meters into the
+ocean. The only exception are some seas, such as the Mediterranean Sea,
+where evaporation is so great that the salinity of the water is
+sufficiently great for the water to sink to the bottom of these seas. If
+these seas can exchange water with the open ocean, the waters formed in
+winter in the seas mixes with the water in the open ocean and it spreads
+out along intermediate depths in the open ocean.</p>
+<section id="defining-the-deep-circulation">
+<h2><span class="section-number">13.1. </span>Defining the Deep Circulation<a class="headerlink" href="#defining-the-deep-circulation" title="Link to this heading">#</a></h2>
+<p>Many terms have been used to describe the deep circulation. They
+include: 1) <em>abyssal circulation</em>, 2) <em>thermohaline circulation</em> 3)
+<em>meridional overturning circulation</em>, and 4) <em>global conveyor</em>. The term
+thermohaline circulation was once widely used, but it has almost
+entirely disappeared from the oceanographic literature (Toggweiler and
+Russell, 2008). It is no longer used because it is now clear that the
+flow is not density driven, and because the concept has not been clearly
+defined (Wunsch, 2002b).</p>
+<p>The meridional overturning circulation is better defined. It is the
+zonal average of the flow plotted as a function of depth and latitude.
+Plots of the circulation show where vertical flow is important, but they
+show no information about how circulation in the gyres influences the
+flow.</p>
+<p>Following Wunsch (2002b), I define the deep circulation as the
+circulation of mass. Of course, the mass circulation also carries heat,
+salt, oxygen, and other properties. But the circulation of the other
+properties is not the same as the mass transport. For example, Wunsch
+points out that the north Atlantic imports heat but exports oxygen.</p>
+</section>
+<section id="importance-of-the-deep-circulation">
+<h2><span class="section-number">13.2. </span>Importance of the Deep Circulation<a class="headerlink" href="#importance-of-the-deep-circulation" title="Link to this heading">#</a></h2>
+<p>The deep circulation carries heat, salinity, oxygen, CO<span class="math notranslate nohighlight">\(_2\)</span>, and other
+properties from high latitudes in winter to lower latitudes throughout
+the world. This has very important consequences.</p>
+<p>The contrast between the cold deep water and the warm surface waters
+determines the stratification of the ocean, which strongly influences
+ocean dynamics.</p>
+<p>The volume of deep water is far larger than the volume of surface water.
+Although currents in the deep ocean are relatively weak, they have
+transports comparable to the surface transports.</p>
+<p>The fluxes of heat and other variables carried by the deep circulation
+influences earth’s heat budget and climate. The fluxes vary from decades
+to centuries to millennia, and this variability modulates climate over
+such time intervals. The ocean may be the primary cause of variability
+over times ranging from years to decades, and it may have helped
+modulate ice-age climate.</p>
+<p>Two aspects of the deep circulation are especially important for
+understanding earth’s climate and its possible response to increased
+carbon dioxide CO<span class="math notranslate nohighlight">\(_2\)</span> in the atmosphere: i) the ability of cold water to
+store CO<span class="math notranslate nohighlight">\(_2\)</span> and heat absorbed from the atmosphere, and ii) the ability
+of deep currents to modulate the heat transported from the tropics to
+high latitudes.</p>
+<section id="the-ocean-as-a-reservoir-of-carbon-dioxide">
+<h3><span class="section-number">13.2.1. </span>The ocean as a Reservoir of Carbon Dioxide<a class="headerlink" href="#the-ocean-as-a-reservoir-of-carbon-dioxide" title="Link to this heading">#</a></h3>
+<p>The ocean are the primary reservoir of readily available CO<span class="math notranslate nohighlight">\(_2\)</span>, an
+important greenhouse gas. The ocean contain 40,000 GtC of dissolved,
+particulate, and living forms of carbon. The land contains 2,200 GtC,
+and the atmosphere contains only 750 GtC. Thus the ocean hold 50 times
+more carbon than the air. Furthermore, the amount of new carbon put into
+the atmosphere since the industrial revolution, 150 GtC, is less than
+the amount of carbon cycled through the marine ecosystem in five years.
+(1 GtC = 1 gigaton of carbon = <span class="math notranslate nohighlight">\(10^{12}\)</span> kilograms of carbon.) Carbonate
+rocks such as limestone, the shells of marine animals, and coral are
+other, much larger, reservoirs. But this carbon is locked up. It cannot
+be easily exchanged with carbon in other reservoirs.</p>
+<p>More CO<span class="math notranslate nohighlight">\(_2\)</span> dissolves in cold water than in warm water. Just imagine
+shaking and opening a hot can of
+Coke<span class="math notranslate nohighlight">\(^{\mbox{\textsf{\scriptsize TM}}}\)</span>. The CO<span class="math notranslate nohighlight">\(_2\)</span> from a hot can will
+spew out far faster than from a cold can. Thus the cold deep water in
+the ocean is the major reservoir of dissolved CO<span class="math notranslate nohighlight">\(_2\)</span> in the ocean.</p>
+<p>New CO<span class="math notranslate nohighlight">\(_ 2\)</span> is released into the atmosphere when fossil fuels and trees
+are burned. Very quickly, 48% of the CO<span class="math notranslate nohighlight">\(_2\)</span> released into the atmosphere
+dissolves into the ocean (Sabine et al, 2004), much of which ends up
+deep in the ocean.</p>
+<p>Forecasts of future climate change depend strongly on how much CO<span class="math notranslate nohighlight">\(_2\)</span> is
+stored in the ocean and for how long. If little is stored, or if it is
+stored and later released into the atmosphere, the concentration in the
+atmosphere will change, modulating earth’s long-wave radiation balance.
+How much and how long CO<span class="math notranslate nohighlight">\(_2\)</span> is stored in the ocean depends on the
+transport of CO<span class="math notranslate nohighlight">\(_2\)</span> by the deep circulation and on the net flux of
+carbon deposited on the sea floor. The amount that dissolves depends on
+the temperature of the deep water, the storage time in the deep ocean
+depends on the rate at which deep water is replenished, and the
+deposition depends on whether the dead plants and animals that drop to
+the sea floor are oxidized. Increased ventilation of deep layers, and
+warming of the deep layers could release large quantities of the gas to
+the atmosphere.</p>
+<p>The storage of carbon in the ocean also depends on the dynamics of
+marine ecosystems, upwelling, and the amount of dead plants and animals
+stored in sediments. But I won’t consider these processes.</p>
+</section>
+<section id="oceanic-transport-of-heat">
+<h3><span class="section-number">13.2.2. </span>Oceanic Transport of Heat<a class="headerlink" href="#oceanic-transport-of-heat" title="Link to this heading">#</a></h3>
+<p>The ocean carry about half the heat out of the tropics needed to
+maintain earth’s temperature. Heat carried by the Gulf Stream and the
+north Atlantic drift keeps the far north Atlantic ice free, and it helps
+warm Europe. Norway, at 60N is far warmer than southern Greenland or
+northern Labrador at the same latitude. Palm trees grow on the west
+coast of Ireland, but not in Newfoundland which is further south.</p>
+<p>Wally Broecker (1987), working at Lamont-Doherty Geophysical Observatory
+of Columbia University, calls the oceanic component of the
+heat-transport system the <em>Global Conveyor Belt</em>. The basic idea is that
+surface currents carry heat to the far north Atlantic (figure 13.1).
+There the surface water releases heat and water to the atmosphere, and
+it becomes sufficiently cold, salty, and dense that it sinks to the
+bottom in the Norwegian and Greenland Seas. It then flows southward in
+cold, bottom currents. Some of the water remains on the surface and
+returns to the south in cool surface currents such as the Labrador
+Current and Portugal Current (see figure 11.8). Richardson (2008) has
+written a very useful paper surveying our understanding of the global
+conveyor belt.</p>
+<p>The deep bottom water from the north Atlantic is mixed upward in other
+regions and ocean, and eventually it makes its way back to the Gulf
+Stream and the North Atlantic. Thus most of the water that sinks in the
+north Atlantic must be replaced by water from the far south Atlantic. As
+this surface water moves northward across the equator and eventually
+into the Gulf Stream, it carries heat out of the south Atlantic.</p>
+<p>So much heat is pulled northward by the formation of north Atlantic
+bottom water in winter that heat transport in the Atlantic is entirely
+northward, even in the southern hemisphere (figure 5.11). Much of the
+solar heat absorbed by the tropical Atlantic is shipped north to warm
+Europe and the northern hemisphere. Imagine then what might happen if
+the supply of heat is shut off. I will get back to that topic in the
+next section.</p>
+<p>Figure 13.1 The surface (narrow dashes)</p>
+<p>and deep (wide dashes) currents in the north Atlantic. The North
+Atlantic Current brings warm water northward where it cools. Some sinks
+and returns southward as a cold, deep, western-boundary current. Some
+returns southward at the surface. From Woods Hole Oceanographic
+Institution. <span id="fig:fig13-1" label="fig:fig13-1"></span></p>
+<p>We can make a crude estimate of the importance of the north Atlantic
+surface and deep circulation from a calculation based on what we know
+about waters in the Atlantic compiled by Bill Schmitz (1996) in his
+wonderful summary of his life’s work. The Gulf Stream carries 40 Sv of
+18C water northward. Of this, 14 Sv return southward in the deep western
+boundary current at a temperature of 2C. The water must therefore lose
+0.9 petawatts (1 petawatt <span class="math notranslate nohighlight">\(= 10^{15}\)</span> watt) in the north Atlantic north
+of 24N. Although the calculation is very crude, it is remarkably close
+to the value of <span class="math notranslate nohighlight">\(1.2\,\pm\,0.2\)</span> petawatts estimated much more carefully
+by Rintoul and Wunsch (1991).</p>
+<p>Note that if the water remained on the surface and returned as an
+eastern boundary current, it would be far warmer than the deep current
+when it returned southward. Hence, the heat transport would be much
+reduced and it would probably not keep the far north Atlantic ice free.</p>
+<p>The production of bottom water is influenced by the surface salinity and
+winds in the north Atlantic (Toggweiler and Russell, 2008). It is also
+influenced by the rate of upwelling due to mixing in other oceanic
+areas. First, let’s look at the influence of salinity.</p>
+<p>Saltier surface waters form denser water in winter than less salty
+water. At first you may think that temperature is also important, but at
+high latitudes water in all ocean basins gets cold enough to freeze, so
+all ocean produce <span class="math notranslate nohighlight">\(-2\)</span>C water at the surface. Of this, only the most
+salty will sink, and the saltiest water is in the Atlantic and under the
+ice on the continental shelves around Antarctica.</p>
+<p>The production of bottom water is remarkably sensitive to small changes
+in salinity. Rahmstorf (1995), using a numerical model of the meridional
+overturning circulation, showed that a <span class="math notranslate nohighlight">\(\pm\)</span><!-- -->0.1Sv
+variation of the flow of fresh water into the north Atlantic can switch
+on or off the deep circulation of 14 Sv. If the deep-water production is
+shut off during times of low salinity, the 1 petawatt of heat may also
+be shut off. Weaver and Hillaire-Marcel (2004) point out that the
+shutdown of the production of bottom water is unlikely, and if it did
+happen, it would lead to a colder Europe, not a new ice age, because of
+the higher concentrations of CO<span class="math notranslate nohighlight">\(_2\)</span> now in the atmosphere.</p>
+<p>I write <em>may be shut off</em> because the ocean is a very complex system. We
+don’t know if other processes will increase heat transport if the deep
+circulation is disturbed. For example, the circulation at intermediate
+depths may increase when deep circulation is reduced.</p>
+<p>The production of bottom water is also remarkably sensitive to small
+changes in mixing in the deep ocean. Munk and Wunsch (1998) calculate
+that 2.1 TW (terawatts <span class="math notranslate nohighlight">\(= 10^{12}\)</span> watts) are required to drive the deep
+circulation, and that this small source of mechanical mixing drives a
+poleward heat flux of 2000 TW. Some of the energy for mixing comes from
+winds which can produce turbulent mixing throughout the ocean. Some
+energy comes from the dissipation of tidal currents, which depend on the
+distribution of the continents. Some of the energy comes from the flow
+of deep water past the mid-ocean ridge system. Thus during the last ice
+age, when sea level was much lower, tides, tidal currents, tidal
+dissipation, winds, and deep circulation all differed from present
+values.</p>
+</section>
+<section id="role-of-the-ocean-in-ice-age-climate-fluctuations">
+<h3><span class="section-number">13.2.3. </span>Role of the Ocean in Ice-Age Climate Fluctuations<a class="headerlink" href="#role-of-the-ocean-in-ice-age-climate-fluctuations" title="Link to this heading">#</a></h3>
+<p>What might happen if the production of deep water in the Atlantic is
+shut off? Information contained in Greenland and Antarctic ice sheets,
+in north Atlantic sediments, and in lake sediments provide important
+clues.</p>
+<p>Several ice cores through the Greenland and Antarctic ice sheets provide
+a continuous record of atmospheric conditions over Greenland and
+Antarctica extending back more than 700,000 years before the present in
+some cores. Annual layers in the core are counted to get age. Deeper in
+the core, where annual layers are hard to see, age is calculated from
+depth and from dust layers from well-dated volcanic eruptions.
+Oxygen-isotope ratios of the ice give air temperature at the glacier
+surface when the ice was formed. Deuterium concentrations give
+ocean-surface temperature at the moisture source region. Bubbles in the
+ice give atmospheric CO<span class="math notranslate nohighlight">\(_2\)</span> and methane concentration. Pollen, chemical
+composition, and particles give information about volcanic eruptions,
+wind speed, and direction. Thickness of annual layers gives snow
+accumulation rates. And isotopes of some elements give solar and cosmic
+ray activity (Alley, 2000).</p>
+<p>Cores through deep-sea sediments in the north Atlantic made by the Ocean
+Drilling Program give information about i) surface and deep temperatures
+and salinity at the location of above the core, ii) the production of
+north Atlantic deep water, iii) ice volume in glaciers, and iv)
+production of icebergs. Ice-sheet and deep-sea cores have allowed
+reconstructions of climate for the past few hundred thousand years.</p>
+<p>The oxygen-isotope and deuterium records in the ice cores show abrupt
+climate variability many times over the past 700,000 years. Many times
+during the last ice age temperatures near Greenland warmed rapidly over
+periods of 1–100 years, followed by gradual cooling over longer
+periods. (Dansgaard et al, 1993). For example, <span class="math notranslate nohighlight">\(\approx 11,500\)</span> years
+ago, temperatures over Greenland warmed by <span class="math notranslate nohighlight">\(\approx 8\)</span>C in 40 years in
+three steps, each spanning 5 years (Alley, 2000). Such abrupt warming is
+called a Dansgaard/Oeschger event. Other studies have shown that much of
+the northern hemisphere warmed and cooled in phase with temperatures
+calculated from the ice core.</p>
+<p>The climate of the past 8,000 years was constant with very little
+variability. Our perception of climate change is thus based on highly
+unusual circumstances. All of recorded history has been during a period
+of warm and stable climate.</p>
+<p>Hartmut Heinrich and colleagues (Bond et al. 1992), studying the
+sediments in the north Atlantic found periods when coarse material was
+deposited on the bottom in mid ocean. Only icebergs can carry such
+material out to sea, and the find indicated times when large numbers of
+icebergs were released into the north Atlantic. These are now called
+Heinrich events.</p>
+<p>Figure 13.2 Periodic</p>
+<p>surges of icebergs during the last ice age appear to have modulated
+temperatures of the northern hemisphere by lowering the salinity of the
+far north Atlantic and reducing the meridional overturning circulation.
+Data from cores through the Greenland ice sheet (1), deep-sea sediments
+(2,3), and alpine-lake sediments (4) indicate that: <strong>Left:</strong> During
+recent times the circulation has been stable, and the polar front which
+separates warm and cold water masses has allowed warm water to penetrate
+beyond Norway. <strong>Center:</strong> During the last ice age, periodic surges of
+icebergs reduced salinity and reduced the meridional overturning
+circulation, causing the polar front to move southward and keeping warm
+water south of Spain. <strong>Right:</strong> Similar fluctuations during the last
+interglacial appear to have caused rapid, large changes in climate. The
+<strong>Bottom</strong> plot is a rough indication of temperature in the region, but
+the scales are not the same. After Zahn (1994). <span id="fig:NAiceage" label="fig:NAiceage"></span></p>
+<p>Figure 13.3 The</p>
+<p>meridional-overturning circulation in the north Atlantic may be stable
+near <em>2</em> and <em>4</em>. But, the switching from a warm, salty regime to a
+cold, fresh regime and back has hysteresis. This means that as the warm
+salty ocean in an initial state <em>1</em> freshens, and becomes more fresh
+than <em>2</em> it quickly switches to a cold, fresh state <em>3</em>. When the area
+again becomes salty, it must move past state <em>4</em> before it can switch
+back to <em>1</em>. <span id="fig:hysteresis" label="fig:hysteresis"></span></p>
+<p>The correlation of Greenland temperature with iceberg production is
+related to the deep circulation. When icebergs melted, the surge of
+fresh water increased the stability of the water column shutting off the
+production of north Atlantic Deep Water. The shut-off of deep-water
+formation greatly reduced the northward transport of warm water into the
+north Atlantic, producing very cold northern hemisphere climate (figure
+13.2). The melting of the ice pushed the polar front, the boundary
+between cold and warm water in the north Atlantic further south than its
+present position. The location of the front, and the time it was at
+different positions can be determined from analysis of bottom sediments.</p>
+<p>When the meridional overturning circulation shuts down, heat normally
+carried from the south Atlantic to the north Atlantic becomes available
+to warm the southern hemisphere. This results in a climate ‘sea-saw’
+between northern and southern hemispheres.</p>
+<p>The switching on and off of the deep circulation has large hysteresis
+(figure 13.3). The circulation has two stable states. The first is the
+present circulation. In the second, deep water is produced mostly near
+Antarctica, and upwelling occurs in the far north Pacific (as it does
+today) and in the far north Atlantic. Once the circulation is shut off,
+the system switches to the second stable state. The return to normal
+salinity does not cause the circulation to turn on. Surface waters must
+become saltier than average for the first state to return (Rahmstorf,
+1995).</p>
+<p>Heinrich events seem to precede the largest Dansgaard/Oeschger events
+(Stocker and Marchal, 2000). Here’s what seems to happen. The Heinrich
+event shuts off the Atlantic deep circulation which leads to a very cold
+north Atlantic (Martrat et al, 2007). This is followed about 1000 years
+later by a Dansgaard/Oeschger event with rapid warming.</p>
+<p>Dansgaard/Oeschger–Heinrich tandem events have global influence, and
+they are related to warming events seen in Antarctic ice cores.
+Temperatures changes in the two hemispheres are out of phase. When
+Greenland warms, Antarctica cools. Recent data from the European Project
+for Ice Coring in Antarctica (<span class="smallcaps">epica</span>) shows that in the
+period between 20,000 and 90,000 years ago, 40% of the variance in the
+Greenland temperature data can be explained by Antarctic temperature
+data (Steig, 2006).</p>
+<p>A weakened version of this process with a period of about 1000 years may
+be modulating present-day climate in the north Atlantic, and it may have
+been responsible for the Little Ice Age from 1100 to 1800.</p>
+<p>The relationship between variations in salinity, air temperature,
+deep-water formation, and the atmospheric circulation is not yet
+understood. For example, we don’t know if changes in the atmospheric
+circulation trigger changes in the meridional overturning circulation,
+or if changes in the meridional overturning circulation trigger changes
+in the atmospheric circulation (Brauer et al, 2008). Furthermore, surges
+may result from warmer temperatures caused by increased water vapor from
+the tropics (a greenhouse gas) or from an internal instability of a
+large ice sheet. We do know, however, that climate can change very
+abruptly, and that circulation in the northern hemisphere has a very
+sensitive threshold, that when crossed, causes large changes in the
+circulation pattern.</p>
+<p>For example, Steffensen (2008) found that 11,704, 12,896, and 14,694
+years before 2000 <span class="smallcaps">ad</span> the temperature of the source water
+for Greenland precipitation warmed 2–4C in 1–3 years. This indicates a
+very rapid reorganization of the atmospheric circulation at high
+latitudes in the northern hemisphere and a shift in the location of the
+source region. During the earliest event air temperature over Greenland
+warmed by <span class="math notranslate nohighlight">\(\approx\)</span> 10C in 3 years. At the later events, air temperature
+over Greenland changed more slowly, over 60 to 200 years. Brauer et al
+(2008) found an abrupt change in storminess over Germany at almost
+exactly the same time, 12,679 years ago.</p>
+</section>
+</section>
+<section id="theory-for-the-deep-circulation">
+<h2><span class="section-number">13.3. </span>Theory for the Deep Circulation<a class="headerlink" href="#theory-for-the-deep-circulation" title="Link to this heading">#</a></h2>
+<p>Stommel, Arons, and Faller in a series of papers from 1958 to 1960
+described a simple theory of the abyssal circulation (Stommel 1958;
+Stommel, Arons, and Faller, 1958; Stommel and Arons, 1960). The theory
+differed so greatly from what was expected that Stommel and Arons
+devised laboratory experiments with rotating fluids to confirmed their
+theory. The theory for the deep circulation has been further discussed
+by Marotzke (2000) and Munk and Wunsch (1998).</p>
+<p>The Stommel, Arons, Faller theory is based on three fundamental ideas:</p>
+<p>Cold, deep water is supplied by deep convection at a few high-latitude
+locations in the Atlantic, notably in the Irminger and Greenland Seas in
+the north and the Weddell Sea in the south.</p>
+<p>Uniform mixing in the ocean brings the cold, deep water back to the
+surface.</p>
+<p>The deep circulation is strictly geostrophic in the interior of the
+ocean, and therefore potential vorticity is conserved.</p>
+<p>Notice that the deep circulation is driven by mixing, not by the sinking
+of cold water at high latitudes. Munk and Wunsch (1998) point out that
+deep convection by itself leads to a deep, stagnant, pool of cold water.
+In this case, the deep circulation is confined to the upper layers of
+the ocean. Mixing or upwelling is required to pump cold water upward
+through the thermocline and drive the deep circulation. Winds and tides
+are the primary source of energy driving the mixing.</p>
+<p>Notice also that convection and sinking are not the same, and they do
+not occur in the same place (Marotzke and Scott, 1999). Convection
+occurs in small regions a few kilometers on a side. Sinking, driven by
+Ekman pumping and geostrophic currents, can occur over far larger areas.
+In this chapter, we are discussing mostly sinking of water.</p>
+<p>To describe the simplest aspects of the flow, we begin with the Sverdrup
+equation applied to a bottom current of thickness <span class="math notranslate nohighlight">\(H\)</span> in an ocean of
+constant depth: $<span class="math notranslate nohighlight">\(\beta\,v =f\,\frac{\partial{w}}{\partial{z}}\)</span><span class="math notranslate nohighlight">\( where
+\)</span>f =2,\Omega,\sin \varphi<span class="math notranslate nohighlight">\(,
+\)</span>\beta = \left(2\Omega,\cos \varphi \right)/{R}<span class="math notranslate nohighlight">\(, \)</span>\Omega<span class="math notranslate nohighlight">\( is earth’s
+rotation rate, \)</span>R<span class="math notranslate nohighlight">\( earth’s radius, and \)</span>\varphi<span class="math notranslate nohighlight">\( is latitude.
+Integrating (13.1) from the bottom of the ocean to the top of the
+abyssal circulation gives: \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+V &amp;= \int_{0}^{H} v\,dz = \int_{0}^{H}
+\frac{f}{\beta}\,\frac{\partial{w}}{\partial{z}}\,dz \notag \\
+V &amp;= R \tan \varphi \,W_0\end{aligned}\)</span><span class="math notranslate nohighlight">\( where \)</span>V<span class="math notranslate nohighlight">\( is the vertical
+integral of the northward velocity, and \)</span>W_0<span class="math notranslate nohighlight">\( is the velocity at the
+base of the thermocline. \)</span>W_0<span class="math notranslate nohighlight">\( must be positive (upward) almost
+everywhere to balance the downward mixing of heat. Then \)</span>V<span class="math notranslate nohighlight">\( must be
+everywhere toward the poles. This is the abyssal flow in the interior of
+the ocean sketched by Stommel in figure 13.4. The \)</span>U<span class="math notranslate nohighlight">\( component of the
+flow is calculated from \)</span>V<span class="math notranslate nohighlight">\( and \)</span>w$ using the continuity equation.</p>
+<p>Figure 13.4 Idealized sketch of</p>
+<p>the deep circulation due to deep convection in the Atlantic (dark
+circles) and upwelling through the thermocline elsewhere. The real
+circulation is much different than the circulation shown in this sketch.
+After Stommel (1958).</p>
+<p><span id="fig:stommeldeep" label="fig:stommeldeep"></span></p>
+<p>To connect the streamlines of the flow in the west, Stommel added a deep
+western boundary current. The strength of the western boundary current
+depends on the volume of water <span class="math notranslate nohighlight">\(S\)</span> produced at the source regions.</p>
+<p>Stommel and Arons calculated the flow for a simplified ocean bounded by
+the Equator and two meridians (a pie shaped ocean). First they placed
+the source <span class="math notranslate nohighlight">\(S_0\)</span> near the pole to approximate the flow in the north
+Atlantic. If the volume of water sinking at the source equals the volume
+of water upwelled in the basin, and if the upwelled velocity is constant
+everywhere, then the transport <span class="math notranslate nohighlight">\(T_w\)</span> in the western boundary current is:
+$<span class="math notranslate nohighlight">\(T_w = -2\,S_0 \sin \varphi\)</span><span class="math notranslate nohighlight">\( The transport in the western boundary
+current at the poles is twice the volume of the source, and the
+transport diminishes to zero at the Equator (Stommel and Arons, 1960a:
+eq, 7.3.15; see also Pedlosky, 1996: §7.3). The flow driven by the
+upwelling water adds a recirculation equal to the source. If \)</span>S_0$
+exceeds the volume of water upwelled in the basin, then the western
+boundary current carries water across the Equator. This gives the
+western boundary current sketched in the north Atlantic in figure 13.4.</p>
+<p>Next, Stommel and Arons calculated the transport in a western boundary
+current in a basin with no source. The transport is:
+$<span class="math notranslate nohighlight">\(T_w = S \left[ 1 - 2 \, \sin \varphi \right]\)</span><span class="math notranslate nohighlight">\( where \)</span>S$ is the
+transport across the Equator from the other hemisphere. In this basin
+Stommel notes:</p>
+<blockquote>
+<div><p>A current of recirculated water equal to the source strength starts at
+the pole and flows toward the source <span class="math notranslate nohighlight">\(\ldots\)</span> [and] gradually
+diminishes to zero at <span class="math notranslate nohighlight">\(\varphi = 30\)</span>north latitude. A northward
+current of equal strength starts at the equatorial source and also
+diminishes to zero at 30north latitude.</p>
+</div></blockquote>
+<p>This gives the western boundary current as sketched in the north Pacific
+in figure 13.4.</p>
+<p>Figure 13.5 Deep flow</p>
+<p>in the Indian Ocean inferred from the temperature, given in C. Note that
+the flow is constrained by the deep mid-ocean ridge system. After
+Tchernia (1980). <span id="fig:deepindian" label="fig:deepindian"></span></p>
+<p>Note that the Stommel-Arons theory assumes a flat bottom. The mid-ocean
+ridge system divides the deep ocean into a series of basins connected by
+sills through which the water flows from one basin to the next. As a
+result, the flow in the deep ocean is not as simple as that sketched by
+Stommel. Boundary current flow along the edges of the basins, and flow
+in the eastern basins in the Atlantic comes through the mid-Atlantic
+ridge from the western basics. Figure 13.5 shows how ridges control the
+flow in the Indian Ocean.</p>
+<p>Finally, Stommel-Arons theory gives some values for time required for
+water to move from the source regions to the base of the thermocline in
+various basins. The time varies from a few hundred years for basins near
+the sources to nearly a thousand years for the north Pacific, which is
+farther from the sources.</p>
+<section id="some-comments-on-the-theory-for-the-deep-circulation">
+<h3><span class="section-number">13.3.1. </span>Some Comments on the Theory for the Deep Circulation<a class="headerlink" href="#some-comments-on-the-theory-for-the-deep-circulation" title="Link to this heading">#</a></h3>
+<p>Our understanding of the deep circulation is still evolving.</p>
+<p>Marotzke and Scott (1999) points out that deep convection and mixing are
+very different processes. Convection reduces the potential energy of the
+water column, and it is self powered. Mixing in a stratified fluid
+increases the potential energy, and it must be driven by an external
+process.</p>
+<p>Numerical models show that the deep circulation is very sensitive to the
+assumed value of vertical eddy diffusivity in the thermocline (Gargett
+and Holloway, 1992).</p>
+<p>Numerical calculations by Marotzke and Scott (1999) indicate that the
+mass transport is not limited by the rate of deep convection, but it is
+sensitive to the assumed value of vertical eddy diffusivity, especially
+near side boundaries.</p>
+<p>Cold water is mixed upward at the ocean’s boundaries, above seamounts
+and mid-ocean ridges, along strong currents such as the Gulf Stream, and
+in the Antarctic Circumpolar Current (Toggweiler and Russell, 2008;
+Garabato et al, 2004, 2007). Because mixing is strong over mid-ocean
+ridges and small in nearby areas, flow is zonal in the ocean basins and
+poleward along the ridges (Hogg et al. 2001). A map of the circulation
+will not look like figure 13.4. Numerical models and measurements of
+deep flow by floats show the flow is indeed zonal.</p>
+<p>Because the transport of mass, heat, and salt are not closely related
+the transport of heat into the north Atlantic may not be as sensitive to
+surface salinity as described above.</p>
+</section>
+</section>
+<section id="observations-of-the-deep-circulation">
+<h2><span class="section-number">13.4. </span>Observations of the Deep Circulation<a class="headerlink" href="#observations-of-the-deep-circulation" title="Link to this heading">#</a></h2>
+<p>The abyssal circulation is less well known than the upper-ocean
+circulation. Direct observations from moored current meters or
+deep-drifting floats were difficult to make until recently, and there
+are few long-term direct measurements of current. In addition, the
+measurements do not produce a stable mean value for the deep currents.
+For example, if the deep circulation takes roughly 1,000 years to
+transport water from the north Atlantic to the Antarctic Circumpolar
+Current and then to the north Pacific, the mean flow is about 1 mm/s.
+Observing this small mean flow in the presence of typical deep currents
+having variable velocities of up to 10 cm/s or greater, is very
+difficult.</p>
+<p>Most of our knowledge of the deep circulation is inferred from measured
+distribution of water masses with their distinctive temperature and
+salinity and their concentrations of oxygen, silicate, tritium,
+fluorocarbons and other tracers. These measurements are much more stable
+than direct current measurements, and observations made decades apart
+can be used to trace the circulation. Tomczak (1999) carefully describes
+how the techniques can be made quantitative and how they can be applied
+in practice.</p>
+<section id="water-masses">
+<h3><span class="section-number">13.4.1. </span>Water Masses<a class="headerlink" href="#water-masses" title="Link to this heading">#</a></h3>
+<p>The concept of water masses originates in meteorology. Vilhelm Bjerknes,
+a Norwegian meteorologist, first described the cold air masses that form
+in the polar regions. He showed how they move southward, where they
+collide with warm air masses at places he called fronts, just as masses
+of troops collide at fronts in war (Friedman, 1989). In a similar way,
+water masses are formed in different regions of the ocean, and the water
+masses are often separated by fronts. Note, however, that strong winds
+are associated with fronts in the atmosphere because of the large
+difference in density and temperature on either side of the front.
+Fronts in the ocean sometimes have little contrast in density, and these
+fronts have only weak currents.</p>
+<p>Tomczak (1999) defines a <em>water mass</em> as a</p>
+<blockquote>
+<div><p>body of water with a common formation history, having its origin in a
+physical region of the ocean. Just as air masses in the atmosphere,
+water masses are physical entities with a measurable volume and
+therefore occupy a finite volume in the ocean. In their formation
+region they have exclusive occupation of a particular part of the
+ocean. Elsewhere they share the ocean with other water masses with
+which they mix. The total volume of a water mass is given by the sum
+of all its elements regardless of their location.</p>
+</div></blockquote>
+<p>Figure 13.6 Temperature</p>
+<p>and salinity measured at hydrographic stations on either side of the
+Gulf Stream. Data are from tables 10.2 and 10.4. <strong>Left:</strong> Temperature
+and salinity plotted as a function of depth. <strong>Right:</strong> The same data,
+but salinity is plotted as a function of temperature in a <em>T-S</em> plot.
+Notice that temperature and salinity are uniquely related below the
+mixed layer. A few depths are noted next to data points.
+<span id="fig:GulfStreamTSDPlot" label="fig:GulfStreamTSDPlot"></span></p>
+<p>Plots of salinity as a function of temperature, called <em>T-S</em> plots, are
+used to delineate water masses and their geographical distribution, to
+describe mixing among water masses, and to infer motion of water in the
+deep ocean. Here’s why the plots are so useful: water properties, such
+as temperature and salinity, are formed only when the water is at the
+surface or in the mixed layer. Heating, cooling, rain, and evaporation
+all contribute. Once the water sinks below the mixed layer temperature
+and salinity can change only by mixing with adjacent water masses. Thus
+water from a particular region has a particular temperature associated
+with a particular salinity, and the relationship changes little as the
+water moves through the deep ocean.</p>
+<p>Thus temperature and salinity are not independent variables. For
+example, the temperature and salinity of the water at different depths
+below the Gulf Stream are uniquely related (figure 13.6, right),
+indicating they came from the same source region, even though they do
+not appear related if temperature and salinity are plotted independently
+as a function of depth (figure 13.6, left).</p>
+<p>Temperature and salinity are <em>conservative properties</em> because there are
+no sources or sinks of heat and salt in the interior of the ocean. Other
+properties, such as oxygen are non-conservative. For example, oxygen
+content may change slowly due to oxidation of organic material and
+respiration by animals.</p>
+<p>Each point in the <em>T-S</em> plot is a <em>water type</em>. This is a mathematical
+ideal. Some water masses may be very homogeneous and they are almost
+points on the plot. Other water masses are less homogeneous, and they
+occupy regions on the plot.</p>
+<p>Figure 13.7 <strong>Upper:</strong> Mixing</p>
+<p>of two water masses produces a line on a <em>T-S</em> plot. <strong>Lower:</strong> Mixing
+among three water masses produces intersecting lines on a <em>T-S</em> plot,
+and the apex at the intersection is rounded by further mixing. After
+Defant (1961: 205). <span id="fig:TSsketch" label="fig:TSsketch"></span></p>
+<p>Mixing two water types leads to a straight line on a <em>T-S</em> diagram
+(figure 13.7). Because the lines of constant density on a <em>T-S</em> plot are
+curved, mixing increases the density of the water. This is called
+<em>densification</em> (figure 13.8).</p>
+</section>
+<section id="water-masses-and-the-deep-circulation">
+<h3><span class="section-number">13.4.2. </span>Water Masses and the Deep Circulation<a class="headerlink" href="#water-masses-and-the-deep-circulation" title="Link to this heading">#</a></h3>
+<p>Let’s use these ideas of water masses and mixing to study the deep
+circulation. We start in the south Atlantic because it has very clearly
+defined water masses. A <em>T-S</em> plot calculated from hydrographic data
+collected in the south Atlantic (figure 13.9) shows three important
+water masses listed in order of decreasing depth (table 13.1): Antarctic
+Bottom Water <span class="smallcaps">aab</span>, North Atlantic Deep Water
+<span class="smallcaps">nadw</span>, and Antarctic Intermediate Water <span class="smallcaps">aiw</span>.
+All are deeper than one kilometer. The mixing among three water masses
+shows the characteristic rounded apexes shown in the idealized case
+shown in figure 13.7.</p>
+<p>The plot indicates that the same water masses can be found throughout
+the western basins in the south Atlantic. Now let’s use a cross section
+of salinity to trace the movement of the water masses using the core
+method.</p>
+<p>Figure 13.8 Mixing</p>
+<p>of two water types of the same density(L and G) produces water that is
+denser (M) than either water type. After Tolmazin (1985: 137).</p>
+<p><span id="fig:densification" label="fig:densification"></span></p>
+</section>
+<section id="core-method">
+<h3><span class="section-number">13.4.3. </span>Core Method<a class="headerlink" href="#core-method" title="Link to this heading">#</a></h3>
+<p>The slow variation from place to place in the ocean of a tracer such as
+salinity can be used to determine the source of the waters masses such
+as those in figure 13.9. This is called the <em>core method</em>. The method
+may also be used to track the slow movement of the water mass. Note,
+however, that a slow drift of the water and horizontal mixing both
+produce the same observed properties in the plot, and they cannot be
+separated by the core method.</p>
+<p>121mm&#64;llc|r|r&#64;<br />
+&amp;</p>
+<p>&amp; &amp; Temp. &amp; Salinity<br />
+&amp; &amp; &amp; (C) &amp;<br />
+Antarctic water &amp; Antarctic Intermediate Water</p>
+<p>&amp; <span class="smallcaps">aiw</span> &amp; 3.3 &amp; 34.15<br />
+&amp; Antarctic Bottom Water &amp; <span class="smallcaps">abw</span> &amp; 0.4 &amp; 34.67<br />
+North Atlantic water &amp; North Atlantic Deep Water</p>
+<p>&amp; <span class="smallcaps">nadw</span> &amp; 4.0 &amp; 35.00<br />
+&amp; North Atlantic Bottom Water &amp; <span class="smallcaps">nabw</span> &amp; 2.5 &amp; 34.90<br />
+Thermocline water &amp; Subtropical Lower Water</p>
+<p>&amp; <span class="smallcaps">u</span> &amp; 18.0 &amp; 35.94</p>
+<p>From Defant (1961: table 82)</p>
+<p></p>
+<p>Figure 13.9 <em>T-S</em> plot</p>
+<p>of data collected at various latitudes in the western basins of the
+south Atlantic. Lines drawn through data from 5N, showing possible
+mixing between water masses: <span class="smallcaps">nadw</span>–North Atlantic Deep
+Water, <span class="smallcaps">aiw</span>–Antarctic Intermediate Water,
+<span class="smallcaps">aab</span> Antarctic Bottom Water, <span class="smallcaps">u</span> Subtropical
+Lower Water. <span id="fig:WesternBasinsTS" label="fig:WesternBasinsTS"></span></p>
+<p>A <em>core</em> is a layer of water with extreme value (in the mathematical
+sense) of salinity or other property as a function of depth. An extreme
+value is a local maximum or minimum of the quantity as a function of
+depth. The method assumes that the flow is along the core. Water in the
+core mixes with the water masses above and below the core and it
+gradually loses its identity. Furthermore, the flow tends to be along
+surfaces of constant potential density.</p>
+<p>Let’s apply the method to the data from the south Atlantic to find the
+source of the water masses. As you might expect, this will explain their
+names.</p>
+<p>We start with a north-south cross section of salinity in the western
+basins of the Atlantic (figure 13.10). It we locate the maxima and
+minima of salinity as a function of depth at different latitudes, we can
+see two clearly defined cores. The upper low-salinity core starts near
+55S and it extends northward at depths near 1000 m. This water
+originates at the Antarctic Polar Front zone. This is the Antarctic
+Intermediate Water. Below this water mass is a core of salty water
+originating in the far north Atlantic. This is the North Atlantic Deep
+Water. Below this is the most dense water, the Antarctic Bottom Water.
+It originates in winter when cold, dense, saline water forms in the
+Weddell Sea and other shallow seas around Antarctica. The water sinks
+along the continental slope and mixes with Circumpolar Deep Water. It
+then fills the deep basins of the south Pacific, Atlantic, and Indian
+ocean.</p>
+<p>Figure 13.10 Contour</p>
+<p>plot of salinity as a function of depth in the western basins of the
+Atlantic from the Arctic Ocean to Antarctica. The plot clearly shows
+extensive cores, one at depths near 1000 m extending from 50S to 20N,
+the other at is at depths near 2000 m extending from 20N to 50S. The
+upper is the Antarctic Intermediate Water, the lower is the North
+Atlantic Deep Water. The arrows mark the assumed direction of the flow
+in the cores. The Antarctic Bottom Water fills the deepest levels from
+50S to 30N. <span class="smallcaps">pf</span> is the polar front, <span class="smallcaps">saf</span> is
+the subantarctic front. See also figures 10.15 and 6.10. After Lynn and
+Reid (1968). <span id="fig:Cores" label="fig:Cores"></span></p>
+<p>The Circumpolar Deep Water is mostly North Atlantic Deep Water that has
+been carried around Antarctica. As it is carried along, it mixes with
+deep waters of the Indian and Pacific Ocean to form the circumpolar
+water.</p>
+<p>The flow is probably not along the arrows shown in figure 13.10. The
+distribution of properties in the abyss can be explained by a
+combination of slow flow in the direction of the arrows plus horizontal
+mixing along surfaces of constant potential density with some weak
+vertical mixing. The vertical mixing probably occurs at the places where
+the density surface reaches the sea bottom at a lateral boundary such as
+seamounts, mid-ocean ridges, and along the western boundary. Flow in a
+plane perpendicular to that of the figure may be at least as strong as
+the flow in the plane of the figure shown by the arrows.</p>
+<p>The core method can be applied only to a tracer that does not influence
+density. Hence temperature is usually a poor choice. If the tracer
+controls density, then flow will be around the core according to ideas
+of geostrophy, not along core as assumed by the core method.</p>
+<p>The core method works especially well in the south Atlantic with its
+clearly defined water masses. In other ocean basins, the <em>T-S</em>
+relationship is more complicated. The abyssal waters in the other basins
+are a complex mixture of waters coming from different areas in the ocean
+(figure 13.11). For example, warm, salty water from the Mediterranean
+Sea enters the north Atlantic and spreads out at intermediate depths
+displacing intermediate water from Antarctica in the north Atlantic,
+adding additional complexity to the flow as seen in the lower right part
+of the figure.</p>
+<p>Figure 13.11 <em>T-S</em> plots</p>
+<p>of water in the various ocean basins. After Tolmazin (1985: 138).</p>
+<p><span id="fig:TSplots" label="fig:TSplots"></span></p>
+</section>
+<section id="other-tracers">
+<h3><span class="section-number">13.4.4. </span>Other Tracers<a class="headerlink" href="#other-tracers" title="Link to this heading">#</a></h3>
+<p>I have illustrated the core method using salinity as a tracer, but many
+other tracers are used. An ideal tracer is easy to measure even when its
+concentration is very small; it is conserved, which means that only
+mixing changes its concentration; it does not influence the density of
+the water; it exists in the water mass we wish to trace, but not in
+other adjacent water masses; and it does not influence marine organisms
+(we don’t want to release toxic tracers).</p>
+<p>Various tracers meet these criteria to a greater or lesser extent, and
+they are used to follow the deep and intermediate water in the ocean.
+Here are some of the most widely used tracers.</p>
+<p>Salinity is conserved, and it influences density much less than
+temperature.</p>
+<p>Oxygen is only partly conserved. Its concentration is reduced by the
+respiration by marine plants and animals and by oxidation of organic
+carbon.</p>
+<p>Silicates are used by some marine organisms. They are conserved at
+depths below the sunlit zone.</p>
+<p>Phosphates are used by all organisms, but they can provide additional
+information.</p>
+<p><span class="math notranslate nohighlight">\(^3\)</span>He is conserved, but there are few sources, mostly at deep-sea
+volcanic areas and hot springs.</p>
+<p><span class="math notranslate nohighlight">\(^3\)</span>H (tritium) was produced by atomic bomb tests in the atmosphere in
+the 1950s. It enters the ocean through the mixed layer, and it is useful
+for tracing the formation of deep water. It decays with a half life of
+12.3 y and it is slowly disappearing from the ocean. Figure 10.16 shows
+the slow advection or perhaps mixing of the tracer into the deep north
+Atlantic. Note that after 25 years little tritium is found south of
+30 N. This implies a mean velocity of less than a mm/s.</p>
+<p>Fluorocarbons (Freon used in air conditioning) have been recently
+injected into atmosphere. They can be measured with very great
+sensitivity, and they are being used for tracing the sources of deep
+water.</p>
+<p>Sulphur hexafluoride SF<span class="math notranslate nohighlight">\(_6\)</span> can be injected into sea water, and the
+concentration can be measured with great sensitivity for many months.</p>
+<p>Each tracer has its usefulness, and each provides additional information
+about the flow.</p>
+</section>
+<section id="north-atlantic-meridional-overturning-circulation">
+<h3><span class="section-number">13.4.5. </span>North Atlantic Meridional Overturning Circulation<a class="headerlink" href="#north-atlantic-meridional-overturning-circulation" title="Link to this heading">#</a></h3>
+<p>The great importance of the meridional overturning circulation for
+European climate has led to programs to monitor the circulation. The
+Rapid Climate Change/Meridional Overturning Circulation and Heat Flux
+Array <span class="smallcaps">rapid/mocha</span> deployed an array of instruments that
+measured bottom pressure plus temperature and salinity throughout the
+water column at 15 locations along 24N near the western and eastern
+boundaries and on either side of the mid-Atlantic ridge beginning in
+2004 (Church, 2007). At the same time, flow of the Gulf Stream was
+measured through the Strait of Florida, and wind stress, which gives the
+Ekman transports, was measured along 24N by satellite instruments. The
+measurements show that transport across 24N was zero, within the
+accuracy of the measurements, as expected. The one-year average of the
+Meridional Overturning Circulation was <span class="math notranslate nohighlight">\(18.7 \pm 5.6\)</span> Sv, with
+variability ranging from 4.4 to 35.3 Sv. Accuracy of the measurement was
+<span class="math notranslate nohighlight">\(\pm\)</span> 1.5 Sv.</p>
+</section>
+</section>
+<section id="antarctic-circumpolar-current">
+<h2><span class="section-number">13.5. </span>Antarctic Circumpolar Current<a class="headerlink" href="#antarctic-circumpolar-current" title="Link to this heading">#</a></h2>
+<p>The Antarctic Circumpolar Current is an important feature of the ocean’s
+deep circulation because it transports deep and intermediate water
+between the Atlantic, Indian, and Pacific Ocean, and because Ekman
+pumping driven by westerly winds is a major driver of the deep
+circulation. Because it is so important for understanding the deep
+circulation in all ocean, let’s look at what is known about this
+current.</p>
+<p>Figure 13.12 Cross</p>
+<p>section of neutral density across the Antarctic Circumpolar Current in
+the Drake Passage from the World Ocean Circulation Experiment section
+A21 in 1990. The current has three streams associated with the three
+fronts (dark shading): <span class="smallcaps">sf</span> = Southern <span class="smallcaps">acc</span>
+Front, <span class="smallcaps">pf</span> = Polar Front, and <span class="smallcaps">saf</span> =
+Subantarctic Front. Hydrographic station numbers are given at the top,
+and transports are relative to 3,000 dbar. Circumpolar deep water is
+indicated by light shading. Data from Alex Orsi, Texas A&amp;M University.</p>
+<p><span id="fig:P16" label="fig:P16"></span></p>
+<p>Figure 13.13 Distribution</p>
+<p>of fronts around Antarctica: <strong>STF</strong>: Subtrobical Front; <strong>SAF</strong>:
+Subantarctic Front; <strong>PF</strong>: Polar Front; <strong>SACC</strong>: Southern Antarctic
+Circumpolar Front. Shaded areas are shallower than 3 km. From Orsi
+(1995).</p>
+<p><span id="fig:AACx-section" label="fig:AACx-section"></span></p>
+<p>Figure 13.14 Variability of</p>
+<p>the transport in the Antarctic Circumpolar Current as measured by an
+array of current meters deployed across the Drake Passage. The heavier
+line is smoothed, time-averaged transport. From Whitworth (1988).</p>
+<p><span id="fig:aacxport" label="fig:aacxport"></span></p>
+<p>A plot of density across a line of constant longitude in the Drake
+Passage (figure 13.12) shows three fronts. They are, from north to
+south: 1) the Subantarctic Front, 2) the Polar Front, and 3) the
+Southern <span class="smallcaps">acc</span> Front. Each front is continuous around
+Antarctica (figure 13.13). The plot also shows that the constant-density
+surfaces slope at all depths, which indicates that the currents extend
+to the bottom.</p>
+<p>Typical current speeds are around 10 cm/s with speeds of up to 50 cm/s
+near some fronts. Although the currents are slow, they transport much
+more water than western boundary currents because the flow is deep and
+wide. Whitworth and Peterson (1985) calculated transport through the
+Drake Passage using several years of data from an array of 91 current
+meters on 24 moorings spaced approximately 50 km apart along a line
+spanning the passage. They also used measurements of bottom pressure
+measured by gauges on either side of the passage. They found that the
+average transport through the Drake Passage was <span class="math notranslate nohighlight">\(125 \pm 11\)</span> Sv, and
+that the transport varied from 95 Sv to 158 Sv. The maximum transport
+tended to occur in late winter and early spring (figure 13.14).</p>
+<p>Because the antarctic currents reach the bottom, they are influenced by
+topographic steering. As the current crosses ridges such as the
+Kerguelen Plateau, the Pacific-Antarctic Ridge, and the Drake Passage,
+it is deflected by the ridges.</p>
+<p>The core of the current is composed of Circumpolar Deep Water, a mixture
+of deep water from all ocean. The upper branch of the current contains
+oxygen-poor water from all ocean. The lower (deeper) branch contains a
+core of high-salinity water from the Atlantic, including contributions
+from the north Atlantic deep water mixed with salty Mediterranean Sea
+water. As the different water masses circulate around Antarctica they
+mix with other water masses with similar density. In a sense, the
+current is a giant ‘mix-master’ taking deep water from each ocean,
+mixing it with deep water from other ocean, and then redistributing it
+back to each ocean (Garabato et al, 2007).</p>
+<p>The coldest, saltiest water in the ocean is produced on the continental
+shelf around Antarctica in winter, mostly from the shallow Weddell and
+Ross seas. The cold salty water drains from the shelves, entrains some
+deep water, and spreads out along the sea floor. Eventually, 8–10 Sv of
+bottom water are formed (Orsi, Johnson, and Bullister, 1999). This dense
+water then seeps into all the ocean basins. By definition, this water is
+too dense to cross through the Drake Passage, so it is not circumpolar
+water.</p>
+<p>The Antarctic currents are wind driven. Strong west winds with maximum
+speed near 50S drive the currents (see figure 4.2), and the north-south
+gradient of wind speed produces convergence and divergence of Ekman
+transports. Divergence south of the zone of maximum wind speed, south of
+50S leads to upwelling of the Circumpolar Deep Water. Convergence north
+of the zone of maximum winds leads to downwelling of the Antarctic
+intermediate water. The surface water is relatively fresh but cold, and
+when they sink they define characteristics of the Antarctic intermediate
+water.</p>
+<p>The position of the circumpolar current relative to the maximum of the
+westerly winds influences the meridional overturning circulation and
+climate. North of the maximum, Ekman transports converge, pushing water
+downward into the Antarctic Intermediate Water north of the Polar Front.
+South of the maximum winds, Ekman transports diverge, pulling
+Circumpolar Atlantic Deep Water to the surface south of the Polar Front,
+which helps drive the deep circulation (figure 13.10). When the maximum
+winds are further from the pole, less deep water is pulled upward, and
+the deep circulation is weak, as it was during the last ice age. As the
+earth warmed after the ice age, the maximum winds shifted south. The
+winds were more aligned with the Circumpolar Current, and they pulled
+more deep water to the surface. Since 1960, the winds have strengthened
+and shifted southward, further strengthening Circumpolar Current and the
+deep circulation Toggweiler and Russell, 2008).</p>
+<p>Because wind constantly transfers momentum to the Antarctic Circumpolar
+Current, causing it to accelerate, the acceleration must be balanced by
+drag, and we are led to ask: What keeps the flow from accelerating to
+very high speeds? Munk and Palmen (1951), suggest form drag dominates.
+Form drag is due to the current crossing sub-sea ridges, especially at
+the Drake Passage. Form drag is also the drag of the wind on a fast
+moving car. In both cases, the flow is diverted, by the ridge or by your
+car, creating a low pressure zone downstream of the ridge or down wind
+of the car. The low pressure zone transfers momentum into the solid
+earth, slowing down the current.</p>
+</section>
+<section id="important-concepts">
+<h2><span class="section-number">13.6. </span>Important Concepts<a class="headerlink" href="#important-concepts" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>The deep circulation of the ocean is very important because it
+determines the vertical stratification of the ocean and because it
+modulates climate.</p>
+<p>The ocean absorbs CO<span class="math notranslate nohighlight">\(_2\)</span> from the atmosphere reducing atmospheric
+CO<span class="math notranslate nohighlight">\(_2\)</span> concentrations. The deep circulation carries the CO<span class="math notranslate nohighlight">\(_2\)</span> deep
+into the ocean temporarily keeping it from returning to the
+atmosphere. Eventually, however, most of the CO<span class="math notranslate nohighlight">\(_2\)</span> must be released
+back to the atmosphere. But, some remains in the ocean.
+Phytoplankton convert CO<span class="math notranslate nohighlight">\(_2\)</span> into organic carbon, some of which
+sinks to the sea floor and is buried in sediments. Some CO<span class="math notranslate nohighlight">\(_2\)</span> is
+used to make sea shells, and it too remains in the ocean.</p>
+<p>The production of deep bottom waters in the north Atlantic draws a
+petawatt of heat into the northern hemisphere which helps warm
+Europe.</p>
+<p>Variability of deep water formation in the north Atlantic has been
+tied to large fluctuations of northern hemisphere temperature during
+the last ice ages.</p>
+<p>Deep convection which produces bottom water occurs only in the far
+north Atlantic and at a few locations around Antarctica.</p>
+<p>The deep circulation is driven by vertical mixing, which is largest
+above mid-ocean ridges, near seamounts, and in strong boundary
+currents.</p>
+<p>The deep circulation is too weak to measure directly. It is inferred
+from observations of water masses defined by their temperature and
+salinity and from observation of tracers.</p>
+<p>The Antarctic Circumpolar Current mixes deep water from the
+Atlantic, Pacific, and Indian Ocean and redistributes it back to
+each ocean. The current is deep and slow with a transport of 125 Sv.</p>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter12.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Vorticity in the Ocean</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter14.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">14. </span>Equatorial Processes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-deep-circulation">13.1. Defining the Deep Circulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importance-of-the-deep-circulation">13.2. Importance of the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ocean-as-a-reservoir-of-carbon-dioxide">13.2.1. The ocean as a Reservoir of Carbon Dioxide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oceanic-transport-of-heat">13.2.2. Oceanic Transport of Heat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#role-of-the-ocean-in-ice-age-climate-fluctuations">13.2.3. Role of the Ocean in Ice-Age Climate Fluctuations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory-for-the-deep-circulation">13.3. Theory for the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-comments-on-the-theory-for-the-deep-circulation">13.3.1. Some Comments on the Theory for the Deep Circulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-of-the-deep-circulation">13.4. Observations of the Deep Circulation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-masses">13.4.1. Water Masses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#water-masses-and-the-deep-circulation">13.4.2. Water Masses and the Deep Circulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-method">13.4.3. Core Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-tracers">13.4.4. Other Tracers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#north-atlantic-meridional-overturning-circulation">13.4.5. North Atlantic Meridional Overturning Circulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antarctic-circumpolar-current">13.5. Antarctic Circumpolar Current</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-concepts">13.6. Important Concepts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Robert Stewart
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
